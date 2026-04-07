@@ -73,6 +73,10 @@ export const LEGACY_PATH_REDIRECTS: Readonly<Record<string, string>> = Object.fr
   "/where-can-i-store-my-photos-permanently": "/articles/where-can-i-store-my-photos-permanently/",
   "/who-needs-permanent-data": "/articles/who-needs-permanent-data/",
 
+  // Nav pages that redirect elsewhere.
+  "/learn": "/articles/",
+  "/start": "https://app.ardrive.io/",
+
   // Old use case URLs -> new use case URLs.
   "/decentralized-ai": "/use-cases/verifiable-ai/",
   "/sites-and-apps": "/use-cases/sites-and-apps/",
