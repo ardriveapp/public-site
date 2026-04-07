@@ -781,13 +781,7 @@ export function HomePage() {
         className="pt-0 pb-24"
         style={{ background: "#080808" }}
       >
-        {/* Red gradient header band */}
-        <div
-          className="py-16 px-4 mb-12"
-          style={{
-            background: "linear-gradient(180deg, #d31721 0%, #2e0a0b 40%, #080808 100%)",
-          }}
-        >
+        <div className="mb-12 px-4 pt-12">
           <div className={`${SITE_CONTAINER_CLASS} text-center`}>
             <h2
               className="text-4xl sm:text-5xl lg:text-6xl text-white"
