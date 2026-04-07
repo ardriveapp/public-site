@@ -15,13 +15,13 @@ An Arweave Manifest is a mapping of Arweave Transaction IDs to friendly names. T
 
 This makes it easier for web masters, NFT creators or any other user to reference their transactions by a single “master” manifest transaction and the individual file path and name. They allow you to use friendlier URLs like...
 
-[https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)  
-[https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**333.png**](https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
+[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)  
+[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**333.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
 
 ...rather than opaque Arweave transaction IDs that ordinarily reference your data:  
 
-[https://arweave.net/**ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0**](https://eev46qzbxsuwzsou7p4xu3trfpa63x6b3hpon5l46hnrisudhswq.arweave.net/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)  
-[https://arweave.net/**nHuFsR2Y-e\_qtnsmj0avn37CTWxlZ4zvG\_CKwtldK3I**](https://arweave.net/nHuFsR2Y-e_qtnsmj0avn37CTWxlZ4zvG_CKwtldK3I)
+[https://turbo-gateway.com/**ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0**](https://eev46qzbxsuwzsou7p4xu3trfpa63x6b3hpon5l46hnrisudhswq.turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)  
+[https://turbo-gateway.com/**nHuFsR2Y-e\_qtnsmj0avn37CTWxlZ4zvG\_CKwtldK3I**](https://turbo-gateway.com/nHuFsR2Y-e_qtnsmj0avn37CTWxlZ4zvG_CKwtldK3I)
 
 This standard was created by the Arweave Team. More details on its motivation, schema and path resolution details can be found on [Github](https://github.com/ArweaveTeam/arweave/wiki/Path-Manifests).
 
@@ -55,26 +55,26 @@ Here is an example manifest that groups 1,111 images that were part of an NFT dr
 
 The root manifest transaction (Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA) has a default `index` that corresponds to the Arweave Transaction ID for image number 0:
 
--   [https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/](https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/)
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/)
     
 
 This image can also be reached using the manifest transaction plus its friendly name `0.png`:
 
--   [https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
     
 
 `0.png` could also be reached directly by its own unique Arweave Transaction ID: (ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
 
--   [https://arweave.net/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0](https://arweave.net/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
+-   [https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0](https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
     
 
 Any other file in the manifest can be seen by adding the corresponding filename, from `0.png` to `1110.png`:
 
--   [https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**1.png**](https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/1.png)
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**1.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/1.png)
     
--   [https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**333.png**](https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**333.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
     
--   [https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**1110.png**](https://arweave.net/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/1110.png)
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**1110.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/1110.png)
     
 
 # Static Site Hosting
@@ -95,7 +95,7 @@ See ArDrive's website assets in a public Drive:
 
 A manifest is made of that Drive (dKA3lLa10okiDj5w7s502YHOzc\_Pg-ZM3y8y0hQ8v8E) and is now a site on the permaweb.
 
--   [https://arweave.net/dKA3lLa10okiDj5w7s502YHOzc\_Pg-ZM3y8y0hQ8v8E/](https://arweave.net/dKA3lLa10okiDj5w7s502YHOzc_Pg-ZM3y8y0hQ8v8E/)
+-   [https://turbo-gateway.com/dKA3lLa10okiDj5w7s502YHOzc\_Pg-ZM3y8y0hQ8v8E/](https://turbo-gateway.com/dKA3lLa10okiDj5w7s502YHOzc_Pg-ZM3y8y0hQ8v8E/)
     
 
 **NOTE:** If you need to update your website, a new manifest is needed to capture changes to your website.
@@ -108,16 +108,16 @@ The ArDrive Price Calculator [https://prices.ardrive.io](https://prices.ardrive.
 
 The root manifest transaction has a default `index` that corresponds to `index.html` which has all of the references to the assets needed to load the ArDrive Price Calculator.
 
--   [https://arweave.net/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/](https://arweave.net/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/)
+-   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/)
     
 
 Assets can be loaded individually by adding their file name and path. For example
 
--   [https://arweave.net/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/font.css](https://arweave.net/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/font.css)
+-   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/font.css](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/font.css)
     
--   [https://arweave.net/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/index.js](https://arweave.net/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/index.js)
+-   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/index.js](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/index.js)
     
--   [https://arweave.net/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/utils/index.js](https://arweave.net/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/utils/index.js)
+-   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/utils/index.js](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/utils/index.js)
     
 
 All of the React assets are hosted out of a public drive, in a single folder called `build`.
@@ -133,7 +133,7 @@ Each version of the manifest is stored permanently, allowing web site and web ap
 
 To view all the paths of a manifest, use the \`raw\` endpoint followed by the manifest transaction ID:
 
--   [https://arweave.net/raw/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo](https://arweave.net/raw/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo)
+-   [https://turbo-gateway.com/raw/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo](https://turbo-gateway.com/raw/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo)
 
 # Ready to start?
 

@@ -41,29 +41,24 @@ export default async function HelpArticlePage({ params }: PageProps) {
   return (
     <main className="min-h-screen px-4 py-16" style={{ background: "#080808" }}>
       <div className={`${SITE_CONTAINER_CLASS} mx-auto max-w-3xl`}>
-        <Link
-          href="/help"
-          className="mb-10 inline-flex items-center gap-2 text-sm font-medium text-fd-foreground/40 transition-colors hover:text-fd-primary"
-        >
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path
-              d="M10 3L5 8l5 5"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-          Help home
-        </Link>
+        {/* Breadcrumb */}
+        <nav className="mb-10 flex items-center gap-1.5 text-sm flex-wrap" style={{ color: "rgba(250,250,250,0.35)" }}>
+          <Link href="/help" className="transition-colors hover:text-fd-primary">Help</Link>
+          {article.category && (
+            <>
+              <span>/</span>
+              <span>{article.category}</span>
+            </>
+          )}
+          {article.section && (
+            <>
+              <span>/</span>
+              <span>{article.section}</span>
+            </>
+          )}
+        </nav>
 
         <article>
-          {article.category ? (
-            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-fd-accent/80">
-              {article.category}
-              {article.section ? ` · ${article.section}` : ""}
-            </p>
-          ) : null}
 
           <h1
             className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl"
@@ -97,7 +92,7 @@ export default async function HelpArticlePage({ params }: PageProps) {
       </div>
 
       <section className="px-4 pb-8 pt-12">
-        <div className={`${SITE_CONTAINER_CLASS} ${FINAL_CTA_WIDTH_CLASS}`}>
+        <div className={FINAL_CTA_WIDTH_CLASS}>
           <div className="rounded-[2.5rem] bg-fd-primary px-8 py-16 text-center text-white">
             <h2 className="mb-4 text-2xl font-bold sm:text-3xl" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
               Ready to store forever?
