@@ -8,7 +8,7 @@ export const metadata = buildMetadata({
   description: "The page you're looking for doesn't exist.",
   canonical: "/404",
   ogImage: "/previews/general-og.jpg",
-  ogAlt: "Page Not Found | ar.io",
+  ogAlt: "Page Not Found | ArDrive",
 });
 
 export default function NotFoundPage() {
@@ -52,12 +52,12 @@ export default function NotFoundPage() {
                   Contact Us
                 </Link>
                 <a
-                  href="https://docs.ar.io"
+                  href="https://help.ardrive.io"
                   target="_blank"
                   rel="noreferrer"
                   className="border-l border-fd-border px-5 py-2 text-sm font-semibold hover:bg-fd-accent transition-colors"
                 >
-                  Docs
+                  Help
                 </a>
               </div>
             </div>

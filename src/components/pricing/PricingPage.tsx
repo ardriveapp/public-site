@@ -153,12 +153,12 @@ export function PricingPage() {
               style={{ background: "rgba(255,255,255,0.04)" }}
             >
               <div
-                className="p-4 text-xs font-semibold uppercase tracking-widest"
+                className="p-3 sm:p-4 text-xs font-semibold uppercase tracking-widest"
                 style={{ color: "rgba(250,250,250,0.35)", borderRight: "1px solid rgba(255,255,255,0.08)" }}
               >
-                Traditional Cloud Storage
+                Traditional Cloud
               </div>
-              <div className="p-4 text-xs font-semibold uppercase tracking-widest text-fd-primary">
+              <div className="p-3 sm:p-4 text-xs font-semibold uppercase tracking-widest text-fd-primary">
                 ArDrive
               </div>
             </div>
@@ -169,7 +169,7 @@ export function PricingPage() {
                 style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
               >
                 <div
-                  className="flex items-start gap-2.5 p-4 text-sm"
+                  className="flex items-start gap-2 p-3 sm:p-4 text-xs sm:text-sm"
                   style={{ color: "rgba(250,250,250,0.35)", borderRight: "1px solid rgba(255,255,255,0.06)" }}
                 >
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0 mt-0.5" aria-hidden="true">
@@ -177,7 +177,7 @@ export function PricingPage() {
                   </svg>
                   {trad}
                 </div>
-                <div className="flex items-start gap-2.5 p-4 text-sm" style={{ color: "rgba(250,250,250,0.8)" }}>
+                <div className="flex items-start gap-2 p-3 sm:p-4 text-xs sm:text-sm" style={{ color: "rgba(250,250,250,0.8)" }}>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0 mt-0.5 text-fd-primary" aria-hidden="true">
                     <path d="M2 7l3.5 3.5L12 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>

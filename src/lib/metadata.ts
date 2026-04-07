@@ -79,7 +79,7 @@ export function buildMetadata(input: BuildMetadataInput): Metadata {
       title: resolvedOgTitle,
       description: resolvedOgDescription,
       type: ogType,
-      siteName: "ar.io",
+      siteName: "ArDrive",
       ...(openGraphImages ? { images: openGraphImages } : {}),
       ...(openGraphExtras ?? {}),
     },
@@ -88,8 +88,8 @@ export function buildMetadata(input: BuildMetadataInput): Metadata {
       title: resolvedTwitterTitle,
       description: resolvedTwitterDescription,
       ...(twitterImages ? { images: twitterImages } : {}),
-      creator: "@ar_io_network",
-      site: "@ar_io_network",
+      creator: "@ardriveapp",
+      site: "@ardriveapp",
     },
   };
 }

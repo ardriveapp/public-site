@@ -98,7 +98,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-8 flex flex-col gap-2 border-t border-fd-border/10 pt-4 text-xs text-fd-foreground/55 sm:flex-row sm:items-center sm:justify-between">
-          <span>Copyright &copy; {year} ardrive</span>
+          <span>Copyright &copy; {year} ArDrive</span>
           <Link href="/tos-and-privacy" className="transition-colors hover:text-fd-foreground/85">
             Terms of Service &amp; Privacy Policy
           </Link>

@@ -91,7 +91,7 @@ Reference: `.temp/framer-exports/ardrive.io/`
 
 ---
 
-## Phase 6 — Secondary Pages ← YOU ARE HERE
+## Phase 6 — Secondary Pages ✅
 
 From sitemap — lower priority:
 
@@ -103,13 +103,13 @@ From sitemap — lower priority:
 
 ---
 
-## Phase 7 — Polish & Deploy
+## Phase 7 — Polish & Deploy ← YOU ARE HERE
 
-- ⬜ SEO — metadata for all pages, OG images, sitemap.xml
-- ⬜ Performance — image optimization, font loading
-- ⬜ Responsive — mobile review of all pages
-- ⬜ Analytics — swap in ArDrive tracking IDs
-- ⬜ GitHub Pages workflow — update BASE_PATH / SITE_URL env vars
+- ✅ SEO — `siteName`, Twitter handle, `robots.txt`, `sitemap.xml` regenerated (122 URLs, `ardrive.io`), stale ar.io refs purged
+- ✅ Performance — fonts already optimal (local woff2, `display: swap`); no changes needed
+- ✅ Responsive — pricing comparison table tightened for mobile; overall layout reviewed
+- ⬜ Analytics — skip for now
+- ⬜ GitHub Pages workflow — action versions need fixing (`checkout@v6` etc. → v4) before first run
 - ⬜ Arweave deploy — test `yarn deploy` pipeline
 - ⬜ Domain — point ardrive.io
 

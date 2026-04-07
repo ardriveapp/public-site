@@ -8,28 +8,18 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.join(__dirname, "..");
 
-const BASE_URL = "https://ar.io";
+const BASE_URL = "https://ardrive.io";
 
 // Static pages with their routes
 const STATIC_PAGES = [
   "/",
-  "/about/",
+  "/pricing/",
+  "/developers/",
   "/articles/",
-  "/case-studies/",
-  "/cloudmap/",
-  "/contact/",
-  "/continuum/",
-  "/ecosystem/",
+  "/nfts/",
   "/enterprise/",
-  "/institutions/",
-  "/platforms/",
-  "/technology/",
-  "/technology/access/",
-  "/technology/arns/",
-  "/technology/gateways/",
-  "/token/",
-  "/use-cases/",
-  "/help/",
+  "/contact/",
+  "/tos-and-privacy/",
 ];
 
 /**
@@ -141,41 +131,6 @@ function generateSitemap() {
     urls.push(generateUrlEntry(`${BASE_URL}/articles/${slug}/`, lastmod, "0.7"));
   }
 
-  // Case Studies (excluding archived)
-  const caseStudiesDir = path.join(rootDir, "content/case-studies");
-  const caseStudyFiles = getMdxFiles(caseStudiesDir);
-  for (const file of caseStudyFiles) {
-    const filePath = path.join(caseStudiesDir, file);
-    if (isArchived(filePath)) continue;
-
-    const slug = file.replace(/\.mdx$/, "");
-    const date = getDateFromMdx(filePath);
-    const lastmod = formatDate(date) || today;
-    urls.push(
-      generateUrlEntry(`${BASE_URL}/case-studies/${slug}/`, lastmod, "0.7")
-    );
-  }
-
-  // Use Cases (nested structure)
-  const useCasesDir = path.join(rootDir, "content/use-cases");
-  const useCaseFiles = getMdxFilesRecursive(useCasesDir);
-  for (const file of useCaseFiles) {
-    const filePath = path.join(useCasesDir, file);
-    // Convert file path to URL slug
-    let slug = file.replace(/\.mdx$/, "").replace(/\\/g, "/");
-    if (slug.endsWith("/index")) {
-      slug = slug.replace(/\/index$/, "");
-    }
-    if (slug === "index") {
-      continue; // Skip root index if it exists
-    }
-    const date = getDateFromMdx(filePath);
-    const lastmod = formatDate(date) || today;
-    urls.push(
-      generateUrlEntry(`${BASE_URL}/use-cases/${slug}/`, lastmod, "0.7")
-    );
-  }
-
   // Help (Zendesk-sourced support articles)
   const helpDir = path.join(rootDir, "content/help");
   const helpFiles = getMdxFiles(helpDir);
@@ -186,16 +141,8 @@ function generateSitemap() {
     urls.push(generateUrlEntry(`${BASE_URL}/help/${slug}/`, formatDate(lastmod) || today, "0.65"));
   }
 
-  // Legal documents
-  const legalDir = path.join(rootDir, "content/legal");
-  const legalFiles = getMdxFiles(legalDir);
-  for (const file of legalFiles) {
-    const filePath = path.join(legalDir, file);
-    const slug = file.replace(/\.mdx$/, "");
-    const date = getDateFromMdx(filePath);
-    const lastmod = formatDate(date) || today;
-    urls.push(generateUrlEntry(`${BASE_URL}/legal/${slug}/`, lastmod, "0.5"));
-  }
+  // ToS and Privacy (single page, not dynamic)
+  urls.push(generateUrlEntry(`${BASE_URL}/tos-and-privacy/`, today, "0.4"));
 
   // Build XML
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

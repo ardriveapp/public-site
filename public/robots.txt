@@ -18,4 +18,4 @@ User-agent: Google-Extended
 Allow: /
 
 # Sitemap location
-Sitemap: https://ar.io/sitemap.xml
+Sitemap: https://ardrive.io/sitemap.xml
