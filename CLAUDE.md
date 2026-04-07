@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Next.js 15 static marketing site for ArDrive's decentralized storage solutions. Uses MDX content, TypeScript, Tailwind CSS v4, and React 19. Built for static export and GitHub Pages deployment.
+Next.js 15 static marketing site for ArDrive — permanent, decentralized storage on Arweave. Uses MDX content, TypeScript, Tailwind CSS v4, and React 19. Built for static export and GitHub Pages/Arweave deployment.
 
 Always refer to AGENTS.md, which generally takes priority on site components and brand design guidelines.
 
@@ -74,8 +74,9 @@ yarn deploy
 ## Styling
 
 - Tailwind CSS v4 with design tokens (`fd-*` classes)
-- Colors: Black `#23232D`, White `#F0F0F0`, Primary `#5427C8`
-- Fonts: Besley (headlines, weight 800), Plus Jakarta Sans (body)
+- Colors: Onyx `#121212` (background), Alabaster `#FAFAFA` (text), Ruddy `#FE0230` (primary)
+- Dark theme only — no light mode
+- Font: Wavehaus (all weights, local) — headings use `var(--font-heading)`, body uses `var(--font-body)`
 - Width constants exported from `@/components/site-container`
 
 ## Adding Content
@@ -87,14 +88,6 @@ yarn deploy
 
 See `AGENTS.md` for detailed frontmatter requirements per content type.
 
-## Ask Arie Widget
-
-The site includes a floating AI chat widget (`src/components/arie/`) that answers questions about ar.io. Key points:
-- Uses external chat API
-- No server-side features — fully static export compatible
-- Per-tab persistence via `sessionStorage` — chat history and thread context survive page reloads
-- New Chat button to reset conversations and start fresh
-
 ## Common Mistakes to Avoid
 
 - Don't use `next/image` directly — use `BaseImage`
@@ -103,4 +96,4 @@ The site includes a floating AI chat widget (`src/components/arie/`) that answer
 - Don't hardcode display order — use `*-config.ts` files
 - Don't add server-side features (static export only)
 - Don't forget `"use client"` for client components
-- Text "ar.io" should always be lowercase (exception: "Ar.io" at sentence start)
+- "ardrive" is always lowercase in body text; "ArDrive" is correct in headings/titles

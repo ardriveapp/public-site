@@ -6,42 +6,52 @@
 
 /* Runtime defaults (so colors exist even if Tailwind doesn't emit @theme vars). */
 :root {
-  --color-fd-background: 18 18 18; /* #121212 Onyx */
+  /* ── Surfaces ── */
+  --color-fd-background: 18 18 18;    /* #121212 Onyx */
   --color-fd-foreground: 250 250 250; /* #FAFAFA Alabaster */
-  --color-fd-card: 30 30 30; /* #1E1E1E */
+  --color-fd-card: 30 30 30;          /* #1E1E1E — elevated card surface */
   --color-fd-card-foreground: 250 250 250;
-  --color-fd-popover: 30 30 30;
+  --color-fd-popover: 36 36 36;       /* #242424 — dropdowns/tooltips */
   --color-fd-popover-foreground: 250 250 250;
-  --color-fd-muted: 60 60 60; /* #3C3C3C */
-  --color-fd-muted-foreground: 180 180 180;
-  --color-fd-border: 250 250 250; /* uses /opacity for subtlety */
+  --color-fd-muted: 42 42 42;         /* #2A2A2A — subtle dividers/fills */
+  --color-fd-muted-foreground: 160 160 160; /* mid-gray text */
+  --color-fd-border: 250 250 250;     /* #FAFAFA at low opacity — use /10 or /15 */
 
-  --color-fd-primary: 254 2 48; /* #FE0230 Ruddy */
+  /* ── Brand: Primary (Ruddy) ── */
+  --color-fd-primary: 254 2 48;       /* #FE0230 Ruddy red */
   --color-fd-primary-foreground: 250 250 250;
+
+  /* ── Brand: Accent (same as primary for ArDrive) ── */
   --color-fd-accent: 254 2 48;
   --color-fd-accent-foreground: 250 250 250;
   --color-fd-ring: 254 2 48;
+
+  /* ── Semantic: Success (green) ── */
+  --color-ardrive-success: 24 169 87;  /* #18A957 */
+  /* ── Semantic: Info (blue) ── */
+  --color-ardrive-info: 49 66 196;     /* #3142C4 */
 }
 
-/* Tailwind v4 CSS-first theming:
-   Define `fd-*` colors as theme tokens so utilities like `bg-fd-primary/15`
-   and `text-fd-foreground/90` work. */
+/* Tailwind v4 CSS-first theming — fd-* utilities (bg-fd-primary/15, text-fd-foreground/90, etc.) */
 @theme {
-  --color-fd-background: 18 18 18; /* #121212 Onyx */
-  --color-fd-foreground: 250 250 250; /* #FAFAFA Alabaster */
-  --color-fd-card: 30 30 30; /* #1E1E1E */
+  --color-fd-background: 18 18 18;
+  --color-fd-foreground: 250 250 250;
+  --color-fd-card: 30 30 30;
   --color-fd-card-foreground: 250 250 250;
-  --color-fd-popover: 30 30 30;
+  --color-fd-popover: 36 36 36;
   --color-fd-popover-foreground: 250 250 250;
-  --color-fd-muted: 60 60 60; /* #3C3C3C */
-  --color-fd-muted-foreground: 180 180 180;
+  --color-fd-muted: 42 42 42;
+  --color-fd-muted-foreground: 160 160 160;
   --color-fd-border: 250 250 250;
 
-  --color-fd-primary: 254 2 48; /* #FE0230 Ruddy */
+  --color-fd-primary: 254 2 48;
   --color-fd-primary-foreground: 250 250 250;
   --color-fd-accent: 254 2 48;
   --color-fd-accent-foreground: 250 250 250;
   --color-fd-ring: 254 2 48;
+
+  --color-ardrive-success: 24 169 87;  /* #18A957 */
+  --color-ardrive-info: 49 66 196;     /* #3142C4 */
 }
 
 /* ============================================================
