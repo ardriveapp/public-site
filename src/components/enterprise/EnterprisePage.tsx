@@ -20,8 +20,6 @@ import {
   SITE_CONTAINER_CLASS,
   WHAT_YOU_GET_WIDTH_CLASS,
 } from "@/components/site-container";
-import { FeaturedLogosRow } from "@/components/featured-logos/FeaturedLogosRow";
-import { getFeaturedEcosystemItems } from "@/lib/ecosystem-content";
 import type { LucideIcon } from "lucide-react";
 
 function BulletIcon() {
@@ -214,8 +212,6 @@ function StepCard({ icon, title, description, stepNumber }: StepCardProps) {
 }
 
 export function EnterprisePage() {
-  const featuredItems = getFeaturedEcosystemItems();
-
   return (
     <main
       style={{
@@ -508,8 +504,6 @@ export function EnterprisePage() {
         </div>
       </section>
 
-      {/* Featured Logos */}
-      <FeaturedLogosRow featuredItems={featuredItems} />
     </main>
   );
 }
