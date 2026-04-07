@@ -16,7 +16,7 @@ Source: `.temp/framer-exports/` | Target: this repo | Deploy: Arweave + GitHub P
 ## Phase 1 — Brand Foundation ✅
 
 - ✅ Wavehaus font wired up (replaces Besley + Plus Jakarta Sans)
-- ✅ Color tokens updated — Onyx `#121212`, Alabaster `#FAFAFA`, Ruddy `#FE0230`
+- ✅ Color tokens updated — Onyx `#121212`, Alabaster `#FAFAFA`, Primary `#D31721`, Accent/Ruddy `#FE0230`
 - ✅ Secondary colors added — Success `#18A957`, Info `#3142C4`
 - ✅ Dark theme set as sole default (no light mode)
 - ✅ Global CSS updated — prose, code blocks, blockquotes all use red accents

@@ -74,7 +74,7 @@ yarn deploy
 ## Styling
 
 - Tailwind CSS v4 with design tokens (`fd-*` classes)
-- Colors: Onyx `#121212` (background), Alabaster `#FAFAFA` (text), Ruddy `#FE0230` (primary)
+- Colors: Onyx `#121212` (background), Alabaster `#FAFAFA` (text), Primary/CTA `#D31721`, Accent/Ruddy `#FE0230` (highlights only)
 - Dark theme only — no light mode
 - Font: Wavehaus (all weights, local) — headings use `var(--font-heading)`, body uses `var(--font-body)`
 - Width constants exported from `@/components/site-container`

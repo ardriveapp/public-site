@@ -42,7 +42,8 @@ Next.js 15 static marketing site for ArDrive — permanent, decentralized storag
 **Brand Colors:**
 | Token | Hex | Name | Use |
 |---|---|---|---|
-| `bg-fd-primary` / `text-fd-primary` | `#FE0230` | Ruddy | CTAs, highlights, active states |
+| `bg-fd-primary` / `text-fd-primary` | `#D31721` | ArDrive Red | CTAs, buttons, interactive elements |
+| `bg-fd-accent` / `text-fd-accent` | `#FE0230` | Ruddy | Accent highlights, decorative tints, ambient glows |
 | `text-fd-foreground` | `#FAFAFA` | Alabaster | Headings, body text |
 | `bg-fd-background` | `#121212` | Onyx | Backgrounds |
 

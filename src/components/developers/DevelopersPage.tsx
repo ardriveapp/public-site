@@ -168,7 +168,7 @@ export function DevelopersPage() {
         </div>
       </section>
 
-      {/* ── Red blob CTA (same ruddy base as homepage — fd-primary / #FE0230) ── */}
+      {/* ── Red blob CTA (fd-primary / #D31721) ── */}
       <section className="px-4 py-12" style={{ background: "#080808" }}>
         <div
           className={`${FINAL_CTA_WIDTH_CLASS} relative overflow-hidden rounded-[2.5rem] border border-white/15 bg-fd-primary px-6 py-14 text-center text-white shadow-2xl shadow-black/35 sm:px-10 sm:py-16 lg:px-12 lg:py-20`}

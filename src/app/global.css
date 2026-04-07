@@ -17,14 +17,14 @@
   --color-fd-muted-foreground: 160 160 160; /* mid-gray text */
   --color-fd-border: 250 250 250;     /* #FAFAFA at low opacity — use /10 or /15 */
 
-  /* ── Brand: Primary (Ruddy) ── */
-  --color-fd-primary: 254 2 48;       /* #FE0230 Ruddy red */
+  /* ── Brand: Primary (ArDrive red — buttons, CTAs) ── */
+  --color-fd-primary: 211 23 33;       /* #D31721 — primary CTA/button red */
   --color-fd-primary-foreground: 250 250 250;
 
-  /* ── Brand: Accent (same as primary for ArDrive) ── */
-  --color-fd-accent: 254 2 48;
+  /* ── Brand: Accent (Ruddy — highlights, decorative tints) ── */
+  --color-fd-accent: 254 2 48;         /* #FE0230 Ruddy — accent only */
   --color-fd-accent-foreground: 250 250 250;
-  --color-fd-ring: 254 2 48;
+  --color-fd-ring: 211 23 33;
 
   /* ── Semantic: Success (green) ── */
   --color-ardrive-success: 24 169 87;  /* #18A957 */
@@ -44,11 +44,11 @@
   --color-fd-muted-foreground: 160 160 160;
   --color-fd-border: 250 250 250;
 
-  --color-fd-primary: 254 2 48;
+  --color-fd-primary: 211 23 33;       /* #D31721 — primary CTA/button red */
   --color-fd-primary-foreground: 250 250 250;
-  --color-fd-accent: 254 2 48;
+  --color-fd-accent: 254 2 48;         /* #FE0230 Ruddy — accent only */
   --color-fd-accent-foreground: 250 250 250;
-  --color-fd-ring: 254 2 48;
+  --color-fd-ring: 211 23 33;
 
   --color-ardrive-success: 24 169 87;  /* #18A957 */
   --color-ardrive-info: 49 66 196;     /* #3142C4 */

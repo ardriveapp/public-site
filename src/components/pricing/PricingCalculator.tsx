@@ -99,7 +99,7 @@ export function PricingCalculator() {
         {usdPerGib !== null && (
           <div
             className="rounded-full px-3 py-1 text-xs font-mono"
-            style={{ background: "rgba(254,2,48,0.1)", border: "1px solid rgba(254,2,48,0.2)", color: "rgba(254,2,48,0.8)" }}
+            style={{ background: "rgba(211,23,33,0.1)", border: "1px solid rgba(211,23,33,0.2)", color: "rgba(211,23,33,0.8)" }}
           >
             ${usdPerGib.toFixed(2)}/GiB
           </div>
@@ -118,9 +118,9 @@ export function PricingCalculator() {
               onClick={() => handleQuickPick(q.gb)}
               className="rounded-full px-4 py-1.5 text-xs font-semibold transition-all"
               style={{
-                background: gb === q.gb ? "rgb(254,2,48)" : "rgba(255,255,255,0.06)",
+                background: gb === q.gb ? "rgb(211,23,33)" : "rgba(255,255,255,0.06)",
                 color: gb === q.gb ? "white" : "rgba(250,250,250,0.6)",
-                border: `1px solid ${gb === q.gb ? "rgb(254,2,48)" : "rgba(255,255,255,0.08)"}`,
+                border: `1px solid ${gb === q.gb ? "rgb(211,23,33)" : "rgba(255,255,255,0.08)"}`,
               }}
             >
               {q.label}
@@ -144,8 +144,8 @@ export function PricingCalculator() {
               }}
               className="flex-1 h-1.5 rounded-full appearance-none cursor-pointer"
               style={{
-                background: `linear-gradient(to right, rgb(254,2,48) ${(gbToSlider(gb) / 1000) * 100}%, rgba(255,255,255,0.12) ${(gbToSlider(gb) / 1000) * 100}%)`,
-                accentColor: "rgb(254,2,48)",
+                background: `linear-gradient(to right, rgb(211,23,33) ${(gbToSlider(gb) / 1000) * 100}%, rgba(255,255,255,0.12) ${(gbToSlider(gb) / 1000) * 100}%)`,
+                accentColor: "rgb(211,23,33)",
               }}
             />
             <div className="flex items-center gap-1.5 shrink-0">
@@ -166,7 +166,7 @@ export function PricingCalculator() {
         {/* Price display */}
         <div
           className="rounded-xl p-5 text-center"
-          style={{ background: "rgba(254,2,48,0.06)", border: "1px solid rgba(254,2,48,0.12)" }}
+          style={{ background: "rgba(211,23,33,0.06)", border: "1px solid rgba(211,23,33,0.12)" }}
         >
           {loading && (
             <p className="text-sm" style={{ color: "rgba(250,250,250,0.4)" }}>Fetching live rate…</p>
