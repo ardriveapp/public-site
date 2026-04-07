@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { BaseImage } from "@/components/base-image";
-import { SITE_CONTAINER_CLASS } from "@/components/site-container";
+import { FINAL_CTA_WIDTH_CLASS, SITE_CONTAINER_CLASS } from "@/components/site-container";
 
 // ─── Data ──────────────────────────────────────────────────────────────────────
 
@@ -130,11 +130,11 @@ const AUDIENCE_BENEFITS = [
 ];
 
 const SLOT_ITEMS = [
-  "vendor lock-in.",
-  "404s.",
-  "subscriptions.",
-  "privacy breaches.",
-  "storage limits.",
+  "vendor lock-in",
+  "404s",
+  "subscriptions",
+  "privacy breaches",
+  "storage limits",
 ];
 
 // ─── Sub-components ────────────────────────────────────────────────────────────
@@ -182,10 +182,20 @@ function CheckIcon() {
   );
 }
 
-function SlotMachine({ items, itemHeight = 72, textClassName = "" }: { items: string[]; itemHeight?: number; textClassName?: string }) {
+const SLOT_VIEWPORT_ROWS = 5;
+/** Row height in px — must fit responsive headline size without clipping */
+const SLOT_ITEM_PX = 70;
+const SLOT_VIEWPORT_PX = SLOT_VIEWPORT_ROWS * SLOT_ITEM_PX;
+
+function SlotMachine({ items, itemHeight = SLOT_ITEM_PX, textClassName = "" }: { items: string[]; itemHeight?: number; textClassName?: string }) {
   const ITEM_H = itemHeight;
-  // Append a clone of item[0] at the end so we can seamlessly loop back
-  const all = [...items, items[0]];
+  const n = items.length;
+  // Top padding rows + full cycle + tail so the center row can stay aligned while looping
+  const all =
+    n >= 2
+      ? [items[n - 2]!, items[n - 1]!, ...items, items[0]!, items[1]!]
+      : [...items, items[0]!];
+
   const [offset, setOffset] = useState(0);
   const [animated, setAnimated] = useState(true);
 
@@ -193,22 +203,21 @@ function SlotMachine({ items, itemHeight = 72, textClassName = "" }: { items: st
     const id = setInterval(() => {
       setAnimated(true);
       setOffset((prev) => prev + 1);
-    }, 2200);
+    }, 2400);
     return () => clearInterval(id);
   }, []);
 
-  // When we land on the clone of item[0], snap back instantly
   useEffect(() => {
-    if (offset === items.length) {
+    if (n < 1) return;
+    if (offset === n) {
       const t = setTimeout(() => {
         setAnimated(false);
         setOffset(0);
-      }, 520); // after transition finishes
+      }, 520);
       return () => clearTimeout(t);
     }
-  }, [offset, items.length]);
+  }, [offset, n]);
 
-  // Re-enable animation after snap
   useEffect(() => {
     if (!animated) {
       const t = setTimeout(() => setAnimated(true), 30);
@@ -216,38 +225,39 @@ function SlotMachine({ items, itemHeight = 72, textClassName = "" }: { items: st
     }
   }, [animated]);
 
+  const viewportH = SLOT_VIEWPORT_ROWS * ITEM_H;
+
   return (
     <div
-      className="relative overflow-hidden"
-      style={{ height: ITEM_H }}
+      className="relative w-max shrink-0 overflow-hidden"
+      style={{
+        height: viewportH,
+        maskImage:
+          "linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%)",
+        WebkitMaskImage:
+          "linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%)",
+      }}
     >
-      {/* Fade masks top/bottom for depth */}
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 z-10 h-6"
-        style={{ background: "linear-gradient(to bottom, #080808, transparent)" }}
-      />
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-6"
-        style={{ background: "linear-gradient(to top, #080808, transparent)" }}
-      />
-
       <div
         style={{
           transform: `translateY(-${offset * ITEM_H}px)`,
-          transition: animated
-            ? "transform 500ms cubic-bezier(0.4, 0.0, 0.2, 1)"
-            : "none",
+          transition: animated ? "transform 520ms cubic-bezier(0.4, 0, 0.2, 1)" : "none",
         }}
       >
         {all.map((item, i) => (
           <div
-            key={i}
-            className="flex items-center"
+            key={`slot-row-${i}`}
+            className="flex items-center justify-start"
             style={{ height: ITEM_H }}
           >
             <span
-              className={`text-fd-primary leading-none ${textClassName}`}
-              style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
+              className={`inline-block whitespace-nowrap text-left leading-none text-fd-foreground ${textClassName}`}
+              style={{
+                fontFamily: "var(--font-heading)",
+                fontWeight: 700,
+                lineHeight: 1,
+                paddingTop: "0.06em",
+              }}
             >
               {item}
             </span>
@@ -286,19 +296,6 @@ export function HomePage() {
         />
 
         <div className={`${SITE_CONTAINER_CLASS} relative z-10 flex flex-col items-center text-center`}>
-          {/* Badge */}
-          <div
-            className="mb-7 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium"
-            style={{
-              background: "rgba(255,255,255,0.06)",
-              border: "1px solid rgba(255,255,255,0.1)",
-              color: "rgba(250,250,250,0.6)",
-            }}
-          >
-            <span className="size-1.5 rounded-full bg-fd-primary shrink-0" />
-            200K+ Projects Managed Daily
-          </div>
-
           {/* Headline */}
           <h1
             className="max-w-3xl text-5xl leading-[1.05] tracking-tight sm:text-6xl lg:text-[5.5rem]"
@@ -908,37 +905,30 @@ export function HomePage() {
           10. SLOT MACHINE + RED BLOB CTA
           ══════════════════════════════════════════════════════════════════════ */}
       {/* Slot machine */}
-      <section
-        className="py-16"
-        style={{
-          background: "#080808",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
-          borderBottom: "1px solid rgba(255,255,255,0.06)",
-        }}
-      >
+      <section className="py-20" style={{ background: "#080808" }}>
         <div className={`${SITE_CONTAINER_CLASS}`}>
-          <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-6">
-            <span
-              className="shrink-0 text-4xl sm:text-5xl lg:text-6xl whitespace-nowrap"
+          <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-5 sm:flex-row sm:flex-nowrap sm:items-center sm:justify-center sm:gap-4 lg:gap-6">
+            {/* Match reel row math so "Break free from" aligns with active slot row */}
+            <div
+              className="grid w-full shrink-0 items-center justify-items-center text-center sm:w-auto sm:min-w-fit sm:justify-items-end sm:text-right"
               style={{
                 fontFamily: "var(--font-heading)",
-                fontWeight: 800,
-                color: "rgba(250,250,250,0.9)",
-                lineHeight: 1,
+                fontWeight: 700,
+                height: SLOT_VIEWPORT_PX,
+                gridTemplateRows: `repeat(${SLOT_VIEWPORT_ROWS}, minmax(0, 1fr))`,
               }}
             >
-              Break free from
-            </span>
+              <span className="row-start-3 block whitespace-nowrap text-4xl leading-none text-fd-foreground sm:text-5xl lg:text-6xl">
+                <span className="text-fd-primary">Break free</span> from
+              </span>
+            </div>
 
-            {/* Divider */}
-            <span
-              className="hidden sm:block shrink-0 w-px self-stretch"
-              style={{ background: "rgba(255,255,255,0.1)" }}
-            />
-
-            {/* Reel */}
-            <div className="w-full overflow-hidden">
-              <SlotMachine items={SLOT_ITEMS} itemHeight={56} textClassName="text-4xl sm:text-5xl lg:text-6xl" />
+            <div className="flex min-h-0 w-full min-w-0 justify-center sm:w-auto sm:justify-start">
+              <SlotMachine
+                items={SLOT_ITEMS}
+                itemHeight={SLOT_ITEM_PX}
+                textClassName="text-4xl sm:text-5xl lg:text-6xl"
+              />
             </div>
           </div>
         </div>
@@ -950,35 +940,36 @@ export function HomePage() {
         style={{ background: "#080808" }}
       >
         <div
-          className="mx-auto max-w-4xl text-center text-white px-8 py-20 relative overflow-hidden"
-          style={{ borderRadius: "2.5rem", background: "#d31721" }}
+          className={`${FINAL_CTA_WIDTH_CLASS} relative overflow-hidden rounded-[2.5rem] border border-white/15 bg-fd-primary px-6 py-14 text-center text-white shadow-2xl shadow-black/35 sm:px-10 sm:py-16 lg:px-12 lg:py-20`}
         >
+          {/* Top sheen */}
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-[45%] opacity-35"
+            style={{
+              background: "linear-gradient(180deg, rgba(255,255,255,0.14) 0%, transparent 100%)",
+            }}
+          />
           {/* Inner glow */}
           <div
-            className="pointer-events-none absolute inset-0 opacity-40"
+            className="pointer-events-none absolute inset-0 opacity-50"
             style={{
-              background: "radial-gradient(60% 50% at 50% 100%, rgba(255,80,80,0.5) 0%, transparent 100%)",
+              background:
+                "radial-gradient(75% 55% at 50% 100%, rgba(255,255,255,0.22) 0%, transparent 60%)",
             }}
           />
           {/* Noise */}
           <div
-            className="pointer-events-none absolute inset-0 opacity-[0.04]"
+            className="pointer-events-none absolute inset-0 opacity-[0.06]"
             style={{ backgroundImage: "url(/home/texture-noise.png)", backgroundSize: "200px" }}
           />
 
-          <p
-            className="relative z-10 text-xs font-semibold uppercase tracking-[0.2em] mb-4 opacity-70"
-          >
-            Permanent, private, and powerful
-          </p>
           <h2
-            className="relative z-10 text-3xl sm:text-4xl lg:text-5xl font-extrabold"
+            className="relative z-10 mx-auto max-w-3xl text-balance text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl xl:text-[3.35rem]"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
           >
-            Break free from{" "}
-            <span style={{ opacity: 0.65 }}>vendor lock-in.</span>
+            Permanent, private, and powerful
           </h2>
-          <p className="relative z-10 mt-4 max-w-md mx-auto text-base opacity-75">
+          <p className="relative z-10 mx-auto mt-5 max-w-md text-base leading-relaxed text-white/85">
             Store your files, apps, and pages once — and keep them forever.
           </p>
           <a

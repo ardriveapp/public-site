@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE_CONTAINER_CLASS } from "@/components/site-container";
+import { PricingCalculator } from "./PricingCalculator";
 
 const ARDRIVE_BENEFITS = [
   "One time payment per file",
@@ -76,6 +77,13 @@ export function PricingPage() {
         </div>
       </section>
 
+      {/* ── Calculator ── */}
+      <section className="px-4 pb-4">
+        <div className={`${SITE_CONTAINER_CLASS} max-w-2xl mx-auto`}>
+          <PricingCalculator />
+        </div>
+      </section>
+
       {/* ── How pricing works ── */}
       <section className="px-4 py-20">
         <div className={`${SITE_CONTAINER_CLASS} max-w-4xl mx-auto`}>
@@ -117,15 +125,6 @@ export function PricingPage() {
             </div>
           </div>
 
-          <div
-            className="mt-6 rounded-2xl p-6 text-center"
-            style={{ background: "rgba(254,2,48,0.06)", border: "1px solid rgba(254,2,48,0.15)" }}
-          >
-            <p className="text-sm font-medium" style={{ color: "rgba(250,250,250,0.7)" }}>
-              <span className="text-fd-primary font-bold">Uploads under 100 KB are free.</span>{" "}
-              Pay once and your data is stored permanently — no ongoing fees, ever.
-            </p>
-          </div>
         </div>
       </section>
 
