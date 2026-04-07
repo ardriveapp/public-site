@@ -31,14 +31,17 @@ jobs:
       - name: Clear Next.js build cache
         run: rm -rf .next out
 
-      - name: Set base path
+      - name: Set GitHub Pages env
         id: base_path
         run: |
-          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
-          if [[ "$REPO_NAME" != *".github.io" ]]; then
+          REPO_OWNER="${{ github.repository_owner }}"
+          REPO_NAME="${{ github.event.repository.name }}"
+          if [[ "$REPO_NAME" == *".github.io" ]]; then
             echo "base_path=" >> $GITHUB_OUTPUT
+            echo "site_url=https://$REPO_NAME" >> $GITHUB_OUTPUT
           else
-            echo "base_path=" >> $GITHUB_OUTPUT
+            echo "base_path=/$REPO_NAME" >> $GITHUB_OUTPUT
+            echo "site_url=https://$REPO_OWNER.github.io" >> $GITHUB_OUTPUT
           fi
 
       - name: Build
@@ -47,7 +50,7 @@ jobs:
           NODE_ENV: production
           BASE_PATH: ${{ steps.base_path.outputs.base_path }}
           NEXT_PUBLIC_BASE_PATH: ${{ steps.base_path.outputs.base_path }}
-          NEXT_PUBLIC_SITE_URL: https://ar.io
+          NEXT_PUBLIC_SITE_URL: ${{ steps.base_path.outputs.site_url }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
