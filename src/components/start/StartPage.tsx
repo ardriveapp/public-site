@@ -26,7 +26,7 @@ const PLATFORMS = [
     num: "04",
     name: "ArDrive CLI",
     desc: "Power users, meet your match — streamline file management with the ArDrive Command Line Interface.",
-    cta: { label: "View CLI Docs", href: "https://docs.ardrive.io/docs/cli/" },
+    cta: { label: "View on GitHub", href: "https://github.com/ardriveapp/ardrive-cli" },
     available: true,
   },
 ];

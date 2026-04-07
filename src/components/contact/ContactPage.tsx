@@ -4,7 +4,7 @@ const CHANNELS = [
   {
     title: "Developer Docs",
     desc: "Guidance for integrating, using and building on ArDrive.",
-    cta: { label: "Visit Docs", href: "https://docs.ardrive.io" },
+    cta: { label: "Visit Docs", href: "https://docs.ar.io/build" },
   },
   {
     title: "Developer Support",

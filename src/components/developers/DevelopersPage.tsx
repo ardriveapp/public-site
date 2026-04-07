@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { SITE_CONTAINER_CLASS } from "@/components/site-container";
 
 const TOOLS = [
@@ -7,7 +6,7 @@ const TOOLS = [
     name: "ArFS",
     full: "Arweave File System",
     desc: "ArFS is a data modeling, storage, and retrieval protocol designed to emulate common file system operations and provide aspects of mutability to your data hierarchy on Arweave's permanent, immutable blockweave. It gives you the power of a file system with total control over the privacy of your data.",
-    cta: { label: "See ArFS Docs", href: "https://docs.ardrive.io/docs/arfs/" },
+    cta: { label: "See ArFS Docs", href: "https://docs.ar.io/build/advanced/arfs" },
   },
   {
     tag: "SDK + Bundler",
@@ -19,15 +18,15 @@ const TOOLS = [
       "Building a front-end app to reliably send data to Arweave",
       "Building a back-end system that stores or backs up data to Arweave",
     ],
-    cta: { label: "Build with Turbo", href: "https://docs.ardrive.io/docs/turbo/what-is-turbo.html" },
-    secondaryCta: { label: "Learn More", href: "https://docs.ardrive.io" },
+    cta: { label: "Build with Turbo", href: "https://docs.ar.io/build/upload/bundling-services#what-is-turbo" },
+    secondaryCta: { label: "Learn More", href: "https://docs.ar.io" },
   },
   {
     tag: "CLI",
     name: "ardrive-cli",
     full: "Command Line Interface",
     desc: "Power users and DevOps teams: streamline file management and automate ArDrive operations with the ArDrive Command Line Interface. Full scripting support for uploads, downloads, drive management, and more.",
-    cta: { label: "View CLI Docs", href: "https://docs.ardrive.io/docs/cli/" },
+    cta: { label: "View on GitHub", href: "https://github.com/ardriveapp/ardrive-cli" },
   },
 ];
 
@@ -60,7 +59,7 @@ export function DevelopersPage() {
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://docs.ardrive.io"
+              href="https://docs.ar.io"
               className="inline-flex items-center gap-2 rounded-full bg-fd-primary px-7 py-3 text-sm font-semibold text-white hover:opacity-90 transition-opacity"
             >
               See Docs
@@ -183,7 +182,7 @@ export function DevelopersPage() {
             Open-source tools to build on the permanent web.
           </p>
           <div className="relative z-10 mt-7 flex flex-wrap items-center justify-center gap-4">
-            <a href="https://docs.ardrive.io" className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-bold text-fd-primary hover:opacity-90 transition-opacity">
+            <a href="https://docs.ar.io" className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-bold text-fd-primary hover:opacity-90 transition-opacity">
               View Docs
             </a>
             <a href="https://github.com/ardriveapp" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/40 px-8 py-3 text-sm font-bold text-white hover:bg-white/10 transition-colors">
