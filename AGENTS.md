@@ -33,13 +33,11 @@ Next.js 15 static marketing site with MDX-powered content (articles, case studie
 - Follow existing patterns for spacing, typography, and component styling
 
 ### Color Palette
-- **Base Colors:**
-  - Black: `#23232D`
-  - White: `#FFFFFF`
-  - Card surface: `#F0F0F0` (use for cards only)
-- **Primary Brand Color:**
-  - Primary: `#5427C8` (with tints as needed)
-  - Lavender: `#DFD6F7`
+- **Base and Brand Colors:**
+  - Ruddy (red): `#FE0230`
+  - Onyx (black): `#121212`
+  - Alabaster (white): `#FAFAFA`
+
 
 ### Background vs Card Surfaces (Design Pattern)
 - **Page background**: Use `bg-fd-background` (tokenized to `#FFFFFF`). Avoid using `#F0F0F0` for full-page backgrounds.
@@ -54,8 +52,7 @@ For index/listing cards (e.g. `/articles`, `/case-studies`, `/ecosystem`, `/clou
 - **Layering**: ensure content wrappers are `relative` so text renders above the overlay
 
 ### Typography
-- **Headline Font:** Besley (Extra Bold / weight 800)
-- **Body Text Font:** Plus Jakarta Sans
+- **Font:** Wavehaus
 
 ## Layout & Width Standards
 

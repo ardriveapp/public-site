@@ -146,12 +146,14 @@ function rewriteImageUrls(content, urlMap) {
 async function importArticle(row) {
   const slug = row.Slug;
   const title = row.Title;
-  const date = row.Date;
+  const date = row.Date || ''; // Date is optional in the Blog CSV
   const content = row.Content;
   const heroImageUrl = row.Image;
+  const tag = row.Tag || '';
+  const heroImageAlt = row['Image:alt'] || '';
 
   // Validate required fields
-  if (!slug || !title || !date || !content) {
+  if (!slug || !title || !content) {
     console.error(`❌ Missing required fields for row: ${JSON.stringify(row)}`);
     stats.failed++;
     return;
@@ -212,11 +214,12 @@ async function importArticle(row) {
   const frontmatter = [];
   frontmatter.push('---');
   frontmatter.push(`title: "${title.replace(/"/g, '\\"')}"`);
-  frontmatter.push(`description: ""`); // Empty as requested
-  frontmatter.push(`date: "${date}"`);
-  frontmatter.push(`authors: ""`);
+  frontmatter.push(`description: ""`);
+  if (date) frontmatter.push(`date: "${date}"`);
+  if (tag) frontmatter.push(`tags: "${tag}"`);
   if (heroImagePath) {
     frontmatter.push(`heroImage: "${heroImagePath}"`);
+    if (heroImageAlt) frontmatter.push(`heroImageAlt: "${heroImageAlt.replace(/"/g, '\\"')}"`);
   }
   frontmatter.push('---');
   frontmatter.push('');
@@ -235,13 +238,13 @@ async function importArticle(row) {
 
 // Main execution
 async function main() {
-  console.log('🚀 AR.IO Framer Articles Importer\n');
-  
+  console.log('🚀 ArDrive Framer Articles Importer\n');
+
   if (flags.dryRun) {
     console.log('🔍 DRY RUN MODE - No files will be created\n');
   }
 
-  const csvPath = path.join(rootDir, '.temp/articles/framer-blog-export.csv');
+  const csvPath = path.join(rootDir, '.temp/framer-exports/cms/Blog.csv');
   
   if (!fs.existsSync(csvPath)) {
     console.error(`❌ CSV file not found: ${csvPath}`);
@@ -278,10 +281,6 @@ async function main() {
       console.error(`\n❌ Failed to import ${row.Slug}:`);
       console.error(`   ${error.message}\n`);
       stats.failed++;
-      
-      // Exit in strict mode
-      console.error('⛔ Exiting due to strict mode error');
-      process.exit(1);
     }
   }
 

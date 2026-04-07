@@ -1,6 +1,6 @@
-# ar.io Public Site
+# ArDrive Public Site
 
-A modern Next.js marketing site for ar.io's decentralized data solutions, featuring MDX content and static export for GitHub Pages.
+A modern Next.js marketing site for ArDrive's decentralized data solutions, featuring MDX content and static export for GitHub Pages.
 
 ## Tech Stack
 

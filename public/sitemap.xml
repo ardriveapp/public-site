@@ -2,442 +2,132 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ar.io/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ar.io/about/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/articles/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/case-studies/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/cloudmap/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/contact/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/continuum/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/ecosystem/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/enterprise/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/institutions/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/platforms/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/technology/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/technology/access/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/technology/arns/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/technology/gateways/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/token/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ar.io/use-cases/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ar.io/articles/5-reasons-to-build-on-permanance/</loc>
+    <loc>https://ar.io/articles/sample/</loc>
     <lastmod>2025-04-25</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ar.io/articles/5-things-that-make-arns-a-different-type-of-domain/</loc>
-    <lastmod>2025-10-09</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/7-reasons-to-run-an-ar-io-gateway/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/ai-needs-the-permaweb-building-verifiable-ai-with-permanent-data/</loc>
-    <lastmod>2025-08-12</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/anyone/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/ar-io-an-emerging-depin/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/ar-io-and-ai/</loc>
-    <lastmod>2025-05-13</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/ar-io-gateways/</loc>
-    <lastmod>2025-02-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/ar-io-specs/</loc>
-    <lastmod>2024-09-10</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/ario-got-more-based/</loc>
-    <lastmod>2025-12-10</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/ario-tokenomics-guide/</loc>
-    <lastmod>2025-01-08</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/arns-vs-dns/</loc>
-    <lastmod>2024-11-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/arns-vs-ens-decentralizing-the-domain-name-system/</loc>
-    <lastmod>2024-11-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/arweave-ar-io-what-s-the-difference/</loc>
-    <lastmod>2024-09-19</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/arweave-dot-net/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/benefits-of-long-term-storage/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/bundles-with-ar-io-gateways/</loc>
-    <lastmod>2024-12-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/data-availability-and-the-arweave-ecosystem/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/evidence-layer/</loc>
-    <lastmod>2026-03-12</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/from-upload-to-access-how-x402-expands-the-power-of-the-permanent-cloud/</loc>
-    <lastmod>2025-10-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/how-to-get-the-ario-token/</loc>
-    <lastmod>2025-04-07</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/interoperability/</loc>
-    <lastmod>2024-12-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/link-rot-1-of-3-the-problem-and-the-permaweb/</loc>
-    <lastmod>2025-05-13</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/link-rot-2-under-the-surface/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/link-rot-3/</loc>
-    <lastmod>2024-10-01</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/missing-layer-content-authenticity/</loc>
-    <lastmod>2026-02-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/permanence/</loc>
-    <lastmod>2024-12-18</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/permaweb/</loc>
-    <lastmod>2025-02-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/protocol-balance/</loc>
-    <lastmod>2025-04-24</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/receipts-that-last/</loc>
-    <lastmod>2026-03-18</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/resilience/</loc>
-    <lastmod>2024-12-18</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/smart-domains/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/sovereignty/</loc>
-    <lastmod>2024-12-18</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/the-gates-are-now-open/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/transparency/</loc>
-    <lastmod>2024-12-18</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/true-decentralization/</loc>
-    <lastmod>2025-01-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/vision/</loc>
-    <lastmod>2025-08-09</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/what-and-why-of-ar-io/</loc>
-    <lastmod>2025-02-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/what-is-a-gateway/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/what-is-ar-io/</loc>
-    <lastmod>2025-05-13</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/what-is-arweave/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/what-is-the-ario-token/</loc>
-    <lastmod>2024-12-10</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/what-is-the-permaweb/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/when-access-fails-archives-disappear/</loc>
-    <lastmod>2026-01-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/why-access-most-underestimated-risk-digital/</loc>
-    <lastmod>2026-01-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/why-ar-io/</loc>
-    <lastmod>2025-04-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/why-arweaves-permanent-storage-model-wins/</loc>
-    <lastmod>2025-09-15</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/why-do-names-matter/</loc>
-    <lastmod>2025-04-10</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/articles/why-immutable-storage-cant-ransomed/</loc>
-    <lastmod>2026-01-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/anyone/</loc>
-    <lastmod>2024-01-24</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/ardrive/</loc>
+    <loc>https://ar.io/case-studies/sample/</loc>
     <lastmod>2025-03-03</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ar.io/case-studies/arlink/</loc>
-    <lastmod>2025-02-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/crimrxiv/</loc>
-    <lastmod>2026-01-12</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/derad-network/</loc>
-    <lastmod>2025-09-30</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/excalibur/</loc>
-    <lastmod>2026-03-10</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/gutenberg/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/iexec-x-ar-io-building-a-decentralized-future-with-privacy-permanence-and-programmable-messaging/</loc>
-    <lastmod>2025-09-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/inference-labs/</loc>
-    <lastmod>2025-03-19</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/kyve-and-ario/</loc>
-    <lastmod>2024-11-07</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/meta/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/redstone/</loc>
-    <lastmod>2025-02-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/rtfkt/</loc>
-    <lastmod>2026-01-12</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/stargrid-battle/</loc>
-    <lastmod>2025-04-06</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ar.io/case-studies/trackgood/</loc>
-    <lastmod>2025-02-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://ar.io/use-cases/digital-assets/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ar.io/use-cases/durable-media/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ar.io/use-cases/file-storage/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ar.io/use-cases/oracles-and-onchain-data/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ar.io/use-cases/sites-and-apps/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ar.io/use-cases/user-platforms/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ar.io/use-cases/verifiable-ai/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <priority>0.7</priority>
   </url>
   <url>

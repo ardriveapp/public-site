@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Next.js 15 static marketing site for ar.io's decentralized storage solutions. Uses MDX content, TypeScript, Tailwind CSS v4, and React 19. Built for static export and GitHub Pages deployment.
+Next.js 15 static marketing site for ArDrive's decentralized storage solutions. Uses MDX content, TypeScript, Tailwind CSS v4, and React 19. Built for static export and GitHub Pages deployment.
 
 Always refer to AGENTS.md, which generally takes priority on site components and brand design guidelines.
 

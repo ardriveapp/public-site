@@ -6,60 +6,42 @@
 
 /* Runtime defaults (so colors exist even if Tailwind doesn't emit @theme vars). */
 :root {
-  --color-fd-background: 255 255 255; /* #FFFFFF */
-  --color-fd-foreground: 35 35 45; /* #23232D */
-  --color-fd-card: 240 240 240; /* #F0F0F0 */
-  --color-fd-card-foreground: 35 35 45;
-  --color-fd-popover: 255 255 255;
-  --color-fd-popover-foreground: 35 35 45;
-  --color-fd-muted: 35 35 45;
-  --color-fd-muted-foreground: 35 35 45;
-  --color-fd-border: 35 35 45;
+  --color-fd-background: 18 18 18; /* #121212 Onyx */
+  --color-fd-foreground: 250 250 250; /* #FAFAFA Alabaster */
+  --color-fd-card: 30 30 30; /* #1E1E1E */
+  --color-fd-card-foreground: 250 250 250;
+  --color-fd-popover: 30 30 30;
+  --color-fd-popover-foreground: 250 250 250;
+  --color-fd-muted: 60 60 60; /* #3C3C3C */
+  --color-fd-muted-foreground: 180 180 180;
+  --color-fd-border: 250 250 250; /* uses /opacity for subtlety */
 
-  --color-fd-primary: 84 39 200; /* #5427C8 */
-  --color-fd-primary-foreground: 240 240 240; /* #F0F0F0 */
-  --color-fd-accent: 84 39 200;
-  --color-fd-accent-foreground: 35 35 45;
-  --color-fd-ring: 84 39 200;
+  --color-fd-primary: 254 2 48; /* #FE0230 Ruddy */
+  --color-fd-primary-foreground: 250 250 250;
+  --color-fd-accent: 254 2 48;
+  --color-fd-accent-foreground: 250 250 250;
+  --color-fd-ring: 254 2 48;
 }
 
 /* Tailwind v4 CSS-first theming:
    Define `fd-*` colors as theme tokens so utilities like `bg-fd-primary/15`
-   and `text-fd-foreground/90` work (this is what made the old pills look nice). */
+   and `text-fd-foreground/90` work. */
 @theme {
-  --color-fd-background: 255 255 255; /* #FFFFFF */
-  --color-fd-foreground: 35 35 45; /* #23232D */
-  --color-fd-card: 240 240 240; /* #F0F0F0 */
-  --color-fd-card-foreground: 35 35 45;
-  --color-fd-popover: 255 255 255;
-  --color-fd-popover-foreground: 35 35 45;
-  --color-fd-muted: 35 35 45;
-  --color-fd-muted-foreground: 35 35 45;
-  --color-fd-border: 35 35 45;
+  --color-fd-background: 18 18 18; /* #121212 Onyx */
+  --color-fd-foreground: 250 250 250; /* #FAFAFA Alabaster */
+  --color-fd-card: 30 30 30; /* #1E1E1E */
+  --color-fd-card-foreground: 250 250 250;
+  --color-fd-popover: 30 30 30;
+  --color-fd-popover-foreground: 250 250 250;
+  --color-fd-muted: 60 60 60; /* #3C3C3C */
+  --color-fd-muted-foreground: 180 180 180;
+  --color-fd-border: 250 250 250;
 
-  --color-fd-primary: 84 39 200; /* #5427C8 */
-  --color-fd-primary-foreground: 240 240 240; /* #F0F0F0 */
-  --color-fd-accent: 84 39 200;
-  --color-fd-accent-foreground: 35 35 45;
-  --color-fd-ring: 84 39 200;
-}
-
-.dark {
-  --color-fd-background: 35 35 45; /* #23232D */
-  --color-fd-foreground: 240 240 240; /* #F0F0F0 */
-  --color-fd-card: 240 240 240;
-  --color-fd-card-foreground: 240 240 240;
-  --color-fd-popover: 240 240 240;
-  --color-fd-popover-foreground: 240 240 240;
-  --color-fd-muted: 240 240 240;
-  --color-fd-muted-foreground: 240 240 240;
-  --color-fd-border: 240 240 240;
-
-  --color-fd-primary: 84 39 200;
-  --color-fd-primary-foreground: 240 240 240;
-  --color-fd-accent: 84 39 200;
-  --color-fd-accent-foreground: 240 240 240;
-  --color-fd-ring: 84 39 200;
+  --color-fd-primary: 254 2 48; /* #FE0230 Ruddy */
+  --color-fd-primary-foreground: 250 250 250;
+  --color-fd-accent: 254 2 48;
+  --color-fd-accent-foreground: 250 250 250;
+  --color-fd-ring: 254 2 48;
 }
 
 /* ============================================================
@@ -148,7 +130,7 @@ html {
     sans-serif;
 }
 
-/* Headings use Besley */
+/* Headings use Wavehaus */
 .prose h1,
 .prose h2,
 .prose h3,
@@ -261,8 +243,8 @@ h6 {
 }
 
 .prose code {
-  background-color: rgb(223 214 247 / 0.35);
-  color: #5427C8;
+  background-color: rgb(254 2 48 / 0.12);
+  color: #FE0230;
   padding: 0.2em 0.4em;
   border-radius: 0.25rem;
   font-size: 0.875em;
@@ -280,16 +262,16 @@ h6 {
 
 .prose pre code {
   background-color: transparent;
-  color: #5427C8;
+  color: #FE0230;
   padding: 0;
   font-size: 0.875rem;
 }
 
 .prose blockquote {
-  background-color: #DFD6F7;
+  background-color: rgb(254 2 48 / 0.08);
   border-radius: 0.5rem;
-  border: 1px solid rgb(84 39 200 / 0.25);
-  border-left: 4px solid #5427C8;
+  border: 1px solid rgb(254 2 48 / 0.25);
+  border-left: 4px solid #FE0230;
   padding: 0.4em 1.25rem;
   font-style: italic;
   color: rgb(var(--color-fd-foreground));
