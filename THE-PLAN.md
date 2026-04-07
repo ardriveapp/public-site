@@ -63,20 +63,20 @@ Reference screenshots: `.temp/framer-exports/screenshots/homepage.png`
 
 ---
 
-## Phase 4 — Core Pages ← YOU ARE HERE
+## Phase 4 — Core Pages ✅
 
 Reference: `.temp/framer-exports/ardrive.io/`
 
-- ⬜ `/pricing` — pay-once model, price calculator widget, comparison table
-- ⬜ `/developers` — "Powering the permanent cloud" + SDK/API features
-- ⬜ `/learn` — article listing page (dark card grid)
-- ⬜ `/enterprise` — rework existing EnterprisePage for ArDrive brand
-- ⬜ `/contact` — contact form / links
-- ⬜ `/about` — team / mission
-- ⬜ `/tos-and-privacy` — legal (MDX)
-- ⬜ `/start` — get started / onboarding
-- ⬜ `/faq` — frequently asked questions
-- ⬜ `/mobile` — ArDrive mobile app page
+- ✅ `/pricing` — pay-once model, comparison table, related articles
+- ✅ `/developers` — "Powering the permanent cloud" + ArFS, Turbo, CLI sections
+- ✅ `/learn` — client-side redirect to `/articles`
+- ✅ `/enterprise` — rewritten for ArDrive brand (3 service cards + CTA)
+- ✅ `/contact` — 4 support channels (Docs, Discord, Email, Feedback)
+- ✅ `/start` — 4 platform cards (Web, Android, iOS, CLI)
+- ⬜ `/about` — no Framer export found; stub exists, content TBD
+- ⬜ `/tos-and-privacy` — redirect to `/legal/terms-of-service-and-privacy-policy`
+- ⬜ `/faq` — no Framer export; skip or stub
+- ~~`/mobile`~~ — omitted
 
 ---
 
@@ -91,7 +91,7 @@ Reference: `.temp/framer-exports/ardrive.io/`
 
 ---
 
-## Phase 6 — Secondary Pages
+## Phase 6 — Secondary Pages ← YOU ARE HERE
 
 From sitemap — lower priority:
 

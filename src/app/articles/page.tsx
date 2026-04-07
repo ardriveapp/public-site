@@ -5,7 +5,7 @@ import { SITE_CONTAINER_CLASS } from "@/components/site-container";
 import { BaseImage } from "@/components/base-image";
 
 export const metadata = buildMetadata({
-  title: "Learn — ArDrive Articles",
+  title: "Articles — ArDrive",
   description:
     "Guides, tutorials, and insights on permanent storage, Arweave, and the permaweb ecosystem.",
   canonical: "/articles",
@@ -25,7 +25,7 @@ export default function ArticlesIndexPage() {
           className="text-4xl font-extrabold sm:text-5xl"
           style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
         >
-          Learn
+          Articles
         </h1>
         <p className="mt-3 text-lg" style={{ color: "rgba(250,250,250,0.5)" }}>
           Guides, tutorials, and insights on permanent storage and the permaweb.

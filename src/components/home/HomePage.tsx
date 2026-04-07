@@ -63,13 +63,13 @@ const TESTIMONIALS = [
     quote: "We use ArDrive so our records are kept forever and we don't have to worry about lost data.",
     name: "Joe David",
     role: "CEO, Myna Accountants",
-    image: "/home/testimonial-joe.jpg",
+    image: "/home/testimonial-joe.png",
   },
   {
     quote: "ArDrive literally saved the entire migration... If I was restarting from scratch, I would've used it way earlier. It's amazing to see that something as big as RTFKT can be fully permanent on chain.",
     name: "Sam Cardillo",
     role: "RTFKT",
-    image: "/home/testimonial-sam.png",
+    image: "/home/testimonial-sam.jpg",
   },
   {
     quote: "I stored all 3 of my NFT projects on ArDrive and will continue to do so.",

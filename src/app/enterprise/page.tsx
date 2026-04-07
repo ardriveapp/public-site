@@ -2,12 +2,11 @@ import { EnterprisePage } from "@/components/enterprise/EnterprisePage";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
-  title: "Enterprise Data Protection - Ransomware-Proof Storage",
+  title: "Enterprise — ArDrive",
   description:
-    "Protect critical enterprise data from ransomware, outages, and access failures. ar.io's permanent cloud storage keeps business-critical data online, immutable, and always accessible.",
+    "Enterprise-grade permanent storage. Never lose your data again. Expert support, premium onboarding, and scalable decentralized infrastructure.",
   canonical: "/enterprise",
-  ogImage: "/previews/enterprise-og.jpg",
-  ogAlt: "Enterprise Data Protection | ar.io",
+  ogImage: "/previews/general-og.jpg",
 });
 
 export default function Page() {
