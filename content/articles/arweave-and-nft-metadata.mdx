@@ -1,0 +1,308 @@
+---
+title: "Arweave and NFT Metadata"
+description: ""
+tags: "Article"
+heroImage: "/articles/arweave-and-nft-metadata/hero.png"
+heroImageAlt: "Illustration of Cuboids and Planes Stacked Layer by Layer"
+---
+The purpose of this document is to provide clarity on Arweave Metadata and NFT Metadata.
+
+Although **Arweave provides its own form of Metadata to aid applications** with more enhanced functionality, **Arweave can also be utilized to store specific NFT Metadata on the permaweb** in order to provide data permanence to NFTs.
+
+This document seeks to illustrate and provide clarity on the specific utilizations of Metadata in these two very distinct scenarios.A case study is provided for each situation in order to show real world utilization of these concepts.
+
+####   
+
+#### What is NFT Metadata?
+
+Metadata is basically information about data. It describes data or provides additional details about data that makes the original data more functional and provides deeper insight and depth into the utilization of the original data.
+
+A primary example of Metadata in blockchain technology is found within the NFT world. NFTs or Non-Fungible Tokens utilize Metadata for a variety of purposes, but most notably **the key use of Metadata within an NFT is to provide the location of the digital asset** to which the NFT is associated.
+
+In addition, there is also Metadata **that describes the digital asset which provides not only human readable attributes but may also provide programmatic elements** that allow the NFT to have enhanced functionality depending upon which NFT standard is being utilized for the NFT.
+
+In this regard, there are two distinct types of Metadata defined within an NFT:
+
+*   *Immutable or permanent contract based Metadata, and*
+    
+*   *Mutable or changeable Metadata.*
+    
+
+  
+
+When an **NFT is minted it creates certain specific data that is immutable and can never be changed.** The specific data that is created during the minting process is typically dictated by the NFT standard which is applicable to the NFT being created.
+
+An example of this type of data are things such as **TokenID**, which would represent a globally unique identifier that would be specific to a single NFT. Other immutable attributes might be the **Artist’s name, royalty percentage,** and so forth. Again this type of data is typically dictated by the NFT standard being utilized to create the NFT.
+
+  
+
+#### Mutable Contract Metadata
+
+The more interesting type of Metadata that can be utilized within an NFT is mutable and can be changed as needed. This type of data **can be embedded within the contract data of an NFT itself, which will provide descriptive additional information** about the NFT.
+
+The most notable and most useful form of Metadata will most likely reside within the actual contract URI (Uniform Resource Identifier), which is typically a JSON file that further expands upon specific items that are useful to the NFT. Utilizing this mechanism within an NFT **allows for an almost infinite number of options to provide details and expansion to Metadata** whenever the need arises.
+
+  
+
+#### What is Arweave Metadata?
+
+Arweave also utilizes Metadata to further help describe and provide additional functionality to data which is stored on the permaweb.In order to utilize Arweave Metadata, the data must first be uploaded or stored onto the permaweb. Although the ArDrive app can be utilized to view some of this Metadata, it does not currently have the capability to produce Metadata.
+
+In **order to produce Metadata, one must utilize the ArDrive CLI (Command Line Interface) to upload JSON files** that then applies the Metadata to the files that are uploaded.Arweave also contains two different types of Metadata:
+
+1.  `*MetadataJson*` *– a flat structure of data contained within key value pairs that further describe the data or it conforms to a specific schema that will be read by an application.*
+    
+2.  `*MetadataGqlTags*` *– aids in searching when utilizing the GQL language.*
+    
+
+  
+
+Arweave provides the ability to designate specific Metadata JSON data for a specific file or data stored on the permaweb.This data can conform to any sort of JSON based schema that may be required.
+
+This type of data is typically used by an application that is aware of the specific JSON schema being applied. The data will be made readily accessible on the permaweb once it is applied through a Metadata transaction on the Arweave network.
+
+Again, this type of functionality is not currently available on the ArDrive web application but can be updated through the use of the CLI.
+
+  
+
+#### Metadata GQL tags
+
+GraphQL or GQL tags is another form of Metadata that can be applied to files through the use of CLI.The primary purpose of providing these tags is to search for data on the permaweb with the specific data that is applied to the file or data on the permaweb. This form or schema of this data needs to conform to the JSON standard as well, but as long as that is done it is incredibly extensible and allows for almost an infinite number of possible to tag data or content stored on the permaweb.
+
+  
+
+#### Process for Creating NFT Metadata
+
+In order to create NFT Metadata that is stored on Arweave there is a simple process which must be followed as below:
+
+1.  Upload Digital Asset to Arweave, using either the ArDrive CLI or ArDrive app
+    
+2.  Create a Metadata JSON file which includes the following attributes, ensuring that the image attribute properly aligns to the uploaded file from step 1 (See sample below):
+    
+    *   Description
+        
+    *   Image
+        
+    *   Name
+        
+    *   Attributes
+        
+3.  Upload the created Metadata JSON file in step 2 to Arweave, using either the ArDrive CLI or ArDrive app
+    
+4.  Update the tokenURI attribute in the NFT smart contract to point to the Uploaded Metadata JSON file.
+    
+
+  
+
+SAMPLE Metadata JSON FILE
+
+```
+{
+    "description": "Brief description of the NFT",
+        "image": "https://arweave.net//digitalAsset.png",
+        "name": "CrypToadz #10",
+        "attributes": [
+        {
+            "customAttribute01": "attr1",
+            "value": "Value1"
+        },
+        {
+            "customAttribute02": "att2",
+            "value": "Value2"
+        }
+    ]
+}
+```
+
+####   
+
+#### NFT Metadata Case Study: CrypToadz
+
+The NFT project CrypToadz recently migrated their digital assets and Metadata to the permaweb utilizing Arweave.
+
+During the migration all of the digital assets that make up the CrypToadz, NFT were uploaded in a coordinated manner.
+
+In addition, all of the Metadata associated with each digital asset of the NFTs was also created. The Smart Contracts were then also updated to point to each of the uploaded files. This created a permanent storage solution for these NFTs that will last for centuries, and there will be no concern of missing digital assets when the NFTs are referenced from within various applications.
+
+Below is an illustration of this in action by closely inspecting CrypToadz #10 Metadata.
+
+####   
+
+#### CrypToadz #10 Metadata
+
+The first thing we will do is load the Metadata drive for CrypToadz, found here: [Drive for CrypToadz on ArDrive](https://app.ardrive.io/#/drives/50417d6c-504f-4e8b-a69a-2eae85c2d17b/folders/8c819d25-7b27-4edb-9f8b-f12b96028f83)
+
+Follow these steps to get the Metadata file from CrypToadz #10:
+
+1.  Once ArDrive is opened on the drive above, click on the file named 10.
+    
+2.  Click on the Details tab and copy the Data Tx ID
+    
+3.  Go to viewBlock and search for the transaction; this should lead you to the following URL on [ViewBlock](https://viewblock.io/arweave/tx/IN1J1AtCt5z3zAHyOhI3TR6VQZ2ICrcGdR68BG2lwk8)
+    
+4.  On the URL above, there will be an item name Link. Click that item, and you will download the Metadata file for CrypToadz #10. It should like like below:
+    
+      
+    
+
+```
+{
+    "description": "A small, warty, amphibious creature that resides in the metaverse.",
+    "external_url": "https://cryptoadz.io ",
+    "image": "https://arweave.net/gjAzfpcJcHqviSnYuUI5ElEQT9b934ShxrUQ-WVolZ0/10.png",
+    "name": "CrypToadz #10",
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Violet"
+        },
+        {
+            "trait_type": "Body",
+            "value": "Pasty"
+        },
+        {
+            "trait_type": "Mouth",
+            "value": "Beard"
+        },
+        {
+            "trait_type": "Head",
+            "value": "Swampy Crazy"
+        },
+        {
+            "trait_type": "# Traits",
+            "value": 4
+        }
+    ]
+}
+```
+
+  
+
+You can confirm this file is the URI in the contract by reading the contract out on the following URL:  [https://etherscan.io/address/0x1cb1a5e65610aeff2551a50f76a87a7d3fb649c6#readContract](https://etherscan.io/address/0x1cb1a5e65610aeff2551a50f76a87a7d3fb649c6#readContract)
+
+If you go to the tokenURI attribute and query for 10, you can go to the following value from the query at: [https://etherscan.io/address/0x1cb1a5e65610aeff2551a50f76a87a7d3fb649c6#readContract](https://etherscan.io/address/0x1cb1a5e65610aeff2551a50f76a87a7d3fb649c6#readContract)
+
+This confirms that the Contract points to the Metadata file stored on Arweave.  
+[See Reference](https://ardrive1.wpengine.com/stories/cryptoadz/)
+
+  
+
+#### Arweave Metadata Case Study: Cowboy Coder CLI demo
+
+The process for creating Arweave Metadata is quite simple. Follow the steps outlined below:
+
+1.  Upload a file using the `ardrive upload-file` command that includes the `--add-ipfs-tag`
+    
+2.  Capture the details of the transaction in step 1, most notably ensure that you have the TransactionID and the Metadata Transaction ID as we will utilize this to actually create a transaction to add Metadata to the file we uploaded in step 1
+    
+3.  Get the JSON data for the file that was uploaded in step 1 by going to the following URL: [https://arweave.net/TransactionID](https://arweave.net/TransactionID) (where Transaction/ID is transaction ID returned from the `upload-file` command in step 1.)
+    
+4.  Save the data into a file that is labeled the same as the transactionId and has a file extension of .json.
+    
+5.  Update the file with some similar to below:
+    
+6.  Issue an ArDrive `upload-file` command that `--Metadata-file` that we created in Step 4 and updated in Step 5.
+    
+7.  Once the transactions have completed from Step 6 you can search for the MetadataGqlTags you updated in your file out at: [https://arweave.net/graphql](https://arweave.net/graphql)
+    
+      
+    
+
+```
+"MetadataJson": {
+    "CustomMetadataKey1": "Metadata Value1",
+    "CustomMetadataKey2": "Metadata Value2"
+},
+"MetadataGqlTags": {
+    "CustomGqlKey1": "GQL Value1",
+    "CustomGqlKey2": "GQL Value2"
+}
+```
+
+  
+
+#### Process for Creating Arweave Metadata
+
+A video series was recently done in which it was demonstrated that the CLI can be utilized to create Metadata for uploaded files done while adding the `add-ipfs-tags` during the upload.
+
+The following commands were run to upload the file:
+
+`ardrive upload-file --add-ipfs-tag -w 65FGHTKIL3g46Qrcu8DL3Xbk9b6z5kBq4R4i0FdT7Xw.json --parent-folder-id "f9704aed-068d-4456-92ac-eed3f6cdd147" --local-path ./Cowboy\ Coder\ -\ Code\ Rage\ \(2022\)/10\ Infinite\ Time\ \(feat.\ Ash\ Tell\ Em\).mp3 --dest-file-name "Infite_Time.mp3" >> ardrive.log`
+
+NOTE: Sending the output to ardrive.log has been incredibly useful as it details all of the information needed to perform the Metadata transaction.Once that file was uploaded the following command was then run:
+
+`ardrive upload-file --parent-folder-id f9704aed-068d-4456-92ac-eed3f6cdd147 --Metadata-file ./4zViSXNI-Ta3RM-U81aell-1t1qLoLrRV5rrcNt80dg.json --local-path ./Cowboy\ Coder\ -\ Code\ Rage\ \(2022\)/10\ Infinite\ Time\ \(feat.\ Ash\ Tell\ Em\).mp3 --wallet-file ./65FGHTKIL3g46Qrcu8DL3Xbk9b6z5kBq4R4i0FdT7Xw.json >> arDrive2.log`
+
+The Metadata json file looked like the following:
+
+```
+{
+    "name":"Infite_Time.mp3",
+    "size":8769331,
+    "lastModifiedDate":1659588787000,
+    "dataTxId":"qJ5oy1JZoBRrc9IGzFA1QqiLPkPnrHV8aRKBlGDtm7M",
+    "dataContentType":"audio/mpeg",
+    "MetadataJson": {
+        "Studio": "The Bunker",
+        "Proposed Genre": "Duet Overture"
+    },
+    "MetadataGqlTags": {
+        "Tempo": "100 bpm",
+        "Key": "E Minor",
+        "Genre": "Indie Rock Duet",
+        "Album": "Code Rage",
+        "Artist": "Cowboy Coder",
+        "Guest Artist": "Ash Tell Em"
+    }
+}
+```
+
+You can see this in action by running the following query out at [https://arweave.net/graphql](https://arweave.net/graphql)
+
+  
+
+```
+query {
+transactions(
+        tags: [
+           {
+           name: "Artist",
+          values: ["Cowboy Coder"]
+        }
+        ]
+    ) {
+        edges {
+            cursor
+            node {
+            id
+            }
+        }
+    }
+}
+```
+
+  
+
+The first transaction you will see from that query will be located at:  
+[https://viewblock.io/arweave/tx/\_AsBf5d3VrriUiOEPYe4hSLNdNCA3MvF7-EDOVtFpgs](https://viewblock.io/arweave/tx/_AsBf5d3VrriUiOEPYe4hSLNdNCA3MvF7-EDOVtFpgs)
+
+Here you will see the `MetadataGqlTags` have been added to the file:
+
+*   Tempo – 100 bpm
+    
+*   Key – E Minor
+    
+*   Genre – Indie Rock Duet
+    
+*   Album – Code Rage
+    
+*   Artist – Cowboy Coder
+    
+*   Guest Artist – Ash Tell Em
+    
+*   Content-Type – application/json
+    
+
+  
+
+<iframe src="https://www.youtube.com/embed/nUBlwF_ySBo?iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsInline=1&amp;autoplay=0&amp;mute=1" data-thumbnail="Medium Quality" frameborder="0" allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>

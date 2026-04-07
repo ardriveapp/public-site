@@ -89,9 +89,8 @@ async function downloadImage(url, targetPath) {
     console.log(`    ↳ Downloaded: ${path.basename(targetPath)}`);
     stats.assetsDownloaded++;
   } catch (error) {
-    console.error(`\n❌ Failed to download image: ${url}`);
-    console.error(`   Error: ${error.message}`);
-    throw new Error(`Strict mode: Image download failed for ${url}`);
+    console.warn(`\n⚠️  Skipping image (download failed): ${path.basename(targetPath)}`);
+    console.warn(`   ${error.message}`);
   }
 }
 
@@ -117,8 +116,11 @@ async function processInlineImages(html, slug, articleDir) {
 
     // Generate stable filename from URL hash
     const hash = crypto.createHash('md5').update(src).digest('hex').slice(0, 8);
-    const response = await fetch(src, { method: 'HEAD' });
-    const contentType = response.headers.get('content-type');
+    let contentType = null;
+    try {
+      const response = await fetch(src, { method: 'HEAD' });
+      contentType = response.headers.get('content-type');
+    } catch { /* fall through to URL-based extension */ }
     const ext = getExtensionFromResponse(contentType, src);
     const filename = `img-${hash}.${ext}`;
     const targetPath = path.join(articleDir, filename);

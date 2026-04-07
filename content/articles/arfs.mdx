@@ -1,0 +1,127 @@
+---
+title: "Arweave File System (ArFS): Powerful Permaweb Tools"
+description: ""
+tags: "Article"
+heroImage: "/articles/arfs/hero.jpg"
+---
+Arweave is a zero-to-one invention. It has provided something brand new that never existed before: [permissionless, decentralized, permanent data storage](https://ardrive.io/can-data-really-be-stored-forever/). Not only will important files and web pages be kept for generations, new applications we haven’t even imagined yet will spring to life, built on the stable foundation of permanent data.
+
+As amazing as it is, Arweave is not a right-out-of-the-box product that can easily be used by individuals and developers to leverage the invention of permanent data storage.
+
+More specifically, while there are good tools to get public data onto Arweave, significant challenges arise with:
+
+*   Organizing files as they are added to Arweave – no hierarchy of data
+    
+*   Changing file names and revision tracking
+    
+*   How to encrypt files and make them private
+    
+*   Controlled and bulk sharing of files
+    
+
+Arweave’s native system of organization revolves around transaction numbers, wallet addresses and block numbers – long strings of letters and numbers that are cumbersome for unaided humans to navigate. Sample Transaction ID: ztJNfqD02TLqRq-ixYEq\_pil11PaLS2xv0loLL\_GEcs .
+
+**So what good is permanent data if we can’t access it easily?**
+
+To leverage the potential uses permanent data could have in our day-to-day lives, everything we put onto Arweave – videos, music, pictures, documents, applications and NFTs – needs to be easily found and managed.
+
+To resolve this issue, the ArDrive team created Arweave File System (ArFS).  **ArFS improves upon the defacto file browsing experience of Arweave – viewblock – by adding the ability to create data hierarchy (folders), private encryption, file versioning, controlled sharing and more.**
+
+Let’s take a closer look at this defacto experience and the benefits of ArFS.
+
+![](/articles/arfs/img-bbc24f8c.png)
+
+Needle in a haystack photo by judy\_and\_ed CC BY NC 3.0
+
+#### How do you find your data once you put it onto Arweave?
+
+So let’s say you recently uploaded your most important data to Arweave using an uploader without the power of ArFS. What’s it going to be like browsing for the files after you’re done?The most common place to start is with a block inspector tool like [viewblock.io](https://viewblock.io/arweave), where you can look through all the transactions put onto Arweave.  Viewblock will show the transactions associated with your wallet.Viewblock is a great resource in the Arweave ecosystem and helpful tool, but it is not designed with a hierarchical organizational structure in mind.What we most often need with our data and files is an intuitive, familiar file browsing experience.Without that hierarchical organization and simply relying on transaction ids make it a pain to sort and organize: the digital equivalent of finding a needle in a haystack.
+
+![](/articles/arfs/img-d92152e6.png)
+
+A sample page on [ViewBlock](https://viewblock.io/), which records millions of Arweave transaction
+
+Arweave is broadly decentralized and has plenty of data storage redundancy, but it does not have a native organizational hierarchy, the way that files are arranged in folders on your computer.  It has no built-in mechanism for organizing by content type or subject matter.
+
+Instead, Arweave is organized by transaction ID.  It’s like a local library deciding to organize their books by the order in which they were delivered, instead of classifying them by subject matter or age-appropriateness.  It might be interesting to browse the most recently delivered books, but finding just the one you wanted would be problematic.
+
+The problem only multiplies in Arweave if you end up needing thousands of files.  The data might be there, but it becomes unuseable if you can’t find it quickly and efficiently.
+
+**ArFS solves this file location problem:**
+
+*   Data uploaded using ArFS places a File System onto the data instead of relying on the transaction ID
+    
+*   ArDrive leverages ArFS to organize files in a friendly and intuitive layout
+    
+*   You can replicate parts of the folder and file hierarchy from your local file system into your on-chain drive.
+    
+*   It’s as easy to find and download your files as any Web2 cloud data storage system.
+    
+
+![](/articles/arfs/img-94a92003.png)
+
+Preview of the new UI for ArDrive, which uses ArFS for file organization
+
+#### How do you manage and share your most important files on Arweave?
+
+Some people like to keep all the files on their computer in a disorganized heap.  Then they rely on their computer’s search functionality to find what they need.
+
+But what if there was no search bar?
+
+Then it might make sense to organize your files into folders with descriptive names like “Family Reunion 2022”.
+
+Currently, there is no ‘search bar’ for Arweave.  So putting the photos directly onto Arweave without ArFS raises a host of questions:
+
+*   How do I label or tag photos?
+    
+*   How can I share photos with my family at the reunion with just the Arweave transaction ID?
+    
+*   How can I change a file name if I mislabel it or want to move it to another folder or simply want to change my organizational system?
+    
+
+ArFS solves these file management problems by:
+
+*   Putting all your information into drives, folder, and files
+    
+*   Using an append only model, which means that the data remains immutable (unchanging) but new data such as file names or descriptions can be added to it. In other words, **you can change your file names even though you can’t delete the file**
+    
+*   Tracking revision history of all changes to a file
+    
+*   Sharing information easily with others through links
+    
+
+On a technical level, two of the key enabling mechanisms in ArFS that make this possible are:
+
+*   Separation of data from the metadata about that data so that you can get the illusion of mutability in both the data and metadata.
+    
+*   The formation of relationships among various pieces of data in both time and space (i.e. revisions and hierarchy) via IDs and tagging.
+    
+
+![](/articles/arfs/img-6023e1b4.png)
+
+#### How does Arweave keep your files private?
+
+Arweave was designed as a public record of transactions.  It wasn’t inherently created to keep your files private.Creating private files on Arweave requires other tools which are provided by ArFS.  ArFS offers the user the ability to encrypt files on the Arweave protocol.  So while the native Arweave protocol will remain public, ArFS creates the ability to have highly-encrypted private files.
+
+**With ArFS, you aren’t bound to the public nature of the permaweb but are able to add private data**:
+
+*   Gives you the option to make your Arweave data public or private
+    
+*   All private files have military grade and quantum-resistant encryption. [Learn More](https://ardrive.zendesk.com/hc/en-us/articles/5300397200283-What-are-the-privacy-and-encryption-standards-)
+    
+*   Ability to easily share private files with whomever you choose
+    
+
+![](/articles/arfs/img-cd08a6f7.png)
+
+#### Who is ArFS for?
+
+At ArDrive our mission from day one has been to make permanent data available to anyone.  ArFS is a big part of facilitating this mission.
+
+**Individuals** – ArFS works right-out-of-the-box for everyone using the ArDrive web app. It is seamlessly integrated into the design, so you can simply upload, organize and manage your files as you wish.
+
+**NFT projects** – ArDrive has become the home for a [number of small-to-large NFT projects](https://ardrive.io/nft/). From digital art to gaming to music, a growing number of artists have chosen to use ArFS to organize and manage their files on the permaweb.
+
+**Developers** – ArFS can save time when building in the Arweave ecosystem by providing the power and flexibility of a file system and total control over the privacy of your data. ArFS is open-source and free to use.  [Learn more](https://ardrive.zendesk.com/hc/en-us/articles/5300263367451-Arweave-File-System)
+
+**Enterprise Solutions** – Organizations have noticed the power of ArFS and are working with the ArDrive team to manage their internal documents and work flows.

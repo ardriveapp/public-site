@@ -1,0 +1,109 @@
+---
+title: "BT’s Orbs"
+description: ""
+tags: "Story"
+heroImage: "/articles/story-btorbs/hero.png"
+heroImageAlt: "BT's Orb NFT Project"
+---
+The Orbs by BT creates first ever gernerative NFT using ArDrive suite of development tools
+
+Artists are often the first people in our society to push the boundaries of what can be done in a given field. And in the area of NFTs this is exactly what BT is doing. 
+
+[BT, a pioneer of trance and intelligent dance music](https://btmusic.com/), is a Grammy-nominated composer who has created **a new project on ArDrive:** [**The Orbs Project**](http://theorbs.io/)**.**
+
+The Orbs project is a collection of 3,333 live coded, real-time playing, objects, terrains, skies and stars that react to an ongoing and ever changing musical creation.
+
+The composition continues into eternity, never looping or repeating itself, in an endless dream presentation of true creative power. Amazing!In the end, with the Orbs, a new class of art and NFT has been created: **the world’s first series of fully generative art and music NFTs.**
+
+  
+
+![](/articles/story-btorbs/img-289600bc.png)
+
+  
+
+[BT’s Orbs Project on OpenSEA](https://opensea.io/collection/theorbsbybt)
+
+ArDrive and BTWith the innovation of the Orbs NFT project, **a platform was needed that could handle all of their requirements.**
+
+Specifically, BT and his team needed a custom solution to:
+
+*   *Load different samples/images for a given period of time, and play them all to the user.*
+    
+*   *Encrypt all of the data, and then only decrypt in their app as users viewed/listened to the given slice –* 
+    
+*   *Create an encryption pattern that lived as long as their data did*
+    
+
+Enter ArDrive.
+
+***Privacy features are one of the great things the ArFS (Arweave File System) protocol in ArDrive** provides to the Arweave blockweave.*
+
+*What the Orbs project ended up doing with ArDrive is:*
+
+*   *Used a Private Drive on ArDrive*
+    
+*   *Encrypted all files with AES-256-GCM – giving each one its own unique file key*
+    
+*   *Loaded all of these keys in their own database, and built their app to programmatically grab the right keys and decrypt the images/samples as needed*
+    
+
+*Finally as Phil Mataras, founder of ArDrive, pointed out:*
+
+> *“While all of the data will make its way to the public eventually, **using Private Drives gave BT the additional flexibility to control when the data is unlocked**, without having to worry about making some custom encryption scheme with custom keys that could be lost.”*
+
+Our Interview with BT and Steven, Head of DevelopmentWith the amazing innovation both creatively and technically there is a lot more to unpack with the Orbs Project.
+
+So we sat down with BT and his developer, Steven, to discuss the project, fan reaction, and why they used ArDrive to get their Orbs onto Arweave. Enjoy!
+
+  
+
+###### **How was the randomization of the Orb distribution decided and eventually made practical?**
+
+> This is a very nuanced and complex question because of the number of traits and potential iterations and sum total of these traits aesthetically. So for example just the color palettes. Originally I designed several hundred 3 and 4 color palettes from scratch – from monochromatic to triadic type palettes I imagined them in a particular way transposed to the scene. In many instances, one or two colors (only) would look good on the Orb and only on certain types of finishes (metallic or plastic for example) and not great on stars, surface topography or stars. So I had to go back after Steven made the trait randomization engine and we added if/then type behaviors for certain color palettes. Scale this up to a plethora of traits and really trying to create a trait randomization engine (including even post processing shaders like vignetting and bloom settings), tempo, tone colors from the textures and melodic modes and hand designed instrument families was a task of such mega 5D chess complexity – **it felt like trying to solve a Rubik’s cube that was a tesseract.** I’m still not sure how we did it!  
+> In the end too – I hand color graded and dinged over 1,600 Orbs in a 48 hour bender (true story). I feel great about where we landed *and* creating something with random trait assignment characteristics and visual and audio – I guess I’d call it symmetry, was probably the most complex thing I’ve ever worked on which is really saying something.
+
+###### **How were you able to have the loops not repeat?**
+
+> The Csound-based engine I created uses isorhythm as a primitive in it’s design. So – simple one here there are 4 textures of different lengths, that loop with filter and amliptude movements that follow a mezzo, macro and micro automation curve + melodic instruments that create a pseudo random phrase that gradually evolves over time (notes from the array and rhythmic changes on each pass) yield something that will never loop. I suppose it could in like 20,000 years or something but statistical probability is for all intents and purposes is zero.
+
+###### **What drew you and the team to Arweave?**
+
+> We love Arweave and I’ve come to know Sam well and think the world of what is philosophically underneath the core desire to build Arweave. I believe in it’s long term vision and love what you guys have built and continue to develop.
+
+###### **What about ArDrive made it easier?**
+
+> Simply, **it is game changing being able to have individual repositories (of sorts, folders you could say) for a project of this magnitude with thousands of dependent assets** from piano sample kits to HDRIs. I don’t think we could have ever done something like this with IPFS or competitive technologies.
+
+  
+
+![](/articles/story-btorbs/img-7aded0b9.png)
+
+###### **What was the biggest hurdle during development?**
+
+> I think the hardest thing about making this, was the scope of all combined elements and creating a rule book for the trait randomization engine that actually made beautiful art and music.
+
+###### **What possibilities have been realized for you now and are there things you didn’t even consider before?**
+
+> The professor Steven and I studied/mentored with (Dr. Richard Boulanger) – taught me (continues to teach me still actually) so much and for so many years about algorithmic composition. The idea of interweaving run-time generative music with run-time generative art is something that just now can be realized in the kind of generative, serialized context The Orbs is realized in. **I’d consider this milestone as the beginning of a life pursuit of these kinds of projects. It’s absolutely thrilling.**
+
+###### **What has the community reaction been like so far?**
+
+> **Phenomenal – we are thrilled and so proud of the response to this project.** I feel excited for things to come in the near future around The Orbs and look forward to seeing it click for people in years to come. It’s a really proud project and I’m super thankful and grateful to have worked with Steven, Gala, 888 and the community on it.
+
+###### **What is next?**
+
+> Will announce soon – but currently 4 insane (blockchain) projects in process. The most exciting yet 🙂
+
+Check out BT’s Orbs project highlighted on ArDrive’s NFT Tracker
+
+<iframe src="https://www.youtube.com/embed/UG5Ns9rNXG4?iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsInline=1&amp;autoplay=0&amp;mute=1" data-thumbnail="Medium Quality" frameborder="0" allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+Where to view the Orbs
+
+Orbs Website: [theorbs.io](https://www.theorbs.io/)
+
+BT Website: [btmusic.com](https://btmusic.com/)
+
+OpenSea: [The Orbs by BT](https://opensea.io/collection/theorbsbybt)
+
+Twitter: [@GoGalaMusic](https://twitter.com/gogalamusic)

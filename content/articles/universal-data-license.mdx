@@ -1,0 +1,309 @@
+---
+title: "How to add a Universal Data License (UDL) with ArDrive"
+description: ""
+tags: "Article"
+heroImage: "/articles/universal-data-license/hero.jpg"
+---
+#### Uploading new items that conform to the UDL standard
+
+*Written by ArDrive community member Cowboy Coder*
+
+The development of the Universal Data License (UDL) is a new and exciting way in which artists and content creators can preserve and distribute their work on their own terms.  
+
+>  “The Universal Data License on Arweave gives every creator an easy to use out-of-the-box solution for content licensing. Just set the UDL terms when uploading the media, and your content is available for licensing worldwide, permanently.” [Forward Research](https://twitter.com/fwdresearch/status/1696912482596782376)
+
+By utilizing the UDL content creators can define the specific licensing and parameters under for which distribution and royalties would need to adhere to on the blockchain. 
+
+You can use the ArDrive web app or the ArDrive Command Line Interface (CLI) to license files, however there is different functionality.
+
+With the **ArDrive Web App** you will be able to:
+
+*    Apply license assertion tags to your files to make them compliant with the UDL standard
+    
+
+Whereas, added functionality with the **ArDrive Command Line Interface (CLI)** allows the user to:
+
+*   Upload new artistic creations that will have the UDL specification embedded into the metadata of the content, or
+    
+*   Update existing items on the platform to be compliant with the UDL standard
+    
+
+Let’s go over how to use both the web app and ArDrive CLI with the UDL standard.
+
+ArDrive Web App and the UDL
+
+The easiest way to add the  UDL information to a file is through the web app. [Here](https://www.youtube.com/watch?v=414oyVq76Bg) is a video of the process, which will, also, be described below. 
+
+To add a license to any file through the web app follow this process:
+
+1.  Click on the three dots beside the file you would like to license
+    
+2.  From the dropdown choose ‘Add License’
+    
+3.  Select either ‘Universal Data License (UDL)’ or ‘Createive Commons Attribution (CC-BY)’
+    
+4.  Finally, choose the License Fee, Currency to be paid in, Commerical Use terms, and any Derivations the license may have
+    
+5.  On the Review screen, confirm the licensing information and you now have a licensed file!
+    
+
+Technically speaking, the web app applies the data assertions per [ANS-105.](https://github.com/ArweaveTeam/arweave-standards/blob/master/ans/ANS-105.md#license-assertion)While the web app is the friendliest way to apply license information the ArDrive CLI gives extra functionality, at this time.
+
+#### ArDrive CLI and the UDL
+
+Using the CLI gives the most customization and control over licensing data with ArDrive. The CLI will allow you to provide the necessary and customized metadata for a UDL when uploading to the permaweb.   If you are unfamiliar with the CLI learn more at: [GitHub](https://github.com/ardriveapp/ardrive-cli#using-the-cli) – The ArDrive Command Line Interface (CLI) is a Node.js application for terminal-based ArDrive workflows. Watch the video series that was created on youtube out at [HOW TO: Use the ArDrive CLI (w Cowboy Coder) (Part 1/4)](https://www.youtube.com/watch?v=qDFu19_Hd1o) .
+
+#### Example of Uploading New Content
+
+In this section we will walk through an example that will provide for the basic UDL license while also including a derivation specification of 25% royalties to the uploaded item. 
+
+Before walking through the example it is important to note about parameters and discoverable content. 
+
+When using the CLI you can provide the ANS-105 “License” tag as part of the metadata-json parameter.  (To learn more about the different parameters you can use in a UDL license go to [Arweave Wiki](https://arwiki.wiki/#/en/Universal-Data-License-How-to-use-it).) 
+
+As well, in order to make sure that **content is discoverable** you can also **utilize GQL metadata tags.**  These tags allow your content to be discoverable by other people or applications. 
+
+The specification for providing this discovery is being maintained at [SPECS](https://specs.g8way.io/?tx=SYHBhGAmBo6fgAkINNoRtumOzxNB8-JFv2tPhBuNk5c). In order to ensure your content can be discovered we can **embed this into the GQL metadata**, in our example below we utilize the Topic:License as an area where we can place option but freeform data to ensure that we have this designation within our content.
+
+In the future the specification may provide for more specific details on what applications and other consumers of content should expect the UDL designations.  
+
+Now let’s get to the example for the basic UDL license with 25% royalties!  **The first step is to upload your chosen file to ArDrive:** 
+
+```
+ardrive upload-file --add-ipfs-tag -w 65FGHTKIL3g46Qrcu8DL3Xbk9b6z5kBq4R4i0FdT7Xw.json
+```
+
+Once uploaded we can also double check that our content has been tagged correctly.  The first way to check this would be to utilize the CLI and view the file information on our uploaded file.  To do this we can utilize the following procedure:
+
+1.  Obtain the EntityId from our file either through the arUDLMeta01.log file that we piped our from the command or go to the arDrive web application and get the FileID located in the More Information panel
+    
+2.  Once we have the file ID we can issue the following command:
+    
+
+```
+arDrive file-info -f 2e6b308a-ae0c-4117-961d-e94880e8afb8
+```
+
+Which will detail the specific metatdata of the file we uploaded as seen below:
+
+```
+$arDrive file-info -f 2e6b308a-ae0c-4117-961d-e94880e8afb8
+
+{
+    "appName": "ArDrive-CLI",
+    "appVersion": "1.21.0",
+    "arFS": "0.11",
+    "contentType": "application/json",
+    "driveId": "5543bb25-c5cc-4ce4-bd51-72c76d9fefd4",
+    "entityType": "file",
+    "name": "Dreamscapes_UDLSpec.mp3",
+    "txId": "_x7D3q4A12KXkYVg2Eot-NV7s7Mly43l79tUfaRGN7g",
+    "unixTime": 1692751028,
+    "customMetaDataGqlTags": {
+        "Title": "Dreamscapes",
+        "Type": "music",
+        "Topic:Genre": "Indie Dubstep",
+        "Topic:License": "yRj4a5KMctX_u0mKWCFJIjmY8DeJcusVk6-HzLiM_t8"
+    },
+
+    "customMetaDataJson": {
+        "License": "yRj4a5KMctX_u0mKWCFJIjmY8DeJcusVk6-HzLiM_t8",
+        "Derivation": "Allowed-With-RevenuShar-25%"
+    },
+
+    "size": 8059008,
+    "lastModifiedDate": 1659586948000,
+    "dataTxId": "AUDTOS1wd1eya7Zw_uhPYyQRoKKqTvXPwNo7vN0QY2w",
+    "dataContentType": "audio/mpeg",
+    "parentFolderId": "f9704aed-068d-4456-92ac-eed3f6cdd147",
+    "entityId": "2e6b308a-ae0c-4117-961d-e94880e8afb8",
+    "fileId": "2e6b308a-ae0c-4117-961d-e94880e8afb8"
+}
+```
+
+To see the discoverability features in action we can also perform a GQL query to see that our metadata has been added as well.  We will go out to [GraphQL Playground](https://arweave.net/graphql) and issue the following query:
+
+```
+query {
+
+  transactions(
+      first: 100,
+        tags: [
+          { name: "Topic:License", values: ["yRj4a5KMctX_u0mKWCFJIjmY8DeJcusVk6-HzLiM_t8"] }
+        ]) {
+
+      edges {
+          node {
+              id
+                owner {
+                  address
+                }
+
+                tags {
+                  name
+                    value
+                }
+        }}
+    }
+}
+```
+
+In the result we see our uploaded file is returned:
+
+```
+"node": {
+
+            "id": "_x7D3q4A12KXkYVg2Eot-NV7s7Mly43l79tUfaRGN7g",
+            "owner": {
+              "address": "65FGHTKIL3g46Qrcu8DL3Xbk9b6z5kBq4R4i0FdT7Xw"
+            },
+
+            "tags": [
+              {
+                "name": "Title",
+                "value": "Dreamscapes"
+              },
+              {
+                "name": "Type",
+                "value": "music"
+              },
+
+              {
+                "name": "Topic:Genre",
+                "value": "Indie Dubstep"
+              },
+
+              {
+                "name": "Topic:License",
+                "value": "yRj4a5KMctX_u0mKWCFJIjmY8DeJcusVk6-HzLiM_t8"
+              },
+
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+
+              {
+                "name": "Entity-Type",
+                "value": "file"
+              },
+
+              {
+                "name": "Unix-Time",
+                "value": "1692751028"
+              },
+
+              {
+                "name": "Drive-Id",
+                "value": "5543bb25-c5cc-4ce4-bd51-72c76d9fefd4"
+              },
+
+              {
+                "name": "File-Id",
+                "value": "2e6b308a-ae0c-4117-961d-e94880e8afb8"
+              },
+
+              {
+                "name": "Parent-Folder-Id",
+                "value": "f9704aed-068d-4456-92ac-eed3f6cdd147"
+              },
+
+              {
+                "name": "App-Name",
+                "value": "ArDrive-CLI"
+              },
+
+              {
+                "name": "App-Version",
+                "value": "1.21.0"
+              },
+
+              {
+                "name": "ArFS",
+                "value": "0.11"
+              }
+            ]
+          }
+        }
+```
+
+#### Conforming existing items to the UDL specification
+
+Many content creators already have existing works of art or content that exists on the permaweb and as the UDL specification gets broader adoption and utilization across platforms many will wish to conform these works to the UDL standard.  
+
+In order to do this it is required that the author of the content **know the meta-data transaction ID** for the specific piece of artwork that is desired to conform to UDL.  If the meta-data transaction is unknown, **one could look it up in ArDrive** by selecting the item in the UI and looking at the detailed information about the item.  
+
+This meta-data transaction ID is utilized in the ArDrive CLI command which will modify the meta-data and properly designate its compliance with the UDL standard.  As part of this command a meta-data file will also need to be created which looks similar to the following:
+
+```
+{"name":"Cryptos_Go_Pop.mp3","size":8032678,"lastModifiedDate":1659586949000,"dataTxId":"cSicHt8hTWJ67RleJvotTGf71xKW5ZIH-cAPCcG2yKw","dataContentType":"audio/mpeg",
+
+    "metaDataJson": {
+        "License": "yRj4a5KMctX_u0mKWCFJIjmY8DeJcusVk6-HzLiM_t8",
+        "Derivation": "Allowed-With-RevenuShar-25%"
+    },
+    "metaDataGqlTags": {
+    "Title":"Cryptos Go Pop",
+    "Type":"music",
+    "Topic:License":"yRj4a5KMctX_u0mKWCFJIjmY8DeJcusVk6-HzLiM_t8",
+    "Topic:Genre": "Indie Pop",
+    "Topic:Album": "Code Rage",
+    "Topic:Artist": "Cowboy Coder"
+    }
+}
+```
+
+Once the file has been created as desired it is a simple matter of uploading the meta-data to ArWeave through the CLI that will provide the content creator with a conforming UDL piece of work live on the permaweb.  
+
+This command would look similar to the one below:
+
+```
+ardrive upload-file --parent-folder-id f9704aed-068d-4456-92ac-eed3f6cdd147 --metadata-file ./NMMkbfQsUiL341is9u7OE06MzE_ruzyl2aj6Cus4pGM.json
+```
+
+which returns the following results:
+
+```
+{
+
+    "appName": "ArDrive-CLI",
+    "appVersion": "1.21.0",
+    "arFS": "0.11",
+    "contentType": "application/json",
+    "driveId": "5543bb25-c5cc-4ce4-bd51-72c76d9fefd4",
+    "entityType": "file",
+    "name": "01 Cryptos Go Pop.mp3",
+    "txId": "Jqgw7bkTmmpZ-k9PYHVUJWYhq-LV7coktSXC1EQir-E",
+    "unixTime": 1692755773,
+    "customMetaDataGqlTags": {
+        "Title": "Cryptos Go Pop",
+        "Type": "music",
+        "Topic:License": "yRj4a5KMctX_u0mKWCFJIjmY8DeJcusVk6-HzLiM_t8",
+        "Topic:Genre": "Indie Pop",
+        "Topic:Album": "Code Rage",
+        "Topic:Artist": "Cowboy Coder"
+    },
+    "customMetaDataJson": {
+        "License": "yRj4a5KMctX_u0mKWCFJIjmY8DeJcusVk6-HzLiM_t8",
+        "Derivation": "Allowed-With-RevenuShar-25%"
+    },
+    "size": 8032678,
+    "lastModifiedDate": 1659586949000,
+    "dataTxId": "_N_d8Vw8Jyx9oAvfA4Ue5Az2ZP6hmjl22mcq2LQfXwM",
+    "dataContentType": "audio/mpeg",
+    "parentFolderId": "f9704aed-068d-4456-92ac-eed3f6cdd147",
+    "entityId": "076c176b-88d1-47b2-8fd7-0fdd061ff7cf",
+    "fileId": "076c176b-88d1-47b2-8fd7-0fdd061ff7cf"
+}
+```
+
+#### Conclusion
+
+UDL is an exciting new development on the permaweb where content creators will set their own terms for how their content can be consumed and monetized.  Using ArDrive makes this process simple and provides content creators all the control they could every desire to implement.  
+
+#### Resources
+
+Find out more about specific details that are currently available for content creators: [How to use the Universal Data License.](https://arwiki.wiki/#/en/Universal-Data-License-How-to-use-it)View the [specific and current implementation of the UDL.](https://zempq24srrznl75y5gffqikjei4zr4bxrfzowfmtv6d4zoem73pq.ar-io.dev/yRj4a5KMctX_uOmKWCFJIjmY8DeJcusVk6-HzLiM_t8)Learn more about the CLI and visit the [GitHub repository](https://github.com/ardriveapp/ardrive-cli#using-the-cli) or watch the video series on [YouTube](https://www.youtube.com/watch?v=qDFu19_Hd1o.)
+
+[  
+](https://ardrive.io/learn)

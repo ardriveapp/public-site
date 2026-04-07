@@ -1,0 +1,54 @@
+---
+title: "GenerativeNFTs"
+description: ""
+tags: "Story"
+heroImage: "/articles/generative-nfts/hero.png"
+heroImageAlt: "Illustration of Cuboids and Planes Stacked Layer by Layer"
+---
+Making digital art sellable at scale
+
+Jim Dee has seen all aspects of the NFT industry from programming to creating to selling. But his real passion is helping others with their NFT projects – which inspired him to create [GenerativeNFTs](https://generativenfts.io/).GenerativeNFTs is an agency that is all about helping bring art and vision to life by empowering artists to mint their NFT projects.They have developed a process that includes [generative art coding](https://generativenfts.io/blog/generative-art-code), which skillfully multiples art projects thousands of times over to create collections to sell. They have managed to take a complex technical process and simplify it for artists so their work can become digital collectibles.As part of the technical process GenerativeNFTs uses Arweave as its storage platform and ArDrive to get newly minted NFTs onto Arweave.
+
+  
+
+![](/articles/generative-nfts/img-e95f353c.png)
+
+  
+
+#### Our Interview
+
+  
+
+###### Why did Generative NFTs start with Arweave?
+
+> I started looking for storage solutions and really liked what I saw with Arweave. They have a model where you pay once at the beginning with your AR (Arweave) tokens and they create permanent storage. … I like this model because it eliminates the need to worry about pinning or constant monthly fees. It’s just better in my opinion.
+
+  
+
+###### How do you use ArDrive with GenerativeNFTs?
+
+> I now use ArDrive for easy access to Arweave. It’s great and super easy to use, you just connect your wallet…Once you have AR tokens, you can use the ArDrive, which is just like using folders on your computer. For NFTs, the ArDrive CLI is better and more powerful than ArDrive’s web app. I still use the web app for setting up directories, but I now do all the uploading programmatically with Arweave and the ArDrive CLI. The commands are intuitively structured, and the [documentation is great](https://github.com/ardriveapp/ardrive-cli).
+> 
+> So, again, the concept of Arweave is great: storing data permanently and having all your records kept forever. If the IRS comes along for your tax data, you can say, “Here it is,” and not worry about lost data or emails. Clients still need some more awareness and education around how this works, but that will come with time. 
+
+  
+
+###### What is the technical process you use with ArDrive to get NFTs onto Arweave?
+
+> I like to break a set of 10,000 into chunks of a few GB each… The metadata can be stored on Arweave. The ERC-721 smart contract assigns a unique token ID, such as token 123, to each item. On Arweave, a manifest feature allows for a folder of JSON files to be uploaded, each with its own storage ID and file name. The manifest gives a new address, such as arweave.net/manifest\_id, to access the contents. If the set sells out, it will be directly stored on Arweave. If it does not sell out, it will be kept on a private reveal API and moved to permanent storage once it sells out.
+> 
+> Each token needs to have its token URI known. The format for this would be “Arweave.net/manifest ID/token number.” The address must lead to a JSON file that contains metadata for the token, including its image, properties, and traits. The description of the set can also be included in the metadata. There will likely be at least 10,000 such files in the ecosystem. If the first JSON file is available at a standard link, the metadata can be stored and referenced. The coordination of URLs, data, and other information is a complex process, but that is how it works.
+> 
+> The metadata and images of a sold-out set are interconnected and stored permanently on Arweave. Arweave serves as a storage protocol and is just as good as any other NFT storage system because it is permanent and hardcoded. Although there may be some issues with any system, Arweave provides convenience by allowing you to move on to the next thing without worrying about losing data.
+
+  
+
+<iframe src="https://www.youtube.com/embed/XHOmBV4js_E?iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsInline=1&amp;autoplay=0&amp;mute=1" data-thumbnail="Medium Quality" frameborder="0" allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+  
+
+Where to find GenerativeNFTsLearn more at [generativenfts.io](https://www.generativenfts.io/)  
+  
+Generative NFTs Twitter: [@GenNFTs](https://twitter.com/GenNFTs)  
+  
+Jim Dee Twitter: [@SwiggaJuice](https://twitter.com/SwiggaJuice)

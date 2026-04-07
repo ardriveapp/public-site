@@ -63,8 +63,6 @@ Reference screenshots: `.temp/framer-exports/screenshots/homepage.png`
 
 ---
 
----
-
 ## Phase 4 — Core Pages ← YOU ARE HERE
 
 Reference: `.temp/framer-exports/ardrive.io/`
@@ -82,13 +80,13 @@ Reference: `.temp/framer-exports/ardrive.io/`
 
 ---
 
-## Phase 5 — Content Import
+## Phase 5 — Content Import ✅
 
-- ⬜ Fix `scripts/import-framer-articles.mjs` CSV path (already done, needs deps)
-- ⬜ Add script deps: `papaparse`, `turndown`, `cheerio` to package.json
-- ⬜ Run import — Blog.csv (~300 articles) → `content/articles/`
-- ⬜ Article page template — dark theme, hero image, prose styles
-- ⬜ `/learn` listing page — article cards with hero thumbnails
+- ✅ Fix `scripts/import-framer-articles.mjs` CSV path + soft-fail image errors
+- ✅ Add script deps: `papaparse`, `turndown`, `cheerio` to package.json
+- ✅ Run import — Blog.csv → 51 articles in `content/articles/` (CSV had 51, not ~300)
+- ✅ Article page template — dark theme, hero image, prose styles, ArDrive branding
+- ✅ `/articles` listing page — dark card grid with hero images, tag + date
 
 ---
 
