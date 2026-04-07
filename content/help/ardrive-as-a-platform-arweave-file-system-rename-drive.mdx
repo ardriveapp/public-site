@@ -1,0 +1,16 @@
+---
+title: "Rename Drive"
+description: "Drives can be renamed from one name to another. A new root folder metadata transaction is created when a user wants to rename an existing drive. The new root folder metadata transaction reuses the …"
+category: "Ardrive As A Platform"
+section: "Arweave File System"
+---
+
+Drives can be renamed from one name to another.
+
+-   A new root folder metadata transaction is created when a user wants to rename an existing drive.
+    
+-   The new root folder metadata transaction reuses the existing drive’s `Drive-Id` and `Folder-Id` and copies all of it’s old metadata values, but the drive’s and root folder’s `name` field in its Data JSON must be updated to the new drive name.
+    
+    -   For private drives, new ciphers are generated for this new root folder metadata transaction.
+        
+-   The new root folder transaction must not have have any `Parent-Folder-Id` since it is a root folder.

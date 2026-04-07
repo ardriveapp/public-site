@@ -29,6 +29,7 @@ const STATIC_PAGES = [
   "/technology/gateways/",
   "/token/",
   "/use-cases/",
+  "/help/",
 ];
 
 /**
@@ -173,6 +174,16 @@ function generateSitemap() {
     urls.push(
       generateUrlEntry(`${BASE_URL}/use-cases/${slug}/`, lastmod, "0.7")
     );
+  }
+
+  // Help (Zendesk-sourced support articles)
+  const helpDir = path.join(rootDir, "content/help");
+  const helpFiles = getMdxFiles(helpDir);
+  for (const file of helpFiles) {
+    const filePath = path.join(helpDir, file);
+    const slug = file.replace(/\.mdx$/, "");
+    const lastmod = getDateFromMdx(filePath) || today;
+    urls.push(generateUrlEntry(`${BASE_URL}/help/${slug}/`, formatDate(lastmod) || today, "0.65"));
   }
 
   // Legal documents

@@ -1,0 +1,31 @@
+---
+title: "Drive Entity"
+description: "A Drive is the highest level logical grouping of folders and files.All folders and files must be part of a drive, and reference the Drive ID.When creating a Drive, a corresponding folder must be cr…"
+category: "Ardrive As A Platform"
+section: "Arweave File System"
+---
+
+A Drive is the highest level logical grouping of folders and files.
+
+All folders and files must be part of a drive, and reference the Drive ID.
+
+When creating a Drive, a corresponding folder must be created as well. This folder will act as the Drive Root Folder. This separation of drive and folder entity enables features such as folder view queries, renaming and linking.
+
+```
+ArFS: "0.11"
+Cipher?: "AES256-GCM"
+Cipher-IV?: "<12 byte initialization vector as Base64>"
+Content-Type: "<application/json | application/octet-stream>"
+Drive-Id: "<uuid>"
+Drive-Privacy: "<public | private>"
+Drive-Auth-Mode?: "password"
+Entity-Type: "drive"
+Unix-Time: "<seconds since unix epoch>"
+
+Data JSON {
+    "name": "<user defined drive name>",
+    "rootFolderId": "<uuid of the drive root folder>"
+}
+```
+
+_Drive Entity Transaction example_

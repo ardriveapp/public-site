@@ -7,6 +7,7 @@
     "dev": "next dev --turbo",
     "start": "next start",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
+    "convert-help": "node scripts/convert-zendesk-to-help-mdx.mjs",
     "deploy": "node scripts/generate-sitemap.mjs && cross-env NODE_ENV=production next build && permaweb-deploy deploy --arns-name ar-io --deploy-folder out"
   },
   "dependencies": {

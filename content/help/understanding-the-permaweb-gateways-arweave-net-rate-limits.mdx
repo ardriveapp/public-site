@@ -1,0 +1,22 @@
+---
+title: "Arweave.net Rate Limits"
+description: "The default gateway used by ArDrive is https://arweave.net - the community gateway for the Arweave ecosystem. As of 7/2022, arweave.net is configured with the following Per-IP rate limits: GQL - 60…"
+category: "Understanding The Permaweb"
+section: "Gateways"
+---
+
+The default gateway used by ArDrive is [https://arweave.net](https://arweave.net) - the community gateway for the Arweave ecosystem.
+
+As of 7/2022, [arweave.net](http://arweave.net/) is configured with the following Per-IP rate limits:
+
+-   GQL - 600 requests per 5 mins
+    
+-   Cloudfront Cache - none
+    
+-   Load balancer rate limit on all paths - 100 per second per IP
+    
+-   Load balancer rate limit on `/tx/*` - 15 per second (4,500 per 5min)
+    
+-   Global rate limit among all routes - 100 per second (30,000 per 5min)
+    
+-   Nodes - 2,500 per 5 minutes
