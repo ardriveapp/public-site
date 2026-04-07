@@ -6,6 +6,7 @@ export const metadata = buildMetadata({
   description:
     "Pay once to store your files permanently on the blockchain. No subscriptions, no renewals, no data loss.",
   canonical: "/",
+  ogImage: "/previews/general-og.jpg",
 });
 
 export default function Page() {
