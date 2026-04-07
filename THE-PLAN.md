@@ -40,30 +40,32 @@ Source: `.temp/framer-exports/` | Target: this repo | Deploy: Arweave + GitHub P
 
 ---
 
-## Phase 3 — Homepage ← YOU ARE HERE
+## Phase 3 — Homepage ✅
 
 ### 3a — Asset Download
-- ⬜ Write `scripts/download-framer-assets.mjs`
-- ⬜ Download ~33 homepage images from framerusercontent.com → `public/home/`
+- ✅ Write `scripts/download-framer-assets.mjs`
+- ✅ Download 33 homepage images from framerusercontent.com → `public/home/`
 
 ### 3b — Homepage Sections (match Framer export)
 Reference: `.temp/framer-exports/ardrive.io/index.html`
 Reference screenshots: `.temp/framer-exports/screenshots/homepage.png`
 
-- ⬜ **Hero** — "Pay Once. Store Forever." + dashboard screenshot + "200K+" badge + Get Started CTA
-- ⬜ **Rotating text** — "Seamless access... no [privacy breaches / vendor lock-in / etc.]"
-- ⬜ **Features** — "Cloud storage, evolved." — 3 numbered features + CLI code block
-- ⬜ **Product showcase** — "Access, upload, own." — app UI + 4 feature cards
-- ⬜ **Stats** — "18,000,000+ files stored"
-- ⬜ **Testimonials** — 3 quotes (Myna Accountants, RTFKT, BT Grammy DJ)
-- ⬜ **Comparison** — "See the difference." — ArDrive vs Traditional Cloud table
-- ⬜ **More features** — "Do more with your data." — File Licensing, Site Hosting, Streaming, Metadata
-- ⬜ **Audience** — "Permanent data for everyone." — tag cloud + 3 benefit cards
-- ⬜ **Red blob CTA** — signature rounded red section (required on all pages)
+- ✅ **Hero** — "Pay Once. Store Forever." + device mockup + "200K+" badge + Get Started CTA
+- ✅ **Rotating text** — "Seamless access... no [privacy breaches / vendor lock-in / etc.]"
+- ✅ **Features** — "Cloud storage, evolved." — 3 numbered features + CLI code block
+- ✅ **Product showcase** — "Access, upload, own." — app UI + 4 feature cards
+- ✅ **Stats** — "18,000,000+ files stored"
+- ✅ **Testimonials** — 3 quotes (Myna Accountants, RTFKT, BT Grammy DJ)
+- ✅ **Comparison** — "See the difference." — ArDrive vs Traditional Cloud table
+- ✅ **More features** — "Do more with your data." — File Licensing, Site Hosting, Streaming, Metadata
+- ✅ **Audience** — "Permanent data for everyone." — tag cloud + 3 benefit cards
+- ✅ **Red blob CTA** — "Permanent, private, and powerful." + scrolling ticker
 
 ---
 
-## Phase 4 — Core Pages
+---
+
+## Phase 4 — Core Pages ← YOU ARE HERE
 
 Reference: `.temp/framer-exports/ardrive.io/`
 
