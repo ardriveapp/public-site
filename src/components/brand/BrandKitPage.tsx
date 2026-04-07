@@ -1,398 +1,308 @@
 import { BaseImage } from "@/components/base-image";
 import { SITE_CONTAINER_CLASS } from "@/components/site-container";
 import { Download } from "lucide-react";
-import Link from "next/link";
 
 interface LogoAsset {
   name: string;
-  svg: string;
-  png?: string;
   description: string;
-  previewBackground: "light" | "dark" | "transparent";
-  kind: "icon" | "full";
-  /** Square variant of the same asset (same card, extra download buttons) */
-  squarePng?: string;
-  squareSvg?: string;
+  previewBg: string;
+  png: string;
+  svg?: string;
+  wide?: boolean;
 }
 
-const logoAssets: LogoAsset[] = [
+const LOGO_ASSETS: LogoAsset[] = [
   {
-    name: "Icon (Dark)",
-    svg: "/brand/ario-black.svg",
-    png: "/brand/ario-black-transparent.png",
-    description: "Icon only, black, for light backgrounds",
-    previewBackground: "light",
-    kind: "icon",
+    name: "Icon — Dark background",
+    description: "Preferred version. Use on dark or black surfaces.",
+    previewBg: "#121212",
+    png: "/brand/ArDrive-Logo-Dark.png",
+    svg: "/brand/ArDrive-Logo-Dark.svg",
   },
   {
-    name: "Icon (Light)",
-    svg: "/brand/ario-white.svg",
-    png: "/brand/ario-white-transparent.png",
-    description: "Icon only, white, for dark backgrounds",
-    previewBackground: "dark",
-    kind: "icon",
+    name: "Icon — Light background",
+    description: "Use on white or light-coloured surfaces.",
+    previewBg: "#FAFAFA",
+    png: "/brand/ArDrive-Logo-Light.png",
+    svg: "/brand/ArDrive-Logo-Light.svg",
   },
   {
-    name: "Full Logo (Dark)",
-    svg: "/brand/ario-full-black.svg",
-    png: "/brand/ario-full-black-transparent.png",
-    description: "Full logo with text, black, for light backgrounds",
-    previewBackground: "light",
-    kind: "full",
+    name: "Wordmark — Dark background",
+    description: "Full logo with logotype. Use on dark surfaces.",
+    previewBg: "#121212",
+    png: "/brand/ArDrive-Logo-Wordmark-Light.png",
+    wide: true,
   },
   {
-    name: "Full Logo (Light)",
-    svg: "/brand/ario-full-white.svg",
-    png: "/brand/ario-full-white-transparent.png",
-    description: "Full logo with text, white, for dark backgrounds",
-    previewBackground: "dark",
-    kind: "full",
-  },
-  {
-    name: "Icon (Black on White)",
-    svg: "/brand/ario-black-on-white-round.svg",
-    png: "/brand/ario-black-on-white-round.png",
-    description: "Round + Square variants",
-    previewBackground: "transparent",
-    kind: "icon",
-    squarePng: "/brand/ario-black-on-white-square.png",
-    squareSvg: "/brand/ario-black-on-white-square.svg",
-  },
-  {
-    name: "Icon (White on Black)",
-    svg: "/brand/ario-white-on-black-round.svg",
-    png: "/brand/ario-white-on-black-round.png",
-    description: "Round + Square variants",
-    previewBackground: "transparent",
-    kind: "icon",
-    squarePng: "/brand/ario-white-on-black-square.png",
-    squareSvg: "/brand/ario-white-on-black-square.svg",
+    name: "Wordmark — Light background",
+    description: "Full logo with logotype. Use on white or light surfaces.",
+    previewBg: "#FAFAFA",
+    png: "/brand/ArDrive-Logo-Wordmark-Dark.png",
+    wide: true,
   },
 ];
 
-interface Color {
+interface BrandColor {
   name: string;
   hex: string;
-  usage: string;
+  role: string;
+  textDark?: boolean;
 }
 
-const colors: Color[] = [
-  {
-    name: "Primary",
-    hex: "#5427C8",
-    usage: "Primary brand color for CTAs, links, and accents",
-  },
-  {
-    name: "Lavender",
-    hex: "#DFD6F7",
-    usage: "Secondary color for gradients and backgrounds",
-  },
-  {
-    name: "Black",
-    hex: "#23232D",
-    usage: "Primary text color and dark elements",
-  },
-  {
-    name: "White",
-    hex: "#FFFFFF",
-    usage: "Background and light text on dark surfaces",
-  },
-  {
-    name: "Card Surface",
-    hex: "#F0F0F0",
-    usage: "Card backgrounds and elevated surfaces",
-  },
+const COLORS: BrandColor[] = [
+  { name: "Onyx", hex: "#121212", role: "Primary background" },
+  { name: "Alabaster", hex: "#FAFAFA", role: "Primary text / foreground", textDark: true },
+  { name: "Primary", hex: "#D31721", role: "CTAs, buttons, key accents" },
+  { name: "Ruddy", hex: "#FE0230", role: "Decorative highlights, glows" },
+  { name: "Success", hex: "#18A957", role: "Success states, positive indicators" },
+  { name: "Info", hex: "#3142C4", role: "Info states, secondary accents" },
 ];
+
+function DownloadButton({
+  href,
+  label,
+  primary,
+}: {
+  href: string;
+  label: string;
+  primary?: boolean;
+}) {
+  return (
+    <a
+      href={href}
+      download
+      className="inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-xs font-semibold transition-opacity hover:opacity-80"
+      style={
+        primary
+          ? { background: "#D31721", color: "#FAFAFA" }
+          : { background: "rgba(255,255,255,0.06)", color: "rgba(250,250,250,0.75)", border: "1px solid rgba(255,255,255,0.1)" }
+      }
+    >
+      <Download className="size-3.5 shrink-0" />
+      {label}
+    </a>
+  );
+}
 
 export function BrandKitPage() {
   return (
-    <main className="bg-fd-background">
-      {/* Hero Section */}
-      <section className="pb-12 pt-10">
+    <main style={{ background: "#080808", color: "#FAFAFA" }}>
+
+      {/* Hero */}
+      <section
+        className="px-4 pt-20 pb-14"
+        style={{ background: "radial-gradient(55% 40% at 50% 0%, rgba(46,5,8,0.8) 0%, #080808 100%)" }}
+      >
         <div className={SITE_CONTAINER_CLASS}>
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-fd-foreground mb-4">
-              Brand Kit
-            </h1>
-            <p className="text-xl text-fd-foreground/75">
-              Download ar.io brand assets including logos, color palette, and typography guidelines for use in your projects.
-            </p>
-          </div>
-          <div className="mt-6 max-w-3xl rounded-2xl border border-fd-border bg-fd-card p-5 shadow-sm">
-            <h2 className="text-lg font-bold tracking-tight text-fd-foreground">
-              AI Agent Integration
-            </h2>
-            <p className="mt-2 text-sm text-fd-foreground/75">
-              For machine-readable brand guidance, point your agent at{" "}
-              <Link
-                href="/brand-kit/agents.json"
-                className="font-medium text-fd-primary hover:underline"
+          <p
+            className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]"
+            style={{ color: "rgba(211,23,33,0.7)" }}
+          >
+            Resources
+          </p>
+          <h1
+            className="text-5xl sm:text-6xl lg:text-7xl"
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
+          >
+            Brand <span style={{ color: "#D31721" }}>Kit</span>
+          </h1>
+          <p className="mt-4 max-w-xl text-lg" style={{ color: "rgba(250,250,250,0.55)" }}>
+            Official ArDrive logos, color tokens, and typography. Use these assets when
+            referencing or building on ArDrive.
+          </p>
+        </div>
+      </section>
+
+      {/* Logos */}
+      <section className="px-4 py-16">
+        <div className={SITE_CONTAINER_CLASS}>
+          <h2
+            className="mb-8 text-3xl"
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
+          >
+            Logos
+          </h2>
+          <div className="grid gap-5 sm:grid-cols-2">
+            {LOGO_ASSETS.map((asset) => (
+              <div
+                key={asset.name}
+                className="rounded-2xl overflow-hidden"
+                style={{ border: "1px solid rgba(255,255,255,0.07)" }}
               >
-                /brand-kit/agents.json
-              </Link>
+                {/* Preview */}
+                <div
+                  className="flex items-center justify-center p-10"
+                  style={{ background: asset.previewBg, minHeight: "180px" }}
+                >
+                  <BaseImage
+                    src={asset.png}
+                    alt={asset.name}
+                    width={asset.wide ? 320 : 160}
+                    height={asset.wide ? 80 : 160}
+                    className="object-contain max-h-[120px]"
+                  />
+                </div>
+
+                {/* Info + downloads */}
+                <div
+                  className="p-5"
+                  style={{ background: "rgba(255,255,255,0.03)" }}
+                >
+                  <p className="font-semibold text-sm" style={{ color: "#FAFAFA" }}>
+                    {asset.name}
+                  </p>
+                  <p className="mt-1 text-xs mb-4" style={{ color: "rgba(250,250,250,0.45)" }}>
+                    {asset.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <DownloadButton href={asset.png} label="PNG" primary />
+                    {asset.svg && <DownloadButton href={asset.svg} label="SVG" />}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Colors */}
+      <section
+        className="px-4 py-16"
+        style={{ background: "rgba(255,255,255,0.015)" }}
+      >
+        <div className={SITE_CONTAINER_CLASS}>
+          <h2
+            className="mb-8 text-3xl"
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
+          >
+            Colors
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {COLORS.map((color) => (
+              <div
+                key={color.hex}
+                className="rounded-2xl overflow-hidden"
+                style={{ border: "1px solid rgba(255,255,255,0.07)" }}
+              >
+                <div
+                  className="h-20 w-full"
+                  style={{ background: color.hex }}
+                />
+                <div className="p-4" style={{ background: "rgba(255,255,255,0.03)" }}>
+                  <div className="flex items-baseline justify-between gap-2">
+                    <span className="font-semibold text-sm">{color.name}</span>
+                    <code
+                      className="text-xs font-mono"
+                      style={{ color: "rgba(250,250,250,0.4)" }}
+                    >
+                      {color.hex}
+                    </code>
+                  </div>
+                  <p className="mt-1 text-xs" style={{ color: "rgba(250,250,250,0.45)" }}>
+                    {color.role}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Typography */}
+      <section className="px-4 py-16">
+        <div className={SITE_CONTAINER_CLASS}>
+          <h2
+            className="mb-8 text-3xl"
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
+          >
+            Typography
+          </h2>
+          <div className="grid gap-5 md:grid-cols-2">
+
+            {/* Heading */}
+            <div
+              className="rounded-2xl p-7"
+              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
+            >
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <p className="font-semibold text-sm">Wavehaus Sans</p>
+                  <p className="text-xs mt-0.5" style={{ color: "rgba(250,250,250,0.45)" }}>
+                    Headings · Weight 800
+                  </p>
+                </div>
+                <code className="text-xs font-mono px-2 py-1 rounded" style={{ background: "rgba(255,255,255,0.06)", color: "rgba(250,250,250,0.5)" }}>
+                  var(--font-heading)
+                </code>
+              </div>
+              <div style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
+                <p className="text-5xl leading-tight">Aa</p>
+                <p className="mt-3 text-2xl leading-tight">Pay Once.</p>
+                <p className="text-2xl leading-tight" style={{ color: "#D31721" }}>Store Forever.</p>
+              </div>
+            </div>
+
+            {/* Body */}
+            <div
+              className="rounded-2xl p-7"
+              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
+            >
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <p className="font-semibold text-sm">Wavehaus Sans</p>
+                  <p className="text-xs mt-0.5" style={{ color: "rgba(250,250,250,0.45)" }}>
+                    Body / UI · Weights 400 – 600
+                  </p>
+                </div>
+                <code className="text-xs font-mono px-2 py-1 rounded" style={{ background: "rgba(255,255,255,0.06)", color: "rgba(250,250,250,0.5)" }}>
+                  var(--font-body)
+                </code>
+              </div>
+              <div className="space-y-2">
+                <p className="text-base font-normal">
+                  Permanent, private, and powerful.
+                </p>
+                <p className="text-base font-semibold">
+                  No subscriptions, no data caps.
+                </p>
+                <p className="text-sm" style={{ color: "rgba(250,250,250,0.55)" }}>
+                  ArDrive uses Arweave — a blockchain protocol that stores your data
+                  across hundreds of nodes worldwide.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Usage guidelines */}
+      <section className="px-4 pb-20">
+        <div className={`${SITE_CONTAINER_CLASS} max-w-3xl`}>
+          <h2
+            className="mb-6 text-3xl"
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
+          >
+            Usage guidelines
+          </h2>
+          <div
+            className="rounded-2xl p-6 text-sm space-y-3"
+            style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", color: "rgba(250,250,250,0.6)" }}
+          >
+            <p>Do not alter the logo colours, proportions, or orientation.</p>
+            <p>Maintain adequate clear space — at minimum equal to the height of the icon — around all logo variants.</p>
+            <p>Do not place the logo on backgrounds with insufficient contrast.</p>
+            <p>
+              Questions?{" "}
+              <a href="/contact" className="text-fd-primary hover:underline">
+                Contact us
+              </a>
               .
             </p>
           </div>
         </div>
       </section>
 
-      {/* Logo Assets Section */}
-      <section className={`${SITE_CONTAINER_CLASS} py-10`}>
-        <h2 className="text-3xl font-bold tracking-tight text-fd-foreground mb-8">
-          Logo Assets
-        </h2>
-        <div className="grid gap-6 md:grid-cols-2">
-          {logoAssets.map((asset) => {
-            const hasSquare = Boolean(asset.squarePng || asset.squareSvg);
-
-            const previewBoxClass = `flex items-center justify-center rounded-lg p-3 sm:p-4 min-h-[96px] sm:min-h-[100px] ${
-              asset.previewBackground === "dark"
-                ? "bg-[#23232D]"
-                : asset.previewBackground === "transparent"
-                  ? "bg-transparent"
-                  : "bg-fd-background"
-            }`;
-
-            const imgClass =
-              asset.kind === "full"
-                ? "object-contain max-h-[88px]"
-                : "object-contain max-h-[72px]";
-
-            return (
-              <div
-                key={asset.name}
-                className="group relative overflow-hidden rounded-2xl border border-fd-border bg-fd-card p-4 shadow-sm"
-                style={{
-                  background:
-                    "linear-gradient(to bottom right, rgb(var(--color-fd-card)), rgb(223 214 247))",
-                }}
-              >
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-fd-primary/18" />
-                <div className="relative">
-                  <h3 className="text-lg font-bold tracking-tight text-fd-foreground mb-1">
-                    {asset.name}
-                  </h3>
-                  <p className="text-sm text-fd-foreground/75 mb-4">
-                    {asset.description}
-                  </p>
-
-                  {hasSquare ? (
-                    <div className="grid grid-cols-2 gap-3 mb-4">
-                      <div className={previewBoxClass}>
-                        <BaseImage
-                          src={asset.png || asset.svg}
-                          alt={asset.name}
-                          width={160}
-                          height={160}
-                          className={imgClass}
-                        />
-                      </div>
-                      <div className={previewBoxClass}>
-                        <BaseImage
-                          src={asset.squarePng || asset.squareSvg || ""}
-                          alt={`${asset.name} (square)`}
-                          width={160}
-                          height={160}
-                          className={imgClass}
-                        />
-                      </div>
-                    </div>
-                  ) : (
-                    <div className={`${previewBoxClass} mb-4`}>
-                      <BaseImage
-                        src={asset.png || asset.svg}
-                        alt={asset.name}
-                        width={asset.kind === "full" ? 320 : 160}
-                        height={asset.kind === "full" ? 100 : 160}
-                        className={imgClass}
-                      />
-                    </div>
-                  )}
-
-                  {hasSquare ? (
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="flex flex-col gap-3">
-                        {asset.png && (
-                          <a
-                            href={asset.png}
-                            download
-                            className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#23232D] px-3 py-2 text-xs font-medium text-[#F0F0F0] transition-opacity hover:opacity-90 sm:px-4 sm:text-sm"
-                          >
-                            <Download className="w-4 h-4" />
-                            <span className="whitespace-nowrap">Round PNG</span>
-                          </a>
-                        )}
-                        <a
-                          href={asset.svg}
-                          download
-                          className="flex w-full items-center justify-center gap-2 rounded-lg border border-fd-border bg-fd-background px-3 py-2 text-xs font-medium text-fd-foreground transition-colors hover:bg-fd-card sm:px-4 sm:text-sm"
-                        >
-                          <Download className="w-4 h-4" />
-                          <span className="whitespace-nowrap">Round SVG</span>
-                        </a>
-                      </div>
-                      <div className="flex flex-col gap-3">
-                        {asset.squarePng && (
-                          <a
-                            href={asset.squarePng}
-                            download
-                            className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#23232D] px-3 py-2 text-xs font-medium text-[#F0F0F0] transition-opacity hover:opacity-90 sm:px-4 sm:text-sm"
-                          >
-                            <Download className="w-4 h-4" />
-                            <span className="whitespace-nowrap">Square PNG</span>
-                          </a>
-                        )}
-                        {asset.squareSvg && (
-                          <a
-                            href={asset.squareSvg}
-                            download
-                            className="flex w-full items-center justify-center gap-2 rounded-lg border border-fd-border bg-fd-background px-3 py-2 text-xs font-medium text-fd-foreground transition-colors hover:bg-fd-card sm:px-4 sm:text-sm"
-                          >
-                            <Download className="w-4 h-4" />
-                            <span className="whitespace-nowrap">Square SVG</span>
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
-                      {asset.png && (
-                        <a
-                          href={asset.png}
-                          download
-                          className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#23232D] px-3 py-2 text-xs font-medium text-[#F0F0F0] transition-opacity hover:opacity-90 sm:w-auto sm:px-4 sm:text-sm"
-                        >
-                          <Download className="w-4 h-4" />
-                          <span className="whitespace-nowrap">PNG</span>
-                        </a>
-                      )}
-                      <a
-                        href={asset.svg}
-                        download
-                        className="flex w-full items-center justify-center gap-2 rounded-lg border border-fd-border bg-fd-background px-3 py-2 text-xs font-medium text-fd-foreground transition-colors hover:bg-fd-card sm:w-auto sm:px-4 sm:text-sm"
-                      >
-                        <Download className="w-4 h-4" />
-                        <span className="whitespace-nowrap">SVG</span>
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Color Palette Section */}
-      <section className={`${SITE_CONTAINER_CLASS} py-10`}>
-        <h2 className="text-3xl font-bold tracking-tight text-fd-foreground mb-8">
-          Color Palette
-        </h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {colors.map((color) => (
-            <div
-              key={color.name}
-              className="rounded-xl border border-fd-border bg-fd-card p-6 shadow-sm"
-            >
-              <div
-                className="w-full h-24 rounded-lg mb-4"
-                style={{ backgroundColor: color.hex }}
-              />
-              <h3 className="text-lg font-semibold text-fd-foreground mb-1">
-                {color.name}
-              </h3>
-              <p className="text-sm font-mono text-fd-foreground/70 mb-2">
-                {color.hex}
-              </p>
-              <p className="text-sm text-fd-foreground/75">
-                {color.usage}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Typography Section */}
-      <section className={`${SITE_CONTAINER_CLASS} py-10`}>
-        <h2 className="text-3xl font-bold tracking-tight text-fd-foreground mb-8">
-          Typography
-        </h2>
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl border border-fd-border bg-fd-card p-6 shadow-sm">
-            <h3 className="text-xl font-bold tracking-tight text-fd-foreground mb-4" style={{ fontFamily: "var(--font-heading)" }}>
-              Besley
-            </h3>
-            <p className="text-sm text-fd-foreground/75 mb-4">
-              Used for headlines and display text. Weight: 800 (Extra Bold).
-            </p>
-            <div className="space-y-2">
-              <div style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
-                <p className="text-4xl">The Quick Brown Fox</p>
-              </div>
-              <div style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
-                <p className="text-2xl">Jumps Over The Lazy Dog</p>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-xl border border-fd-border bg-fd-card p-6 shadow-sm">
-            <h3 className="text-xl font-bold tracking-tight text-fd-foreground mb-4">
-              Plus Jakarta Sans
-            </h3>
-            <p className="text-sm text-fd-foreground/75 mb-4">
-              Used for body text and UI elements. Variable font with multiple weights.
-            </p>
-            <div className="space-y-2">
-              <p className="text-base">The quick brown fox jumps over the lazy dog.</p>
-              <p className="text-base font-semibold">The quick brown fox jumps over the lazy dog.</p>
-              <p className="text-sm">The quick brown fox jumps over the lazy dog.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Token Logo Section */}
-      <section className={`${SITE_CONTAINER_CLASS} py-10`}>
-        <h2 className="text-3xl font-bold tracking-tight text-fd-foreground mb-8">
-          Token Logo
-        </h2>
-        <div className="max-w-md mx-auto">
-          <div className="rounded-xl border border-fd-border bg-fd-card p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-fd-foreground mb-2">
-              ARIO Token Logo
-            </h3>
-            <p className="text-sm text-fd-foreground/75 mb-4">
-              Official logo for the ARIO token
-            </p>
-            <div className="flex items-center justify-center bg-fd-background rounded-lg p-8 mb-6 min-h-[200px]">
-              <BaseImage
-                src="/brand/ario-token-logo.png"
-                alt="ARIO Token Logo"
-                width={200}
-                height={200}
-                className="object-contain"
-              />
-            </div>
-            <div className="flex gap-3">
-              <a
-                href="/brand/ario-token-logo.png"
-                download
-                className="flex items-center gap-2 px-4 py-2 bg-[#23232D] text-[#F0F0F0] rounded-lg hover:opacity-90 transition-opacity text-sm font-medium flex-1 justify-center"
-              >
-                <Download className="w-4 h-4" />
-                PNG
-              </a>
-              <a
-                href="/brand/ario-token-logo.svg"
-                download
-                className="flex items-center gap-2 px-4 py-2 border border-fd-border bg-fd-background text-fd-foreground rounded-lg hover:bg-fd-card transition-colors text-sm font-medium flex-1 justify-center"
-              >
-                <Download className="w-4 h-4" />
-                SVG
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
