@@ -101,7 +101,7 @@ export function getArticle(slug: string): Article | null {
     description: data.description || "",
     date: data.date || "",
     authors: data.authors,
-    tags: data.tags,
+    tags: Array.isArray(data.tags) ? data.tags : data.tags ? [String(data.tags)] : undefined,
     heroImage: data.heroImage,
     ogImage: data.ogImage,
     archived: data.archived || false,
