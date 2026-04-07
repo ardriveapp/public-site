@@ -87,6 +87,7 @@ Reference: `.temp/framer-exports/ardrive.io/`
 - ✅ Run import — Blog.csv → 51 articles in `content/articles/` (CSV had 51, not ~300)
 - ✅ Article page template — dark theme, hero image, prose styles, ArDrive branding
 - ✅ `/articles` listing page — dark card grid with hero images, tag + date
+- ✅ Fix tags coercion bug (`"Article"` string → `["Article"]` array in both `getArticle` + `getAllArticles`)
 
 ---
 
@@ -96,15 +97,9 @@ From sitemap — lower priority:
 
 - ⬜ `/nfts` — NFT use case page
 - ⬜ `/arcast` — ArCast podcast/content
-- ⬜ `/turbo-launchpad` — Turbo product page
 - ⬜ `/turbo-bundler` — Turbo bundler page
 - ⬜ `/compare` — detailed comparison page
 - ⬜ `/ar-io` — ar.io relationship page
-- ⬜ `/manifests` — Arweave manifests explainer
-- ⬜ `/arfs` — ARFS spec page
-- ⬜ `/pins` — pins feature page
-- ⬜ `/ardrive-difference` — ArDrive differentiator
-- ⬜ `/universal-data-license` — UDL page
 - ⬜ `/subscribe` — newsletter/subscribe
 
 ---
