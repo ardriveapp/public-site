@@ -1,4 +1,4 @@
-import { SITE_CONTAINER_CLASS } from "@/components/site-container";
+import { FINAL_CTA_WIDTH_CLASS, SITE_CONTAINER_CLASS } from "@/components/site-container";
 
 const TOOLS = [
   {
@@ -168,24 +168,51 @@ export function DevelopersPage() {
         </div>
       </section>
 
-      {/* ── Red blob CTA ── */}
-      <section className="px-4 py-10">
+      {/* ── Red blob CTA (same ruddy base as homepage — fd-primary / #FE0230) ── */}
+      <section className="px-4 py-12" style={{ background: "#080808" }}>
         <div
-          className="mx-auto max-w-4xl text-center text-white px-8 py-16 relative overflow-hidden"
-          style={{ borderRadius: "2.5rem", background: "#d31721" }}
+          className={`${FINAL_CTA_WIDTH_CLASS} relative overflow-hidden rounded-[2.5rem] border border-white/15 bg-fd-primary px-6 py-14 text-center text-white shadow-2xl shadow-black/35 sm:px-10 sm:py-16 lg:px-12 lg:py-20`}
         >
-          <div className="pointer-events-none absolute inset-0 opacity-40" style={{ background: "radial-gradient(60% 50% at 50% 100%, rgba(255,80,80,0.5) 0%, transparent 100%)" }} />
-          <h2 className="relative z-10 text-3xl sm:text-4xl font-extrabold" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-[45%] opacity-35"
+            style={{
+              background: "linear-gradient(180deg, rgba(255,255,255,0.14) 0%, transparent 100%)",
+            }}
+          />
+          <div
+            className="pointer-events-none absolute inset-0 opacity-50"
+            style={{
+              background:
+                "radial-gradient(75% 55% at 50% 100%, rgba(255,255,255,0.22) 0%, transparent 60%)",
+            }}
+          />
+          <div
+            className="pointer-events-none absolute inset-0 opacity-[0.06]"
+            style={{ backgroundImage: "url(/home/texture-noise.png)", backgroundSize: "200px" }}
+          />
+
+          <h2
+            className="relative z-10 mx-auto max-w-3xl text-balance text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl"
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
+          >
             Permanent, private, and powerful.
           </h2>
-          <p className="relative z-10 mt-3 opacity-75 max-w-sm mx-auto">
+          <p className="relative z-10 mx-auto mt-5 max-w-md text-base leading-relaxed text-white/85">
             Open-source tools to build on the permanent web.
           </p>
-          <div className="relative z-10 mt-7 flex flex-wrap items-center justify-center gap-4">
-            <a href="https://docs.ar.io" className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-bold text-fd-primary hover:opacity-90 transition-opacity">
+          <div className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://docs.ar.io"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-bold text-fd-primary hover:opacity-90 transition-opacity"
+            >
               View Docs
             </a>
-            <a href="https://github.com/ardriveapp" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/40 px-8 py-3 text-sm font-bold text-white hover:bg-white/10 transition-colors">
+            <a
+              href="https://github.com/ardriveapp"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/40 px-8 py-3 text-sm font-bold text-white hover:bg-white/10 transition-colors"
+            >
               GitHub
             </a>
           </div>
