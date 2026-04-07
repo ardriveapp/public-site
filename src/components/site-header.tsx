@@ -1,18 +1,35 @@
 "use client";
 
 import Link from "next/link";
-import { X, Menu } from "lucide-react";
-import { useCallback, useState } from "react";
+import { X, Menu, ArrowRight } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { useCallback, useEffect, useState } from "react";
 import { BaseImage } from "@/components/base-image";
 import { SITE_CONTAINER_CLASS } from "@/components/site-container";
 
 const NAV_LINKS = [
   { label: "Pricing", href: "/pricing" },
   { label: "Developers", href: "/developers" },
+  { label: "Articles", href: "/articles" },
 ];
+
+const isActiveLink = (pathname: string, href: string) =>
+  pathname === href || pathname.startsWith(`${href}/`);
 
 export function SiteHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 8);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const toggleMobileMenu = useCallback(() => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -23,8 +40,18 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-fd-background/90 backdrop-blur border-b border-fd-border/10">
-      <div className={`${SITE_CONTAINER_CLASS} flex items-center justify-between gap-6 py-4`}>
+    <header
+      className={`sticky top-0 z-50 border-b backdrop-blur transition-all duration-300 ${
+        isScrolled
+          ? "border-fd-border/15 bg-fd-background/95 shadow-[0_8px_30px_rgba(0,0,0,0.24)]"
+          : "border-fd-border/10 bg-fd-background/85"
+      }`}
+    >
+      <div
+        className={`${SITE_CONTAINER_CLASS} flex items-center justify-between gap-6 transition-all duration-300 ${
+          isScrolled ? "py-3" : "py-4"
+        }`}
+      >
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0" onClick={closeMobileMenu}>
           <BaseImage
@@ -38,14 +65,25 @@ export function SiteHeader() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-fd-foreground/80 hover:text-fd-foreground transition-colors"
+              className={`group relative inline-flex items-center py-1 text-[0.92rem] font-semibold transition-colors ${
+                isActiveLink(pathname, link.href)
+                  ? "text-fd-foreground"
+                  : "text-fd-foreground/75 hover:text-fd-foreground"
+              }`}
             >
               {link.label}
+              <span
+                className={`absolute -bottom-1 left-0 h-px w-full origin-left transition-transform duration-200 ${
+                  isActiveLink(pathname, link.href)
+                    ? "scale-x-100 bg-fd-primary"
+                    : "scale-x-0 bg-fd-primary group-hover:scale-x-100"
+                }`}
+              />
             </Link>
           ))}
         </nav>
@@ -56,10 +94,12 @@ export function SiteHeader() {
             href="https://app.ardrive.io"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-fd-primary px-5 py-2 text-sm font-semibold text-white hover:opacity-90 transition-opacity"
+            className="group inline-flex items-center gap-2 rounded-full border border-fd-primary bg-white pl-5 pr-1 py-1 text-sm font-semibold text-black transition-all duration-200 hover:shadow-[0_8px_20px_rgba(211,23,33,0.28)]"
           >
-            <span className="size-2 rounded-full bg-white/70 shrink-0" />
             Get Started
+            <span className="inline-flex size-8 items-center justify-center rounded-full bg-fd-primary text-white">
+              <ArrowRight className="size-4 transition-transform duration-200 group-hover:-rotate-45" />
+            </span>
           </a>
         </div>
 
@@ -84,7 +124,11 @@ export function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMobileMenu}
-                className="rounded-lg px-3 py-3 text-sm text-fd-foreground/80 hover:bg-fd-card hover:text-fd-foreground transition-colors"
+                className={`rounded-lg px-3 py-3 text-base font-semibold transition-colors ${
+                  isActiveLink(pathname, link.href)
+                    ? "bg-fd-card text-fd-foreground"
+                    : "text-fd-foreground/80 hover:bg-fd-card hover:text-fd-foreground"
+                }`}
               >
                 {link.label}
               </Link>
@@ -94,10 +138,12 @@ export function SiteHeader() {
                 href="https://app.ardrive.io"
                 target="_blank"
                 rel="noreferrer"
-                className="flex w-full items-center justify-center gap-2 rounded-full bg-fd-primary px-5 py-3 text-sm font-semibold text-white hover:opacity-90 transition-opacity"
+                className="group flex w-full items-center justify-center gap-2 rounded-full border border-fd-primary bg-white px-5 py-1.5 text-sm font-semibold text-black transition-all duration-200 hover:shadow-[0_8px_20px_rgba(211,23,33,0.28)]"
               >
-                <span className="size-2 rounded-full bg-white/70 shrink-0" />
                 Get Started
+                <span className="inline-flex size-8 items-center justify-center rounded-full bg-fd-primary text-white">
+                  <ArrowRight className="size-4 transition-transform duration-200 group-hover:-rotate-45" />
+                </span>
               </a>
             </div>
           </div>

@@ -69,12 +69,12 @@ Reference: `.temp/framer-exports/ardrive.io/`
 
 - ✅ `/pricing` — pay-once model, comparison table, related articles
 - ✅ `/developers` — "Powering the permanent cloud" + ArFS, Turbo, CLI sections
-- ✅ `/learn` — client-side redirect to `/articles`
+- ✅ `/learn` — handled by LegacyRedirector → `/articles/`
+- ✅ `/start` — handled by LegacyRedirector → `https://app.ardrive.io/`
 - ✅ `/enterprise` — rewritten for ArDrive brand (3 service cards + CTA)
-- ✅ `/contact` — 4 support channels (Docs, Discord, Email, Feedback)
-- ✅ `/start` — 4 platform cards (Web, Android, iOS, CLI)
-- ⬜ `/about` — no Framer export found; stub exists, content TBD
-- ⬜ `/tos-and-privacy` — redirect to `/legal/terms-of-service-and-privacy-policy`
+- ✅ `/contact` — 3 support channels (Docs, Discord, Email)
+- ✅ `/tos-and-privacy` — renders `content/legal/terms-of-service-and-privacy-policy.mdx`
+- ⬜ `/about` — no Framer export; content TBD
 - ⬜ `/faq` — no Framer export; skip or stub
 - ~~`/mobile`~~ — omitted
 
@@ -95,11 +95,10 @@ Reference: `.temp/framer-exports/ardrive.io/`
 
 From sitemap — lower priority:
 
-- ⬜ `/nfts` — NFT use case page
+- ✅ `/nfts` — NFT use case page (hero, features, stats, testimonials, collection grid, resources)
 - ⬜ `/arcast` — ArCast podcast/content
 - ⬜ `/turbo-bundler` — Turbo bundler page
 - ⬜ `/compare` — detailed comparison page
-- ⬜ `/ar-io` — ar.io relationship page
 - ⬜ `/subscribe` — newsletter/subscribe
 
 ---
