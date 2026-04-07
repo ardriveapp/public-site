@@ -1,0 +1,44 @@
+name: Deploy to Arweave
+
+on:
+  # Trigger on push to main branch
+  push:
+    branches:
+      - main
+
+  # Allow manual dispatch with custom undername
+  workflow_dispatch:
+    inputs:
+      undername:
+        description: "ArNS undername for deployment (use @ for base name)"
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build Next.js application
+        run: yarn build
+
+      - uses: permaweb/permaweb-deploy@v0.1.0
+        with:
+          deploy-key: ${{ secrets.DEPLOY_KEY }}
+          arns-name: ${{ secrets.ARNS_NAME }}
+          ttl-seconds: "60"
+          preview: "true"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-folder: ./out

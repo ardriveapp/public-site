@@ -1,0 +1,115 @@
+{
+  "brand": "ar.io",
+  "version": "2026-03-30",
+  "human_reference": "/brand-kit",
+  "machine_reference": "/brand-kit/agents.json",
+  "assets_base_path": "/brand/",
+  "logos": [
+    {
+      "id": "icon-dark",
+      "name": "Icon (Dark)",
+      "variants": {
+        "svg": "/brand/ario-black.svg"
+      },
+      "usage": "Use on light backgrounds."
+    },
+    {
+      "id": "icon-light",
+      "name": "Icon (Light)",
+      "variants": {
+        "svg": "/brand/ario-white.svg"
+      },
+      "usage": "Use on dark backgrounds."
+    },
+    {
+      "id": "full-logo-dark",
+      "name": "Full Logo (Dark)",
+      "variants": {
+        "svg": "/brand/ario-full-black.svg"
+      },
+      "usage": "Use on light backgrounds when full wordmark is needed."
+    },
+    {
+      "id": "full-logo-light",
+      "name": "Full Logo (Light)",
+      "variants": {
+        "svg": "/brand/ario-full-white.svg"
+      },
+      "usage": "Use on dark backgrounds when full wordmark is needed."
+    },
+    {
+      "id": "icon-black-on-white",
+      "name": "Icon (Black on White)",
+      "variants": {
+        "round_svg": "/brand/ario-black-on-white-round.svg",
+        "round_png": "/brand/ario-black-on-white-round.png",
+        "square_svg": "/brand/ario-black-on-white-square.svg",
+        "square_png": "/brand/ario-black-on-white-square.png"
+      },
+      "usage": "Use when a white plate is required."
+    },
+    {
+      "id": "icon-white-on-black",
+      "name": "Icon (White on Black)",
+      "variants": {
+        "round_svg": "/brand/ario-white-on-black-round.svg",
+        "round_png": "/brand/ario-white-on-black-round.png",
+        "square_svg": "/brand/ario-white-on-black-square.svg",
+        "square_png": "/brand/ario-white-on-black-square.png"
+      },
+      "usage": "Use when a black plate is required."
+    },
+    {
+      "id": "token-logo",
+      "name": "ARIO Token Logo",
+      "variants": {
+        "svg": "/brand/ario-token-logo.svg"
+      },
+      "usage": "Official logo for the ARIO token."
+    }
+  ],
+  "colors": [
+    {
+      "name": "Primary",
+      "hex": "#5427C8",
+      "usage": "Primary brand color for CTAs, links, and accents."
+    },
+    {
+      "name": "Lavender",
+      "hex": "#DFD6F7",
+      "usage": "Secondary color for gradients and backgrounds."
+    },
+    {
+      "name": "Black",
+      "hex": "#23232D",
+      "usage": "Primary text color and dark elements."
+    },
+    {
+      "name": "White",
+      "hex": "#FFFFFF",
+      "usage": "Background and light text on dark surfaces."
+    },
+    {
+      "name": "Card Surface",
+      "hex": "#F0F0F0",
+      "usage": "Card backgrounds and elevated surfaces."
+    }
+  ],
+  "typography": {
+    "headline": {
+      "family": "Besley",
+      "weight": 800,
+      "usage": "Headlines and display text."
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "usage": "Body text and UI elements."
+    }
+  },
+  "rules": [
+    "Use dark logo variants on light backgrounds and light variants on dark backgrounds.",
+    "Do not alter logo proportions, colors, or orientation.",
+    "Prefer SVG for digital interfaces; use PNG where raster output is required.",
+    "Use lowercase 'ar.io' except sentence starts where 'Ar.io' is acceptable."
+  ]
+}

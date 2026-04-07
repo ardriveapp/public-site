@@ -1,0 +1,354 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Design tokens (migrated from Fumadocs CSS variables)
+   ============================================================ */
+
+/* Runtime defaults (so colors exist even if Tailwind doesn't emit @theme vars). */
+:root {
+  --color-fd-background: 255 255 255; /* #FFFFFF */
+  --color-fd-foreground: 35 35 45; /* #23232D */
+  --color-fd-card: 240 240 240; /* #F0F0F0 */
+  --color-fd-card-foreground: 35 35 45;
+  --color-fd-popover: 255 255 255;
+  --color-fd-popover-foreground: 35 35 45;
+  --color-fd-muted: 35 35 45;
+  --color-fd-muted-foreground: 35 35 45;
+  --color-fd-border: 35 35 45;
+
+  --color-fd-primary: 84 39 200; /* #5427C8 */
+  --color-fd-primary-foreground: 240 240 240; /* #F0F0F0 */
+  --color-fd-accent: 84 39 200;
+  --color-fd-accent-foreground: 35 35 45;
+  --color-fd-ring: 84 39 200;
+}
+
+/* Tailwind v4 CSS-first theming:
+   Define `fd-*` colors as theme tokens so utilities like `bg-fd-primary/15`
+   and `text-fd-foreground/90` work (this is what made the old pills look nice). */
+@theme {
+  --color-fd-background: 255 255 255; /* #FFFFFF */
+  --color-fd-foreground: 35 35 45; /* #23232D */
+  --color-fd-card: 240 240 240; /* #F0F0F0 */
+  --color-fd-card-foreground: 35 35 45;
+  --color-fd-popover: 255 255 255;
+  --color-fd-popover-foreground: 35 35 45;
+  --color-fd-muted: 35 35 45;
+  --color-fd-muted-foreground: 35 35 45;
+  --color-fd-border: 35 35 45;
+
+  --color-fd-primary: 84 39 200; /* #5427C8 */
+  --color-fd-primary-foreground: 240 240 240; /* #F0F0F0 */
+  --color-fd-accent: 84 39 200;
+  --color-fd-accent-foreground: 35 35 45;
+  --color-fd-ring: 84 39 200;
+}
+
+.dark {
+  --color-fd-background: 35 35 45; /* #23232D */
+  --color-fd-foreground: 240 240 240; /* #F0F0F0 */
+  --color-fd-card: 240 240 240;
+  --color-fd-card-foreground: 240 240 240;
+  --color-fd-popover: 240 240 240;
+  --color-fd-popover-foreground: 240 240 240;
+  --color-fd-muted: 240 240 240;
+  --color-fd-muted-foreground: 240 240 240;
+  --color-fd-border: 240 240 240;
+
+  --color-fd-primary: 84 39 200;
+  --color-fd-primary-foreground: 240 240 240;
+  --color-fd-accent: 84 39 200;
+  --color-fd-accent-foreground: 240 240 240;
+  --color-fd-ring: 84 39 200;
+}
+
+/* ============================================================
+   Utility classes using design tokens
+   ============================================================ */
+
+/* Fallbacks for Tailwind opacity-variant classes (these appear as literal classnames).
+   This makes the "pill" nav/buttons look correct even if Tailwind doesn't generate them. */
+.bg-fd-primary\/10 {
+  background-color: rgb(var(--color-fd-primary) / 0.10);
+}
+.bg-fd-primary\/15 {
+  background-color: rgb(var(--color-fd-primary) / 0.15);
+}
+.hover\:bg-fd-primary\/25:hover {
+  background-color: rgb(var(--color-fd-primary) / 0.25);
+}
+.hover\:bg-fd-accent:hover {
+  background-color: rgb(var(--color-fd-accent) / 0.14);
+}
+.bg-fd-background\/70 {
+  background-color: rgb(var(--color-fd-background) / 0.70);
+}
+.bg-fd-background\/85 {
+  background-color: rgb(var(--color-fd-background) / 0.85);
+}
+.text-fd-foreground\/90 {
+  color: rgb(var(--color-fd-foreground) / 0.90);
+}
+
+.bg-fd-background {
+  background-color: rgb(var(--color-fd-background));
+}
+
+.bg-fd-card {
+  background-color: rgb(var(--color-fd-card));
+}
+
+.bg-fd-muted {
+  background-color: rgb(var(--color-fd-muted) / 0.06);
+}
+
+.bg-fd-accent {
+  background-color: rgb(var(--color-fd-accent) / 0.14);
+}
+
+.bg-fd-primary {
+  background-color: rgb(var(--color-fd-primary));
+}
+
+.text-fd-foreground {
+  color: rgb(var(--color-fd-foreground));
+}
+
+.text-fd-muted-foreground {
+  color: rgb(var(--color-fd-muted-foreground) / 0.72);
+}
+
+.text-fd-primary {
+  color: rgb(var(--color-fd-primary));
+}
+
+.text-fd-primary-foreground {
+  color: rgb(var(--color-fd-primary-foreground));
+}
+
+.text-fd-accent-foreground {
+  color: rgb(var(--color-fd-accent-foreground));
+}
+
+.text-fd-background {
+  color: rgb(var(--color-fd-background));
+}
+
+.border-fd-border {
+  border-color: rgb(var(--color-fd-border) / 0.12);
+}
+
+.ring-fd-ring {
+  --tw-ring-color: rgb(var(--color-fd-ring));
+}
+
+/* Typography: local fonts (wired via next/font/local variables in layout.tsx) */
+html {
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+/* Headings use Besley */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), var(--font-body), system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  /* Match "Besley (Extra Bold)" reference even if elements use `font-bold` utilities */
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ============================================================
+   Prose styling for MDX content
+   ============================================================ */
+
+.prose {
+  color: var(--color-fd-foreground);
+  max-width: 65ch;
+  line-height: 1.75;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: var(--color-fd-foreground);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+}
+
+.prose h1 {
+  font-size: 2.25rem;
+  margin-top: 0;
+}
+
+/* ============================================================
+   Anchor scroll offset (avoid headings hiding under sticky header)
+   Scoped to Continuum page content
+   ============================================================ */
+
+#continuum-content h1,
+#continuum-content h2,
+#continuum-content h3,
+#continuum-content h4,
+#continuum-content h5,
+#continuum-content h6 {
+  /* Match the sticky header + spacing (top-24 ≈ 6rem). */
+  scroll-margin-top: 7rem;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--color-fd-border);
+  padding-bottom: 0.5rem;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+}
+
+.prose p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose a {
+  color: var(--color-fd-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  opacity: 0.8;
+}
+
+.prose strong {
+  font-weight: 600;
+}
+
+.prose ul,
+.prose ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.625em;
+}
+
+.prose li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose ul > li {
+  list-style-type: disc;
+}
+
+.prose ol > li {
+  list-style-type: decimal;
+}
+
+.prose code {
+  background-color: rgb(223 214 247 / 0.35);
+  color: #5427C8;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.prose pre {
+  background-color: var(--color-fd-muted);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.prose pre code {
+  background-color: transparent;
+  color: #5427C8;
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+.prose blockquote {
+  background-color: #DFD6F7;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(84 39 200 / 0.25);
+  border-left: 4px solid #5427C8;
+  padding: 0.4em 1.25rem;
+  font-style: italic;
+  color: rgb(var(--color-fd-foreground));
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.prose blockquote > *:first-child {
+  margin-top: 0;
+}
+
+.prose blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+.prose blockquote p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose blockquote p:first-child {
+  margin-top: 0;
+}
+
+.prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.prose hr {
+  border-color: var(--color-fd-border);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--color-fd-border);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.prose th {
+  background-color: var(--color-fd-muted);
+  font-weight: 600;
+}
+
+/* ============================================================
+   Animations
+   ============================================================ */

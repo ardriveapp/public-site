@@ -1,0 +1,22 @@
+# ar.io - Permanent Cloud Storage
+
+> ar.io provides permanent, decentralized cloud storage built on Arweave.
+
+## About
+ar.io is the access layer for the permaweb, providing gateways, naming (ArNS),
+and tools for permanent data storage and retrieval.
+
+## Key Products
+- Gateways: Fast, resilient access to permanent data
+- ArNS: Permanent naming system for apps and data
+- Turbo: Upload service for permanent storage
+
+## Documentation
+- Docs: https://docs.ar.io
+- GitHub: https://github.com/ar-io
+- Brand Kit (Human): https://ar.io/brand-kit
+- Brand Kit (Machine): https://ar.io/brand-kit/agents.json
+
+## Contact
+- Twitter: https://twitter.com/ar_io_network
+- Discord: https://discord.gg/ario
