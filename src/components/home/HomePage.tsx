@@ -35,7 +35,7 @@ const FEATURES = [
     title: "Open Source",
     desc: "Benefit from full transparency, robust security, and complete flexibility.",
     pill: null,
-    img: null,
+    img: "/home/open-source.png",
   },
 ];
 
@@ -437,14 +437,31 @@ export function HomePage() {
             {/* Feature 03 + CLI illustration side by side */}
             <div className="grid gap-6 lg:grid-cols-[1fr_2fr]">
               <div
-                className="rounded-2xl p-6 flex flex-col justify-between"
+                className="relative min-h-[360px] overflow-hidden rounded-2xl p-6 flex flex-col justify-between"
                 style={{
                   background: "rgba(255,255,255,0.04)",
                   border: "1px solid rgba(255,255,255,0.07)",
                 }}
               >
+                {FEATURES[2].img && (
+                  <BaseImage
+                    src={FEATURES[2].img}
+                    alt=""
+                    fill
+                    className="object-cover object-center opacity-90"
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    unoptimized
+                  />
+                )}
+                <div
+                  className="pointer-events-none absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom, rgba(8,8,8,0.2) 0%, rgba(8,8,8,0.2) 45%, rgba(8,8,8,0.86) 100%)",
+                  }}
+                />
                 <span
-                  className="text-5xl font-extrabold leading-none"
+                  className="relative z-10 text-5xl font-extrabold leading-none"
                   style={{
                     fontFamily: "var(--font-heading)",
                     fontWeight: 800,
@@ -453,7 +470,7 @@ export function HomePage() {
                 >
                   {FEATURES[2].num}
                 </span>
-                <div className="mt-auto">
+                <div className="relative z-10 mt-auto">
                   <h3
                     className="text-xl font-bold"
                     style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}

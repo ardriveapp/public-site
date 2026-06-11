@@ -75,7 +75,7 @@ Reference: `.temp/framer-exports/ardrive.io/`
 - ✅ `/contact` — 3 support channels (Docs, Discord, Email)
 - ✅ `/tos-and-privacy` — renders `content/legal/terms-of-service-and-privacy-policy.mdx`
 - ✅ `/about` — ArDrive story, mission, beliefs, community, and CTA
-- ⬜ `/faq` — no Framer export; skip or stub
+- ~~`/faq`~~ — omitted
 - ~~`/mobile`~~ — omitted
 
 ---
@@ -96,10 +96,11 @@ Reference: `.temp/framer-exports/ardrive.io/`
 From sitemap — lower priority:
 
 - ✅ `/nfts` — NFT use case page (hero, features, stats, testimonials, collection grid, resources)
-- ⬜ `/arcast` — ArCast podcast/content
-- ⬜ `/turbo-bundler` — Turbo bundler page
-- ⬜ `/compare` — detailed comparison page
-- ⬜ `/subscribe` — newsletter/subscribe
+- 🔄 `/help` — Decide what (if anything) to do with it.
+- ~~`/arcast`~~ — omitted
+- ~~`/turbo-bundler`~~ — omitted
+- ~~`/compare`~~ — omitted
+- ~~`/subscribe`~~ — omitted
 
 ---
 

@@ -106,7 +106,7 @@ export function SiteHeader() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="md:hidden inline-flex size-10 items-center justify-center rounded-full border border-fd-border/20 text-fd-foreground transition-colors hover:bg-fd-card"
+          className="md:hidden inline-flex size-11 items-center justify-center rounded-full border border-fd-border/20 text-fd-foreground transition-colors hover:bg-fd-card"
           onClick={toggleMobileMenu}
           aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isMobileMenuOpen}
