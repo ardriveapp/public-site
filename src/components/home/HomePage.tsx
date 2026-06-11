@@ -21,7 +21,7 @@ const FEATURES = [
     title: "Unlimited Storage",
     desc: "Store and share your files effortlessly, with no upload limits or storage caps.",
     pill: "Off Subscription",
-    img: "/home/feature-1.svg",
+    img: "/home/turbo-balances.png",
   },
   {
     num: "02",

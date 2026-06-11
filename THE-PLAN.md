@@ -74,7 +74,7 @@ Reference: `.temp/framer-exports/ardrive.io/`
 - ✅ `/enterprise` — rewritten for ArDrive brand (3 service cards + CTA)
 - ✅ `/contact` — 3 support channels (Docs, Discord, Email)
 - ✅ `/tos-and-privacy` — renders `content/legal/terms-of-service-and-privacy-policy.mdx`
-- ⬜ `/about` — no Framer export; content TBD
+- ✅ `/about` — ArDrive story, mission, beliefs, community, and CTA
 - ⬜ `/faq` — no Framer export; skip or stub
 - ~~`/mobile`~~ — omitted
 

@@ -6,6 +6,7 @@ import { SITE_CONTAINER_CLASS } from "@/components/site-container";
 
 const FOOTER_LINKS = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   { label: "For Developers", href: "/developers" },
   { label: "Pricing", href: "/pricing" },
   { label: "Articles", href: "/articles" },
@@ -14,8 +15,6 @@ const FOOTER_LINKS = [
 ];
 
 export function SiteFooter() {
-  const year = new Date().getFullYear();
-
   return (
     <footer
       className="pb-8 pt-14"
@@ -97,8 +96,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-2 border-t border-fd-border/10 pt-4 text-xs text-fd-foreground/55 sm:flex-row sm:items-center sm:justify-between">
-          <span>Copyright &copy; {year} ArDrive</span>
+        <div className="mt-8 flex flex-col gap-2 border-t border-fd-border/10 pt-4 text-xs text-fd-foreground/55 sm:flex-row sm:items-center sm:justify-end">
           <Link href="/tos-and-privacy" className="transition-colors hover:text-fd-foreground/85">
             Terms of Service &amp; Privacy Policy
           </Link>
