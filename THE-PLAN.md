@@ -109,6 +109,7 @@ From sitemap — lower priority:
 - ✅ SEO — `siteName`, Twitter handle, `robots.txt`, `sitemap.xml` regenerated (122 URLs, `ardrive.io`), stale ar.io refs purged
 - ✅ Performance — fonts already optimal (local woff2, `display: swap`); no changes needed
 - ✅ Responsive — pricing comparison table tightened for mobile; overall layout reviewed
+- ⬜ Navigation — finalize footer, header nav, and sitemap
 - ⬜ Analytics — skip for now
 - ⬜ GitHub Pages workflow — action versions need fixing (`checkout@v6` etc. → v4) before first run
 - ⬜ Arweave deploy — test `yarn deploy` pipeline

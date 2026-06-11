@@ -4,15 +4,33 @@ import Link from "next/link";
 import { ArrowRight, Gamepad2 } from "lucide-react";
 import { SITE_CONTAINER_CLASS } from "@/components/site-container";
 
-const FOOTER_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "For Developers", href: "/developers" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Articles", href: "/articles" },
-  { label: "Enterprise", href: "/enterprise" },
-  { label: "Contact", href: "/contact" },
-];
+const FOOTER_SECTIONS = [
+  {
+    title: "Explore",
+    links: [
+      { label: "Home", href: "/" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "Developers", href: "/developers" },
+      { label: "NFTs", href: "/nfts" },
+      { label: "Articles", href: "/articles" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "About", href: "/about" },
+      { label: "Enterprise", href: "/enterprise" },
+      { label: "Contact", href: "/contact" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "Help", href: "/help" },
+      { label: "Brand Kit", href: "/brand-kit" },
+    ],
+  },
+] as const;
 
 export function SiteFooter() {
   return (
@@ -21,30 +39,12 @@ export function SiteFooter() {
       style={{ background: "#080808" }}
     >
       <div className={SITE_CONTAINER_CLASS}>
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
-          <div className="grid flex-1 grid-cols-1 gap-10 sm:grid-cols-3 lg:max-w-3xl">
-            <div>
-              <p className="max-w-[13rem] text-xl leading-[1.2] text-fd-foreground">
-                Permanent, private, and powerful.
-              </p>
-            </div>
-
-            <div>
-              <p className="mb-3 text-sm font-semibold text-fd-foreground">ArDrive</p>
-              <nav className="flex flex-col gap-1.5 text-sm text-fd-foreground/85">
-                {FOOTER_LINKS.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="w-fit transition-colors hover:text-fd-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-
-            <div>
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)_auto] lg:items-start">
+          <div>
+            <p className="max-w-[13rem] text-xl leading-[1.2] text-fd-foreground">
+              Permanent, private, and powerful.
+            </p>
+            <div className="mt-6">
               <p className="mb-3 text-sm font-semibold text-fd-foreground">Socials</p>
               <div className="flex flex-col gap-2 text-sm text-fd-foreground/85">
                 <a
@@ -68,6 +68,27 @@ export function SiteFooter() {
               </div>
             </div>
           </div>
+
+          <nav className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+            {FOOTER_SECTIONS.map((section) => (
+              <div key={section.title}>
+                <p className="mb-3 text-sm font-semibold text-fd-foreground">
+                  {section.title}
+                </p>
+                <div className="flex flex-col gap-2 text-sm text-fd-foreground/85">
+                  {section.links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="w-fit transition-colors hover:text-fd-foreground"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </nav>
 
           <div className="flex shrink-0 flex-col gap-5 lg:items-end">
             <a

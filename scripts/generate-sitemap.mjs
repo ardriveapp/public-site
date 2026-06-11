@@ -13,12 +13,15 @@ const BASE_URL = "https://ardrive.io";
 // Static pages with their routes
 const STATIC_PAGES = [
   "/",
+  "/about/",
   "/pricing/",
   "/developers/",
   "/articles/",
   "/nfts/",
   "/enterprise/",
   "/contact/",
+  "/help/",
+  "/brand-kit/",
   "/tos-and-privacy/",
 ];
 
@@ -140,9 +143,6 @@ function generateSitemap() {
     const lastmod = getDateFromMdx(filePath) || today;
     urls.push(generateUrlEntry(`${BASE_URL}/help/${slug}/`, formatDate(lastmod) || today, "0.65"));
   }
-
-  // ToS and Privacy (single page, not dynamic)
-  urls.push(generateUrlEntry(`${BASE_URL}/tos-and-privacy/`, today, "0.4"));
 
   // Build XML
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

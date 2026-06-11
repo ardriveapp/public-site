@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://ardrive.io/about/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ardrive.io/pricing/</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.8</priority>
@@ -32,6 +37,16 @@
   </url>
   <url>
     <loc>https://ardrive.io/contact/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ardrive.io/help/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ardrive.io/brand-kit/</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.8</priority>
   </url>
@@ -604,10 +619,5 @@
     <loc>https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://ardrive.io/tos-and-privacy/</loc>
-    <lastmod>2026-06-11</lastmod>
-    <priority>0.4</priority>
   </url>
 </urlset>
