@@ -21,7 +21,7 @@ const LOGO_ASSETS: LogoAsset[] = [
   },
   {
     name: "Icon — Light background",
-    description: "Use on white or light-coloured surfaces.",
+    description: "Use on white or light-colored surfaces.",
     previewBg: "#FAFAFA",
     png: "/brand/ArDrive-Logo-Light.png",
     svg: "/brand/ArDrive-Logo-Light.svg",
@@ -289,7 +289,7 @@ export function BrandKitPage() {
             className="rounded-2xl p-6 text-sm space-y-3"
             style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", color: "rgba(250,250,250,0.6)" }}
           >
-            <p>Do not alter the logo colours, proportions, or orientation.</p>
+            <p>Do not alter the logo colors, proportions, or orientation.</p>
             <p>Maintain adequate clear space — at minimum equal to the height of the icon — around all logo variants.</p>
             <p>Do not place the logo on backgrounds with insufficient contrast.</p>
             <p>

@@ -100,7 +100,7 @@ const MORE_FEATURES = [
   },
   {
     title: "Content Streaming",
-    desc: "Stream your favourite media content from drives, and create playlists.",
+    desc: "Stream your favorite media content from drives, and create playlists.",
   },
   {
     title: "Enriched Metadata",
@@ -916,7 +916,7 @@ export function HomePage() {
           10. SLOT MACHINE + RED BLOB CTA
           ══════════════════════════════════════════════════════════════════════ */}
       {/* Slot machine */}
-      <section className="py-20" style={{ background: "#080808" }}>
+      <section className="hidden py-20 sm:block" style={{ background: "#080808" }}>
         <div className={`${SITE_CONTAINER_CLASS}`}>
           <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-5 sm:flex-row sm:flex-nowrap sm:items-center sm:justify-center sm:gap-4 lg:gap-6">
             {/* Match reel row math so "Break free from" aligns with active slot row */}

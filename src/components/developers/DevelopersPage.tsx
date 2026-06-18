@@ -22,6 +22,32 @@ const TOOLS = [
     secondaryCta: { label: "Learn More", href: "https://docs.ar.io" },
   },
   {
+    tag: "Naming",
+    name: "ArNS domains",
+    full: "Human-readable permaweb URLs",
+    desc: "ArNS gives permanent data, apps, and pages memorable names instead of raw transaction IDs. Point a friendly domain to Arweave data, update where it resolves as your project evolves, and make permanent links easier for people and applications to share.",
+    bullets: [
+      "Publishing a permanent app or website with a readable URL",
+      "Keeping stable links while updating the underlying transaction ID",
+      "Creating shareable entry points for public ArDrive data",
+    ],
+    cta: { label: "Explore ArNS", href: "https://docs.ar.io/build/access/arns" },
+    secondaryCta: { label: "Register a Name", href: "https://arns.ar.io" },
+  },
+  {
+    tag: "Retrieval",
+    name: "Access flexibility",
+    full: "Gateway routing and verification",
+    desc: "Build retrieval flows that are not tied to a single gateway. ar.io gateway discovery and Wayfinder help route requests across the network, fail over when needed, and verify data integrity for production applications.",
+    bullets: [
+      "Routing reads through trusted, network, or static gateway providers",
+      "Adding failover and retries for more resilient data access",
+      "Verifying responses when your app needs stronger guarantees",
+    ],
+    cta: { label: "Use Wayfinder", href: "https://docs.ar.io/build/access/wayfinder" },
+    secondaryCta: { label: "Learn Gateways", href: "https://docs.ar.io/learn/gateways/gateway-registry" },
+  },
+  {
     tag: "CLI",
     name: "ardrive-cli",
     full: "Command Line Interface",
