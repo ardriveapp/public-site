@@ -5,7 +5,7 @@ import { getHelpArticle, getHelpSlugs } from "@/lib/help";
 import { compileMDX } from "@/lib/mdx";
 import { buildMetadata } from "@/lib/metadata";
 import { YouTubeEmbed } from "@/components/help/YouTubeEmbed";
-import { FINAL_CTA_WIDTH_CLASS, SITE_CONTAINER_CLASS } from "@/components/site-container";
+import { SITE_CONTAINER_CLASS } from "@/components/site-container";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -90,23 +90,6 @@ export default async function HelpArticlePage({ params }: PageProps) {
           </Link>
         </div>
       </div>
-
-      <section className="px-4 pb-8 pt-12">
-        <div className={FINAL_CTA_WIDTH_CLASS}>
-          <div className="rounded-[2.5rem] bg-fd-primary px-8 py-16 text-center text-white">
-            <h2 className="mb-4 text-2xl font-bold sm:text-3xl" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
-              Ready to store forever?
-            </h2>
-            <p className="mb-8 opacity-80">Pay once. No subscriptions.</p>
-            <a
-              href="https://app.ardrive.io"
-              className="inline-flex rounded-full bg-white px-8 py-3 text-sm font-bold text-fd-primary transition-opacity hover:opacity-90"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
