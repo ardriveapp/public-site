@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllHelpArticles } from "@/lib/help";
 import { buildMetadata } from "@/lib/metadata";
 import { SITE_CONTAINER_CLASS } from "@/components/site-container";
@@ -38,6 +39,25 @@ export default function HelpIndexPage() {
       <section className="px-4 pb-20 pt-2">
         <div className={SITE_CONTAINER_CLASS}>
           <HelpIndex articles={articles} />
+        </div>
+      </section>
+
+      <section className="px-4 pb-20">
+        <div className={`${SITE_CONTAINER_CLASS} mx-auto max-w-xl`}>
+          <div className="rounded-2xl border border-fd-border/10 bg-fd-card px-8 py-10 text-center shadow-2xl shadow-black/20">
+            <p
+              className="text-lg font-semibold text-fd-foreground sm:text-xl"
+              style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}
+            >
+              Still can&apos;t fix your issue?
+            </p>
+            <Link
+              href="/contact"
+              className="mt-6 inline-flex items-center justify-center rounded-full bg-fd-primary px-8 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            >
+              Contact us!
+            </Link>
+          </div>
         </div>
       </section>
     </main>

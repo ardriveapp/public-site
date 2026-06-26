@@ -17,6 +17,7 @@ export interface HelpArticleMeta {
   description: string;
   category: string;
   section: string;
+  archived?: boolean;
 }
 
 const HELP_DIR = path.join(process.cwd(), "content/help");
@@ -36,9 +37,10 @@ export function getHelpSlugs(): string[] {
 }
 
 /**
- * Get metadata for all help articles, sorted for the index page
+ * Get metadata for all help articles, sorted for the index page.
+ * By default, archived articles are excluded from the results.
  */
-export function getAllHelpArticles(): HelpArticleMeta[] {
+export function getAllHelpArticles(options?: { includeArchived?: boolean }): HelpArticleMeta[] {
   const slugs = getHelpSlugs();
 
   const items = slugs.map((slug) => {
@@ -52,10 +54,15 @@ export function getAllHelpArticles(): HelpArticleMeta[] {
       description: (data.description as string) || "",
       category: (data.category as string) || "",
       section: (data.section as string) || "",
+      archived: Boolean(data.archived),
     };
   });
 
-  return sortHelpArticles(items);
+  const filtered = options?.includeArchived
+    ? items
+    : items.filter((item) => !item.archived);
+
+  return sortHelpArticles(filtered);
 }
 
 /**
