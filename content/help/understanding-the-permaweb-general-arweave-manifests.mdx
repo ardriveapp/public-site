@@ -1,6 +1,6 @@
 ---
 title: "Arweave Manifests"
-description: "Introduction Arweave Manifests unlock new and unique experiences that can only be made possible on the Permaweb. An Arweave Manifest is a mapping of Arweave Transaction IDs to friendly names. This …"
+description: "Learn how Arweave Manifests map transaction IDs to friendly file names and paths."
 category: "Understanding The Permaweb"
 section: "General"
 ---
@@ -15,12 +15,12 @@ An Arweave Manifest is a mapping of Arweave Transaction IDs to friendly names. T
 
 This makes it easier for web masters, NFT creators or any other user to reference their transactions by a single “master” manifest transaction and the individual file path and name. They allow you to use friendlier URLs like...
 
-[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)  
+[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
 [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**333.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
 
-...rather than opaque Arweave transaction IDs that ordinarily reference your data:  
+...rather than opaque Arweave transaction IDs that ordinarily reference your data:
 
-[https://turbo-gateway.com/**ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0**](https://eev46qzbxsuwzsou7p4xu3trfpa63x6b3hpon5l46hnrisudhswq.turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)  
+[https://turbo-gateway.com/**ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0**](https://eev46qzbxsuwzsou7p4xu3trfpa63x6b3hpon5l46hnrisudhswq.turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
 [https://turbo-gateway.com/**nHuFsR2Y-e\_qtnsmj0avn37CTWxlZ4zvG\_CKwtldK3I**](https://turbo-gateway.com/nHuFsR2Y-e_qtnsmj0avn37CTWxlZ4zvG_CKwtldK3I)
 
 This standard was created by the Arweave Team. More details on its motivation, schema and path resolution details can be found on [Github](https://github.com/ArweaveTeam/arweave/wiki/Path-Manifests).
@@ -43,9 +43,8 @@ Arweave Manifests tie many transaction IDs to one transaction ID. This opens a v
 
 -   Aggregate your NFT assets into a single Arweave transaction ID for easier Smart Contract publication.
 -   Host a personal or business website
-    
+
 -   Host a web application using familiar frameworks like JavaScript, React and Angular
-    
 
 # NFT Publication
 
@@ -56,32 +55,27 @@ Here is an example manifest that groups 1,111 images that were part of an NFT dr
 The root manifest transaction (Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA) has a default `index` that corresponds to the Arweave Transaction ID for image number 0:
 
 -   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/)
-    
 
 This image can also be reached using the manifest transaction plus its friendly name `0.png`:
 
 -   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
-    
 
 `0.png` could also be reached directly by its own unique Arweave Transaction ID: (ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
 
 -   [https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0](https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
-    
 
 Any other file in the manifest can be seen by adding the corresponding filename, from `0.png` to `1110.png`:
 
 -   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**1.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/1.png)
-    
+
 -   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**333.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
-    
+
 -   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**1110.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/1110.png)
-    
 
 # Static Site Hosting
 
 Static, HTML based web sites are another use for Arweave Manifests. Whether it is a custom developed site, leverages an easy to use template, or taken from an existing portal like WordPress, they can all be uploaded to ArDrive and tied together with an Arweave Manifest, and deployed as a website on the permaweb.
 
-  
 One example is the [ArDrive.io](http://ArDrive.io) Public Site, which is is hosted with Word Press.
 
 The plugin [https://www.simplystatic.co/](https://www.simplystatic.co/) downloads all of the site assets;  pages, images, CSS etc.
@@ -91,12 +85,10 @@ The assets and their folder structures get uploaded to ArDrive and once the file
 See ArDrive's website assets in a public Drive:
 
 -   [https://app.ardrive.io/#/drives/318826ae-472b-46ea-96db-b6a397a201ac?name=ArDrive.io+Public+Site](https://app.ardrive.io/#/drives/318826ae-472b-46ea-96db-b6a397a201ac?name=ArDrive.io+Public+Site)
-    
 
 A manifest is made of that Drive (dKA3lLa10okiDj5w7s502YHOzc\_Pg-ZM3y8y0hQ8v8E) and is now a site on the permaweb.
 
 -   [https://turbo-gateway.com/dKA3lLa10okiDj5w7s502YHOzc\_Pg-ZM3y8y0hQ8v8E/](https://turbo-gateway.com/dKA3lLa10okiDj5w7s502YHOzc_Pg-ZM3y8y0hQ8v8E/)
-    
 
 **NOTE:** If you need to update your website, a new manifest is needed to capture changes to your website.
 
@@ -109,21 +101,18 @@ The ArDrive Price Calculator [https://prices.ardrive.io](https://prices.ardrive.
 The root manifest transaction has a default `index` that corresponds to `index.html` which has all of the references to the assets needed to load the ArDrive Price Calculator.
 
 -   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/)
-    
 
 Assets can be loaded individually by adding their file name and path. For example
 
 -   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/font.css](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/font.css)
-    
+
 -   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/index.js](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/index.js)
-    
+
 -   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/utils/index.js](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/utils/index.js)
-    
 
 All of the React assets are hosted out of a public drive, in a single folder called `build`.
 
 -   [https://app.ardrive.io/#/drives/cc5ad940-83ba-4cd4-9192-669867030904?name=price-calculator](https://app.ardrive.io/#/drives/cc5ad940-83ba-4cd4-9192-669867030904?name=price-calculator)
-    
 
 Need to change a file? Items in a manifest can be modified, like changing the name, uploading a new version or moving to a new folder. A new Arweave Manifest can be generated with the updated references.
 

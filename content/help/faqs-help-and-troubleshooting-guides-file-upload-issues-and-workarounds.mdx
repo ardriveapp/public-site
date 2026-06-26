@@ -1,7 +1,7 @@
 ---
 title: "File Upload Issues And Workarounds"
-description: "When you upload your files to ArDrive, they are sent directly from your device to the decentralized storage network called Arweave where they are stored on servers across the world. This process is…"
-category: "Faqs"
+description: "Troubleshoot file upload status, gateway indexing delays, and transaction visibility."
+category: "FAQs"
 section: "Help And Troubleshooting Guides"
 ---
 
@@ -13,16 +13,15 @@ Let’s demystify what this means and what you can do about it.
 
 # What is supposed to happen
 
-After a a file is uploaded, the Arweave network cryptographically secures the file’s transaction and distributes it across the different servers (miners) that make up the network. The file ends up “mined” in a “block” and is permanently stored and freely accessed.
+After a file is uploaded, the Arweave network cryptographically secures the file’s transaction and distributes it across the different servers (miners) that make up the network. The file ends up “mined” in a “block” and is permanently stored and freely accessed.
 
 End-to-end, this can take upwards of 30 minutes.
 
 -   On average, blocks are mined every 2 minutes, but can sometimes take up to 15 minutes.
-    
+
 -   The miners building and maintaining the Arweave blockchain may periodically reorganize the transactions from last few blocks on the chain into different blocks (a.k.a. “fork recovery”), potentially dropping your transaction from the network history. However, each additional block added after the block containing your transaction, or “confirmation”, makes it increasingly less likely that your transaction will be reorganized into another block or dropped from the chain. Therefore, ArDrive waits for 15 confirmations before considering your transaction sufficiently “confirmed”.
-    
+
 -   Arweave Gateways have to index the transaction into a GraphQL index so ArDrive can find this file in the future. For “bundled” transactions like those that ArDrive uses to get you the best possible storage pricing, Gateway “unbundling” must take place before your transaction can be indexed and searchable by ArDrive. This process can take anywhere from a few minutes to a few hours during times of heavy network usage.
-    
 
 After files are mined and indexed, they are accessible via ArDrive and any other Arweave block explorer, like Viewblock.
 
@@ -31,21 +30,18 @@ After files are mined and indexed, they are accessible via ArDrive and any other
 ArDrive tries to track the status of each transaction in order to let the user know when their files are stored on the network.
 
 -   Green status means the file was successfully replicated and mined on the network.
-    
+
 -   Orange status means the file upload transaction to the network has completed, but ArDrive is awaiting a sufficient number of confirmations and any potentially necessary unbundling to complete.
-    
+
     -   It could take up to 30 minutes for this process to complete, so please be patient.
-        
--   Red status means the file upload transaction has failed or the app thinks that file failed, when really it’s still unpacking at the gateway (this will be reworked for clarity by the ArDrive team in the near future).
-    
+
+-   Red status means the app believes the file upload transaction may have failed.
+
     -   NOTE: If a file’s transaction is not mined or is dropped by the network, the AR payment made for this file is effectively “refunded” by the network. However, this is not the case for failed or omitted unbundling by the Gateway.
-        
 
 # Troubleshooting “Red” Status
 
 While it does not happen often, uploaded file transactions may not be “mined” successfully during periods of high network congestion or dropped by the network during a fork recovery. This could result in a “Red” file status icon.
-
-![](https://help.ardrive.io/hc/article_attachments/5300446455835)
 
 We recently began packing all ArDrive transactions into bundles to improve ArFS reliability and reduce overall transaction costs for users. One tradeoff of this approach is that bundled transactions have to be unbundled by the Arweave Gateway, and this can sometimes take more time than expected. Soon we'll be making updates to the web app that will allow for more "unbundling" time at the Arweave gateway so that ArDrive transactions don't appear as 'failed' for the period of time that they are yet to be unpacked.
 
@@ -61,16 +57,8 @@ Advanced users can look up every transaction they have made with their ArDrive W
 
 In the Block Explorer, you can search for your ArDrive Wallet address. It will show you every transaction you have made, including your ArDrive transactions. This is another way to validate your transactions and their status on the Arweave network.
 
-![](https://help.ardrive.io/hc/article_attachments/5300452194331)
-
 Is the symbol for an Arweave Token transaction. These transactions involve moving AR tokens from one wallet to another.
-
-![](https://help.ardrive.io/hc/article_attachments/5300423743515)
 
 This is the symbol for an Arweave Data transaction. These transactions involve uploading data to Arweave, and will include every ArDrive drive, folder and file upload.
 
-![](https://help.ardrive.io/hc/article_attachments/5300416103067)
-
 This is the symbol for an Arweave Bundled Data transaction. These transactions include multiple files packed into a single bundle and can also include the ArDrive Community Tip as well.
-
-![](https://help.ardrive.io/hc/article_attachments/5300452357147)

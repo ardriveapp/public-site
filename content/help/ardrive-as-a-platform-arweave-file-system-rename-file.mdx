@@ -1,16 +1,16 @@
 ---
 title: "Rename File"
-description: "Files can be renamed from one name to another. A new file metadata transaction is created when a user wants to rename an existing file. The new file metadata transaction reuses the existing file’s …"
-category: "Ardrive As A Platform"
+description: "Technical overview of how ArFS represents file renames."
+category: "ArDrive as a Platform"
 section: "Arweave File System"
 ---
 
 Files can be renamed from one name to another.
 
 -   A new file metadata transaction is created when a user wants to rename an existing file.
-    
+
 -   The new file metadata transaction reuses the existing file’s `File-Id` and copies all of it’s old metadata values, but the file’s `name` field in its Data JSON must be updated to the new file name and extension.
-    
+
     -   For private files, a new `Cipher-IV` is generated for this new metadata transaction.
-        
+
 -   File’s must not be allowed to be renamed to the name of another file with that same name in that same folder.

@@ -1,16 +1,16 @@
 ---
 title: "Move File"
-description: "Files can be moved from one folder to another within the same Drive. A new file metadata transaction is created when a user wants to move a file into a different folder. The new file metadata trans…"
-category: "Ardrive As A Platform"
+description: "Technical overview of how ArFS represents moving files within a Drive."
+category: "ArDrive as a Platform"
 section: "Arweave File System"
 ---
 
 Files can be moved from one folder to another within the same Drive.
 
 -   A new file metadata transaction is created when a user wants to move a file into a different folder.
-    
+
 -   The new file metadata transaction copies all of the file’s old metadata values, but the file’s `Parent-Folder-Id` must be updated to the `Folder-Id` of the folder is was just moved to.
-    
+
     -   For private files, a new `Cipher-IV` is generated for this new metadata transaction.
-        
+
 -   File’s must not be allowed to be moved into a folder if a file exists in that folder with the same file name.

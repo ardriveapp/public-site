@@ -1,22 +1,22 @@
 ---
 title: "Update File Version"
-description: "When a user adds a new file to a folder, and there is a file in that folder with the same name, then a new file version is created. A new file version uses the same File-Id of the file with the mat…"
-category: "Ardrive As A Platform"
+description: "Technical overview of how ArFS represents new file versions."
+category: "ArDrive as a Platform"
 section: "Arweave File System"
 ---
 
 When a user adds a new file to a folder, and there is a file in that folder with the same name, then a new file version is created.
 
 -   A new file version uses the same `File-Id` of the file with the matching name and same `Parent-Folder-Id`.
-    
+
 -   The file upload process is followed and new File Metadata and Data transactions are created.
-    
+
 -   However a new UUID is not generated and the same `File-Id` and associated metadata is used for this new version
-    
+
 -   The new File Metadata Transaction points to the new Data transaction.
-    
+
     -   Since the `File-Id` remains the same, the File Keys for private files can decrypt all versions of that file.
-        
+
     -   For private files, new `Cipher-IV`s are generated for this new metadata and data transaction
-        
+
 -   ArFS clients can now iterate through the state of this file, since it will have multiple versions using the same `File-Id`.
