@@ -11,8 +11,21 @@ const CATEGORY_LABELS: Record<string, string> = {
   "Understanding The Permaweb": "Understanding the Permaweb",
 };
 
+const CATEGORY_ORDER = ["FAQs", "Faqs"];
+
 function displayCategory(raw: string): string {
   return CATEGORY_LABELS[raw] ?? raw;
+}
+
+function compareCategories(a: string, b: string): number {
+  const aIndex = CATEGORY_ORDER.indexOf(displayCategory(a));
+  const bIndex = CATEGORY_ORDER.indexOf(displayCategory(b));
+
+  if (aIndex !== -1 || bIndex !== -1) {
+    return (aIndex === -1 ? CATEGORY_ORDER.length : aIndex) - (bIndex === -1 ? CATEGORY_ORDER.length : bIndex);
+  }
+
+  return displayCategory(a).localeCompare(displayCategory(b));
 }
 
 interface Props {
@@ -48,7 +61,7 @@ export function HelpIndex({ articles }: Props) {
   }, [filtered]);
 
   const categoryKeys = useMemo(
-    () => [...grouped.keys()].sort((a, b) => a.localeCompare(b)),
+    () => [...grouped.keys()].sort(compareCategories),
     [grouped]
   );
 

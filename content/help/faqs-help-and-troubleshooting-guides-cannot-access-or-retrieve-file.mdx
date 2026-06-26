@@ -1,0 +1,40 @@
+---
+title: "Cannot Access Or Retrieve A File"
+description: "If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, AR.IO, or gateway errors, the issue may be temporary gateway availability."
+category: "FAQs"
+section: "Help And Troubleshooting Guides"
+---
+
+If you cannot access, retrieve, preview, or download a file in ArDrive Web, the issue may be related to temporary gateway availability, indexing delays, or frontend connectivity.
+
+ArDrive retrieves file data through Arweave gateways. During periods of heavy network activity, gateway maintenance, AR.IO routing issues, or temporary gateway errors, a file may fail to load even if it is still stored permanently on Arweave.
+
+If you are seeing 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, or frontend errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+
+The browser console is the best place to confirm whether the file issue is a gateway, network, resource, GraphQL, AR.IO, or frontend error. See [Check Browser Console Logs](/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs).
+
+Common signs include:
+
+- 502, 503, or 504 errors
+
+- "Bad Gateway" errors
+
+- Failed download, preview, or file retrieval requests
+
+- Network or resource errors in the browser console
+
+- Gateway, AR.IO, GraphQL, or frontend errors while opening a file
+
+# What to do
+
+- Refresh ArDrive and try opening or downloading the file again.
+
+- Wait a few minutes and retry if you are seeing 502, 503, 504, or bad gateway errors.
+
+- Try a different browser or private window to rule out cached frontend issues.
+
+- If you have a public preview link or transaction ID, try opening it again later after gateway indexing catches up.
+
+- Advanced users can try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+
+- If the problem continues, visit our [contact page](/contact) and include the file link or transaction ID if available, plus any browser console errors you saw.

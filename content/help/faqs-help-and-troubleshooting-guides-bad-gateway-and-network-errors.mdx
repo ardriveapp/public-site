@@ -1,0 +1,40 @@
+---
+title: "Bad Gateway And Network Errors"
+description: "Troubleshoot 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, and frontend errors in ArDrive Web."
+category: "FAQs"
+section: "Help And Troubleshooting Guides"
+---
+
+If ArDrive Web shows 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, or frontend errors, the issue is often temporary gateway availability or connectivity rather than a problem with your files or wallet.
+
+ArDrive uses Arweave gateways to load account data, retrieve files, show previews, download files, and query drive, folder, and file metadata. During periods of heavy network activity, gateway maintenance, AR.IO routing issues, or temporary gateway errors, some requests may fail.
+
+These errors can appear while logging in, syncing a drive, opening a folder, previewing a file, retrieving a file, or downloading a file.
+
+The browser console is the best place to confirm what kind of error is happening and helps the ArDrive team troubleshoot if you need support. See [Check Browser Console Logs](/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs).
+
+Common signs include:
+
+- 502, 503, or 504 errors
+
+- "Bad Gateway" errors
+
+- Failed network requests while loading account, drive, folder, or file data
+
+- Network or resource errors in the browser console
+
+- Gateway, AR.IO, GraphQL, or frontend errors
+
+# What to do
+
+- Refresh ArDrive and try again.
+
+- Wait a few minutes and retry if you are seeing 502, 503, 504, or bad gateway errors.
+
+- Try a different browser or private window to rule out cached frontend issues.
+
+- If the issue is with a file, try opening the file, preview link, or transaction ID again later after gateway indexing catches up.
+
+- Advanced users can try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+
+- If the problem continues, visit our [contact page](/contact) and include what you were trying to do plus any browser console errors you saw, such as 502, 503, 504, bad gateway, network errors, resource errors, AR.IO errors, or GraphQL errors.
