@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "node scripts/generate-sitemap.mjs && cross-env NODE_ENV=production next build",
+    "build": "node scripts/generate-sitemap.mjs && node scripts/generate-agent-indexes.mjs && cross-env NODE_ENV=production next build",
     "dev": "next dev --turbo",
     "start": "next start",
+    "generate-agent-indexes": "node scripts/generate-agent-indexes.mjs",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "convert-help": "node scripts/convert-zendesk-to-help-mdx.mjs",
-    "deploy": "node scripts/generate-sitemap.mjs && cross-env NODE_ENV=production next build && permaweb-deploy deploy --arns-name ar-io --deploy-folder out"
+    "deploy": "node scripts/generate-sitemap.mjs && node scripts/generate-agent-indexes.mjs && cross-env NODE_ENV=production next build && permaweb-deploy deploy --arns-name ar-io --deploy-folder out"
   },
   "dependencies": {
     "@mdx-js/mdx": "^3.0.1",

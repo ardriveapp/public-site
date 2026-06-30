@@ -1,0 +1,2401 @@
+# ArDrive Help Corpus
+
+> Full public help content for AI agents and retrieval tools. Canonical URLs point to rendered help pages on ardrive.io.
+
+## Index
+
+- [ArDrive CLI](https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-cli/): Use the ArDrive CLI for terminal-based ArDrive workflows.
+- [ArDrive Core](https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-core/): ArDrive Core contains the essential back end features for the ArDrive apps, written in TypeScript. While the Arweave network gives the power of.
+- [Arweave File System](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-arweave-file-system/): Technical overview of ArFS, the Arweave File System used by ArDrive.
+- [Drive Entity](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-drive-entity/): Technical overview of the ArFS Drive entity and root folder relationship.
+- [Move File](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-move-file/): Technical overview of how ArFS represents moving files within a Drive.
+- [Move Folder](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-move-folder/): Technical overview of how ArFS represents moving folders within a Drive.
+- [Rename Drive](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-drive/): Technical overview of how ArFS represents Drive renames.
+- [Rename File](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-file/): Technical overview of how ArFS represents file renames.
+- [Rename Folder](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-folder/): Technical overview of how ArFS represents folder renames.
+- [Schema Diagrams](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-schema-diagrams/): Technical diagrams for public and private ArFS Drive structures.
+- [Update File Version](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-update-file-version/): Technical overview of how ArFS represents new file versions.
+- [ArDrive On The Permaweb](https://ardrive.io/help/faqs-faq-ardrive-on-the-permaweb-dapp/): Use the permanent ArDrive dApp entry point on the permaweb.
+- [ArDrive Turbo](https://ardrive.io/help/faqs-faq-ardrive-turbo/): Common questions about ArDrive Turbo Credits, payments, receipts, refunds, and support.
+- [Arweave Wallets](https://ardrive.io/help/faqs-faq-arweave-wallets/): Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.
+- [Everything You Need To Know About ArDrive](https://ardrive.io/help/faqs-faq-everything-you-need-to-know-about-ardrive/): Common questions about permanence, privacy, uploads, sharing, and permaweb URLs in ArDrive.
+- [How Do Keyfile And Seed Phrase Login Work](https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/): Learn how keyfile and seed phrase login work and how to protect wallet access.
+- [How Do Turbo Conversions Work](https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/): Understand how Turbo upload prices are estimated from file size, AR, and Credits.
+- [What Are The Privacy And Encryption Standards?](https://ardrive.io/help/faqs-faq-what-are-the-privacy-and-encryption-standards/): Private Drive files are encrypted with AES-256-GCM, while public files remain public forever.
+- [What Currencies Or Cryptocurrencies Can I Use To Upload?](https://ardrive.io/help/faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload/): ArDrive supports permanent storage payments through Turbo Credits or AR tokens.
+- [What Makes ArDrive Different From Other File Storage Apps](https://ardrive.io/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/): What makes ArDrive different from other file storage apps?
+- [Where Can I Make A Feature Request](https://ardrive.io/help/faqs-faq-where-can-i-make-a-feature-request/): Where can I make a feature request?
+- [ArDrive App Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/): Current upload and download limits for ArDrive by upload method, platform, and browser.
+- [Bad Gateway And Network Errors](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/): Troubleshoot 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, and frontend errors in ArDrive Web.
+- [Cannot Access Or Retrieve A File](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/): If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, AR.IO, or gateway errors, the issue may be temporary gateway availability.
+- [Change Gateway URL For ArDrive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/): Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen.
+- [Check Browser Console Logs](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs/): Browser console logs and network errors are the best way to understand ArDrive Web issues and help support troubleshoot login, gateway, upload, download, preview, or sync problems.
+- [Clearing Your Cache](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/): Clear browser cache for app.ardrive.io when files, folders, drives, or statuses look stale.
+- [Drive Syncing Issues](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/): Drive syncing issues are usually caused by intermittent gateway indexing delays and often resolve on their own within a few hours.
+- [File Upload Issues And Workarounds](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/): Troubleshoot file upload status, gateway indexing delays, and transaction visibility.
+- [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
+- [Arweave Manifests](https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/): Learn how Arweave Manifests map transaction IDs to friendly file names and paths.
+- [Block Explorers](https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/): Use Arweave block explorers to inspect transactions, wallets, and network activity.
+- [What Is The Permaweb](https://ardrive.io/help/understanding-the-permaweb-general-what-is-the-permaweb/): Learn what the permaweb is and how Arweave stores data permanently.
+- [Actions](https://ardrive.io/help/using-ardrive-apps-actions-actions/): Overview of common file, folder, and Drive actions in ArDrive.
+- [ArDrive Explorer View](https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/): An overview of the buttons on the ArDrive Drive Explorer:
+- [Download A File](https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/): Download files from ArDrive without additional storage charges.
+- [Drive Explorer](https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/): Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.
+- [Drive Sharing](https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/): Share public or private Drives with a link.
+- [Export Csv Table](https://ardrive.io/help/using-ardrive-apps-actions-export-csv-table/): Export a CSV inventory of Drive contents, transaction IDs, links, and metadata.
+- [File Sharing](https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/): Share public or private files from ArDrive with a link.
+- [Hiding Files From Your Drive](https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/): Yes, hiding files or folders is possible with ArDrive.
+- [Licensing Your Data](https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/): Apply licensing information to uploaded files to clarify reuse and attribution.
+- [Move A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-move-a-file-or-folder/): Move files or folders within the same Drive.
+- [New File Versions](https://ardrive.io/help/using-ardrive-apps-actions-new-file-versions/): Upload a replacement file with the same name to create a new file version.
+- [Public Preview](https://ardrive.io/help/using-ardrive-apps-actions-public-preview/): Get a permanent public preview URL for files stored in a Public Drive.
+- [Rename A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/): Rename files and folders in ArDrive while preserving permanent data history.
+- [Storing Your NFT Data With ArDrive Web](https://ardrive.io/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/): Store NFT assets and metadata permanently with ArDrive.
+- [ArDrive Password](https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/): Understand how your ArDrive password protects private Drives and why it must be stored safely.
+- [Create An Arweave Wallet With ArDrive](https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/): Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
+- [Fund Your Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/): Fund ArDrive uploads with Turbo Credits or AR tokens.
+- [Gifting Credits](https://ardrive.io/help/using-ardrive-apps-getting-started-gifting-credits/): Send and redeem ArDrive Turbo Credits with gift codes.
+- [Log Into ArDrive Keyfile](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/): Log in to ArDrive using your Arweave wallet keyfile and password.
+- [Log Into ArDrive MetaMask Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/): Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.
+- [Log Into ArDrive Seed Phrase](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/): Log in to ArDrive with an existing seed phrase and your ArDrive password.
+- [Log Into ArDrive With Wander](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/): Use Wander to manage an Arweave wallet and log in to ArDrive.
+- [Attach A Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/): Attach a shared public or private Drive to your account from a Drive link.
+- [Create A Snapshot](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-a-snapshot/): Create Drive snapshots to speed up future syncing for large public or private Drives.
+- [Create An Arweave Manifest](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/): Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.
+- [Create New Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/): Create a new public or private Drive for permanent file storage on the permaweb.
+- [New Folders](https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/): Create folders to organize files inside an ArDrive Drive.
+- [The New Button](https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/): Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.
+- [Uploading Files](https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/): Upload files from a Drive using the +NEW button, review the one-time storage price, and wait for upload confirmation.
+
+---
+
+# ArDrive CLI
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-cli/
+Category: ArDrive as a Platform
+Section: ArDrive Platform
+Description: Use the ArDrive CLI for terminal-based ArDrive workflows.
+
+# Introduction
+
+The _[ArDrive Command Line Interface (CLI)](https://github.com/ardriveapp/ardrive-cli)_ is a Node.js application for terminal-based ArDrive workflows. It also offers utility operations for securely interacting with Arweave wallets and inspecting various [Arweave](https://ardrive.io/what-is-arweave/) blockchain conditions.
+
+Data uploaded via the ArDrive CLI, once indexed by Arweave's Gateways and sufficiently seeded across enough nodes on the network, can be accessed via ArDrive Web.
+
+All transactions successfully executed by ArDrive can always be inspected in the [Viewblock blockchain explorer](https://viewblock.io/arweave/).
+
+# Intended Audience
+
+This tool is intended for use by:
+
+-   ArDrive power users with advanced workflows and resource efficiency in mind: bulk uploaders, those with larger storage demand, game developers, nft creators, storage/database admins, etc.
+
+-   Automation tools or workflow platforms
+
+-   Services or bots
+
+-   Terminal aficionados
+
+-   Extant and aspiring cypherpunks
+
+For deeper integrations with the ArDrive platform, consider using the [ArDrive Core](/help/ardrive-as-a-platform-ardrive-platform-ardrive-core) (Node) library's configurable and intuitive class interfaces directly within your application.
+
+# Learn More
+
+Visit our docs portal to learn more - [https://docs.ardrive.io](https://docs.ardrive.io)
+
+# Need Help?
+
+Not sure how to start with the CLI or running into issues? Visit our [contact page](/contact) and we would love to help.
+
+---
+
+# ArDrive Core
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-core/
+Category: ArDrive as a Platform
+Section: ArDrive Platform
+Description: ArDrive Core contains the essential back end features for the ArDrive apps, written in TypeScript. While the Arweave network gives the power of.
+
+# What is ArDrive Core?
+
+ArDrive Core contains the essential back end features for the ArDrive apps, written in TypeScript. While the Arweave network gives the power of immutable data storage, the ArDrive Core can take your integration to the next level.
+
+Using the ArDrive Core can unlock different capabilities for your app integration.
+
+-   An append only file system schema called Arweave File System supporting metadata and version history
+
+-   Battle tested patterns and components for querying, uploading and downloading
+
+-   Privacy using industry leading encryption
+
+-   View, organize and share all of your data through our cross-platform web app.
+
+-   Cross-platform desktop apps to sync your data locally
+
+-   Benefit from any ArDrive app upgrades as they appear
+
+# Github
+
+ArDrive-Core-JS can be cloned from our [Github](https://github.com/ardriveapp/ardrive-core-js), or deployed via NPM/Yarn.
+
+Learn more on our docs portal at [https://docs.ardrive.io](https://docs.ardrive.io)
+
+---
+
+# Arweave File System
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-arweave-file-system/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical overview of ArFS, the Arweave File System used by ArDrive.
+
+Arweave File System, or “ArFS” is a data modeling, storage, and retrieval protocol designed to emulate common file system operations and to provide aspects of mutability to your data hierarchy on [Arweave](https://ardrive.io/what-is-arweave/)'s otherwise permanent, immutable data storage blockweave.
+
+Due to Arweave's permanent, immutable and public nature traditional file system operations such as permissions, file/folder renaming and moving, and file updates cannot be done by simply updating the on-chain data model.
+
+ArFS works around this by implementing a privacy and encryption pattern and defining an append-only transaction data model using tags within [Arweave Transaction headers.](https://docs.arweave.org/developers/server/http-api#transaction-format)
+
+# Document Version History
+
+**Version**
+
+**Date**
+
+**Release Notes**
+
+0.11a
+
+July, 2021
+
+Introduces version 0.11, the first version of “ArFS” that has been in use in ArDrive since September 2020.
+
+0.11b
+
+October, 2021
+
+Added more details around first ArFS version including actions that can be performed.
+
+# ArFS Version History
+
+**Version**
+
+**Date**
+
+**Release Notes**
+
+0.10
+
+August 2020
+
+The brief, beta version that was in use during initial testing of ArDrive across Web (Dart) and legacy CLI (TypeScript).
+
+0.11
+
+(Current)
+
+September 2020
+
+Includes all of the major functionality supporting file systems on Arweave including new drives, folders, files, renames, moves and privacy.
+
+Learn more about ArFS on in our official docs at [https://docs.ardrive.io](https://docs.ardrive.io)
+
+---
+
+# Drive Entity
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-drive-entity/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical overview of the ArFS Drive entity and root folder relationship.
+
+A Drive is the highest level logical grouping of folders and files.
+
+All folders and files must be part of a drive, and reference the Drive ID.
+
+When creating a Drive, a corresponding folder must be created as well. This folder will act as the Drive Root Folder. This separation of drive and folder entity enables features such as folder view queries, renaming and linking.
+
+```
+ArFS: "0.11"
+Cipher?: "AES256-GCM"
+Cipher-IV?: "<12 byte initialization vector as Base64>"
+Content-Type: "<application/json | application/octet-stream>"
+Drive-Id: "<uuid>"
+Drive-Privacy: "<public | private>"
+Drive-Auth-Mode?: "password"
+Entity-Type: "drive"
+Unix-Time: "<seconds since unix epoch>"
+
+Data JSON {
+    "name": "<user defined drive name>",
+    "rootFolderId": "<uuid of the drive root folder>"
+}
+```
+
+_Drive Entity Transaction example_
+
+---
+
+# Move File
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-move-file/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical overview of how ArFS represents moving files within a Drive.
+
+Files can be moved from one folder to another within the same Drive.
+
+-   A new file metadata transaction is created when a user wants to move a file into a different folder.
+
+-   The new file metadata transaction copies all of the file’s old metadata values, but the file’s `Parent-Folder-Id` must be updated to the `Folder-Id` of the folder is was just moved to.
+
+    -   For private files, a new `Cipher-IV` is generated for this new metadata transaction.
+
+-   File’s must not be allowed to be moved into a folder if a file exists in that folder with the same file name.
+
+---
+
+# Move Folder
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-move-folder/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical overview of how ArFS represents moving folders within a Drive.
+
+Folders can be moved from one folder to another within the same Drive.
+
+-   A new file metadata transaction is created when a user wants to move a folder into a different folder.
+
+-   The new file metadata transaction reuses the existing folder’s `Folder-Id` and copies all of it’s old metadata values, but the file’s `Parent-Folder-Id` must be updated to the `Folder-Id` of the folder is was just moved to.
+
+    -   For private folders, new ciphers are generated for this new metadata transaction.
+
+-   Folder’s must not be allowed to be moved into a folder if another folder exists in that folder with the same folder name.
+
+---
+
+# Rename Drive
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-drive/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical overview of how ArFS represents Drive renames.
+
+Drives can be renamed from one name to another.
+
+-   A new root folder metadata transaction is created when a user wants to rename an existing drive.
+
+-   The new root folder metadata transaction reuses the existing drive’s `Drive-Id` and `Folder-Id` and copies all of it’s old metadata values, but the drive’s and root folder’s `name` field in its Data JSON must be updated to the new drive name.
+
+    -   For private drives, new ciphers are generated for this new root folder metadata transaction.
+
+-   The new root folder transaction must not have have any `Parent-Folder-Id` since it is a root folder.
+
+---
+
+# Rename File
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-file/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical overview of how ArFS represents file renames.
+
+Files can be renamed from one name to another.
+
+-   A new file metadata transaction is created when a user wants to rename an existing file.
+
+-   The new file metadata transaction reuses the existing file’s `File-Id` and copies all of it’s old metadata values, but the file’s `name` field in its Data JSON must be updated to the new file name and extension.
+
+    -   For private files, a new `Cipher-IV` is generated for this new metadata transaction.
+
+-   File’s must not be allowed to be renamed to the name of another file with that same name in that same folder.
+
+---
+
+# Rename Folder
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-folder/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical overview of how ArFS represents folder renames.
+
+Folders can be renamed from one name to another.
+
+-   A new folder metadata transaction is created when a user wants to rename an existing folder.
+
+-   The new folder metadata transaction reuses the existing folder’s `Folder-Id` and copies all of it’s old metadata values, but the folder’s `name` field in its Data JSON must be updated to the new folder name.
+
+    -   For private folders, new ciphers are generated for this new metadata transaction.
+
+-   Folders must not be allowed to be renamed to the name of another folder with that same name in that same folder.
+
+---
+
+# Schema Diagrams
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-schema-diagrams/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical diagrams for public and private ArFS Drive structures.
+
+Sometimes, it is easier to understand how different data types come together to make a single information architecture, or schema. The below diagrams show examples of how Drives, Folders and Files all fit together and reference one another.
+
+# ArFS 0.11 Public Drive View
+
+# ArFS 0.11 Private Drive View
+
+---
+
+# Update File Version
+
+Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-update-file-version/
+Category: ArDrive as a Platform
+Section: Arweave File System
+Description: Technical overview of how ArFS represents new file versions.
+
+When a user adds a new file to a folder, and there is a file in that folder with the same name, then a new file version is created.
+
+-   A new file version uses the same `File-Id` of the file with the matching name and same `Parent-Folder-Id`.
+
+-   The file upload process is followed and new File Metadata and Data transactions are created.
+
+-   However a new UUID is not generated and the same `File-Id` and associated metadata is used for this new version
+
+-   The new File Metadata Transaction points to the new Data transaction.
+
+    -   Since the `File-Id` remains the same, the File Keys for private files can decrypt all versions of that file.
+
+    -   For private files, new `Cipher-IV`s are generated for this new metadata and data transaction
+
+-   ArFS clients can now iterate through the state of this file, since it will have multiple versions using the same `File-Id`.
+
+---
+
+# ArDrive On The Permaweb
+
+Canonical URL: https://ardrive.io/help/faqs-faq-ardrive-on-the-permaweb-dapp/
+Category: FAQs
+Section: FAQ
+Description: Use the permanent ArDrive dApp entry point on the permaweb.
+
+ArDrive is born & bred on the Permaweb and the app exists in a fully decentralized way on Arweave.
+
+<YouTubeEmbed videoId="w9Yi-ara1o" />
+
+You can find the latest permanent version of the ArDrive web dApp at [https://dapp.ardrive.io](https://dapp.ardrive.io).
+
+For everyday use, we recommend starting from [https://app.ardrive.io](https://app.ardrive.io). Use the permaweb dApp entry point when you specifically want to access the permanent app deployment.
+
+---
+
+# ArDrive Turbo
+
+Canonical URL: https://ardrive.io/help/faqs-faq-ardrive-turbo/
+Category: FAQs
+Section: FAQ
+Description: Common questions about ArDrive Turbo Credits, payments, receipts, refunds, and support.
+
+## **Credits, Payments, and Receipts**
+
+What is a Credit?
+
+-   Credits represent a 1:1 value with the AR token and can be used to upload data to ArDrive.
+
+Can I view my Credits balance on Viewblock or Wander?
+
+-   Credits are specific to ArDrive and can only be viewed and used in ArDrive.
+
+Which currencies can I pay in?
+
+-   USD with additional currencies being added soon.
+
+Can I get a copy of my receipt?
+
+-   All receipts are provided by Stripe and are sent to those that provide their email during check out.
+
+Can I pay with any credit or debit card?
+
+-   We accept all major credit and debit cards. Purchase restrictions may be implemented by your card provider or country of origin.
+
+Do the value of Credits ever change?
+
+-   Credits have the same storage purchasing power as AR.
+
+Do you keep my credit card info?
+
+-   No. ArDrive keeps a record of your public wallet address, the amount purchased and used Credits when purchases occur. All credit card purchases are processed by Stripe, learn more about their policies [here.](https://stripe.com/privacy "https://stripe.com/privacy")
+
+Can I use Credits elsewhere on the permaweb?
+
+-   Credits can be used with any apps on Arweave that accept Turbo.
+
+## **Refunds, Transfer, & Exchanges**
+
+Can I get a refund for my Credit purchase?
+
+-   All sales of Credits are final. When a Credits are purchased, ArDrive holds that balance of AR to cover the cost of data uploaded.
+
+Do Credits expire?
+
+-   Your Credits may expire after 3 years from the date of purchase.
+
+Can I transfer Credits to another wallet?
+
+-   No, Credits are non-transferable.
+
+Can I buy Credits as a gift?
+
+-   Yes. See [Gifting Credits](/help/using-ardrive-apps-getting-started-gifting-credits) for current gift code instructions.
+
+Can I exchange my Credits for AR?
+
+-   No, ArDrive is not a crypto exchange and Credits cannot be returned or exchanged.
+
+Do I get my Credits back if my Turbo upload fails?
+
+-   You will not be charged for any failed uploads. If you believe you have been charged please [contact](/contact) the ArDrive team.
+
+## **Building with Turbo**
+
+Can I use Turbo in my own app?
+
+-   Yes. Visit the [developer docs](https://docs.ar.io/build) for current ArDrive and Turbo integration guidance.
+
+Is Turbo Available in ArDrive-CLI?
+
+-   Yes. Use the current [developer docs](https://docs.ar.io/build) for CLI guidance.
+
+## **Don't see your question here?**
+
+-   Submit a [support ticket](/contact).
+
+---
+
+# Arweave Wallets
+
+Canonical URL: https://ardrive.io/help/faqs-faq-arweave-wallets/
+Category: FAQs
+Section: FAQ
+Description: Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.
+
+I didn't get my seed phrase from ArDrive. Can I still use it to log in?
+
+-   If you have a seed phrase from another Arweave-compatible wallet, such as Wander, you can use it to log in to ArDrive.
+
+Can I get a seed phrase for my existing wallet?
+
+-   No. If you did not save your seed phrase when the wallet was created, it cannot be generated or recovered later.
+
+What is a seed phrase?
+
+-   A seed phrase is a set of random words generated when you create a wallet. You can use it to log in or as a backup to regain access to your account.
+
+What do I do if I lose my seed phrase?
+
+-   You can still log in if you have your keyfile. If you lose both your seed phrase and keyfile, your wallet cannot be recovered. Keep your seed phrase in a safe place.
+
+How do I keep my seed phrase safe?
+
+-   Write it down on paper and store it securely, or save it in a password manager.
+
+Is logging in with a seed phrase safe?
+
+-   Yes. Always verify you are on [ardrive.io](https://ardrive.io) or one of the [official ArDrive dapps](/help/faqs-faq-ardrive-on-the-permaweb-dapp) before entering your seed phrase so you do not share it with another site or app.
+
+Why is my wallet generated every time I log in with a seed phrase?
+
+-   Your seed phrase identifies and regenerates your wallet each time you log in to ArDrive. Your wallet is required to access your drives, upload and sign transactions, and check your balance.
+
+What format does my seed phrase need to be in to log into ArDrive?
+
+-   Enter the 12 words in the order they were given to you, separated by spaces.
+
+Can I use my ArDrive-generated wallet in Wander?
+
+-   Yes. A wallet generated by ArDrive works with other apps in the permaweb ecosystem, including Wander.
+
+---
+
+# Everything You Need To Know About ArDrive
+
+Canonical URL: https://ardrive.io/help/faqs-faq-everything-you-need-to-know-about-ardrive/
+Category: FAQs
+Section: FAQ
+Description: Common questions about permanence, privacy, uploads, sharing, and permaweb URLs in ArDrive.
+
+Where is the delete button?
+
+**ArDrive deleted the delete button.** All data uploaded to ArDrive is permanent and indelible. It can’t be removed by you or by us or by any third party. Think twice before uploading a file you wouldn’t want your great-grandchildren to discover.
+
+However, only files that you make public can be seen by others. All files that you keep private will remain private unless you share them with others.
+
+# What type of things should I put on ArDrive?
+
+ArDrive provides permanent data storage. It’s an ideal platform for storing photos, video, audio, Word documents, and other files you don’t want to disappear as technology changes. The permaweb changes the way humans keep digital data.
+
+Many different verticals are already benefiting from permanent data storage.
+
+-   Family history
+
+-   Academic papers and research
+
+-   Legal papers and cases
+
+-   Architectural drawings
+
+-   Digital art
+
+-   Original music
+
+-   Journalists and bloggers
+
+-   Digital archives
+
+# What type of files should I not put on ArDrive?
+
+Anything you wouldn’t want to be remembered for. ArDrive is about preserving essential archives, indelible memories and the best of human culture, not the worst.
+
+If you put a file onto the public portion of ArDrive, it will be public forever. Please do not upload:
+
+-   Personal information that includes banking, social security numbers, phone numbers, passwords, etc.
+
+-   Profoundly offensive or objectionable content
+
+-   Copyrighted materials
+
+-   Proprietary information
+
+# What kinds of files do you accept?
+
+We accept a wide variety of files including video (mp4, mov), audio (mp3, wav), photos (jpg, png, tiff), vector files (svg, eps, ai), documents (Word, PowerPoint, PDF) and more. You can even save some AR by uploading .zip files. If it’s currently on your computer, you can probably add it to ArDrive.
+
+# How do I upload more than one file at a time?
+
+With ArDrive it is easy to upload more than one file at a time.
+
+After you hit the ‘Upload File(s)’ button in ArDrive a browser will appear that allows you to select which files to choose from. Simply choose the desired files and then upload them.
+
+Upload limits depend on upload method, browser, and platform. See [ArDrive App Limits](/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits) for the current limits.
+
+If you accidentally choose the same file twice, ArDrive will catch this and ask if you really want to upload the same file twice. You will then have the option of declining the option to upload or proceed with the transaction.
+
+If you want to upload a folder from your computer to ArDrive, there are two options:
+
+1.  Zip the folder and upload that to ArDrive.
+
+2.  Use the 'Upload Folder' option from the NEW button.
+
+READ: [https://ardrive.io/bundles/](https://ardrive.io/bundles/) WATCH: [https://www.youtube.com/watch?v=EUAERbzmxaY](https://www.youtube.com/watch?v=EUAERbzmxaY)
+
+#
+How long does it take to upload?
+
+Upload speeds are dependent on your Internet connection. Arweave block times are 2 minutes and ArDrive waits for 15 confirmations to consider data properly seeded on the Network.
+
+Need to upload quick? Give Turbo a try.
+
+#
+How long does it take to download?
+
+Download speeds are dependent on your Internet connection. Permaweb data is cached and indexed by gateways & made retrievable just like downloading from the Internet.
+
+#
+Are there limits to the amount of data I can upload in one transaction?
+
+Limits depend on upload method, browser, and platform.
+
+**See also: [ArDrive App Limits](/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits)**
+
+#
+Is there data size limits on accounts?
+
+No, there are no data size limits on accounts.
+
+Feel free to put as little or as much on as you like on the permaweb.  Whether you want to store 1 kb, 1 MB, 1 GB, 1TB or 1 PB – it is up to you!
+
+#
+Will accounts ever be made inactive due to non-use?
+
+No.  You can upload a file onto the permaweb, and walk away from it for 1, 2, 5, 10, 50 years and it will still be there. You will never receive a message that your account is going to be closed due to inactive use or a missed payment.
+
+Think of it as your safety deposit box of data that you only have to pay for once.  As long as you keep the key, you can always access it.
+
+#
+How do I share my public drive?
+
+One of the great features of ArDrive is sharing Drives with others. [Learn about Drive sharing](/help/using-ardrive-apps-actions-drive-sharing).
+
+#
+Are my public files given a URL?
+
+Yes, all of your public files are accessible through the permaweb & it's unique transaction ID. Use the [preview button](/help/using-ardrive-apps-actions-public-preview) to get the link to your data.
+
+The public preview button will load or stream any compatible data right into your browser. This includes music, movies and PDFs.
+
+When you click the public preview button, a new tab in your browser will open with the chosen file as a web page. The web address for the file will be located in the web address box of your browser. It may look unusual, but it works as a permaweb URL.
+
+[Learn more about public previews](/help/using-ardrive-apps-actions-public-preview).
+
+#
+Can I edit my files after they are uploaded?
+
+Arweave is a permanent blockchain. Whatever you upload to Arweave becomes immutable & can’t be edited or removed by anybody. Thanks to the [Arweave File System](/help/ardrive-as-a-platform-arweave-file-system-arweave-file-system), you can edit the metadata (name & location of your files on ArDrive). ArDrive will allow you to save a revised copy of the same file, and you will be able to see the history of your changes. Remember, **every file you upload to Arweave is a unique transaction.**
+
+---
+
+# How Do Keyfile And Seed Phrase Login Work
+
+Canonical URL: https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/
+Category: FAQs
+Section: FAQ
+Description: Learn how keyfile and seed phrase login work and how to protect wallet access.
+
+**Keyfiles:**
+
+A keyfile is a file that contains your Arweave wallet, a unique sequence of characters that is used to encrypt and decrypt your data. This keyfile is used to authenticate your identity when you log in to ArDrive’s applications and sign transactions.
+
+The keyfile is stored on your device and an encrypted version is stored in ArDrive until you opt to forget wallet during login, it can be removed from your device at any time. You will be prompted to provide your keyfile and password when you log in to ArDrive. Your password is needed to encrypt your wallet when you first start a session and decrypt your wallet for future access. Once your keyfile and password are verified, you will have access to your account and the data that you have stored via ArDrive.
+
+It is important to keep your keyfile secure, as anyone who has access to it can potentially access your account and the data stored within it. Additionally, your wallet can not be exported from the app, and cannot be recovered by ArDrive. Therefore, it is recommended to store your keyfile in a secure location and not share it with anyone else.
+
+**Seed Phrases:**
+
+A seed phrase is a sequence of words that serves as a cryptographic backup for your wallet. When you enter the seed phrase, ArDrive applies an algorithm to identify and generate your unique wallet (which you can download as a keyfile).
+
+You will be prompted to provide your seed phrase and password when you log in to ArDrive. Your password is needed to encrypt your wallet when you first start a session and decrypt your wallet for future access.
+
+Once your wallet is generated and your password is entered, you can then view your balances, interact with your drives, and make uploads.
+
+It is important to keep your seed phrase secure, as anyone who has access to it can potentially access your account and the data stored within it. We recommend keeping your seed phrase in a password manager for extra protection.
+
+---
+
+# How Do Turbo Conversions Work
+
+Canonical URL: https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/
+Category: FAQs
+Section: FAQ
+Description: Understand how Turbo upload prices are estimated from file size, AR, and Credits.
+
+# Getting the price of an upload
+
+File size is used to determine the base fee to upload data to Arweave. The price of the base fee is set by the Arweave protocol code. ArDrive values Credits at 1:1 with AR when uploading. Prices for uploading in Credits are cheaper than uploading in AR because, while a Credit and AR token have the same value, a community tip is added on to all uploads paid for in AR
+
+Users can purchase credits through ArDrive, and then use them whenever they need to upload their files.
+
+**Note:** All file sizes are represented using binary units of measurement (i.e. 1 mB = 1024 kB).
+
+The price of an upload using Credits takes into account multiple factors like the file size, Arweave network data cost, and other fees required by the service.
+
+# Is the price of data consistent?
+
+Not exactly. The Arweave network protocol is always adjusting the data price to maintain sustainable, perpetual storage. The data price is lowered as the network increases its overall capacity.
+
+This can result in a fluctuating data price. However, for most files these fluctuations would only increase or decrease costs by fractions of a cent.
+
+---
+
+# What Are The Privacy And Encryption Standards?
+
+Canonical URL: https://ardrive.io/help/faqs-faq-what-are-the-privacy-and-encryption-standards/
+Category: FAQs
+Section: FAQ
+Description: Private Drive files are encrypted with AES-256-GCM, while public files remain public forever.
+
+Are my files encrypted?
+
+If you opt to make your Drive private, all of your files will be encrypted. ArDrive uses [AES-256-GCM](https://www.cryptosys.net/pki/manpki/pki_aesgcmauthencryption.html), which we believe is the best encryption standard currently available. AES-256-GCM is the current standard for top-secret military information. [Learn more](https://adeya.ch/communication-security-what-military-grade-encryption-means/)
+
+Additionally, every private file has its own ‘private key’ based on the key from the user’s Arweave wallet combined with their password.  This makes it only possible for the content to be accessed by the person with that ‘private key’ (you) and the people that they share it with.
+
+#
+Can I make private files public?
+
+Private Drives can't be converted into Public Drives yet. But any _files_ in your Private Drive can be shared with anyone you want.
+
+Learn how to [share files](/help/using-ardrive-apps-actions-file-sharing) and [share Drives](/help/using-ardrive-apps-actions-drive-sharing) in ArDrive.
+
+#
+Can I make public files private?
+
+No, Arweave is a public data protocol. Public files can never be made private. Once you have made a file public it will always be public. There is no way to undo this.
+
+**NOTE**: Sharing a private file with someone gives access to that file forever.
+
+#
+Can my public files be searched on the internet?
+
+Yes, your public files can be searched on the internet.
+
+We urge you to carefully consider what you want to make public, because once it is uploaded to the permaweb it will be there forever.
+
+#
+Can my private documents stay private forever?
+
+Yes, your private documents can stay private. The only way they can become accessible is if you move them to a public folder, where they become available to everyone, or if you share the file with someone else.
+
+---
+
+# What Currencies Or Cryptocurrencies Can I Use To Upload?
+
+Canonical URL: https://ardrive.io/help/faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload/
+Category: FAQs
+Section: FAQ
+Description: ArDrive supports permanent storage payments through Turbo Credits or AR tokens.
+
+How do I pay to upload my data on ArDrive?
+
+There are two ways to purchase permanent storage with ArDrive:
+
+1. **ArDrive Turbo**: use a credit or debit card to buy Credits.
+
+ArDrive Turbo is an upload service that makes it simple to pay for permanent storage without managing AR directly. In the app, use the Turbo top-up flow to buy Credits and then spend those Credits on uploads.
+
+Questions about Turbo? Visit the [Turbo FAQ](/help/faqs-faq-ardrive-turbo).
+
+2. **Arweave Tokens (AR)**: use AR from your Arweave wallet.
+
+ArDrive is based on the [Arweave network](https://arweave.org/ "https://arweave.org/") and the $AR token is used to pay the global network of operators who secure the network & provide storage.
+
+Obtaining $AR through exchanges can be a cumbersome process. Exchanges may not be registered in your country and signing up can require complying with Know-Your-Customer laws.
+
+[Fund your wallet](/help/using-ardrive-apps-getting-started-fund-your-wallet) if you plan to upload with AR.
+
+#
+How does pay-per file work?
+
+Pricing is based on the size of each file. ArDrive checks the size of each file and offers a price for permanent storage before upload.
+
+Many of the files you upload will cost only a tenth or hundredth of a cent. It is not until the size of the file gets to be 1 MB that it may cost a penny.
+
+**NOTE:** This is the price, not for one month or one year, but for forever.
+
+#
+How much does it cost?
+
+Rather than pay subscriptions month after month, with ArDrive you only pay once to store your data forever. Most files such as photos, PDFs and Word Docs may only cost a tenth or hundredth of a cent.
+
+There are a few factors that cause fluctuations in the price, such as the price movement of the AR token but the [network adjusts storage costs dynamically](https://ardrive.io/how-much-does-it-cost-to-store-on-arweave/) to keep costs predictable.
+
+[**See Price Calculator**](https://prices.ardrive.io)
+
+#
+Will I be told how much it costs before I upload it to the permaweb?
+
+Yes. Since every transaction could be different, ArDrive calculates the cost of each transaction before uploading to the permaweb. You will be given a chance to accept or reject the cost of the transaction before uploading your data permanently.
+
+You can also use our [**Price Calculator**](https://prices.ardrive.io) to estimate how much fiat, crypto, data size, or AR is required to upload to the permaweb using ArDrive.
+
+#
+Does the price ever fluctuate?
+
+Yes. The price of ArDrive uploads can fluctuate based on the computing power available to the Arweave network at any one time. We anticipate that these fluctuations should even out as the Arweave network increases in scope. [**See permaweb growth chart**](https://viewblock.io/arweave/stat/cumulativeWeaveSizeHistory)
+
+There are a few factors that cause fluctuations in the price, such as the price movement of the AR token, but the network adjusts storage costs dynamically to keep costs predictable.
+
+So you can be confident that even as the price fluctuates that you are still paying roughly the same amount for permanent storage.
+
+---
+
+# What Makes ArDrive Different From Other File Storage Apps
+
+Canonical URL: https://ardrive.io/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/
+Category: FAQs
+Section: FAQ
+Description: What makes ArDrive different from other file storage apps?
+
+What makes ArDrive different from other file storage apps?
+
+ArDrive is not like cloud storage apps. Many of the file sync features are the same, but what makes ArDrive different is the key innovation of data permanence in a pay-as-you-go format.
+
+WATCH: [https://www.youtube.com/watch?v=IIBTLabA78k](https://www.youtube.com/watch?v=IIBTLabA78k) READ: [https://ardrive.io/what-is-ardrive/](https://ardrive.io/what-is-ardrive/)
+
+ArDrive, which is built on [Arweave’s technology](https://www.arweave.org/), offers you the ability to securely store your data for a lifetime and beyond, without any subscription fees, and often for pennies per file or less.
+
+This combination of permanence, security and value over time cannot be matched by any other storage service including new blockchain file storage providers such as Filecoin.
+
+This is a new type of relationship with data and storage.
+
+Similar to riding a bicycle for the first time, this new type of relationship to data will take a little getting used to, but once you get comfortable with it we think you will love it!
+
+#
+What is the permaweb?
+
+ArDrive is built upon and powered by the permaweb.
+
+Launched in 2018, the Arweave permaweb is an indelible, tamper-proof version of the internet. Sam Williams, the founding engineer of the ppermaweb, describes it as “a collectively owned hard drive that never forgets, \[and\] allows us to remember and preserve valuable information, apps, and history indefinitely.”
+
+The permaweb was developed by [Arweave](https://www.arweave.org/) with technology that is based on blockchains and distributed computing, the computer science innovation behind digital currencies such as Bitcoin.
+
+[Learn more about Arweave](https://arwiki.wiki)
+
+[**Watch a Video about Arweave from the Coin Bureau (20:51)**](https://www.youtube.com/watch?v=jKFhHL1geVw)
+
+#
+How can it actually be permanent?
+
+Three factors allow Arweave’s technology to be a permanent storage system:
+
+1.  _**Indelible Code**_.  The Arweave protocol or the code is written in a way that does not allow anything to be deleted.
+
+2.  _**A Decentralized Network.**_  Instead of one centralized server that keeps all your data, files are distributed and replicated over a network of thousands of different nodes. Although one node will not necessarily store all the data, the data will be spread out countless times over all the nodes in the network to provide redundancy and rapid file access. As founder Sam Williams of Arweave explains, the permaweb “spreads the data across tens of thousands of places in the world and then makes it available from those locations, like the web, except censorship-resistant and permanent.” Even if one part of the permaweb goes offline, the remaining network retains the memory.
+
+3.  _**Storage Endowment**_.  Like everyone else we need to pay someone to store the data. So how can a one-time payment cover the cost of storage for a lifetime or more? In most areas of life we are used to prices going up. However, this is not the case with the price of storage for data. It is very much the opposite as over the past 50 years the average annual rate of decline to store a GB has been 30.57%.
+
+    The decline of storage prices has allowed the Arweave team design an innovate payment method to incentive storage over extremely long periods of time. The one-time up-front fee goes into an endowment where the interest on the fees will accrual perpetually and cover the cost of storage over time. In other words, the amount that a user pays upfront creates enough interest over time to cover the costs associated with paying someone to store that data perpetually.
+
+    Just like a university or non-profit forms an endowment that creates interest to cover costs over time, the Arweave token creates interest that covers costs. Unlike those other endowments, the interest is covering costs that are declining and not rising.
+
+    This design, in the end, creates a reward for the network (the people storing that data) that is greater than the cost to hold the data and maintain it—even over long periods of time. Even in the unlikely case that storage costs do not go down, the upfront free will cover 200 years of storage.
+
+Want to learn more?  Read our post [**“Can data really be stored forever?”**](https://ardrive.io/can-data-really-be-stored-forever/)
+
+#
+What makes it censorship-resistant?
+
+Whatever you put on the permaweb cannot be deleted by one single person or organization.
+
+The permaweb’s file storage method was created so that each data storage block cannot be removed by anyone – not you, not ArDrive, not Arweave (the creators of the permaweb), not the world’s best supercomputer.
+
+Furthermore, the Permaweb exists as a decentralized network. It distributes data to thousands of nodes which make it impossible for any centralized actor to remove the data from the whole network. A node may go offline, but the redundancy of the network keeps the entire repository of uploaded information available.
+
+Therefore, with no delete button and a decentralized network, any public information posted on ArDrive cannot be taken down by a third party. This makes it censorship-resistant.
+
+_In November 2020, a government made a failed attempt to censor the Permaweb._  [**Read the story in Fortune Magazine**](https://fortune.com/2020/11/05/chinese-spies-hack-anticensorship-startup/)
+
+#
+Where does my data go?
+
+The data is not stored in any one single place. Instead, it is distributed across hundreds of different nodes throughout the world.
+
+Your private information is encrypted end to end, and can only be unlocked by you and those you share the keys with.
+
+#
+What is the uptime or reliability of ArDrive?
+
+The ArDrive Web App has had 100% uptime since launching our Beta app.
+
+We cannot guarantee this perfect track record, but even if the ArDrive Web App is inaccessible or has an outage your data is still backed up and available from other nodes on the Arweave network. Cloud storage providers occasionally go offline, but the permaweb is more like the internet:  it can’t be turned off unless you power down every server globally.
+
+Even if we completely go out of business, your files will remain on the permaweb. Your data is safe for generations to come. We are working on ensuring our web app is also published on the permaweb, ensuring you can still upload and download for the lifetime of your data.
+
+* * *
+
+**SUPPORT**
+Have a specific question? Reach out via our [contact page](/contact).
+
+**TRY ARDRIVE**
+ArDrive offers never-ending storage of your most valuable files. Sometimes the best way to learn is to [try it out](https://app.ardrive.io/).
+
+**COMMUNITY**
+ArDrive is community-owned and operated. [Get in touch](/contact) or join us on [Telegram](https://t.me/ardriveapp) (general chat).
+
+---
+
+# Where Can I Make A Feature Request
+
+Canonical URL: https://ardrive.io/help/faqs-faq-where-can-i-make-a-feature-request/
+Category: FAQs
+Section: FAQ
+Description: Where can I make a feature request?
+
+# Where can I make a feature request?
+
+We’d love to hear what you have in mind. Please [reach out to us on Twitter](https://x.com/ardriveapp) with your idea or visit our [contact page](/contact).
+
+---
+
+# ArDrive App Limits
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Current upload and download limits for ArDrive by upload method, platform, and browser.
+
+Uploads are currently limited depending on how you are using ArDrive or which version of ArDrive you are using. We are always working to raise these limits and will update this page accordingly.
+
+# Upload Size Limits
+
+**Direct-to-network** uploads are paid with AR tokens, and are submitted directly to the Arweave network via an ar.io gateway.
+
+**Turbo** uploads are paid with Credits, and are submitted to the ArDrive Turbo service.
+
+The limits posted below are for ArDrive version **2.22.0** and above and apply to both public and private files.
+
+| Platform | Direct-to-Network (AR) | Turbo (Credits) |
+| --- | ---: | ---: |
+| Web App | 2 GiB* | 2 GiB |
+| CLI | 2 GiB | 2 GiB |
+
+\* Direct-to-network uploads have no theoretical protocol limit; practical app and browser limits are listed here.
+
+| Browser | Direct-to-Network (AR) | Turbo (Credits) |
+| --- | ---: | ---: |
+| Chrome/Edge/Brave | 2 GiB* | 2 GiB |
+| Safari | 2 GiB* | 500 MiB |
+| Firefox | 2 GiB* | 500 MiB |
+
+# Upload Count Limits
+
+The ArDrive Web App has limitations on the amount of files it can upload.
+
+Our testing has shown that Chrome/Brave Browsers can handle up to 1,500 files per upload & Firefox can handle up to 10,000 files.
+
+# Download Size Limits
+
+| Platform | Size |
+| --- | ---: |
+| Web App | 15 GiB* |
+
+\* Downloads have no theoretical limits, however, we have tested files up to the listed size.
+
+| Browser | Size |
+| --- | ---: |
+| Chrome/Edge/Brave | 15 GiB* |
+| Safari | 1 GiB |
+| Firefox | 15 GiB* |
+
+# What is a GiB?
+
+A gibibyte and a gigabyte are sometimes used synonymously, though technically they are not the same amount of storage. They are very close in size, however.
+
+**One gibibyte equals 1.074 gigabytes**.
+
+One gibibyte is equal to 2^30 or 1,073,741,824 bytes.
+
+One gigabyte is equal to 10^9 or 1,000,000,000 bytes.
+
+---
+
+# Bad Gateway And Network Errors
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Troubleshoot 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, and frontend errors in ArDrive Web.
+
+If ArDrive Web shows 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, or frontend errors, the issue is often temporary gateway availability or connectivity rather than a problem with your files or wallet.
+
+ArDrive uses Arweave gateways to load account data, retrieve files, show previews, download files, and query drive, folder, and file metadata. During periods of heavy network activity, gateway maintenance, AR.IO routing issues, or temporary gateway errors, some requests may fail.
+
+These errors can appear while logging in, syncing a drive, opening a folder, previewing a file, retrieving a file, or downloading a file.
+
+The browser console is the best place to confirm what kind of error is happening and helps the ArDrive team troubleshoot if you need support. See [Check Browser Console Logs](/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs).
+
+Common signs include:
+
+- 502, 503, or 504 errors
+
+- "Bad Gateway" errors
+
+- Failed network requests while loading account, drive, folder, or file data
+
+- Network or resource errors in the browser console
+
+- Gateway, AR.IO, GraphQL, or frontend errors
+
+# What to do
+
+- Refresh ArDrive and try again.
+
+- Wait a few minutes and retry if you are seeing 502, 503, 504, or bad gateway errors.
+
+- Try a different browser or private window to rule out cached frontend issues.
+
+- If the issue is with a file, try opening the file, preview link, or transaction ID again later after gateway indexing catches up.
+
+- Advanced users can try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+
+- If the problem continues, visit our [contact page](/contact) and include what you were trying to do plus any browser console errors you saw, such as 502, 503, 504, bad gateway, network errors, resource errors, AR.IO errors, or GraphQL errors.
+
+---
+
+# Cannot Access Or Retrieve A File
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, AR.IO, or gateway errors, the issue may be temporary gateway availability.
+
+If you cannot access, retrieve, preview, or download a file in ArDrive Web, the issue may be related to temporary gateway availability, indexing delays, or frontend connectivity.
+
+ArDrive retrieves file data through Arweave gateways. During periods of heavy network activity, gateway maintenance, AR.IO routing issues, or temporary gateway errors, a file may fail to load even if it is still stored permanently on Arweave.
+
+If you are seeing 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, or frontend errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+
+The browser console is the best place to confirm whether the file issue is a gateway, network, resource, GraphQL, AR.IO, or frontend error. See [Check Browser Console Logs](/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs).
+
+Common signs include:
+
+- 502, 503, or 504 errors
+
+- "Bad Gateway" errors
+
+- Failed download, preview, or file retrieval requests
+
+- Network or resource errors in the browser console
+
+- Gateway, AR.IO, GraphQL, or frontend errors while opening a file
+
+# What to do
+
+- Refresh ArDrive and try opening or downloading the file again.
+
+- Wait a few minutes and retry if you are seeing 502, 503, 504, or bad gateway errors.
+
+- Try a different browser or private window to rule out cached frontend issues.
+
+- If you have a public preview link or transaction ID, try opening it again later after gateway indexing catches up.
+
+- Advanced users can try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+
+- If the problem continues, visit our [contact page](/contact) and include the file link or transaction ID if available, plus any browser console errors you saw.
+
+---
+
+# Change Gateway URL For ArDrive
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen.
+
+[app.ardrive.io](https://app.ardrive.io/) connects to Arweave gateways to upload data, download data, and query indexed drive, file, and folder information.
+
+Changing your gateway can be useful if the default gateway is temporarily unavailable, your ISP blocks access to it, or you want to use another decentralized gateway for Permaweb services.
+
+This setting is intended for advanced users. Changing gateways can affect loading, syncing, previews, and how quickly newly uploaded data appears in the app.
+
+# Change gateways from account settings
+
+After you are logged in, open your account menu and go to settings.
+
+![ArDrive account menu with settings option](/help/help-gateway-settings-1.jpg)
+
+From settings, open the gateway settings area.
+
+![ArDrive settings screen showing gateway settings](/help/help-gateway-settings-2.jpg)
+
+You can update both gateway fields:
+
+- Data Gateway: used for retrieving data and generating preview links.
+
+- GraphQL Gateway: used for querying indexed drive, folder, and file metadata.
+
+![ArDrive gateway settings fields](/help/help-gateway-settings-3.jpg)
+
+# Change gateways while logging in
+
+You can also change gateway settings from the login screen before accessing your drive.
+
+![ArDrive login gateway settings](/help/help-gateway-login-settings.jpg)
+
+# When to try this
+
+Changing gateways may help if you are an advanced user troubleshooting drive syncing, file previews, or temporary gateway availability issues.
+
+If your issue appears to be an extended outage, visit our [contact page](/contact) before changing settings.
+
+---
+
+# Check Browser Console Logs
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Browser console logs and network errors are the best way to understand ArDrive Web issues and help support troubleshoot login, gateway, upload, download, preview, or sync problems.
+
+Browser console logs are often the best way to understand what is happening when ArDrive Web does not load, log in, sync, preview, upload, download, access, or retrieve a file as expected.
+
+Console logs can show whether the issue looks like a password or wallet problem, a frontend issue, a failed network request, a gateway issue, an AR.IO issue, or a 502, 503, 504, or bad gateway error.
+
+# How to open the browser console
+
+- In Chrome, Edge, Brave, or Firefox, right-click anywhere on the page and select **Inspect**, then open the **Console** tab.
+
+- You can also press **F12** or **Ctrl+Shift+J** on Windows and Linux.
+
+- On Mac, press **Cmd+Option+J** in Chrome, Edge, or Brave. In Firefox, press **Cmd+Option+K**.
+
+- In Safari, enable the Develop menu first from Safari settings, then choose **Develop** > **Show JavaScript Console**.
+
+# What to look for
+
+- 502, 503, 504, or "Bad Gateway" errors
+
+- Failed network requests
+
+- Network or resource errors
+
+- AR.IO, GraphQL, gateway, or frontend errors
+
+- Invalid password, invalid keyfile, wallet, or authentication messages
+
+# What to send support
+
+If you contact us, include what you were trying to do and the console errors you saw. A screenshot of the console is helpful.
+
+Do not share your password, seed phrase, private key, or wallet keyfile. If a screenshot includes sensitive information, hide it before sending.
+
+---
+
+# Clearing Your Cache
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Clear browser cache for app.ardrive.io when files, folders, drives, or statuses look stale.
+
+Clearing the cache in your web browser for [https://app.ardrive.io](https://app.ardrive.io) can help when you think things aren’t behaving as they should. This includes:
+
+-   Incorrect file status
+
+-   Missing files, folders or drives
+
+Syncing a large Drive can take several minutes depending on how many items are in it.
+
+# Clearing Your Cache
+
+## Brave Browser
+
+-   brave://settings in the search bar
+
+-   Privacy and security in the left menu
+
+-   Cookies and other site data selection
+
+-   See all cookies and site data selection
+
+-   [app.ardrive.io](https://app.ardrive.io/) in the search bar
+
+-   click garbage can icon and confirm
+
+-   reload [app.ardrive.io](https://app.ardrive.io/)
+
+## Chrome Browser
+
+-   chrome://settings in the search bar
+
+-   Privacy and security in the left menu
+
+-   Cookies and other site data selection
+
+-   See all cookies and site data selection
+
+-   [app.ardrive.io](https://app.ardrive.io/) in the search bar
+
+-   click garbage can icon and confirm
+
+-   reload [app.ardrive.io](https://app.ardrive.io/)
+
+## Firefox Browser
+
+-   In the Menu bar at the top of the screen, click Firefox and select Preferences.
+
+-   Select the Privacy & Security panel.
+
+-   In the **Cookies and Site Data** section, click **Clear Data…**.
+
+-   Remove the check mark in front of _Cookies and Site Data_.
+
+    -   For more information about managing site data, see [Manage local site storage settings](https://support.mozilla.org/en-US/kb/storage).
+
+-   With _Cached Web Content_ check marked, click the **Clear** button.
+
+-   Close the _about:preferences_ page. Any changes you've made will automatically be saved.
+
+## Safari Browser
+
+1.  While Safari is running, select the first option, Safari, from the top left of your menu bar.
+
+2.  Select Preferences… or use the keyboard shortcut \[CMD\] + \[,\]
+
+3.  A pop-up window will open. Select the Advanced tab.
+
+4.  Click the checkbox at the bottom of this tab that reads Show Develop menu in menu bar. A new item will now appear in the menu bar called Develop.
+
+5.  Whenever you want to clear your cache, click on Develop and select Empty Caches.
+
+6.  Reload the page you’re on, and you’ll be good to go.
+
+---
+
+# Drive Syncing Issues
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Drive syncing issues are usually caused by intermittent gateway indexing delays and often resolve on their own within a few hours.
+
+If your drive is taking longer than expected to sync, it is usually caused by intermittent gateway indexing delays.
+
+ArDrive relies on Arweave gateways to index newly uploaded files, folders, and drive updates. During periods of heavy network activity or temporary gateway delays, your data may take longer to appear or sync across the app.
+
+In most cases, this resolves on its own within a few hours.
+
+# What to do
+
+- Wait a few hours and check your drive again.
+
+- Refresh ArDrive or sign out and back in if the app still looks stale.
+
+- Advanced users can try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+
+- If the problem lasts longer than a few hours, visit our [contact page](/contact) for outage updates or service status.
+
+- If there is no known outage and your drive still is not syncing, reach out via our [contact page](/contact).
+
+---
+
+# File Upload Issues And Workarounds
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Troubleshoot file upload status, gateway indexing delays, and transaction visibility.
+
+When you upload your files to ArDrive, they are sent directly from your device to the decentralized storage network called Arweave where they are stored on servers across the world.
+
+This process is not perfect, and sometimes your files do not appear on the network.
+
+Let’s demystify what this means and what you can do about it.
+
+# What is supposed to happen
+
+After a file is uploaded, the Arweave network cryptographically secures the file’s transaction and distributes it across the different servers (miners) that make up the network. The file ends up “mined” in a “block” and is permanently stored and freely accessed.
+
+End-to-end, this can take upwards of 30 minutes.
+
+-   On average, blocks are mined every 2 minutes, but can sometimes take up to 15 minutes.
+
+-   The miners building and maintaining the Arweave blockchain may periodically reorganize the transactions from last few blocks on the chain into different blocks (a.k.a. “fork recovery”), potentially dropping your transaction from the network history. However, each additional block added after the block containing your transaction, or “confirmation”, makes it increasingly less likely that your transaction will be reorganized into another block or dropped from the chain. Therefore, ArDrive waits for 15 confirmations before considering your transaction sufficiently “confirmed”.
+
+-   Arweave Gateways have to index the transaction into a GraphQL index so ArDrive can find this file in the future. For “bundled” transactions like those that ArDrive uses to get you the best possible storage pricing, Gateway “unbundling” must take place before your transaction can be indexed and searchable by ArDrive. This process can take anywhere from a few minutes to a few hours during times of heavy network usage.
+
+After files are mined and indexed, they are accessible via ArDrive and any other Arweave block explorer, like Viewblock.
+
+# Tracking Upload Status
+
+ArDrive tries to track the status of each transaction in order to let the user know when their files are stored on the network.
+
+-   Green status means the file was successfully replicated and mined on the network.
+
+-   Orange status means the file upload transaction to the network has completed, but ArDrive is awaiting a sufficient number of confirmations and any potentially necessary unbundling to complete.
+
+    -   It could take up to 30 minutes for this process to complete, so please be patient.
+
+-   Red status means the app believes the file upload transaction may have failed.
+
+    -   NOTE: If a file’s transaction is not mined or is dropped by the network, the AR payment made for this file is effectively “refunded” by the network. However, this is not the case for failed or omitted unbundling by the Gateway.
+
+# Troubleshooting “Red” Status
+
+While it does not happen often, uploaded file transactions may not be “mined” successfully during periods of high network congestion or dropped by the network during a fork recovery. This could result in a “Red” file status icon.
+
+We recently began packing all ArDrive transactions into bundles to improve ArFS reliability and reduce overall transaction costs for users. One tradeoff of this approach is that bundled transactions have to be unbundled by the Arweave Gateway, and this can sometimes take more time than expected. Soon we'll be making updates to the web app that will allow for more "unbundling" time at the Arweave gateway so that ArDrive transactions don't appear as 'failed' for the period of time that they are yet to be unpacked.
+
+If your file status is red, the transaction may have failed and your file may not be permanently stored on the Arweave network. Use `turbo-gateway.com/` plus your transaction id to see if your file made it to Arweave 5–15 minutes after you upload your data through the web. If your file fails to reach Arweave, the fees you paid for uploading this data are not spent, and the funds return to your ArDrive wallet.
+
+Using an Incognito Tab or logging out of ArDrive will clear your local cache of data, including files that have not been mined. If you log out and back in, the files marked red will disappear.
+
+# Using the Arweave Block Explorer
+
+Advanced users can look up every transaction they have made with their ArDrive Wallet by navigating to the Arweave Block Explorer, hosted by Viewblock
+
+[https://viewblock.io/arweave](https://viewblock.io/arweave)
+
+In the Block Explorer, you can search for your ArDrive Wallet address. It will show you every transaction you have made, including your ArDrive transactions. This is another way to validate your transactions and their status on the Arweave network.
+
+Is the symbol for an Arweave Token transaction. These transactions involve moving AR tokens from one wallet to another.
+
+This is the symbol for an Arweave Data transaction. These transactions involve uploading data to Arweave, and will include every ArDrive drive, folder and file upload.
+
+This is the symbol for an Arweave Bundled Data transaction. These transactions include multiple files packed into a single bundle and can also include the ArDrive Community Tip as well.
+
+---
+
+# Login Trouble
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
+
+If you are having trouble logging in to ArDrive Web, first check whether the issue looks like a password, keyfile, seed phrase, or wallet problem.
+
+If ArDrive shows an invalid password or invalid keyfile message, double-check that you are using the correct wallet keyfile and password.
+
+If you are using a seed phrase, make sure the phrase belongs to the wallet you expect to access. If you are using ArConnect or another wallet connection, make sure the wallet is unlocked and connected to the correct account.
+
+If you do not see an invalid password or wallet message, and instead see repeated network, resource, 502, 503, 504, bad gateway, AR.IO, GraphQL, or frontend errors, the issue may not be your password or keyfile. See [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+
+The browser console is the best place to confirm whether the login issue is a password, wallet, gateway, network, or frontend error. See [Check Browser Console Logs](/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs).
+
+# What to do
+
+- Confirm you are using the correct keyfile, seed phrase, wallet, and password.
+
+- Try a different browser or private window to rule out cached frontend issues.
+
+- Refresh ArDrive and try logging in again.
+
+- If the browser console shows 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, or frontend errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+
+- If the problem continues, visit our [contact page](/contact) and include how you are logging in, whether you saw an invalid password message, and any browser console errors you saw.
+
+---
+
+# Arweave Manifests
+
+Canonical URL: https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/
+Category: Understanding The Permaweb
+Section: General
+Description: Learn how Arweave Manifests map transaction IDs to friendly file names and paths.
+
+# Introduction
+
+Arweave Manifests unlock new and unique experiences that can only be made possible on the Permaweb.
+
+An Arweave Manifest is a mapping of Arweave Transaction IDs to friendly names. This map is put into a standardized JSON structure and permanently stored on Arweave. This allows users to create logical groupings of content. Arweave Gateways interpret this structure so users can reference individual transactions by their file name and/or path.
+
+<YouTubeEmbed videoId="AhxXThWMwbY" />
+
+This makes it easier for web masters, NFT creators or any other user to reference their transactions by a single “master” manifest transaction and the individual file path and name. They allow you to use friendlier URLs like...
+
+[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
+[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**333.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
+
+...rather than opaque Arweave transaction IDs that ordinarily reference your data:
+
+[https://turbo-gateway.com/**ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0**](https://eev46qzbxsuwzsou7p4xu3trfpa63x6b3hpon5l46hnrisudhswq.turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
+[https://turbo-gateway.com/**nHuFsR2Y-e\_qtnsmj0avn37CTWxlZ4zvG\_CKwtldK3I**](https://turbo-gateway.com/nHuFsR2Y-e_qtnsmj0avn37CTWxlZ4zvG_CKwtldK3I)
+
+This standard was created by the Arweave Team. More details on its motivation, schema and path resolution details can be found on [Github](https://github.com/ArweaveTeam/arweave/wiki/Path-Manifests).
+
+\-----
+
+With ArDrive, any Drive or Folder can be turned into a Manifest. The file names and paths are represented within the Arweave Manifest, making it easier for developers and users to reference their content by the names used on their local file systems.
+
+**NOTE:** Arweave Manifests must be public, non-encrypted data for the Arweave Gateways to interpret them.
+
+Want to learn more? Check out this deep dive into Arweave Manifests and demonstration on how to create them with ArDrive Web, CLI and Core-Js
+
+<YouTubeEmbed videoId="KBP1J3hStDw" />
+
+# \---
+
+# Use Cases
+
+Arweave Manifests tie many transaction IDs to one transaction ID. This opens a variety of use cases
+
+-   Aggregate your NFT assets into a single Arweave transaction ID for easier Smart Contract publication.
+-   Host a personal or business website
+
+-   Host a web application using familiar frameworks like JavaScript, React and Angular
+
+# NFT Publication
+
+Digital creators, whether music, art or video (or anything in between) can leverage an Arweave Manifest in order to reference their permanently stored data within their NFT Smart Contracts using a predefined set of friendly names.
+
+Here is an example manifest that groups 1,111 images that were part of an NFT drop. The artist did not want to sacrifice the naming scheme used to programmatically generate the artwork. The manifest references all 1,111 images with a single Arweave Transaction ID that can be used in an ERC721 contract.
+
+The root manifest transaction (Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA) has a default `index` that corresponds to the Arweave Transaction ID for image number 0:
+
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/)
+
+This image can also be reached using the manifest transaction plus its friendly name `0.png`:
+
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**0.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
+
+`0.png` could also be reached directly by its own unique Arweave Transaction ID: (ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
+
+-   [https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0](https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
+
+Any other file in the manifest can be seen by adding the corresponding filename, from `0.png` to `1110.png`:
+
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**1.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/1.png)
+
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**333.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
+
+-   [https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/**1110.png**](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/1110.png)
+
+# Static Site Hosting
+
+Static, HTML based web sites are another use for Arweave Manifests. Whether it is a custom developed site, leverages an easy to use template, or taken from an existing portal like WordPress, they can all be uploaded to ArDrive and tied together with an Arweave Manifest, and deployed as a website on the permaweb.
+
+One example is the [ArDrive.io](http://ArDrive.io) Public Site, which is is hosted with Word Press.
+
+The plugin [https://www.simplystatic.co/](https://www.simplystatic.co/) downloads all of the site assets;  pages, images, CSS etc.
+
+The assets and their folder structures get uploaded to ArDrive and once the files are mined and validated, an Arweave Manifest can be created at the root of the Drive. The manifest ties all of the site’s files and their transactions into a single Arweave transaction that loads a permanent version of the website.
+
+See ArDrive's website assets in a public Drive:
+
+-   [https://app.ardrive.io/#/drives/318826ae-472b-46ea-96db-b6a397a201ac?name=ArDrive.io+Public+Site](https://app.ardrive.io/#/drives/318826ae-472b-46ea-96db-b6a397a201ac?name=ArDrive.io+Public+Site)
+
+A manifest is made of that Drive (dKA3lLa10okiDj5w7s502YHOzc\_Pg-ZM3y8y0hQ8v8E) and is now a site on the permaweb.
+
+-   [https://turbo-gateway.com/dKA3lLa10okiDj5w7s502YHOzc\_Pg-ZM3y8y0hQ8v8E/](https://turbo-gateway.com/dKA3lLa10okiDj5w7s502YHOzc_Pg-ZM3y8y0hQ8v8E/)
+
+**NOTE:** If you need to update your website, a new manifest is needed to capture changes to your website.
+
+# React App Hosting
+
+React apps also work with manifests and can be permanently served from the Permaweb.
+
+The ArDrive Price Calculator [https://prices.ardrive.io](https://prices.ardrive.io) is an example React app, that is hosted both centrally and on the decentralized PermaWeb.
+
+The root manifest transaction has a default `index` that corresponds to `index.html` which has all of the references to the assets needed to load the ArDrive Price Calculator.
+
+-   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/)
+
+Assets can be loaded individually by adding their file name and path. For example
+
+-   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/font.css](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/font.css)
+
+-   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/index.js](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/index.js)
+
+-   [https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/utils/index.js](https://turbo-gateway.com/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo/dist/utils/index.js)
+
+All of the React assets are hosted out of a public drive, in a single folder called `build`.
+
+-   [https://app.ardrive.io/#/drives/cc5ad940-83ba-4cd4-9192-669867030904?name=price-calculator](https://app.ardrive.io/#/drives/cc5ad940-83ba-4cd4-9192-669867030904?name=price-calculator)
+
+Need to change a file? Items in a manifest can be modified, like changing the name, uploading a new version or moving to a new folder. A new Arweave Manifest can be generated with the updated references.
+
+Each version of the manifest is stored permanently, allowing web site and web app version control back to the first iteration ever published.
+
+# Raw Endpoint
+
+To view all the paths of a manifest, use the \`raw\` endpoint followed by the manifest transaction ID:
+
+-   [https://turbo-gateway.com/raw/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo](https://turbo-gateway.com/raw/QMbW2XMKGvr7UgzV3tUxxnXTsCgRJRnCaEZC9Vxh9Yo)
+
+# Ready to start?
+
+ArDrive is an easy way to create a manifest out of a Drive or Folder from the NEW button. Check out how to [create an Arweave Manifest](/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/) with ArDrive Web.
+
+For a more advanced Manifest creation experience, like creating manifests out of Private ArDrive Data or totally customizing a manifest to use any Arweave Transaction ID or friendly name, visit our [docs portal](https://docs.ardrive.io/docs/cli/using-the-cli.html#uploading-manifests).
+
+---
+
+# Block Explorers
+
+Canonical URL: https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/
+Category: Understanding The Permaweb
+Section: General
+Description: Use Arweave block explorers to inspect transactions, wallets, and network activity.
+
+There are two block explorers that can be used to view details about all of the transactions, wallets, and Smartweave contracts on Arweave.
+
+-   [ViewBlock](https://viewblock.io/arweave)
+
+-   [https://scar.vercel.app/#/](https://scar.vercel.app/#/)
+
+For more info, check out this video about [how to use Viewblock.](https://www.youtube.com/watch?v=SWyLTcCwcLI)
+
+---
+
+# What Is The Permaweb
+
+Canonical URL: https://ardrive.io/help/understanding-the-permaweb-general-what-is-the-permaweb/
+Category: Understanding The Permaweb
+Section: General
+Description: Learn what the permaweb is and how Arweave stores data permanently.
+
+Arweave stores data permanently and sustainably over time for a single up front fee. It is a data storage protocol as a service, where data is stored on an immutable blockchain and owned by a global community, [accessible through gateways](https://ar.io/what-is-a-gateway/) that make up [the permaweb](https://ar.io/what-is-the-permaweb/).
+
+Similar to Bitcoin and Ethereum, Arweave is [free and open source software](https://github.com/ArweaveTeam/arweave). This software is run across thousands of nodes across the world. Each node is responsible for the security of the blockweave, Arweave’s version of a blockchain.
+
+The blockweave was purpose built for the storage and replication of data over [standard HTTP and TCP/IP.](https://docs.arweave.org/developers/server/http-api) Data on the blockweave is fault tolerant, tamper proof, and paid for - Arweave is a new way to store data, unmatched by centralized storage platforms.
+
+The native [Arweave token (AR)](https://messari.io/asset/arweave/profile) is used to pay for permanent storage space. The [price of data](https://prices.ardrive.io) is calculated by the network and each payment is split between node operators (also known as miners) and [the endowment](https://arwiki.wiki/#/en/storage-endowment). This endowment covers the cost of storing the data for at least 200 years, modeled after declining storage costs over time.
+
+Arweave allows for a permanent and decentralized Internet. The Arweave Permaweb is a global web of pages, and applications that live forever on Arweave. Permaweb apps use a set of open, modular and interchangeable protocols designed and developed by the community.
+
+---
+
+# Actions
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-actions/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Overview of common file, folder, and Drive actions in ArDrive.
+
+After your data is uploaded and secured on the Arweave network, ArDrive lets you perform various actions to edit, share and download your content.
+
+**Drives:** When in a drive you can click on the “Show Menu” Button
+
+This will bring up the dropdown:
+
+You will now have your choice to Rename, Share, Export the Drive Contents or see the details (More info) of the Drive.
+
+**Folder**: Clicking on a folder will bring up the details bar to the right and the ability to Rename or Move.
+
+**Files**: Clicking on a file will bring up the details bar and the ability to:
+
+-   Share the file
+
+-   Download the file
+
+-   Preview the file (will show you the permanent URL given to the file in your web browser)
+
+    -   **Note:** Only for Public files and not Private Files
+
+-   Rename the file
+
+-   Move the file
+
+For a more in-depth guide of all these functions see below:
+
+-   [Download a file](/help/using-ardrive-apps-actions-download-a-file/)
+
+-   [Share a file](/help/using-ardrive-apps-actions-file-sharing/) or [drive](/help/using-ardrive-apps-actions-drive-sharing/)
+
+-   [Preview](/help/using-ardrive-apps-actions-public-preview/) a public file
+
+-   [Edit](/help/using-ardrive-apps-actions-rename-a-file-or-folder/) a file or folder name
+
+-   [Move](/help/using-ardrive-apps-actions-move-a-file-or-folder/) a file or folder name
+
+[See what all the buttons on the Drive Explorer do](/help/using-ardrive-apps-actions-ardrive-explorer-view/).
+
+---
+
+# ArDrive Explorer View
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/
+Category: Using ArDrive Apps
+Section: Actions
+Description: An overview of the buttons on the ArDrive Drive Explorer:
+
+An overview of the buttons on the ArDrive Drive Explorer:
+
+[https://www.youtube.com/watch?v=JyDfZoEhOa4](https://www.youtube.com/watch?v=JyDfZoEhOa4)
+
+---
+
+# Download A File
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Download files from ArDrive without additional storage charges.
+
+Click on the file you want to download.
+
+In the details panel, the download icon is the one with the arrow pointing downwards.
+
+Click on the download icon and the file will download to your computer.
+
+For private files, we remove any ArFS encryption.
+
+**NOTE**: There is no additional charge to download, preview or share any of your files in ArDrive.
+
+---
+
+# Drive Explorer
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.
+
+Once logged into ArDrive you’ll arrive at the Drive Explorer.
+
+Get to know how to use [the New button](/help/using-ardrive-apps-using-ardrive-the-new-button) to upload files and [take actions](/help/using-ardrive-apps-actions-actions) to share your files.
+
+---
+
+# Drive Sharing
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Share public or private Drives with a link.
+
+<YouTubeEmbed videoId="O3o0oLc2IX4" />
+
+One of the great features of ArDrive is sharing Drives with others.
+
+To share a Drive select the Public Drive you wish to share.
+
+Then click on the show menu icon at the right of the Drive name
+
+After clicking on the icon a text box will appear that has a link that you are able to copy and send to anyone of your choosing.
+
+**When the user receives your link and clicks on it they will be brought to that specific Drive and will be able to access the shared drive without needing an ArDrive account or login.**
+
+* * *
+
+When you share a **Private Drive**, the "drive key" is included in the copied link.  This enables someone to view the Drive without having access to your wallet, or drive password.
+
+**Make sure you know & trust who you’re sharing your Private Drive & Files with & where you’re sharing it.**
+**It is not recommended to share Private Drives & Files on public platforms.**
+
+If the recipient of this drive key loses it, they will no longer be able to access the private drive.
+
+Sharing is only for Public Drives, Private Drives and individual files. Folders cannot currently be shared.
+
+---
+
+# Export Csv Table
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-export-csv-table/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Export a CSV inventory of Drive contents, transaction IDs, links, and metadata.
+
+Exporting a CSV file of your Drives contents work with both public & private Drives.
+
+The CSV contains the following information:
+
+-   File ID
+
+-   File Name
+
+-   Parent Folder ID
+
+-   Data Transaction ID
+
+-   Metadata Transaction ID
+
+-   File Size
+
+-   Date Created
+
+-   Last Modified
+
+-   Direct Download Link from turbo-gateway.com
+
+    -   Direct Download Links from a Private Drive are encrypted & won’t be accessible without the file key.
+
+Use the [Share File](/help/using-ardrive-apps-actions-file-sharing/) feature to get a link with the file key.
+
+---
+
+# File Sharing
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Share public or private files from ArDrive with a link.
+
+To share a file in one of your public or private folders click on and highlight the file you want to share.
+
+This will expand the detail panel. at the top right corner of your screen
+
+### File Link
+
+Click on the share icon and a window will pop up in the middle of your screen that contains a link. You can now copy the link and send it to whomever you want to share it with and they will have access to the file forever.
+
+**NOTE:** Sharing is only for Public Drives, Private Drives, and individual files. Folders cannot be shared at this time.
+
+**NOTE:** Whomever you share a link with can also share that link with others. We plan to provide the option to limit the spread of link sharing in future versions of ArDrive. For now, links are unrestricted in how often they can be shared.
+
+---
+
+# Hiding Files From Your Drive
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Yes, hiding files or folders is possible with ArDrive.
+
+### **Can you hide a folder or file?**
+
+Yes, hiding files or folders is possible with ArDrive.
+
+**NOTE: Drives cannot be hidden at this time**
+
+To hide a file or folder press the ‘three dots’ to the right of the file or folder, which will reveal the option to hide that particular file or folder.
+
+Click on ‘Hide’ and that folder or file will be hidden from view.
+
+### Can you unhide files or folders?
+
+If you want to unhide the files or folders that you have hidden, go to the ‘three dots’ to the right of Drive box and hit the ‘Reveal hidden items’ option.
+
+To hide these items again press the same ‘Three Dots’ and hit ‘Conceal hidden items’.
+
+---
+
+# Licensing Your Data
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Apply licensing information to uploaded files to clarify reuse and attribution.
+
+# Introduction
+
+ArDrive is proud to introduce its new "Licensing" feature, designed to empower users with greater control and flexibility over the distribution and use of their uploaded files. This guide provides an in-depth overview of the licensing options available, including the Universal Data License (UDL) and a suite of Creative Commons licenses. By understanding and utilizing these licensing options, you can ensure that your work is shared and used in a manner that aligns with your preferences.
+
+# Licensing Your Content
+
+When you upload files to ArDrive, you now have the option to apply a license after. This feature is vital for content creators, educators, and anyone interested in specifying how their work can be used by others. Licensing your content can protect your rights while also enabling you to contribute to the global commons of knowledge and culture.
+
+## How to Apply a License
+
+1.  **Upload Your File:** Begin by uploading your file(s) to ArDrive as you normally would.
+2.  **Assign License:** After the upload process, select the file and apply a license.
+3.  **Select a License:** You can select from the Universal Data License (UDL) or any of the Creative Commons licenses.
+4.  **Review and Confirm:** After selecting a license, review the details to ensure it aligns with your intentions for the file. Once confirmed, the license will be applied to your file.
+
+At this time, there is no additional cost to apply a licenses files on ArDrive.
+
+## Viewing Licenses
+
+Anyone accessing your files on ArDrive can view the license you've applied by viewing the file's details in the right panel. This transparency ensures that users understand the permissions and restrictions associated with a file, whether accessing an individual file or the full drive.
+
+# Understanding Your Licensing Options
+
+## Creative Commons Licenses
+
+Creative Commons is a globally recognized nonprofit organization that offers a standardized way to grant public permission to share and use creative work. By applying a Creative Commons license to your files, you specify the freedoms and limitations others have in using your work. This clarity benefits both creators and users, facilitating the sharing and use of copyrighted material in a legal and straightforward manner.
+
+### The Six License Types
+
+Creative Commons offers six main license types, ranging from the most permissive (allowing for both commercial use and modifications) to the most restrictive (only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially). Additionally, the CC0 Public Domain Dedication allows creators to waive all rights and place a work in the public domain.
+
+Learn more from [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/) about these licenses, as well as CC0 Public Domain Dedication.
+
+### Choosing the Right License
+
+Selecting the appropriate license is crucial. We recommend using the [Creative Commons License Chooser](https://chooser-beta.creativecommons.org/) tool, which guides you through the process of selecting a license that aligns with your intentions.
+
+## Universal Data License (UDL)
+
+The Universal Data License is specifically designed for content stored on public permissionless blockchain networks. It is a legal framework that outlines the terms of use for your content, addressing the unique considerations of blockchain-based storage. The UDL is an excellent choice for users who wish to leverage the security and transparency of blockchain technology for their content.
+
+[Learn more](https://dev.to/fllstck/the-universal-data-license-explained-2di) about the Universal Data License and how it works.
+
+## Impacts of Licensing
+
+Applying a license to your content has several implications:
+
+-   **Legal Clarity:** Licenses provide legal clarity about what others can and cannot do with your content, protecting your rights while facilitating its use.
+-   **Control:** You maintain control over how your content is used and distributed.
+-   **Contribution to the Commons:** By selecting a license that allows for sharing and reuse, you contribute to the global commons, supporting a culture of collaboration and innovation.
+
+# Stay Connected and Empowered
+
+If you have any questions, need assistance with the licensing feature, or require further information, please don't hesitate to reach out. Our support team is here to help you with technical queries, licensing choices, and any other concerns you might have.
+
+Visit our [contact page](/contact) for help with technical queries, licensing choices, and any other questions.
+
+---
+
+# Move A File Or Folder
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-move-a-file-or-folder/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Move files or folders within the same Drive.
+
+To move a file or folder to another folder, first click on the file or folder you want moved.
+
+In the details panel, the move button is on the right end.
+
+This will bring up a window titled “**Move File**” which has all of the Folders you have created within that Drive. Select the folder or subfolder where you’d like to move the file, then click the “**Move Here**” button at the bottom right.
+
+**NOTE**: Files and folders cannot currently be moved from one Drive to another.
+
+---
+
+# New File Versions
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-new-file-versions/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Upload a replacement file with the same name to create a new file version.
+
+Uploading a new file version is a matter of uploading a file with the same name as an existing file in a given folder. ArDrive will automatically create a second version of that file, using the fieId as the unique ID used to access the entire version history of the file.
+
+There are no version limits, and each new version contains the full data of that file.
+
+Learn more about the [Arweave File System](http://ardrive.io/arfs).
+
+Note: ArDrive exposes version history in the Info panel of the file.
+
+---
+
+# Public Preview
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-public-preview/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Get a permanent public preview URL for files stored in a Public Drive.
+
+All of the files on your Public Drive are given a URL that can be searched and shared as any other web address.
+
+To locate the full URL address highlight a file within your public folder.
+
+In the details panel, select the square with a diagonal arrow - this is the public preview button. It will load any browser compatible data. This includes photos, music, movies, and PDFs.
+
+## URLs on the Permaweb
+
+When you click the public preview button, a new tab in your browser will open. You're viewing your data on the permaweb. The first string of numbers is a sandbox that turbo-gateway.com uses, the string of characters after turbo-gateway.com is the data item's transaction ID.
+
+Once you have this unique URL you can share it with others, embed it on a website or bookmark it in your browser as a record of your public permaweb files.
+
+**Warning:**  Not all file types can be previewed in the browser. If a file type cannot be previewed, it will automatically download the file to your computer.
+
+---
+
+# Rename A File Or Folder
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Rename files and folders in ArDrive while preserving permanent data history.
+
+To rename a file or folder, click on the file or folder you want to be renamed.
+
+In the details panel, click on the icon that looks like a pencil.
+
+Clicking the icon will bring up a “Rename File” window with the current name of the File displayed in the text box.
+
+Click the “Rename” button below and the file get its new name. A new transaction will be submitted to the Arweave network, using this new name with the file’s existing data.
+
+**NOTE:** All data stored in ArDrive is immutable and cannot be changed. But this doesn’t mean we cannot append new information and metadata to that file.
+
+ArDrive lets you do things like rename and move your files and folders after they have been uploaded. This ability to edit the metadata lets you keep a nice organized view of your permanent data.
+
+Learn more about [ArFS](https://ardrive.io/arfs) in our FAQ Video: [https://www.youtube.com/watch?v=9gv4S4K4Kro](https://www.youtube.com/watch?v=9gv4S4K4Kro)
+
+---
+
+# Storing Your NFT Data With ArDrive Web
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/
+Category: Using ArDrive Apps
+Section: Actions
+Description: Store NFT assets and metadata permanently with ArDrive.
+
+Whether you are creating NFTs on Ethereum, Solana, or Tezos, storing your NFT data and metadata with ArDrive means you do not have to worry about it disappearing.
+
+ArDrive makes your art & metadata fault tolerant and tamper proof.
+
+Storing your NFT data on ArDrive is a simple and straightforward process.
+
+_At this point, we’re assuming that you have already created an account and are logged in to ArDrive. If not, get started with our_ [_Create a Wallet_](/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive) _article first._
+
+## **Create a Public Drive**
+
+You want your NFT to be seen - it needs be in a public Drive!
+
+## **Upload your image files**
+
+## **Upload your NFT metadata**
+
+Our good friend Cowboy Coder went in depth into [NFT metadata](https://ardrive.io/arweave-and-nft-metadata/). Upload your metadata the same way you uploaded your images.
+
+## **Create a Manifest for your metadata**
+
+Just like you made one for your images.
+
+## **Working with NFT marketplaces**
+
+Now you have an NFT on the Arweave blockweave where both the transaction and image will last permanently.
+
+You can now upload your NFT to other popular NFT marketplaces like [OpenSea](https://opensea.io/) with confidence that the NFT that you are selling will be around forever!
+
+When listing your NFT be sure that you share your Arweave link with your file’s Data Transaction ID, eg `https://turbo-gateway.com/4OIZ1pAi3KZvEnZZ1af15BIuL3Y_ql32WWIrTpQc69Y`
+
+This is sometimes referenced as
+
+`ar://4OIZ1pAi3KZvEnZZ1af15BIuL3Y_ql32WWIrTpQc69Y`
+
+---
+
+# ArDrive Password
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Understand how your ArDrive password protects private Drives and why it must be stored safely.
+
+## ArDrive requires a password for any Private Drives that you create.
+
+##
+
+Your ArDrive password serves as additional security during your session. Encrypting your wallet at rest and as also serving as entropy for encrypting Private Drives.  This password is never uploaded or stored off your device, ensuring nobody else can access your data, except for you and those who you share it with.
+
+**This password cannot be reset or changed if you make a Private Drive during your session. Make sure to write it down & keep it in a secure location since there is no recovery mechanism.  If this password is lost, you will not be able to decrypt your Private Drive data!**
+
+Accounts that don't create private Drives can use different passwords.
+
+---
+
+# Create An Arweave Wallet With ArDrive
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
+
+## Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
+
+<YouTubeEmbed videoId="kUaCpRXItss" />
+
+1.  Visit [app.ardrive.io](https://app.ardrive.io) and click **“New User? Get Started here”.**
+
+2.  We will walk you through a few things that may be new to you compared to other apps in the signup process.
+
+3.  A 12 word seed phrase and keyfile are generated with the option to download the keyfile.
+
+4.  Write down the seed phrase & store it in a secure location.
+
+5.  Confirm the seed phrase by providing the words ArDrive asks for in order to download the keyfile.
+
+6.  Download your keyfile and keep it in a safe place.
+
+7.  Create and confirm a password that you will use with your seed phrase or keyfile if you create a private Drive.
+
+    **NOTE:** The seed phrase cannot be recovered by anybody. The keyfile can be recovered by using the seed phrase in ArDrive or another wallet service like Wander.
+
+---
+
+# Fund Your Wallet
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Fund ArDrive uploads with Turbo Credits or AR tokens.
+
+There are two ways to purchase permanent storage with ArDrive:
+
+1. **ArDrive Turbo**: use a credit or debit card to buy Credits.
+
+ArDrive Turbo is an upload service that makes it simple to pay for permanent storage without managing AR directly. In the app, use the Turbo top-up flow to add Credits to your wallet.
+
+Questions about Turbo? Visit the [Turbo FAQ](/help/faqs-faq-ardrive-turbo).
+
+<YouTubeEmbed videoId="H3GuC033w5o" />
+
+2. **Arweave Tokens (AR)**: use AR from your Arweave wallet.
+
+ArDrive is based on the [Arweave network](https://arweave.org/ "https://arweave.org/") and the $AR token is used to pay the global network of operators who secure the network & provide storage.
+
+If you choose to use AR, buy it through an exchange or swap service that is available in your region, then transfer the AR to your Arweave wallet address. Always verify wallet addresses carefully before sending funds.
+
+---
+
+# Gifting Credits
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-gifting-credits/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Send and redeem ArDrive Turbo Credits with gift codes.
+
+## How to Gift Credits
+
+You can send Credits through the Gifting App at [https://gift.ardrive.io/](https://gift.ardrive.io//). You can also find the direct link to the Gifting App on the ArDrive website or in the ArDrive App under the gift box icon.
+
+1.  Select or input the USD value you want to spend.
+2.  Provide the gift recipient's email address.
+3.  Add a personalized note (optional).
+4.  Confirm the information and proceed to the payment page, where you will provide your payment information.
+
+To better understand the purchasing power of Credits, check out our [Pricing Calculator](https://ardrive.io/pricing/).
+
+## Redeeming Gifts
+
+Gift codes can be redeemed in the ArDrive App or the Redemption App. New users should first create a new account/wallet before they can redeem their gift code.
+
+**To redeem in ArDrive:**
+
+1.  Login to [ArDrive](https://app.ardrive.io/ "https://app.ardrive.io") or create a new account [here](https://app.ardrive.io/#/get-started "https://app.ardrive.io/#/get-started").
+
+2.  Click on the gift icon in the right corner and select “Redeem gift”.
+
+3.  Enter the email address of the gift recipient.
+
+4.  Enter the gift code provided.
+
+5.  Click on "Confirm".
+
+The funds should appear in the recipient's wallet, visible in the Profile menu shortly after redemption.
+
+**In the Redemption App:**
+
+1.  Go to the [Redemption App](https://gift.ardrive.io/redeem "https://gift.ardrive.io/redeem").
+
+2.  Specify the wallet address where you want the funds to go.
+
+3.  Enter the gift code provided.
+
+4.  Provide the email address of the gift recipient.
+
+5.  Click on "Redeem".
+
+The funds should appear in the recipient's wallet visible in the Profile menu of the [ArDrive App](https://app.ardrive.io) shortly after redemption.
+
+---
+
+# Log Into ArDrive Keyfile
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Log in to ArDrive using your Arweave wallet keyfile and password.
+
+### Logging into ArDrive with your keyfile is an easy way to sign into ArDrive web.
+
+1.  Go to [app.ardrive.io](https://app.ardrive.io/ "https://app.ardrive.io") and choose ‘Select a Keyfile’ to proceed.
+
+2.  Locate the keyfile on your computer and select it. [ArDrive encrypts the keyfile securely on the backend](/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work "/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work").
+
+3.  Enter your ArDrive password to log in.
+
+Learn more about keyfiles in the FAQ Section.
+
+---
+
+# Log Into ArDrive MetaMask Wallet
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.
+
+Users can login to ArDrive with MetaMask, making it easy to get started with storing data permanently without needing a new wallet browser extension or keys to worry about.
+
+From [app.ardrive.io](https://app.ardrive.io), select Log In, and Continue with MetaMask.
+
+This will begin a process that generates a new Arweave wallet behind the scenes, that is safely and securely derived from your Ethereum wallet in MetaMask.
+
+You'll be prompted to connect the wallet to ArDrive and sign two messages through MetaMask.
+
+If it's the first time you're logging into ArDrive with MetaMask, you'll be prompted to create a password. **It's important to securely store this password, as entering a different password will prevent access to the newly created Arweave wallet.  It cannot be changed or recovered by an administrator.**
+
+Users continue through the ArDrive onboarding steps and enter the app securely logged in with a new Arweave wallet derived from Ethereum keys through MetaMask. Users can write down or copy the seedphrase for the new Arweave wallet or download the keyfile. Users can skip this and continue to access ArDrive through MetaMask with the password created during setup.
+
+Once logged in, users can top up using their credit card with Turbo, or even send and spend AR from their new Arweave wallet.
+
+Want to export your Arweave key and store it in an Arweave wallet? Keyfiles can always be downloaded after logging into ArDrive by clicking your wallet address in the top right corner.  These can be stored securely offline, or within Arweave wallet apps like Wander.io.
+
+---
+
+# Log Into ArDrive Seed Phrase
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Log in to ArDrive with an existing seed phrase and your ArDrive password.
+
+### Logging into ArDrive with your seed phrase is a secure way to log into ArDrive without having to keep a keyfile on your computer.
+
+1.  Go to [app.ardrive.io](https://app.ardrive.io/ "https://app.ardrive.io") and select ‘Enter Seed Phrase’ to proceed.
+
+2.  Enter the 12 word seed phrase in the order it was given seperated by a space. When entered correctly, ArDrive generates the keyfile securely on the backend keeping it encrypted within the app.
+
+3.   Enter your ArDrive password to log in.
+
+Learn more about Seed Phrases in the FAQ Section.
+
+---
+
+# Log Into ArDrive With Wander
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Use Wander to manage an Arweave wallet and log in to ArDrive.
+
+What is Wander?
+
+Wander is a Chrome browser extension that makes it easy to manage your digital wallet for ArDrive.  If you’ve ever used MetaMask before, you’ll find Wander similar.
+
+Wander simplifies the login experience because your wallet is encrypted and safely stored within Wander. ArDrive can then securely access it as needed.
+
+* * *
+
+## Get Started
+
+1.  Go to the [**Wander website**](https://arconnect.io) to download the Wander Chrome extension
+
+2.  Press on the ‘Download for Chrome’ button
+
+3.  You will be redirected to the Wander page of the Chrome store
+
+4.  Once at that page press the ‘Add to Chrome’ button
+
+5.  A pop-up will appear and please press ‘add extension’ and you will be directed to the Welcome page for Wander
+
+## Download Wander
+
+We are now on the “Welcome to Wander” page
+
+1.  Create a password for Wander. This password is not the same as your password for ArDrive.
+
+**Note:** Make sure to write down your Wander password as it can’t be recovered.
+
+2\. You will be asked to either create a new wallet or load a wallet.
+
+## Add a Wallet
+
+-   To make a new wallet with Wander, press the “New Wallet” button, then copy the seedphrase and download the keyfile.
+
+**Note:** Make sure to save your seedphrase and keyfile somewhere safe as they are not able to be recreated if lost.
+
+-   The new wallet will be loaded into Wander automatically, but will have no AR.
+
+## Log into the ArDrive using the digital wallet from Wander
+
+1.  Visit the [**ArDrive login screen**](https://app.ardrive.io)
+
+2.  Select the Wander option
+
+3.  Log in with your ArDrive password
+
+---
+
+# Attach A Drive
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Attach a shared public or private Drive to your account from a Drive link.
+
+Attach Drives is the way to receive a Public or Private Drive that has been shared with you. There is no cost to attach a Drive to your account or download any files from that Drive.
+
+## Use a Drive Link to attach a Drive
+
+The easiest way to attach a Drive to your account is to simply click on a Drive link that has been given to you. Drives are automatically attached if they are accessed via a Drive Sharing link.
+
+Once you click on the link (and [login to ArDrive](/help), if needed) your new Drive will appear under a ‘Shared Drives’ heading in the left side menu.
+
+## Use the new button to attach a Drive
+
+If you have the 36-character Drive ID, you can also use the **+NEW** button to attach a Drive.
+
+Go to the control center of ArDrive and click the **+NEW** button.
+
+Four options will appear including ‘Attach Drive’.
+
+Click on Attach Drive and a popup box will appear at the center of your screen.
+
+The pop up will have a place for you to put your 36-character Drive ID that your friend shared with you and a box that allows you to name the Drive. You can choose any name you wish for this Drive. It doesn’t have to be the same name that the original creator used.
+
+Once you press ‘attach’ the Drive will appear under a ‘Shared Drives’ heading in the left side menu.
+
+---
+
+# Create A Snapshot
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-a-snapshot/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Create Drive snapshots to speed up future syncing for large public or private Drives.
+
+## Snapshots are rollups of your Drive - it makes syncing your Drive in future sessions much faster.
+
+**QuickSync** a roll up of your Drive's ArFS metadata into a single snapshot, meaning much faster syncing times for your Drive in future sessions.
+
+This feature greatly improves the experience of power users with large Drives, all thanks to the ArFS protocol. Snapshots can be created for both your public & private Drives and decreases the sync time needed when you share/attach Drives with snapshots.
+
+1.  Select the Drive you want to create a snap shot for, hit the **New** button, and select **Advanced**, and **New Snapshot**.
+2.  Select **proceed**.
+3.  ArDrive determines the size & cost of uploading the Snapshot, click **upload** to proceed.
+4.  Your Snapshot is created & the next time you login, you'll notice faster Drive syncing.
+
+---
+
+# Create An Arweave Manifest
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.
+
+# Overview
+
+Arweave Manifests can unlock new and unique experiences that can only be made possible on the Permaweb.
+
+An Arweave Manifest is a mapping of Arweave Transaction IDs and friendly names. This map is put into a standardized, JSON structure and permanently stored on Arweave, and it allows users to create logical groupings of content. Arweave Gateways can interpret this structure, so users can then reference individual transactions by their file name and/or path.
+
+Manifests allow you to use friendlier URLs like...
+
+[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/0.png](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
+[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/333.png](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
+
+...rather than opaque Arweave transaction IDs that ordinarily reference your data:
+[https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0](https://eev46qzbxsuwzsou7p4xu3trfpa63x6b3hpon5l46hnrisudhswq.turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
+[https://turbo-gateway.com/nHuFsR2Y-e\_qtnsmj0avn37CTWxlZ4zvG\_CKwtldK3I](https://turbo-gateway.com/nHuFsR2Y-e_qtnsmj0avn37CTWxlZ4zvG_CKwtldK3I)
+
+With ArDrive, any Public Drive or Folder can be turned into a Manifest. The file names and paths would each be represented within the Arweave Manifest, making it easier for developers and users to reference their content by the names used on their local file systems.
+
+Want to learn how it works and see some examples? [Check out our detailed technology article.](/help/understanding-the-permaweb-general-arweave-manifests/)
+
+# Instructions
+
+Creating an Arweave Manifest is easy with ArDrive.
+
+1.  Navigate to your Public Drive, and click the “New” button and "Advanced" and select “Create Manifest”.
+
+1.  Enter in the name for your Arweave Manifest and click “Next”
+
+1.  Select the location to create the Manifest out of.
+
+    1.  Selecting the top level of the Drive will create a manifest out of all of the Drive’s content, including subfolders.
+
+    2.  Selecting an individual folder will create a manifest out of all of that Folder’s content, including subfolders
+
+2.  View and confirm the price of the Manifest and upload it to ArDrive
+
+After the Manifest is created and uploaded, it will have a special icon indicating that it is an Arweave Manifest.
+
+Congratulations! You can now access any of the Arweave Transactions referenced in the Manifest using the its friendlier file path and name. [See our technical article on for more references.](/help/understanding-the-permaweb-general-arweave-manifests/)
+
+Clicking the “Preview Link” for a Manifest will load the default `index.html` page referenced within the Manifest.
+
+Clicking the “Download Link” for a Manifest will download the default `index.html` page referenced within the Manifest.
+
+No `index.html`? No problem! The first file contained in the Manifest will act as the default file that is loaded when the Manifest is previewed, and all other files can still be referenced with their friendly names.
+
+**NOTE:** Check the paths that your Manifest is using by checking the raw endpoint: `turbo-gateway.com/raw/ManifestTXID` into your browser.
+
+# Updating a Manifest
+
+Need to make changes to your permanent web app or NFT collection? ArDrive makes it easy for users to quickly adjust a specific file or folder, and then recreate a new manifest containing the updated transaction IDs and friendly names. Just like any other file in ArDrive, a new Manifest revision can be created by reusing the existing Manifest name, allowing permanent version control over your site or app.
+
+# Want it Custom?
+
+The ArDrive CLI also allows you to create a manifest out of a given Public Drive or Folder, and takes it a step further.
+
+With the CLI, developers can quickly create and export a preview of their manifest. This preview can be modified in a standard text editor to fit any use case, like adding other Arweave Transaction IDs that aren’t contained within your Drive, or changing the friendly names. Once the manifest has been customized, the CLI can quickly upload it, using the custom “Arweave Manifest” content type.
+
+Detailed instructions can be found on our [Docs Portal](https://docs.ardrive.io).
+
+---
+
+# Create New Drive
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Create a new public or private Drive for permanent file storage on the permaweb.
+
+ArDrive is built around “Drives” - permanent digital storage containers. Drives are like hard drives on the permaweb where you can put all kinds of files - audio, video, photo, code - and group them in folders to your heart’s content.
+
+You must create a Drive before you start uploading your files.
+
+## Getting Started
+
+To get started with ArDrive, you’ll first want to create a Drive.
+
+Hit the **+NEW** button and a drop down list will appear with our seven options.
+
+Select “New Drive”
+
+A pop screen will appear that gives you the option to name your Drive and to select whether it is public or private.
+
+★ If you select “Private” then only you will have access to that Drive. If you select “Public” you are giving access to all files in the Drive to everyone forever. An automatic URL will be created for this Drive and this URL cannot be deleted.
+
+When you create a new Drive, the default is for it to be private. Be careful! If you accidentally publish your information to a public Drive there is no delete button.
+
+## New Drives added to the Sidebar
+
+Once you create the Drive it will now appear on the sidebar list under personal Drives.
+
+After you select the Drive, you can now add folders or upload files to it.
+
+<YouTubeEmbed videoId="lurTntJbd1U" />
+
+---
+
+# New Folders
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Create folders to organize files inside an ArDrive Drive.
+
+After [creating a Drive](/help/using-ardrive-apps-using-ardrive-create-new-drive/), you can upload any file you want to it, but you can keep your Drive organized by creating folders.
+
+Click on the **+NEW** button and choose “New Folder”.
+
+Once you create a new folder it will appear under the Drive that you have assigned it to.
+
+Select the folder that you have created, and it will take you another level down into that folder.
+
+Navigate easily through your Drive by clicking on the folder names that now appear as breadcrumbs in the top navigation.
+
+**NOTE:** Folders cannot be shared at this time.
+
+---
+
+# The New Button
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.
+
+The first thing to know about using ArDrive is that the big red **+NEW** button in the top left corner is your best friend.
+
+The **+NEW** button is the control center of the app, where you control your Drive:
+
+-   [Create New Drives](/help/using-ardrive-apps-using-ardrive-create-new-drive/)
+
+-   [Create New Folders](/help/using-ardrive-apps-using-ardrive-new-folders/)
+
+-   [Attach a Drive](/help/using-ardrive-apps-using-ardrive-attach-a-drive/) made by someone else
+
+-   [Upload Files](/help/using-ardrive-apps-using-ardrive-uploading-files/)
+
+-   [Create a manifest](/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest)
+-   Create a Snapshot
+
+---
+
+# Uploading Files
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Upload files from a Drive using the +NEW button, review the one-time storage price, and wait for upload confirmation.
+
+After [creating a Drive](/help/using-ardrive-apps-using-ardrive-create-new-drive/) you are ready to upload a file.
+
+Click into the Drive where you want to upload your file.
+
+Now click on the **+NEW** button and select “Upload file(s)”
+
+ArDrive will now allow you to select from the file(s) on your desktop.
+
+Select which file you want and press “Upload”
+
+ArDrive will then calculate the cost of the file(s) you want to upload to the permaweb. A pop up screen will appear that will confirm the file(s) you have selected, the size of each file, and the one-time cost.
+
+You will now have the ability to cancel the transaction at no cost or upload the file for the cost indicated.
+
+<YouTubeEmbed videoId="51Gpg3-GFZw" />
+
+## What file sizes can I upload?
+
+Upload limits depend on upload method, browser, and platform. See [ArDrive App Limits](/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits) for the current limits.
+
+Our calculation of file size may be slightly larger than the file size listed on your computer given the unique way that data is stored and encrypted on the permaweb.
+
+## How long does it take to upload?
+
+Decentralized, permanent data storage doesn’t happen in an instant. Upload speeds are dependent on your internet connection. ArDrive waits til there are 15 confirmations on your uploaded data to ensure there are no forks in the chain.
+
+**NOTE:** Do not leave from the uploading screen until the upload completes. If you exit the browser before it has completed your file will not be uploaded. You will not be charged if a file does not fully upload, but any progress towards uploading your file will be lost.
+
+## Understanding File Status
+
+ArDrive tries to track the status of each transaction in order to let you know when your files are stored on the network.
+
+-   Green status means the file was successfully replicated and mined on the network.
+
+-   Orange status means the file upload transaction is in progress.
+
+    -   It could take up to 30 minutes for this process to complete, permanence requires patience!
+
+-   Red status means the file upload transaction may have failed
+
+    -   If a file is not mined, the AR payment made for this file is refunded.

@@ -182,6 +182,14 @@ Use constants from `@/components/site-container`:
 - Required: `title`, `description`
 - Optional: `heroImage`, `ogImage`, `archived`
 
+### Help (`content/help/`)
+- Filename: `<slug>.mdx` (kebab-case)
+- Required frontmatter: `title`, `description`, `category`, `section`
+- Optional: `date`, `archived`
+- `archived: true` hides articles from generated agent indexes
+- Help content automatically generates `/llms.txt`, `/llms-full.txt`, and `/help/index.json`
+- Run `yarn generate-agent-indexes` after changing help content if you need to refresh those files without a full build
+
 ### Legal (`content/legal/`)
 - Filename: `<slug>.mdx`
 - Required: `title`

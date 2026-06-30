@@ -1,0 +1,660 @@
+{
+  "site": "ArDrive",
+  "baseUrl": "https://ardrive.io",
+  "contentType": "help_article_index",
+  "articles": [
+    {
+      "slug": "ardrive-as-a-platform-ardrive-platform-ardrive-cli",
+      "title": "ArDrive CLI",
+      "description": "Use the ArDrive CLI for terminal-based ArDrive workflows.",
+      "category": "ArDrive as a Platform",
+      "section": "ArDrive Platform",
+      "pathname": "/help/ardrive-as-a-platform-ardrive-platform-ardrive-cli/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-cli/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-ardrive-platform-ardrive-core",
+      "title": "ArDrive Core",
+      "description": "ArDrive Core contains the essential back end features for the ArDrive apps, written in TypeScript. While the Arweave network gives the power of.",
+      "category": "ArDrive as a Platform",
+      "section": "ArDrive Platform",
+      "pathname": "/help/ardrive-as-a-platform-ardrive-platform-ardrive-core/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-core/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-arweave-file-system",
+      "title": "Arweave File System",
+      "description": "Technical overview of ArFS, the Arweave File System used by ArDrive.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-arweave-file-system/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-arweave-file-system/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-drive-entity",
+      "title": "Drive Entity",
+      "description": "Technical overview of the ArFS Drive entity and root folder relationship.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-drive-entity/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-drive-entity/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-move-file",
+      "title": "Move File",
+      "description": "Technical overview of how ArFS represents moving files within a Drive.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-move-file/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-move-file/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-move-folder",
+      "title": "Move Folder",
+      "description": "Technical overview of how ArFS represents moving folders within a Drive.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-move-folder/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-move-folder/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-rename-drive",
+      "title": "Rename Drive",
+      "description": "Technical overview of how ArFS represents Drive renames.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-rename-drive/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-drive/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-rename-file",
+      "title": "Rename File",
+      "description": "Technical overview of how ArFS represents file renames.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-rename-file/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-file/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-rename-folder",
+      "title": "Rename Folder",
+      "description": "Technical overview of how ArFS represents folder renames.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-rename-folder/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-folder/",
+      "headings": []
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-schema-diagrams",
+      "title": "Schema Diagrams",
+      "description": "Technical diagrams for public and private ArFS Drive structures.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-schema-diagrams/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-schema-diagrams/",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "ArFS 0.11 Private Drive View"
+        }
+      ]
+    },
+    {
+      "slug": "ardrive-as-a-platform-arweave-file-system-update-file-version",
+      "title": "Update File Version",
+      "description": "Technical overview of how ArFS represents new file versions.",
+      "category": "ArDrive as a Platform",
+      "section": "Arweave File System",
+      "pathname": "/help/ardrive-as-a-platform-arweave-file-system-update-file-version/",
+      "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-update-file-version/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-ardrive-on-the-permaweb-dapp",
+      "title": "ArDrive On The Permaweb",
+      "description": "Use the permanent ArDrive dApp entry point on the permaweb.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-ardrive-on-the-permaweb-dapp/",
+      "url": "https://ardrive.io/help/faqs-faq-ardrive-on-the-permaweb-dapp/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-ardrive-turbo",
+      "title": "ArDrive Turbo",
+      "description": "Common questions about ArDrive Turbo Credits, payments, receipts, refunds, and support.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-ardrive-turbo/",
+      "url": "https://ardrive.io/help/faqs-faq-ardrive-turbo/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-arweave-wallets",
+      "title": "Arweave Wallets",
+      "description": "Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-arweave-wallets/",
+      "url": "https://ardrive.io/help/faqs-faq-arweave-wallets/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-everything-you-need-to-know-about-ardrive",
+      "title": "Everything You Need To Know About ArDrive",
+      "description": "Common questions about permanence, privacy, uploads, sharing, and permaweb URLs in ArDrive.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-everything-you-need-to-know-about-ardrive/",
+      "url": "https://ardrive.io/help/faqs-faq-everything-you-need-to-know-about-ardrive/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-how-do-keyfile-and-seed-phrase-login-work",
+      "title": "How Do Keyfile And Seed Phrase Login Work",
+      "description": "Learn how keyfile and seed phrase login work and how to protect wallet access.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/",
+      "url": "https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-how-do-turbo-conversions-work",
+      "title": "How Do Turbo Conversions Work",
+      "description": "Understand how Turbo upload prices are estimated from file size, AR, and Credits.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-how-do-turbo-conversions-work/",
+      "url": "https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-what-are-the-privacy-and-encryption-standards",
+      "title": "What Are The Privacy And Encryption Standards?",
+      "description": "Private Drive files are encrypted with AES-256-GCM, while public files remain public forever.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-what-are-the-privacy-and-encryption-standards/",
+      "url": "https://ardrive.io/help/faqs-faq-what-are-the-privacy-and-encryption-standards/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload",
+      "title": "What Currencies Or Cryptocurrencies Can I Use To Upload?",
+      "description": "ArDrive supports permanent storage payments through Turbo Credits or AR tokens.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload/",
+      "url": "https://ardrive.io/help/faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps",
+      "title": "What Makes ArDrive Different From Other File Storage Apps",
+      "description": "What makes ArDrive different from other file storage apps?",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/",
+      "url": "https://ardrive.io/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-faq-where-can-i-make-a-feature-request",
+      "title": "Where Can I Make A Feature Request",
+      "description": "Where can I make a feature request?",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-where-can-i-make-a-feature-request/",
+      "url": "https://ardrive.io/help/faqs-faq-where-can-i-make-a-feature-request/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-ardrive-app-limits",
+      "title": "ArDrive App Limits",
+      "description": "Current upload and download limits for ArDrive by upload method, platform, and browser.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors",
+      "title": "Bad Gateway And Network Errors",
+      "description": "Troubleshoot 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, and frontend errors in ArDrive Web.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "What to do"
+        }
+      ]
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file",
+      "title": "Cannot Access Or Retrieve A File",
+      "description": "If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, AR.IO, or gateway errors, the issue may be temporary gateway availability.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "What to do"
+        }
+      ]
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive",
+      "title": "Change Gateway URL For ArDrive",
+      "description": "Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-check-browser-console-logs",
+      "title": "Check Browser Console Logs",
+      "description": "Browser console logs and network errors are the best way to understand ArDrive Web issues and help support troubleshoot login, gateway, upload, download, preview, or sync problems.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs/",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "How to open the browser console"
+        },
+        {
+          "depth": 1,
+          "text": "What to look for"
+        },
+        {
+          "depth": 1,
+          "text": "What to send support"
+        }
+      ]
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-clearing-your-cache",
+      "title": "Clearing Your Cache",
+      "description": "Clear browser cache for app.ardrive.io when files, folders, drives, or statuses look stale.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-drive-syncing-issues",
+      "title": "Drive Syncing Issues",
+      "description": "Drive syncing issues are usually caused by intermittent gateway indexing delays and often resolve on their own within a few hours.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds",
+      "title": "File Upload Issues And Workarounds",
+      "description": "Troubleshoot file upload status, gateway indexing delays, and transaction visibility.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/",
+      "headings": []
+    },
+    {
+      "slug": "faqs-help-and-troubleshooting-guides-login-trouble",
+      "title": "Login Trouble",
+      "description": "Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-login-trouble/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "What to do"
+        }
+      ]
+    },
+    {
+      "slug": "understanding-the-permaweb-general-arweave-manifests",
+      "title": "Arweave Manifests",
+      "description": "Learn how Arweave Manifests map transaction IDs to friendly file names and paths.",
+      "category": "Understanding The Permaweb",
+      "section": "General",
+      "pathname": "/help/understanding-the-permaweb-general-arweave-manifests/",
+      "url": "https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/",
+      "headings": []
+    },
+    {
+      "slug": "understanding-the-permaweb-general-block-explorers",
+      "title": "Block Explorers",
+      "description": "Use Arweave block explorers to inspect transactions, wallets, and network activity.",
+      "category": "Understanding The Permaweb",
+      "section": "General",
+      "pathname": "/help/understanding-the-permaweb-general-block-explorers/",
+      "url": "https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/",
+      "headings": []
+    },
+    {
+      "slug": "understanding-the-permaweb-general-what-is-the-permaweb",
+      "title": "What Is The Permaweb",
+      "description": "Learn what the permaweb is and how Arweave stores data permanently.",
+      "category": "Understanding The Permaweb",
+      "section": "General",
+      "pathname": "/help/understanding-the-permaweb-general-what-is-the-permaweb/",
+      "url": "https://ardrive.io/help/understanding-the-permaweb-general-what-is-the-permaweb/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-actions",
+      "title": "Actions",
+      "description": "Overview of common file, folder, and Drive actions in ArDrive.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-actions/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-actions/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-ardrive-explorer-view",
+      "title": "ArDrive Explorer View",
+      "description": "An overview of the buttons on the ArDrive Drive Explorer:",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-ardrive-explorer-view/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-download-a-file",
+      "title": "Download A File",
+      "description": "Download files from ArDrive without additional storage charges.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-download-a-file/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-drive-explorer",
+      "title": "Drive Explorer",
+      "description": "Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-drive-explorer/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-drive-sharing",
+      "title": "Drive Sharing",
+      "description": "Share public or private Drives with a link.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-drive-sharing/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-export-csv-table",
+      "title": "Export Csv Table",
+      "description": "Export a CSV inventory of Drive contents, transaction IDs, links, and metadata.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-export-csv-table/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-export-csv-table/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-file-sharing",
+      "title": "File Sharing",
+      "description": "Share public or private files from ArDrive with a link.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-file-sharing/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-hiding-files-from-your-drive",
+      "title": "Hiding Files From Your Drive",
+      "description": "Yes, hiding files or folders is possible with ArDrive.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-hiding-files-from-your-drive/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-licensing-your-data",
+      "title": "Licensing Your Data",
+      "description": "Apply licensing information to uploaded files to clarify reuse and attribution.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-licensing-your-data/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-move-a-file-or-folder",
+      "title": "Move A File Or Folder",
+      "description": "Move files or folders within the same Drive.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-move-a-file-or-folder/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-move-a-file-or-folder/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-new-file-versions",
+      "title": "New File Versions",
+      "description": "Upload a replacement file with the same name to create a new file version.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-new-file-versions/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-new-file-versions/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-public-preview",
+      "title": "Public Preview",
+      "description": "Get a permanent public preview URL for files stored in a Public Drive.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-public-preview/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-public-preview/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-rename-a-file-or-folder",
+      "title": "Rename A File Or Folder",
+      "description": "Rename files and folders in ArDrive while preserving permanent data history.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-rename-a-file-or-folder/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web",
+      "title": "Storing Your NFT Data With ArDrive Web",
+      "description": "Store NFT assets and metadata permanently with ArDrive.",
+      "category": "Using ArDrive Apps",
+      "section": "Actions",
+      "pathname": "/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-ardrive-password",
+      "title": "ArDrive Password",
+      "description": "Understand how your ArDrive password protects private Drives and why it must be stored safely.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-ardrive-password/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive",
+      "title": "Create An Arweave Wallet With ArDrive",
+      "description": "Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-fund-your-wallet",
+      "title": "Fund Your Wallet",
+      "description": "Fund ArDrive uploads with Turbo Credits or AR tokens.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-fund-your-wallet/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-gifting-credits",
+      "title": "Gifting Credits",
+      "description": "Send and redeem ArDrive Turbo Credits with gift codes.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-gifting-credits/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-gifting-credits/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-log-into-ardrive-keyfile",
+      "title": "Log Into ArDrive Keyfile",
+      "description": "Log in to ArDrive using your Arweave wallet keyfile and password.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet",
+      "title": "Log Into ArDrive MetaMask Wallet",
+      "description": "Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase",
+      "title": "Log Into ArDrive Seed Phrase",
+      "description": "Log in to ArDrive with an existing seed phrase and your ArDrive password.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-log-into-ardrive-arconnect",
+      "title": "Log Into ArDrive With Wander",
+      "description": "Use Wander to manage an Arweave wallet and log in to ArDrive.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-attach-a-drive",
+      "title": "Attach A Drive",
+      "description": "Attach a shared public or private Drive to your account from a Drive link.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-attach-a-drive/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-create-a-snapshot",
+      "title": "Create A Snapshot",
+      "description": "Create Drive snapshots to speed up future syncing for large public or private Drives.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-create-a-snapshot/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-a-snapshot/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-create-an-arweave-manifest",
+      "title": "Create An Arweave Manifest",
+      "description": "Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-create-new-drive",
+      "title": "Create New Drive",
+      "description": "Create a new public or private Drive for permanent file storage on the permaweb.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-create-new-drive/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-new-folders",
+      "title": "New Folders",
+      "description": "Create folders to organize files inside an ArDrive Drive.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-new-folders/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-the-new-button",
+      "title": "The New Button",
+      "description": "Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-the-new-button/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/",
+      "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-uploading-files",
+      "title": "Uploading Files",
+      "description": "Upload files from a Drive using the +NEW button, review the one-time storage price, and wait for upload confirmation.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-uploading-files/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/",
+      "headings": []
+    }
+  ]
+}

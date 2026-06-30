@@ -36,6 +36,21 @@ src/
 - **Use Cases** (`/use-cases`) — Industry applications
 - **Ecosystem** (`/ecosystem`) — Partner projects
 - **Cloudmap** (`/cloudmap`) — Gateway locations
+- **Help** (`/help`) — Product guides, FAQs, and troubleshooting
+
+## Agent-Friendly Help Indexes
+
+The build generates static files for AI agents and retrieval tools from `content/help/*.mdx`:
+
+- `/llms.txt` — concise site and help map
+- `/llms-full.txt` — full public help corpus in markdown-oriented text
+- `/help/index.json` — structured help article metadata
+
+Refresh them without a full build:
+
+```bash
+yarn generate-agent-indexes
+```
 
 ## Ask Arie Widget
 

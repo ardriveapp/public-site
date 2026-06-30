@@ -1,22 +1,108 @@
-# ar.io - Permanent Cloud Storage
+# ArDrive
 
-> ar.io provides permanent, decentralized cloud storage built on Arweave.
+> ArDrive provides permanent, decentralized storage powered by Arweave. This file maps the public site and help center for AI agents and retrieval tools.
 
-## About
-ar.io is the access layer for the permaweb, providing gateways, naming (ArNS),
-and tools for permanent data storage and retrieval.
+## Core Pages
 
-## Key Products
-- Gateways: Fast, resilient access to permanent data
-- ArNS: Permanent naming system for apps and data
-- Turbo: Upload service for permanent storage
+- [Home](https://ardrive.io/): Pay once. Store forever.
+- [Pricing](https://ardrive.io/pricing/): Estimate permanent storage costs.
+- [Developers](https://ardrive.io/developers/): Developer resources for building with ArDrive.
+- [Help](https://ardrive.io/help/): Product guides, FAQs, and troubleshooting.
+- [Contact](https://ardrive.io/contact/): Contact ArDrive support.
 
-## Documentation
-- Docs: https://docs.ar.io
-- GitHub: https://github.com/ar-io
-- Brand Kit (Human): https://ar.io/brand-kit
-- Brand Kit (Machine): https://ar.io/brand-kit/agents.json
+## Machine-Readable Help
 
-## Contact
-- Twitter: https://twitter.com/ar_io_network
-- Discord: https://discord.gg/ario
+- [Full help corpus](https://ardrive.io/llms-full.txt): All public help article bodies in markdown-oriented text.
+- [Help JSON index](https://ardrive.io/help/index.json): Structured help article metadata.
+
+## ArDrive as a Platform
+
+### ArDrive Platform
+
+- [ArDrive CLI](https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-cli/): Use the ArDrive CLI for terminal-based ArDrive workflows.
+- [ArDrive Core](https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-core/): ArDrive Core contains the essential back end features for the ArDrive apps, written in TypeScript. While the Arweave network gives the power of.
+
+### Arweave File System
+
+- [Arweave File System](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-arweave-file-system/): Technical overview of ArFS, the Arweave File System used by ArDrive.
+- [Drive Entity](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-drive-entity/): Technical overview of the ArFS Drive entity and root folder relationship.
+- [Move File](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-move-file/): Technical overview of how ArFS represents moving files within a Drive.
+- [Move Folder](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-move-folder/): Technical overview of how ArFS represents moving folders within a Drive.
+- [Rename Drive](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-drive/): Technical overview of how ArFS represents Drive renames.
+- [Rename File](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-file/): Technical overview of how ArFS represents file renames.
+- [Rename Folder](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-rename-folder/): Technical overview of how ArFS represents folder renames.
+- [Schema Diagrams](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-schema-diagrams/): Technical diagrams for public and private ArFS Drive structures.
+- [Update File Version](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-update-file-version/): Technical overview of how ArFS represents new file versions.
+
+## FAQs
+
+### FAQ
+
+- [ArDrive On The Permaweb](https://ardrive.io/help/faqs-faq-ardrive-on-the-permaweb-dapp/): Use the permanent ArDrive dApp entry point on the permaweb.
+- [ArDrive Turbo](https://ardrive.io/help/faqs-faq-ardrive-turbo/): Common questions about ArDrive Turbo Credits, payments, receipts, refunds, and support.
+- [Arweave Wallets](https://ardrive.io/help/faqs-faq-arweave-wallets/): Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.
+- [Everything You Need To Know About ArDrive](https://ardrive.io/help/faqs-faq-everything-you-need-to-know-about-ardrive/): Common questions about permanence, privacy, uploads, sharing, and permaweb URLs in ArDrive.
+- [How Do Keyfile And Seed Phrase Login Work](https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/): Learn how keyfile and seed phrase login work and how to protect wallet access.
+- [How Do Turbo Conversions Work](https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/): Understand how Turbo upload prices are estimated from file size, AR, and Credits.
+- [What Are The Privacy And Encryption Standards?](https://ardrive.io/help/faqs-faq-what-are-the-privacy-and-encryption-standards/): Private Drive files are encrypted with AES-256-GCM, while public files remain public forever.
+- [What Currencies Or Cryptocurrencies Can I Use To Upload?](https://ardrive.io/help/faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload/): ArDrive supports permanent storage payments through Turbo Credits or AR tokens.
+- [What Makes ArDrive Different From Other File Storage Apps](https://ardrive.io/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/): What makes ArDrive different from other file storage apps?
+- [Where Can I Make A Feature Request](https://ardrive.io/help/faqs-faq-where-can-i-make-a-feature-request/): Where can I make a feature request?
+
+### Help And Troubleshooting Guides
+
+- [ArDrive App Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/): Current upload and download limits for ArDrive by upload method, platform, and browser.
+- [Bad Gateway And Network Errors](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/): Troubleshoot 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, and frontend errors in ArDrive Web.
+- [Cannot Access Or Retrieve A File](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/): If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, AR.IO, or gateway errors, the issue may be temporary gateway availability.
+- [Change Gateway URL For ArDrive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/): Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen.
+- [Check Browser Console Logs](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs/): Browser console logs and network errors are the best way to understand ArDrive Web issues and help support troubleshoot login, gateway, upload, download, preview, or sync problems.
+- [Clearing Your Cache](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/): Clear browser cache for app.ardrive.io when files, folders, drives, or statuses look stale.
+- [Drive Syncing Issues](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/): Drive syncing issues are usually caused by intermittent gateway indexing delays and often resolve on their own within a few hours.
+- [File Upload Issues And Workarounds](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/): Troubleshoot file upload status, gateway indexing delays, and transaction visibility.
+- [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
+
+## Understanding The Permaweb
+
+- [Arweave Manifests](https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/): Learn how Arweave Manifests map transaction IDs to friendly file names and paths.
+- [Block Explorers](https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/): Use Arweave block explorers to inspect transactions, wallets, and network activity.
+- [What Is The Permaweb](https://ardrive.io/help/understanding-the-permaweb-general-what-is-the-permaweb/): Learn what the permaweb is and how Arweave stores data permanently.
+
+## Using ArDrive Apps
+
+### Actions
+
+- [Actions](https://ardrive.io/help/using-ardrive-apps-actions-actions/): Overview of common file, folder, and Drive actions in ArDrive.
+- [ArDrive Explorer View](https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/): An overview of the buttons on the ArDrive Drive Explorer:
+- [Download A File](https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/): Download files from ArDrive without additional storage charges.
+- [Drive Explorer](https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/): Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.
+- [Drive Sharing](https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/): Share public or private Drives with a link.
+- [Export Csv Table](https://ardrive.io/help/using-ardrive-apps-actions-export-csv-table/): Export a CSV inventory of Drive contents, transaction IDs, links, and metadata.
+- [File Sharing](https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/): Share public or private files from ArDrive with a link.
+- [Hiding Files From Your Drive](https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/): Yes, hiding files or folders is possible with ArDrive.
+- [Licensing Your Data](https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/): Apply licensing information to uploaded files to clarify reuse and attribution.
+- [Move A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-move-a-file-or-folder/): Move files or folders within the same Drive.
+- [New File Versions](https://ardrive.io/help/using-ardrive-apps-actions-new-file-versions/): Upload a replacement file with the same name to create a new file version.
+- [Public Preview](https://ardrive.io/help/using-ardrive-apps-actions-public-preview/): Get a permanent public preview URL for files stored in a Public Drive.
+- [Rename A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/): Rename files and folders in ArDrive while preserving permanent data history.
+- [Storing Your NFT Data With ArDrive Web](https://ardrive.io/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/): Store NFT assets and metadata permanently with ArDrive.
+
+### Getting Started
+
+- [ArDrive Password](https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/): Understand how your ArDrive password protects private Drives and why it must be stored safely.
+- [Create An Arweave Wallet With ArDrive](https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/): Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
+- [Fund Your Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/): Fund ArDrive uploads with Turbo Credits or AR tokens.
+- [Gifting Credits](https://ardrive.io/help/using-ardrive-apps-getting-started-gifting-credits/): Send and redeem ArDrive Turbo Credits with gift codes.
+- [Log Into ArDrive Keyfile](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/): Log in to ArDrive using your Arweave wallet keyfile and password.
+- [Log Into ArDrive MetaMask Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/): Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.
+- [Log Into ArDrive Seed Phrase](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/): Log in to ArDrive with an existing seed phrase and your ArDrive password.
+- [Log Into ArDrive With Wander](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/): Use Wander to manage an Arweave wallet and log in to ArDrive.
+
+### Using ArDrive
+
+- [Attach A Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/): Attach a shared public or private Drive to your account from a Drive link.
+- [Create A Snapshot](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-a-snapshot/): Create Drive snapshots to speed up future syncing for large public or private Drives.
+- [Create An Arweave Manifest](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/): Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.
+- [Create New Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/): Create a new public or private Drive for permanent file storage on the permaweb.
+- [New Folders](https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/): Create folders to organize files inside an ArDrive Drive.
+- [The New Button](https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/): Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.
+- [Uploading Files](https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/): Upload files from a Drive using the +NEW button, review the one-time storage price, and wait for upload confirmation.
