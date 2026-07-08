@@ -60,6 +60,7 @@
 - [Drive Syncing Issues](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/): Drive syncing issues are usually caused by intermittent gateway indexing delays and often resolve on their own within a few hours.
 - [File Upload Issues And Workarounds](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/): Troubleshoot file upload status, gateway indexing delays, and transaction visibility.
 - [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
+- [Sync Your Drive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/): Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.
 
 ## Understanding The Permaweb
 

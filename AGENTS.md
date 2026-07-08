@@ -236,4 +236,3 @@ Default fallback: `/previews/general-og.jpg`
 - ❌ Don't use `withBasePath()` with `<Link>` — causes double prefixing
 - ❌ Don't forget `"use client"` for client components
 - ❌ Don't use ar.io branding, colors (#5427C8), or content — this is ArDrive
-- ❌ "ardrive" is always lowercase in body text; "ArDrive" is correct in headings/titles

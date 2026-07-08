@@ -337,6 +337,33 @@
       ]
     },
     {
+      "slug": "faqs-help-and-troubleshooting-guides-sync-your-drive",
+      "title": "Sync Your Drive",
+      "description": "Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-sync-your-drive/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Start a manual sync"
+        },
+        {
+          "depth": 1,
+          "text": "Regular sync"
+        },
+        {
+          "depth": 1,
+          "text": "Deep sync"
+        },
+        {
+          "depth": 1,
+          "text": "When sync may not fix it"
+        }
+      ]
+    },
+    {
       "slug": "understanding-the-permaweb-general-arweave-manifests",
       "title": "Arweave Manifests",
       "description": "Learn how Arweave Manifests map transaction IDs to friendly file names and paths.",
