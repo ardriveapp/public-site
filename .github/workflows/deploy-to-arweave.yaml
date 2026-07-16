@@ -33,6 +33,12 @@ jobs:
 
       - name: Build Next.js application
         run: yarn build
+        env:
+          NODE_ENV: production
+          # Served at the root (ArNS / gateway TXID prefix handled at runtime), so no base path.
+          BASE_PATH: ""
+          NEXT_PUBLIC_BASE_PATH: ""
+          NEXT_PUBLIC_SITE_URL: https://ardrive.io
 
       - uses: permaweb/permaweb-deploy@v0.1.0
         with:
