@@ -1,12 +1,14 @@
 import type { LucideIcon } from "lucide-react";
 import { BookOpen, Code, Mail } from "lucide-react";
 import { FINAL_CTA_WIDTH_CLASS, SITE_CONTAINER_CLASS } from "@/components/site-container";
+import { EmailSupportButton } from "@/components/contact/EmailSupportButton";
 
 const CHANNELS: {
   icon: LucideIcon;
   title: string;
   desc: string;
   cta: { label: string; href: string };
+  email?: boolean;
 }[] = [
   {
     icon: BookOpen,
@@ -24,7 +26,8 @@ const CHANNELS: {
     icon: Mail,
     title: "Get in Touch",
     desc: "Reach out to support@ardrive.io",
-    cta: { label: "Email support", href: "mailto:support@ardrive.io" },
+    cta: { label: "Email us", href: "mailto:support@ardrive.io" },
+    email: true,
   },
 ];
 
@@ -84,14 +87,18 @@ export function ContactPage() {
                   <p className="mt-3 flex-1 text-sm leading-relaxed sm:text-[0.9375rem]" style={{ color: "rgba(250,250,250,0.5)" }}>
                     {c.desc}
                   </p>
-                  <a
-                    href={c.cta.href}
-                    target={c.cta.href.startsWith("http") ? "_blank" : undefined}
-                    rel={c.cta.href.startsWith("http") ? "noreferrer" : undefined}
-                    className="mt-8 inline-flex items-center justify-center rounded-full bg-fd-primary px-8 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-                  >
-                    {c.cta.label}
-                  </a>
+                  {c.email ? (
+                    <EmailSupportButton />
+                  ) : (
+                    <a
+                      href={c.cta.href}
+                      target={c.cta.href.startsWith("http") ? "_blank" : undefined}
+                      rel={c.cta.href.startsWith("http") ? "noreferrer" : undefined}
+                      className="mt-8 inline-flex items-center justify-center rounded-full bg-fd-primary px-8 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                    >
+                      {c.cta.label}
+                    </a>
+                  )}
                 </div>
               );
             })}
