@@ -92,7 +92,6 @@
 - [ArDrive Password](https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/): Understand how your ArDrive password protects private Drives and why it must be stored safely.
 - [Create An Arweave Wallet With ArDrive](https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/): Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
 - [Fund Your Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/): Fund ArDrive uploads with Turbo Credits or AR tokens.
-- [Gifting Credits](https://ardrive.io/help/using-ardrive-apps-getting-started-gifting-credits/): Send and redeem ArDrive Turbo Credits with gift codes.
 - [Log Into ArDrive Keyfile](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/): Log in to ArDrive using your Arweave wallet keyfile and password.
 - [Log Into ArDrive MetaMask Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/): Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.
 - [Log Into ArDrive Seed Phrase](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/): Log in to ArDrive with an existing seed phrase and your ArDrive password.
