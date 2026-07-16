@@ -1,0 +1,33 @@
+ArDrive Public Site
+Copyright 2026 ArDrive
+
+This product includes software developed by ArDrive and its contributors.
+
+The SOURCE CODE in this repository is licensed under the Apache License,
+Version 2.0 (see the LICENSE file).
+
+----------------------------------------------------------------------
+Brand, content, and font carve-out (NOT covered by the Apache License)
+----------------------------------------------------------------------
+
+The Apache-2.0 grant applies to the site's source code only. It does NOT
+grant any rights to the following, all of which are reserved:
+
+  * Trademarks and brand assets — the "ArDrive" and "AR.IO" names, logos,
+    wordmarks, and any associated brand marks. Apache-2.0 Section 6
+    expressly excludes trademark rights.
+
+  * Brand and marketing content — the copywriting, articles, case studies,
+    use-case pages, images, illustrations, and other creative content under
+    content/ and public/ (including public/brand/). These are copyrighted
+    works of ArDrive, all rights reserved, and may not be reused or
+    redistributed without written permission.
+
+  * Fonts — the Wavehaus typeface files under src/fonts/ are the property
+    of their respective foundry and are governed by that font's own license
+    agreement, NOT by the Apache License. They are included here for building
+    this site only. Do not redistribute or reuse the font files; obtain your
+    own license from the foundry for any other use.
+
+If you wish to reuse the code, you may do so under Apache-2.0. For any use of
+the ArDrive brand, content, or fonts, contact ArDrive for permission.
