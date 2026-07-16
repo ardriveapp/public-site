@@ -8,13 +8,13 @@ const SUPPORT_EMAIL = "mailto:support@ardrive.io";
 
 const SUPPORT_DETAILS = [
   "A short summary of the issue",
-  "Your public wallet address (the one connected when the issue happened)",
+  "Your public wallet address",
   "What you were trying to do, and what went wrong",
   "When it started, and whether it's happened more than once",
-  "Which product you're using (ArDrive web, CLI, ArNS, Turbo, gateway, or a custom integration)",
-  "Environment details: browser and version, operating system, or — for CLI — Node version and the command you ran",
-  "Any useful IDs: transaction ID, drive/file/folder ID, manifest transaction ID, ArNS name, ANT/process ID, or gateway URL",
-  "Screenshots or sanitized logs (browser console or error output), if you have them",
+  "Which product: ArDrive web, CLI, Turbo, or gateway",
+  "Environment: browser/OS, or for CLI, Node version and the command you ran",
+  "Useful IDs: transaction ID, drive/file/folder ID, or gateway URL",
+  "Screenshots or sanitized logs, if you have them",
 ];
 
 interface EmailSupportModalProps {
@@ -45,17 +45,6 @@ export function EmailSupportModal({
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [isOpen, onClose]);
-
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.body.style.overflow = previousOverflow;
-    };
-  }, [isOpen]);
 
   if (!isOpen || !mounted) return null;
 
@@ -126,9 +115,9 @@ export function EmailSupportModal({
           <a
             href={SUPPORT_EMAIL}
             onClick={onClose}
-            className="inline-flex w-full items-center justify-center rounded-full bg-fd-primary px-8 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+            className="inline-flex w-full cursor-pointer items-center justify-center rounded-full bg-fd-primary px-8 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
           >
-            Got it
+            Got it — email support
           </a>
         </div>
       </div>
