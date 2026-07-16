@@ -34,15 +34,9 @@ jobs:
       - name: Set GitHub Pages env
         id: base_path
         run: |
-          REPO_OWNER="${{ github.repository_owner }}"
-          REPO_NAME="${{ github.event.repository.name }}"
-          if [[ "$REPO_NAME" == *".github.io" ]]; then
-            echo "base_path=" >> $GITHUB_OUTPUT
-            echo "site_url=https://$REPO_NAME" >> $GITHUB_OUTPUT
-          else
-            echo "base_path=/$REPO_NAME" >> $GITHUB_OUTPUT
-            echo "site_url=https://$REPO_OWNER.github.io" >> $GITHUB_OUTPUT
-          fi
+          # Served from the custom domain (ardrive.io) at the root, so no base path.
+          echo "base_path=" >> $GITHUB_OUTPUT
+          echo "site_url=https://ardrive.io" >> $GITHUB_OUTPUT
 
       - name: Build
         run: yarn build
