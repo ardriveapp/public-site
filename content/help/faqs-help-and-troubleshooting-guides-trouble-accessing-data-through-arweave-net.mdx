@@ -1,0 +1,42 @@
+---
+title: "Trouble Accessing Data Through arweave.net?"
+description: "Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact."
+category: "FAQs"
+section: "Help And Troubleshooting Guides"
+---
+
+If a file will not load through `arweave.net`, the fastest way to narrow it down is to request the same identifier from a different public Arweave gateway. That tells you whether the data itself is unavailable or whether one gateway is having trouble serving it.
+
+`arweave.net` is a public gateway run independently of ArDrive and Turbo. We cannot change how it behaves or re-seed data there, but we can help you make sense of what the gateways are returning.
+
+# What to do
+
+1. Confirm the upload finished and the transaction or data item is finalized. A [block explorer](/help/understanding-the-permaweb-general-block-explorers) is the quickest way to check this.
+
+2. Copy one affected transaction ID or data-item ID.
+
+3. Load that identifier through another public Arweave gateway.
+
+4. Compare what each gateway returns.
+
+# What the results mean
+
+- **It loads through another gateway but not through `arweave.net`:** The data is there, so the issue is with how that gateway is serving or indexing it. Contact the gateway operator through the [Arweave Discord](https://discord.gg/V8hzfpYJd).
+
+- **It fails through every gateway:** This points to transaction confirmation, upload processing, or data availability rather than a single gateway. Visit our [contact page](/contact) with one identifier and ArDrive or Turbo support can help.
+
+- **The transaction never finalized or the upload failed:** Confirm the status on a [block explorer](/help/understanding-the-permaweb-general-block-explorers), then start with [File Upload Issues And Workarounds](/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds) and follow the steps for the service you uploaded with.
+
+# What to include if you contact us
+
+- One affected transaction ID or data-item ID
+
+- The gateway URLs you tested
+
+- The HTTP status or error you saw from each gateway
+
+- Whether the upload is finalized
+
+- Roughly when the problem started
+
+Please do not send full manifests, entire collections, or large diagnostic logs unless a support reviewer asks for them. Never share your seed phrase, private key, or wallet keyfile.

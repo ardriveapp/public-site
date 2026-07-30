@@ -35,8 +35,9 @@
 - [File Upload Issues And Workarounds](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/): Troubleshoot file upload status, gateway indexing delays, and transaction visibility.
 - [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
 - [Sync Your Drive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/): Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.
+- [Trouble Accessing Data Through arweave.net?](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/): Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact.
 - [Arweave Manifests](https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/): Learn how Arweave Manifests map transaction IDs to friendly file names and paths.
-- [Block Explorers](https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/): Use Arweave block explorers to inspect transactions, wallets, and network activity.
+- [Block Explorers](https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/): Use ViewBlock or ArScan to check a wallet's transaction history and confirm whether an upload reached Arweave.
 - [What Is The Permaweb](https://ardrive.io/help/understanding-the-permaweb-general-what-is-the-permaweb/): Learn what the permaweb is and how Arweave stores data permanently.
 - [Actions](https://ardrive.io/help/using-ardrive-apps-actions-actions/): Overview of common file, folder, and Drive actions in ArDrive.
 - [ArDrive Explorer View](https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/): An overview of the buttons on the ArDrive Drive Explorer:
@@ -82,7 +83,7 @@ The _[ArDrive Command Line Interface (CLI)](https://github.com/ardriveapp/ardriv
 
 Data uploaded via the ArDrive CLI, once indexed by Arweave's Gateways and sufficiently seeded across enough nodes on the network, can be accessed via ArDrive Web.
 
-All transactions successfully executed by ArDrive can always be inspected in the [Viewblock blockchain explorer](https://viewblock.io/arweave/).
+All transactions successfully executed by ArDrive can always be inspected in a [block explorer](/help/understanding-the-permaweb-general-block-explorers).
 
 # Intended Audience
 
@@ -1004,6 +1005,8 @@ Common signs include:
 
 - Advanced users can try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
 
+- If the problem occurs specifically when requesting data through `arweave.net`, compare the identifier across public gateways. See [Trouble Accessing Data Through arweave.net?](/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net).
+
 - If the problem continues, visit our [contact page](/contact) and include what you were trying to do plus any browser console errors you saw, such as 502, 503, 504, bad gateway, network errors, resource errors, AR.IO errors, or GraphQL errors.
 
 ---
@@ -1048,6 +1051,10 @@ Common signs include:
 - If the file should be in your drive but does not appear, or its status is stuck red or orange, try manually syncing your drive. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
 
 - Advanced users can try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+
+- If the file is available through another public gateway but not through `arweave.net`, see [Trouble Accessing Data Through arweave.net?](/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net).
+
+- To confirm the file is stored on Arweave at all, look up its transaction ID on a [block explorer](/help/understanding-the-permaweb-general-block-explorers). A transaction can be confirmed on-chain and still be slow to appear in ArDrive.
 
 - If the problem continues, visit our [contact page](/contact) and include the file link or transaction ID if available, plus any browser console errors you saw.
 
@@ -1272,7 +1279,7 @@ End-to-end, this can take upwards of 30 minutes.
 
 -   Arweave Gateways have to index the transaction into a GraphQL index so ArDrive can find this file in the future. For “bundled” transactions like those that ArDrive uses to get you the best possible storage pricing, Gateway “unbundling” must take place before your transaction can be indexed and searchable by ArDrive. This process can take anywhere from a few minutes to a few hours during times of heavy network usage.
 
-After files are mined and indexed, they are accessible via ArDrive and any other Arweave block explorer, like Viewblock.
+After files are mined and indexed, they are accessible via ArDrive and visible on any Arweave [block explorer](/help/understanding-the-permaweb-general-block-explorers).
 
 # Tracking Upload Status
 
@@ -1302,17 +1309,9 @@ Using an Incognito Tab or logging out of ArDrive will clear your local cache of 
 
 # Using the Arweave Block Explorer
 
-Advanced users can look up every transaction they have made with their ArDrive Wallet by navigating to the Arweave Block Explorer, hosted by Viewblock
+A block explorer is another way to validate your transactions and their status on the Arweave network. Search your ArDrive wallet address to see every transaction you have made, or look up a single transaction ID to check whether it was mined into a block.
 
-[https://viewblock.io/arweave](https://viewblock.io/arweave)
-
-In the Block Explorer, you can search for your ArDrive Wallet address. It will show you every transaction you have made, including your ArDrive transactions. This is another way to validate your transactions and their status on the Arweave network.
-
-Is the symbol for an Arweave Token transaction. These transactions involve moving AR tokens from one wallet to another.
-
-This is the symbol for an Arweave Data transaction. These transactions involve uploading data to Arweave, and will include every ArDrive drive, folder and file upload.
-
-This is the symbol for an Arweave Bundled Data transaction. These transactions include multiple files packed into a single bundle and can also include the ArDrive Community Tip as well.
+See [Block Explorers](/help/understanding-the-permaweb-general-block-explorers) for the URLs to use, what the different transaction types mean, and why a confirmed transaction can still take time to appear in ArDrive.
 
 ---
 
@@ -1399,6 +1398,51 @@ If the gateway has not indexed the file, folder, or upload transaction yet, sync
 If you continue seeing gateway, GraphQL, 502, 503, 504, or bad gateway errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
 
 Advanced users can also try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+
+---
+
+# Trouble Accessing Data Through arweave.net?
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact.
+
+If a file will not load through `arweave.net`, the fastest way to narrow it down is to request the same identifier from a different public Arweave gateway. That tells you whether the data itself is unavailable or whether one gateway is having trouble serving it.
+
+`arweave.net` is a public gateway run independently of ArDrive and Turbo. We cannot change how it behaves or re-seed data there, but we can help you make sense of what the gateways are returning.
+
+# What to do
+
+1. Confirm the upload finished and the transaction or data item is finalized. A [block explorer](/help/understanding-the-permaweb-general-block-explorers) is the quickest way to check this.
+
+2. Copy one affected transaction ID or data-item ID.
+
+3. Load that identifier through another public Arweave gateway.
+
+4. Compare what each gateway returns.
+
+# What the results mean
+
+- **It loads through another gateway but not through `arweave.net`:** The data is there, so the issue is with how that gateway is serving or indexing it. Contact the gateway operator through the [Arweave Discord](https://discord.gg/V8hzfpYJd).
+
+- **It fails through every gateway:** This points to transaction confirmation, upload processing, or data availability rather than a single gateway. Visit our [contact page](/contact) with one identifier and ArDrive or Turbo support can help.
+
+- **The transaction never finalized or the upload failed:** Confirm the status on a [block explorer](/help/understanding-the-permaweb-general-block-explorers), then start with [File Upload Issues And Workarounds](/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds) and follow the steps for the service you uploaded with.
+
+# What to include if you contact us
+
+- One affected transaction ID or data-item ID
+
+- The gateway URLs you tested
+
+- The HTTP status or error you saw from each gateway
+
+- Whether the upload is finalized
+
+- Roughly when the problem started
+
+Please do not send full manifests, entire collections, or large diagnostic logs unless a support reviewer asks for them. Never share your seed phrase, private key, or wallet keyfile.
 
 ---
 
@@ -1541,15 +1585,77 @@ For a more advanced Manifest creation experience, like creating manifests out of
 Canonical URL: https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/
 Category: Understanding The Permaweb
 Section: General
-Description: Use Arweave block explorers to inspect transactions, wallets, and network activity.
+Description: Use ViewBlock or ArScan to check a wallet's transaction history and confirm whether an upload reached Arweave.
 
-There are two block explorers that can be used to view details about all of the transactions, wallets, and Smartweave contracts on Arweave.
+A block explorer is a public website that reads the Arweave blockchain directly. You can use one to confirm that an upload reached the network, review every transaction a wallet has made, and check overall network activity. No login or account is required.
 
--   [ViewBlock](https://viewblock.io/arweave)
+This is worth reaching for when ArDrive shows a file as pending or failed, when a file will not load, or when support asks you to verify a transaction.
 
--   [https://scar.vercel.app/#/](https://scar.vercel.app/#/)
+# ViewBlock and ArScan
 
-For more info, check out this video about [how to use Viewblock.](https://www.youtube.com/watch?v=SWyLTcCwcLI)
+ViewBlock and ArScan are the same explorer at two addresses. ViewBlock covers several blockchains, so its Arweave pages sit under an `/arweave/` path. ArScan serves the same Arweave data from its own root. Use whichever you prefer.
+
+To look up a wallet:
+
+-   `https://viewblock.io/arweave/address/<wallet-address>`
+
+-   `https://arscan.io/address/<wallet-address>`
+
+To look up a transaction or data item:
+
+-   `https://viewblock.io/arweave/tx/<transaction-id>`
+
+-   `https://arscan.io/tx/<transaction-id>`
+
+# Check a wallet's transaction history
+
+Paste a public wallet address into the address page to see every transaction that wallet has made, including uploads made through ArDrive.
+
+Your public wallet address is safe to share and safe to paste into an explorer. Your seed phrase, private key, and wallet keyfile are not, and no explorer will ever ask for them.
+
+# Check whether an upload reached Arweave
+
+Copy the transaction ID or data-item ID from ArDrive and open it on a `/tx/` page.
+
+-   If the explorer shows the transaction mined into a block, the data reached Arweave.
+
+-   If the explorer cannot find it, the upload may still be in progress rather than failed. Blocks are mined every two minutes on average but can take longer, and bundled transactions have to be unbundled before they appear everywhere. Allow roughly 30 minutes before treating an upload as failed. See [File Upload Issues And Workarounds](/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds).
+
+# Transaction types you will see
+
+-   **Token transactions** move AR between wallets.
+
+-   **Data transactions** upload data to Arweave. Every ArDrive drive, folder, and file upload is a data transaction.
+
+-   **Bundled data transactions** pack multiple files into a single transaction, and may also include the ArDrive Community Tip. ArDrive bundles uploads to keep storage costs down, so most ArDrive activity appears this way.
+
+# What an explorer will not show you
+
+-   **Your Turbo Credits balance.** Credits are specific to ArDrive and can only be viewed there. See [ArDrive Turbo](/help/faqs-faq-ardrive-turbo).
+
+-   **The contents of private files.** Private drives are encrypted before upload, so an explorer only shows the encrypted data.
+
+-   **Your folder structure.** Explorers list transactions individually and do not reconstruct the drive, folder, and file hierarchy that ArDrive builds on top of Arweave.
+
+-   **Whether ArDrive can see the file yet.** This one catches people out most often, so it is worth spelling out.
+
+# Confirmed on Arweave is not the same as visible in ArDrive
+
+An explorer reports the state of the Arweave network. ArDrive additionally depends on gateways unbundling and indexing the transaction, and on your drive being synced. A transaction can be confirmed on-chain and still be missing from your drive for a while.
+
+If an explorer shows your transaction but ArDrive does not, run a regular sync and then a deep sync. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
+
+If the data will not load through a particular gateway, see [Trouble Accessing Data Through arweave.net?](/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net).
+
+# Sharing what you find with support
+
+If you contact us about an upload, include the explorer link or the raw transaction ID. That is usually enough for support to see the same evidence you are looking at. Visit our [contact page](/contact) to get in touch.
+
+Never share your seed phrase, private key, or wallet keyfile with anyone, including anyone claiming to be ArDrive support.
+
+# Learn more
+
+For a walkthrough of the explorer interface, see this video on [how to use ViewBlock](https://www.youtube.com/watch?v=SWyLTcCwcLI).
 
 ---
 

@@ -11,24 +11,7 @@
       "section": "ArDrive Platform",
       "pathname": "/help/ardrive-as-a-platform-ardrive-platform-ardrive-cli/",
       "url": "https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-cli/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Introduction"
-        },
-        {
-          "depth": 1,
-          "text": "Intended Audience"
-        },
-        {
-          "depth": 1,
-          "text": "Learn More"
-        },
-        {
-          "depth": 1,
-          "text": "Need Help?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "ardrive-as-a-platform-ardrive-platform-ardrive-core",
@@ -38,16 +21,7 @@
       "section": "ArDrive Platform",
       "pathname": "/help/ardrive-as-a-platform-ardrive-platform-ardrive-core/",
       "url": "https://ardrive.io/help/ardrive-as-a-platform-ardrive-platform-ardrive-core/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "What is ArDrive Core?"
-        },
-        {
-          "depth": 1,
-          "text": "Github"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "ardrive-as-a-platform-arweave-file-system-arweave-file-system",
@@ -57,16 +31,7 @@
       "section": "Arweave File System",
       "pathname": "/help/ardrive-as-a-platform-arweave-file-system-arweave-file-system/",
       "url": "https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-arweave-file-system/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Document Version History"
-        },
-        {
-          "depth": 1,
-          "text": "ArFS Version History"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "ardrive-as-a-platform-arweave-file-system-drive-entity",
@@ -139,10 +104,6 @@
       "headings": [
         {
           "depth": 1,
-          "text": "ArFS 0.11 Public Drive View"
-        },
-        {
-          "depth": 1,
           "text": "ArFS 0.11 Private Drive View"
         }
       ]
@@ -175,24 +136,7 @@
       "section": "FAQ",
       "pathname": "/help/faqs-faq-ardrive-turbo/",
       "url": "https://ardrive.io/help/faqs-faq-ardrive-turbo/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Credits, Payments, and Receipts"
-        },
-        {
-          "depth": 2,
-          "text": "Refunds, Transfer, & Exchanges"
-        },
-        {
-          "depth": 2,
-          "text": "Building with Turbo"
-        },
-        {
-          "depth": 2,
-          "text": "Don't see your question here?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-faq-arweave-wallets",
@@ -212,24 +156,7 @@
       "section": "FAQ",
       "pathname": "/help/faqs-faq-everything-you-need-to-know-about-ardrive/",
       "url": "https://ardrive.io/help/faqs-faq-everything-you-need-to-know-about-ardrive/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "What type of things should I put on ArDrive?"
-        },
-        {
-          "depth": 1,
-          "text": "What type of files should I not put on ArDrive?"
-        },
-        {
-          "depth": 1,
-          "text": "What kinds of files do you accept?"
-        },
-        {
-          "depth": 1,
-          "text": "How do I upload more than one file at a time?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-faq-how-do-keyfile-and-seed-phrase-login-work",
@@ -249,16 +176,7 @@
       "section": "FAQ",
       "pathname": "/help/faqs-faq-how-do-turbo-conversions-work/",
       "url": "https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Getting the price of an upload"
-        },
-        {
-          "depth": 1,
-          "text": "Is the price of data consistent?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-faq-what-are-the-privacy-and-encryption-standards",
@@ -298,12 +216,7 @@
       "section": "FAQ",
       "pathname": "/help/faqs-faq-where-can-i-make-a-feature-request/",
       "url": "https://ardrive.io/help/faqs-faq-where-can-i-make-a-feature-request/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Where can I make a feature request?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-help-and-troubleshooting-guides-ardrive-app-limits",
@@ -313,24 +226,7 @@
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/",
       "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Upload Size Limits"
-        },
-        {
-          "depth": 1,
-          "text": "Upload Count Limits"
-        },
-        {
-          "depth": 1,
-          "text": "Download Size Limits"
-        },
-        {
-          "depth": 1,
-          "text": "What is a GiB?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors",
@@ -370,20 +266,7 @@
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/",
       "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Change gateways from account settings"
-        },
-        {
-          "depth": 1,
-          "text": "Change gateways while logging in"
-        },
-        {
-          "depth": 1,
-          "text": "When to try this"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-help-and-troubleshooting-guides-check-browser-console-logs",
@@ -416,28 +299,7 @@
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/",
       "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Clearing Your Cache"
-        },
-        {
-          "depth": 2,
-          "text": "Brave Browser"
-        },
-        {
-          "depth": 2,
-          "text": "Chrome Browser"
-        },
-        {
-          "depth": 2,
-          "text": "Firefox Browser"
-        },
-        {
-          "depth": 2,
-          "text": "Safari Browser"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-help-and-troubleshooting-guides-drive-syncing-issues",
@@ -447,12 +309,7 @@
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/",
       "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "What to do"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds",
@@ -462,24 +319,7 @@
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/",
       "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "What is supposed to happen"
-        },
-        {
-          "depth": 1,
-          "text": "Tracking Upload Status"
-        },
-        {
-          "depth": 1,
-          "text": "Troubleshooting “Red” Status"
-        },
-        {
-          "depth": 1,
-          "text": "Using the Arweave Block Explorer"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "faqs-help-and-troubleshooting-guides-login-trouble",
@@ -524,6 +364,29 @@
       ]
     },
     {
+      "slug": "faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net",
+      "title": "Trouble Accessing Data Through arweave.net?",
+      "description": "Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact.",
+      "category": "FAQs",
+      "section": "Help And Troubleshooting Guides",
+      "pathname": "/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/",
+      "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "What to do"
+        },
+        {
+          "depth": 1,
+          "text": "What the results mean"
+        },
+        {
+          "depth": 1,
+          "text": "What to include if you contact us"
+        }
+      ]
+    },
+    {
       "slug": "understanding-the-permaweb-general-arweave-manifests",
       "title": "Arweave Manifests",
       "description": "Learn how Arweave Manifests map transaction IDs to friendly file names and paths.",
@@ -531,45 +394,12 @@
       "section": "General",
       "pathname": "/help/understanding-the-permaweb-general-arweave-manifests/",
       "url": "https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Introduction"
-        },
-        {
-          "depth": 1,
-          "text": "\\---"
-        },
-        {
-          "depth": 1,
-          "text": "Use Cases"
-        },
-        {
-          "depth": 1,
-          "text": "NFT Publication"
-        },
-        {
-          "depth": 1,
-          "text": "Static Site Hosting"
-        },
-        {
-          "depth": 1,
-          "text": "React App Hosting"
-        },
-        {
-          "depth": 1,
-          "text": "Raw Endpoint"
-        },
-        {
-          "depth": 1,
-          "text": "Ready to start?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "understanding-the-permaweb-general-block-explorers",
       "title": "Block Explorers",
-      "description": "Use Arweave block explorers to inspect transactions, wallets, and network activity.",
+      "description": "Use ViewBlock or ArScan to check a wallet's transaction history and confirm whether an upload reached Arweave.",
       "category": "Understanding The Permaweb",
       "section": "General",
       "pathname": "/help/understanding-the-permaweb-general-block-explorers/",
@@ -654,12 +484,7 @@
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-file-sharing/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/",
-      "headings": [
-        {
-          "depth": 3,
-          "text": "File Link"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-actions-hiding-files-from-your-drive",
@@ -669,16 +494,7 @@
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-hiding-files-from-your-drive/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/",
-      "headings": [
-        {
-          "depth": 3,
-          "text": "Can you hide a folder or file?"
-        },
-        {
-          "depth": 3,
-          "text": "Can you unhide files or folders?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-actions-licensing-your-data",
@@ -688,52 +504,7 @@
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-licensing-your-data/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Introduction"
-        },
-        {
-          "depth": 1,
-          "text": "Licensing Your Content"
-        },
-        {
-          "depth": 2,
-          "text": "How to Apply a License"
-        },
-        {
-          "depth": 2,
-          "text": "Viewing Licenses"
-        },
-        {
-          "depth": 1,
-          "text": "Understanding Your Licensing Options"
-        },
-        {
-          "depth": 2,
-          "text": "Creative Commons Licenses"
-        },
-        {
-          "depth": 3,
-          "text": "The Six License Types"
-        },
-        {
-          "depth": 3,
-          "text": "Choosing the Right License"
-        },
-        {
-          "depth": 2,
-          "text": "Universal Data License UDL"
-        },
-        {
-          "depth": 2,
-          "text": "Impacts of Licensing"
-        },
-        {
-          "depth": 1,
-          "text": "Stay Connected and Empowered"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-actions-move-a-file-or-folder",
@@ -763,12 +534,7 @@
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-public-preview/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-public-preview/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "URLs on the Permaweb"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-actions-rename-a-file-or-folder",
@@ -788,28 +554,7 @@
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Create a Public Drive"
-        },
-        {
-          "depth": 2,
-          "text": "Upload your image files"
-        },
-        {
-          "depth": 2,
-          "text": "Upload your NFT metadata"
-        },
-        {
-          "depth": 2,
-          "text": "Create a Manifest for your metadata"
-        },
-        {
-          "depth": 2,
-          "text": "Working with NFT marketplaces"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-getting-started-ardrive-password",
@@ -819,12 +564,7 @@
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-ardrive-password/",
       "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "ArDrive requires a password for any Private Drives that you create."
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive",
@@ -834,12 +574,7 @@
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/",
       "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive."
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-getting-started-fund-your-wallet",
@@ -859,12 +594,7 @@
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/",
       "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/",
-      "headings": [
-        {
-          "depth": 3,
-          "text": "Logging into ArDrive with your keyfile is an easy way to sign into ArDrive web."
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet",
@@ -884,12 +614,7 @@
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/",
       "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/",
-      "headings": [
-        {
-          "depth": 3,
-          "text": "Logging into ArDrive with your seed phrase is a secure way to log into ArDrive without having to keep a keyfile on your computer."
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-getting-started-log-into-ardrive-arconnect",
@@ -899,24 +624,7 @@
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/",
       "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Get Started"
-        },
-        {
-          "depth": 2,
-          "text": "Download Wander"
-        },
-        {
-          "depth": 2,
-          "text": "Add a Wallet"
-        },
-        {
-          "depth": 2,
-          "text": "Log into the ArDrive using the digital wallet from Wander"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-using-ardrive-attach-a-drive",
@@ -926,16 +634,7 @@
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-attach-a-drive/",
       "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Use a Drive Link to attach a Drive"
-        },
-        {
-          "depth": 2,
-          "text": "Use the new button to attach a Drive"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-using-ardrive-create-a-snapshot",
@@ -945,12 +644,7 @@
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-create-a-snapshot/",
       "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-a-snapshot/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Snapshots are rollups of your Drive - it makes syncing your Drive in future sessions much faster."
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-using-ardrive-create-an-arweave-manifest",
@@ -960,24 +654,7 @@
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/",
       "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/",
-      "headings": [
-        {
-          "depth": 1,
-          "text": "Overview"
-        },
-        {
-          "depth": 1,
-          "text": "Instructions"
-        },
-        {
-          "depth": 1,
-          "text": "Updating a Manifest"
-        },
-        {
-          "depth": 1,
-          "text": "Want it Custom?"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-using-ardrive-create-new-drive",
@@ -987,16 +664,7 @@
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-create-new-drive/",
       "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Getting Started"
-        },
-        {
-          "depth": 2,
-          "text": "New Drives added to the Sidebar"
-        }
-      ]
+      "headings": []
     },
     {
       "slug": "using-ardrive-apps-using-ardrive-new-folders",
@@ -1026,20 +694,7 @@
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-uploading-files/",
       "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "What file sizes can I upload?"
-        },
-        {
-          "depth": 2,
-          "text": "How long does it take to upload?"
-        },
-        {
-          "depth": 2,
-          "text": "Understanding File Status"
-        }
-      ]
+      "headings": []
     }
   ]
 }
