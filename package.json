@@ -10,7 +10,7 @@
     "generate-agent-indexes": "node scripts/generate-agent-indexes.mjs",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "convert-help": "node scripts/convert-zendesk-to-help-mdx.mjs",
-    "deploy": "node scripts/generate-sitemap.mjs && node scripts/generate-agent-indexes.mjs && cross-env NODE_ENV=production next build && permaweb-deploy deploy --arns-name ar-io --deploy-folder out"
+    "deploy": "node -e \"if (!process.env.ARNS_NAME) { console.error('Set ARNS_NAME to the ArNS name this site deploys to. It is not ar-io (the ar.io site) or ardrive (the ArDrive app).'); process.exit(1) }\" && node scripts/generate-sitemap.mjs && node scripts/generate-agent-indexes.mjs && cross-env NODE_ENV=production next build && cross-env-shell permaweb-deploy deploy --arns-name $ARNS_NAME --deploy-folder out"
   },
   "dependencies": {
     "@mdx-js/mdx": "^3.0.1",
