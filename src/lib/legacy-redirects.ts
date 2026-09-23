@@ -12,9 +12,6 @@ export const LEGACY_PATH_REDIRECTS: Readonly<Record<string, string>> = Object.fr
   // Old solution pages -> home.
   "/storage": "/",
 
-  // Old long-form -> new article.
-  "/vision": "/articles/vision/",
-
   // Legacy article slugs at root -> /articles/<slug>/
   "/anthony": "/articles/anthony/",
   "/ardrive-difference": "/articles/ardrive-difference/",
