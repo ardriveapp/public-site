@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ABOUT_FAQS } from "@/lib/about-faq-config";
 import {
   FINAL_CTA_WIDTH_CLASS,
   SITE_CONTAINER_CLASS,
@@ -8,7 +9,7 @@ import {
 const PRODUCTS = [
   {
     title: "ArDrive app",
-    text: "The ArDrive web and desktop app lets you create drives, upload files, and organize them into folders, much like a familiar cloud storage app. You choose which drives are public and which are private and encrypted, and every upload becomes a permanent, addressable file on Arweave.",
+    text: "The ArDrive web app lets you create drives, upload files, and organize them into folders, much like a familiar cloud storage app. You choose which drives are public and which are private and encrypted, and every upload becomes a permanent, addressable file on Arweave.",
   },
   {
     title: "ArDrive CLI",
@@ -16,7 +17,7 @@ const PRODUCTS = [
   },
   {
     title: "Turbo, for developers",
-    text: "Turbo is ArDrive's open-source bundler and SDK for sending data to Arweave. It lets developers pay for uploads with a credit card instead of managing AR tokens directly, and it groups uploads together for faster indexing on the network.",
+    text: "Turbo is the upload service behind ArDrive. Developers use the open-source Turbo SDK to upload data to Arweave from their own apps, and can pay with a credit card instead of holding AR tokens.",
   },
   {
     title: "Site and app hosting",
@@ -31,11 +32,11 @@ const DIFFERENTIATORS = [
   },
   {
     title: "Your data lives on Arweave",
-    text: "Files uploaded through ArDrive are stored on Arweave, a decentralized network of storage nodes, rather than on a single company's servers. Your data stays available even if ArDrive the company were to shut down.",
+    text: "Files uploaded through ArDrive are stored on Arweave, a decentralized network of storage nodes, rather than on a single company's servers. Your data stays available even if ArDrive stops operating.",
   },
   {
     title: "Open source",
-    text: "The ArDrive app, CLI, and core libraries are open source and published on GitHub, so anyone can inspect, audit, or build on the code ArDrive runs.",
+    text: "The ArDrive app, CLI, and core libraries are open source and published on GitHub, so anyone can inspect, audit, or build on them.",
   },
   {
     title: "You hold your own keys",
@@ -83,7 +84,7 @@ const GET_STARTED_STEPS = [
   },
   {
     title: "Build or get help",
-    text: "Building an integration, use the developer docs. Otherwise, reach the team through the contact page.",
+    text: "To build an integration, use the developer docs. For anything else, use the contact page.",
     href: "/developers",
     linkLabel: "Developer docs",
     href2: "/contact",
@@ -92,36 +93,6 @@ const GET_STARTED_STEPS = [
   },
 ] as const;
 
-const FAQS = [
-  {
-    q: "Is ArDrive a subscription?",
-    a: "No. You pay once per file when you upload it. There's no recurring bill to keep a file accessible.",
-  },
-  {
-    q: "What happens to my files if ArDrive shuts down?",
-    a: "Your files stay on Arweave, the decentralized network ArDrive stores data on, not on ArDrive's own servers. They remain retrievable through Arweave gateways even if ArDrive the company stops operating.",
-  },
-  {
-    q: "Can I delete a file after I upload it?",
-    a: "No. Once an upload is confirmed on Arweave, it can't be removed by you, by ArDrive, or by anyone else. You can hide a file from your own view in the app, or choose not to share it, but the underlying data stays on the network.",
-  },
-  {
-    q: "Who can see my files?",
-    a: "Anyone can see a file in a public drive once it's uploaded. Files in a private drive are encrypted and visible only to you and anyone you explicitly share a key with.",
-  },
-  {
-    q: "Do I need to already own cryptocurrency to use ArDrive?",
-    a: "No. ArDrive can pay for uploads with a credit or debit card through Turbo. You still get an Arweave wallet to sign your uploads, and ArDrive can generate one for you.",
-  },
-  {
-    q: "What can I store on ArDrive?",
-    a: "ArDrive accepts most common file types, including documents, photos, video, audio, and zipped folders, plus static sites and apps you want to publish with a permanent link.",
-  },
-  {
-    q: "What is the permaweb?",
-    a: "The permaweb is the network of pages and files stored permanently on Arweave and served through gateways. ArDrive is one of the apps that lets you publish to it and manage what you store there.",
-  },
-] as const;
 
 function CardHeading({ children }: { children: React.ReactNode }) {
   return (
@@ -159,10 +130,9 @@ export function AboutPage() {
               <span className="text-fd-primary">subscription.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-fd-foreground/70">
-              ArDrive is a permanent storage platform that stores files, apps,
-              and pages on Arweave for a one-time payment, built for anyone
-              who wants their data to last beyond a subscription or a single
-              company.
+              ArDrive is a permanent storage app that keeps your files, sites
+              and apps on Arweave for a one-time payment, for anyone who wants
+              their data to outlast a subscription or a single company.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
@@ -386,6 +356,10 @@ export function AboutPage() {
                   <td className="px-6 py-4 text-fd-foreground/85">2020</td>
                 </tr>
                 <tr className="border-b border-fd-border/10">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Files stored</th>
+                  <td className="px-6 py-4 text-fd-foreground/85">Billions, through ArDrive and Turbo</td>
+                </tr>
+                <tr className="border-b border-fd-border/10">
                   <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Website</th>
                   <td className="px-6 py-4">
                     <a href="https://ardrive.io" className="text-fd-primary hover:underline">ardrive.io</a>
@@ -404,7 +378,7 @@ export function AboutPage() {
                 </tr>
                 <tr className="border-b border-fd-border/10">
                   <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Services</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">ArDrive app, ArDrive CLI, Turbo, ArNS</td>
+                  <td className="px-6 py-4 text-fd-foreground/85">ArDrive app, ArDrive CLI, Turbo uploads and SDK</td>
                 </tr>
                 <tr className="border-b border-fd-border/10">
                   <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Open source</th>
@@ -475,14 +449,14 @@ export function AboutPage() {
           </div>
 
           <div className="mx-auto mt-10 flex max-w-3xl flex-col gap-4">
-            {FAQS.map((faq) => (
+            {ABOUT_FAQS.map((faq) => (
               <div
-                key={faq.q}
+                key={faq.question}
                 className="rounded-2xl border border-fd-border/10 bg-fd-card p-6"
               >
-                <h3 className="text-lg font-bold tracking-tight">{faq.q}</h3>
+                <h3 className="text-lg font-bold tracking-tight">{faq.question}</h3>
                 <p className="mt-2 text-base leading-7 text-fd-foreground/70">
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             ))}
