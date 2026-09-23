@@ -648,7 +648,7 @@ export function HomePage() {
             className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
           >
-            18,000,000+
+            Billions
           </h2>
           <p className="mt-3 text-lg" style={{ color: "rgba(250,250,250,0.4)" }}>
             files stored

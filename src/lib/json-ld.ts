@@ -1,5 +1,6 @@
-const BASE_URL = "https://ar.io";
-const LOGO_URL = `${BASE_URL}/brand/ario-full-black.svg`;
+const BASE_URL = "https://ardrive.io";
+const LOGO_URL = `${BASE_URL}/brand/ArDrive-Logo.png`;
+const ORGANIZATION_NAME = "ArDrive";
 
 export interface OrganizationSchema {
   "@context": "https://schema.org";
@@ -8,6 +9,10 @@ export interface OrganizationSchema {
   url: string;
   logo: string;
   description: string;
+  parentOrganization: {
+    "@type": "Organization";
+    name: string;
+  };
   sameAs: string[];
 }
 
@@ -36,14 +41,19 @@ export function getOrganizationSchema(): OrganizationSchema {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "ar.io",
+    name: ORGANIZATION_NAME,
     url: BASE_URL,
     logo: LOGO_URL,
-    description: "Permanent cloud storage for the next generation of the web.",
+    description:
+      "ArDrive is a permanent file storage app built on Arweave. You pay once to upload a file and it stays stored, with no subscription.",
+    parentOrganization: {
+      "@type": "Organization",
+      name: "Permanent Data Solutions, Inc.",
+    },
     sameAs: [
-      "https://twitter.com/ar_io_network",
-      "https://discord.gg/ario",
-      "https://github.com/ar-io",
+      "https://x.com/ardriveapp",
+      "https://discord.com/invite/ya4hf2H",
+      "https://github.com/ardriveapp",
     ],
   };
 }
@@ -64,11 +74,11 @@ export function getArticleSchema(article: ArticleSchemaInput): ArticleSchema {
     datePublished: article.date,
     author: {
       "@type": "Organization",
-      name: "ar.io",
+      name: ORGANIZATION_NAME,
     },
     publisher: {
       "@type": "Organization",
-      name: "ar.io",
+      name: ORGANIZATION_NAME,
       logo: {
         "@type": "ImageObject",
         url: LOGO_URL,

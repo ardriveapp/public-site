@@ -1,4 +1,5 @@
 import { HomePage } from "@/components/home/HomePage";
+import { getOrganizationSchema } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
@@ -10,5 +11,13 @@ export const metadata = buildMetadata({
 });
 
 export default function Page() {
-  return <HomePage />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getOrganizationSchema()) }}
+      />
+      <HomePage />
+    </>
+  );
 }
