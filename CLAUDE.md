@@ -33,7 +33,7 @@ yarn deploy
 ## Architecture
 
 ### Content System
-- **MDX files** in `content/` directory (articles, case-studies, use-cases, ecosystem, legal)
+- **MDX files** in `content/` directory (articles, help, legal)
 - **Loader functions** in `src/lib/` fetch and compile MDX at build time
 - **Config files** (`*-config.ts`) define display order, labels, and metadata
 - Images stored in `public/<content-type>/<slug>/`
@@ -50,17 +50,12 @@ yarn deploy
 **Images:** Always use `BaseImage` from `@/components/base-image` (not `next/image` directly). Handles basePath for GitHub Pages.
 
 **Path Handling:**
-- Next.js `Link`: Use plain paths (`/use-cases/ai`) — auto-handles basePath
+- Next.js `Link`: Use plain paths (`/help/getting-started`) — auto-handles basePath
 - MDX images: Use plain paths — custom components handle basePath
 - Metadata icons/favicons: Use `withBasePath()` from `@/lib/base-path`
 - OpenGraph/Twitter images: Use plain paths — Next.js resolves against `metadataBase` automatically
 
 **Client Components:** Must include `"use client"` directive at top.
-
-**Config Files:** Use `*-config.ts` files for display order and labels (single source of truth):
-- `use-case-config.ts` — Navigation order, metadata
-- `ecosystem-config.ts` — Category labels and order
-- `cloudmap-config.ts` — Status and theme order
 
 **Metadata:** Use `buildMetadata()` from `@/lib/metadata` for page metadata. Handles title, description, OpenGraph, and Twitter cards consistently.
 
