@@ -3,7 +3,7 @@ import { SITE_CONTAINER_CLASS } from "@/components/site-container";
 const SERVICES = [
   {
     title: "Expert Technical Support",
-    desc: "Gain direct access to our technical team and robust development tools to maximize your project's potential.",
+    desc: "Gain direct access to our technical team and development tools to maximize your project's potential.",
   },
   {
     title: "Premium Onboarding Services",
@@ -11,7 +11,7 @@ const SERVICES = [
   },
   {
     title: "Scalable Data Storage",
-    desc: "Leverage a high-performance, decentralized data infrastructure, designed to grow with you effortlessly.",
+    desc: "Leverage a high-performance, decentralized data infrastructure that scales with the data you store.",
   },
 ];
 
@@ -98,7 +98,7 @@ export function EnterprisePage() {
         >
           <div className="pointer-events-none absolute inset-0 opacity-40" style={{ background: "radial-gradient(60% 50% at 50% 100%, rgba(255,80,80,0.5) 0%, transparent 100%)" }} />
           <h2 className="relative z-10 text-3xl sm:text-4xl font-extrabold" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
-            Permanent, private, and powerful.
+            Permanent, private, and user-owned.
           </h2>
           <p className="relative z-10 mt-3 opacity-75 max-w-sm mx-auto">
             Enterprise-grade permanent storage for teams that can&apos;t afford to lose data.
