@@ -11,7 +11,7 @@ const SERVICES = [
   },
   {
     title: "Scalable Data Storage",
-    desc: "Leverage a high-performance, decentralized data infrastructure that scales with the data you store.",
+    desc: "Use decentralized storage infrastructure that scales with your data.",
   },
 ];
 
@@ -39,8 +39,7 @@ export function EnterprisePage() {
             <span className="text-fd-primary">data again.</span>
           </h1>
           <p className="mt-5 max-w-xl mx-auto text-lg" style={{ color: "rgba(250,250,250,0.55)" }}>
-            Securely save, manage and share photos, files and documents — by leveraging
-            the power of a permanent blockchain.
+            Save, manage, and share photos, files, and documents on permanent storage.
           </p>
           <div className="mt-8">
             <a

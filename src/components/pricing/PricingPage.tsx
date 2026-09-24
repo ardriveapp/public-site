@@ -62,7 +62,7 @@ export function PricingPage() {
             <span className="text-fd-primary">store forever.</span>
           </h1>
           <p className="mt-4 max-w-xl mx-auto text-lg" style={{ color: "rgba(250,250,250,0.55)" }}>
-            No subscriptions, just permanent preservation and access.
+            No subscriptions. You pay once to store and access your files.
           </p>
           <div className="mt-8">
             <a

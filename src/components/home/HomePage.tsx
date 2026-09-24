@@ -95,7 +95,7 @@ const MORE_FEATURES = [
   },
   {
     title: "Site and App Hosting",
-    desc: "Easily deploy and host sites or apps directly from your drives.",
+    desc: "Deploy and host sites or apps directly from your drives.",
   },
   {
     title: "Content Streaming",
