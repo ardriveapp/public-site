@@ -26,7 +26,7 @@ export const ABOUT_FAQS: FaqEntry[] = [
       "Anyone can see a file in a public drive once it's uploaded. Files in a private drive are encrypted and visible only to you and anyone you explicitly share a key with.",
   },
   {
-    question: "Do I need to already own cryptocurrency to use ArDrive?",
+    question: "Do I need cryptocurrency to use ArDrive?",
     answer:
       "No. ArDrive can pay for uploads with a credit or debit card through Turbo. You still get an Arweave wallet to sign your uploads, and ArDrive can generate one for you.",
   },

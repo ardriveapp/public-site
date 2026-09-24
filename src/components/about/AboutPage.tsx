@@ -54,7 +54,7 @@ const DIFFERENTIATORS = [
 
 const AUDIENCES = [
   "Individuals archiving family photos, videos, and documents",
-  "Digital artists and NFT creators storing and dating their work",
+  "Digital artists and NFT creators timestamping their work",
   "Journalists, researchers, and archivists preserving records and source material",
   "Open-source developers and communities publishing sites, apps, and data",
   "Businesses and creators who want files to stay accessible without a recurring bill",
@@ -221,8 +221,11 @@ export function AboutPage() {
 
       {/* Who uses ArDrive */}
       <section className={`${SITE_CONTAINER_CLASS} py-10`}>
-        <div className="mx-auto grid max-w-[1100px] gap-6 lg:grid-cols-2">
-          <div className="rounded-[2rem] border border-fd-border/10 bg-fd-card p-7 sm:p-10">
+        <div className={`${WHAT_YOU_GET_WIDTH_CLASS} grid gap-5 md:grid-cols-2`}>
+          <div className="rounded-2xl border border-fd-border/10 bg-fd-card p-7 sm:p-8">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-fd-primary">
+              Who it&apos;s for
+            </p>
             <h2
               className="text-3xl font-bold tracking-tight sm:text-4xl"
               style={{ fontFamily: "var(--font-heading)" }}
@@ -240,7 +243,10 @@ export function AboutPage() {
           </div>
 
           {/* Who builds ArDrive */}
-          <div className="rounded-[2rem] border border-fd-border/10 bg-fd-card p-7 sm:p-10">
+          <div className="rounded-2xl border border-fd-border/10 bg-fd-card p-7 sm:p-8">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-fd-primary">
+              Who builds it
+            </p>
             <h2
               className="text-3xl font-bold tracking-tight sm:text-4xl"
               style={{ fontFamily: "var(--font-heading)" }}
@@ -345,7 +351,7 @@ export function AboutPage() {
                 </tr>
                 <tr className="border-b border-fd-border/10">
                   <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Type</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">Permanent storage platform built on Arweave</td>
+                  <td className="px-6 py-4 text-fd-foreground/85">Permanent storage app built on Arweave</td>
                 </tr>
                 <tr className="border-b border-fd-border/10">
                   <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Built by</th>
@@ -373,7 +379,7 @@ export function AboutPage() {
                   <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Pricing model</th>
                   <td className="px-6 py-4 text-fd-foreground/85">
                     Pay once per upload, no subscription. Current rates:{" "}
-                    <Link href="/pricing" className="text-fd-primary hover:underline">/pricing</Link>
+                    <Link href="/pricing" className="text-fd-primary hover:underline">pricing page</Link>
                   </td>
                 </tr>
                 <tr className="border-b border-fd-border/10">
