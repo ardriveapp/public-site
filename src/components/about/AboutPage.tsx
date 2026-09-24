@@ -109,7 +109,7 @@ export function AboutPage() {
   return (
     <main className="bg-fd-background text-fd-foreground">
       {/* Hero: H1 + value sentence */}
-      <section className="relative overflow-hidden pb-12 pt-16">
+      <section className="relative overflow-hidden pb-16 pt-20">
         <div
           className="pointer-events-none absolute inset-0 opacity-80"
           style={{
@@ -139,6 +139,7 @@ export function AboutPage() {
                 href="https://app.ardrive.io"
                 className="inline-flex items-center gap-2 rounded-full bg-fd-primary px-7 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
               >
+                <span className="size-2 shrink-0 rounded-full bg-white/70" />
                 Get Started
               </a>
               <a
@@ -168,7 +169,7 @@ export function AboutPage() {
             {PRODUCTS.map((product) => (
               <div
                 key={product.title}
-                className="relative overflow-hidden rounded-2xl border border-fd-border/10 bg-fd-card p-6"
+                className="relative overflow-hidden rounded-2xl border border-fd-foreground/[0.07] bg-fd-foreground/[0.04] p-6"
               >
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-fd-primary/10" />
                 <div className="relative">
@@ -199,7 +200,7 @@ export function AboutPage() {
             {DIFFERENTIATORS.map((item, index) => (
               <div
                 key={item.title}
-                className="relative overflow-hidden rounded-2xl border border-fd-border/10 bg-fd-card p-6"
+                className="relative overflow-hidden rounded-2xl border border-fd-foreground/[0.07] bg-fd-foreground/[0.04] p-6"
               >
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-fd-primary/10" />
                 <div className="relative">
@@ -222,7 +223,7 @@ export function AboutPage() {
       {/* Who uses ArDrive */}
       <section className={`${SITE_CONTAINER_CLASS} py-10`}>
         <div className={`${WHAT_YOU_GET_WIDTH_CLASS} grid gap-5 md:grid-cols-2`}>
-          <div className="rounded-2xl border border-fd-border/10 bg-fd-card p-7 sm:p-8">
+          <div className="rounded-2xl border border-fd-foreground/[0.07] bg-fd-foreground/[0.04] p-7 sm:p-8">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-fd-primary">
               Who it&apos;s for
             </p>
@@ -243,7 +244,7 @@ export function AboutPage() {
           </div>
 
           {/* Who builds ArDrive */}
-          <div className="rounded-2xl border border-fd-border/10 bg-fd-card p-7 sm:p-8">
+          <div className="rounded-2xl border border-fd-foreground/[0.07] bg-fd-foreground/[0.04] p-7 sm:p-8">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-fd-primary">
               Who builds it
             </p>
@@ -290,7 +291,7 @@ export function AboutPage() {
             {GET_STARTED_STEPS.map((step, index) => (
               <li
                 key={step.title}
-                className="relative overflow-hidden rounded-2xl border border-fd-border/10 bg-fd-card p-6"
+                className="relative overflow-hidden rounded-2xl border border-fd-foreground/[0.07] bg-fd-foreground/[0.04] p-6"
               >
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-fd-primary/10" />
                 <div className="relative">
@@ -341,53 +342,53 @@ export function AboutPage() {
             <CardHeading>Key facts</CardHeading>
           </div>
 
-          <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-fd-border/10 bg-fd-card">
-            <p className="sr-only">Key facts about ArDrive.</p>
+          <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-fd-foreground/[0.07] bg-fd-foreground/[0.04]">
             <table className="w-full border-collapse text-left text-sm">
+              <caption className="sr-only">Key facts about ArDrive.</caption>
               <tbody>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="w-1/3 px-6 py-4 font-semibold text-fd-foreground/60">Name</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">ArDrive</td>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="w-1/3 px-6 py-4 font-semibold text-fd-foreground/50">Name</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">ArDrive</td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Type</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">Permanent storage app built on Arweave</td>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Type</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">Permanent storage app built on Arweave</td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Built by</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">Permanent Data Solutions, Inc.</td>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Built by</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">Permanent Data Solutions, Inc.</td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Started</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">2020</td>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Started</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">2020</td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Files stored</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">Billions, through ArDrive and Turbo</td>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Files stored</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">Billions, through ArDrive and Turbo</td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Website</th>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Website</th>
                   <td className="px-6 py-4">
                     <a href="https://ardrive.io" className="text-fd-primary hover:underline">ardrive.io</a>
                   </td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Core offering</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">Permanent, one-time-payment file storage</td>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Core offering</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">Permanent, one-time-payment file storage</td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Pricing model</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Pricing model</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">
                     Pay once per upload, no subscription. Current rates:{" "}
                     <Link href="/pricing" className="text-fd-primary hover:underline">pricing page</Link>
                   </td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Services</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">ArDrive app, ArDrive CLI, Turbo uploads and SDK</td>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Services</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">ArDrive app, ArDrive CLI, Turbo uploads and SDK</td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Open source</th>
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Open source</th>
                   <td className="px-6 py-4">
                     <a
                       href="https://github.com/ardriveapp"
@@ -399,17 +400,17 @@ export function AboutPage() {
                     </a>
                   </td>
                 </tr>
-                <tr className="border-b border-fd-border/10">
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Help</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">
+                <tr className="border-b border-fd-foreground/[0.07]">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Help</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">
                     <Link href="/help" className="text-fd-primary hover:underline">Help center</Link>
                     {", "}
                     <Link href="/contact" className="text-fd-primary hover:underline">Contact</Link>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/60">Social</th>
-                  <td className="px-6 py-4 text-fd-foreground/85">
+                  <th scope="row" className="px-6 py-4 font-semibold text-fd-foreground/50">Social</th>
+                  <td className="px-6 py-4 text-fd-foreground/70">
                     <a
                       href="https://x.com/ardriveapp"
                       target="_blank"
@@ -458,7 +459,7 @@ export function AboutPage() {
             {ABOUT_FAQS.map((faq) => (
               <div
                 key={faq.question}
-                className="rounded-2xl border border-fd-border/10 bg-fd-card p-6"
+                className="rounded-2xl border border-fd-foreground/[0.07] bg-fd-foreground/[0.04] p-6"
               >
                 <h3 className="text-lg font-bold tracking-tight">{faq.question}</h3>
                 <p className="mt-2 text-base leading-7 text-fd-foreground/70">
