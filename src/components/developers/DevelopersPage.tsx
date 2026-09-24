@@ -12,7 +12,7 @@ const TOOLS = [
     tag: "SDK + Bundler",
     name: "Turbo",
     full: "Bundler and SDK",
-    desc: "The first open source bundler for the Arweave ecosystem. Turbo has been designed and built for enterprise-level scale and security, trusted by Meta for their uploads to Arweave. Turbo SDK brings programmable fiat top-ups, upload reliability, and fast data indexing finality.",
+    desc: "Turbo is the upload service behind ArDrive, trusted by Meta for their uploads to Arweave. The open-source Turbo SDK brings programmable fiat top-ups, upload reliability, and fast data indexing.",
     bullets: [
       "Seeking to leverage a FIAT payment option for bundling services",
       "Building a front-end app to reliably send data to Arweave",
