@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { label: "Developers", href: "/developers" },
   { label: "Articles", href: "/articles" },
   { label: "Help", href: "/help" },
+  { label: "About", href: "/about" },
 ];
 
 const isActiveLink = (pathname: string, href: string) =>
