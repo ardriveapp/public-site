@@ -222,7 +222,7 @@ export function AboutPage() {
 
       {/* Who uses ArDrive */}
       <section className={`${SITE_CONTAINER_CLASS} py-10`}>
-        <div className={`${WHAT_YOU_GET_WIDTH_CLASS} grid gap-5 md:grid-cols-2`}>
+        <div className={`${WHAT_YOU_GET_WIDTH_CLASS} grid items-start gap-5 md:grid-cols-2`}>
           <div className="rounded-2xl border border-fd-border bg-fd-card p-7 sm:p-8">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-fd-primary">
               Who it&apos;s for
