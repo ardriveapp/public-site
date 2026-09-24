@@ -163,7 +163,7 @@ export function NftsPage() {
               className="mt-4 max-w-xl mx-auto text-base sm:text-lg leading-relaxed"
               style={{ color: "rgba(250,250,250,0.5)" }}
             >
-              Leverage the power of permanent data to future-proof your NFTs.
+              Store NFT media and metadata permanently, so the links in your NFTs keep working.
             </p>
           </div>
 

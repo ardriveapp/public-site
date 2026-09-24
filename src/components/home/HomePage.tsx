@@ -41,15 +41,15 @@ const FEATURES = [
 const PRODUCT_FEATURES = [
   {
     title: "End to end encryption",
-    desc: "Ensure your files remain fully secure from upload to download.",
+    desc: "Files in a private drive are encrypted on your device before they upload.",
   },
   {
     title: "Permanent Publishing",
-    desc: "Publish sites with unbreakable links and content that never disappears.",
+    desc: "Publish sites to permanent storage, with links that keep working.",
   },
   {
     title: "Designed to Last",
-    desc: "Enjoy unlimited access to your secure data for generations to come.",
+    desc: "Files are stored on Arweave, not on ArDrive's servers, so they do not depend on ArDrive staying online.",
   },
   {
     title: "Version Tracking",
@@ -84,8 +84,8 @@ const COMPARISON_ROWS = [
   ["Proprietary and company controlled",          "Decentralized and open source"],
   ["Risk account shutdown",                       "Inactive accounts never deleted"],
   ["User tracking and big data collection",       "No collection of personal data"],
-  ["Storage based on subscription tiers",         "No storage restrictions"],
-  ["Subject to corporate control",                "The ArDrive app will outlive the company"],
+  ["Storage based on subscription tiers",         "No storage cap"],
+  ["Subject to corporate control",                "Files stay on Arweave if ArDrive stops"],
 ];
 
 const MORE_FEATURES = [
@@ -557,8 +557,8 @@ export function HomePage() {
               <span className="text-fd-primary">own.</span>
             </h2>
             <p className="mt-4 max-w-lg mx-auto text-base" style={{ color: "rgba(250,250,250,0.45)" }}>
-              ArDrive acts just like your go-to cloud storage app, but comes supercharged
-              with features that let you permanently secure, manage, and access your data.
+              ArDrive works like the cloud storage app you already use, and every file you
+              upload is stored permanently.
             </p>
           </div>
 
