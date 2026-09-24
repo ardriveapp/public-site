@@ -32,26 +32,29 @@
   --color-ardrive-info: 49 66 196;     /* #3142C4 */
 }
 
-/* Tailwind v4 CSS-first theming — fd-* utilities (bg-fd-primary/15, text-fd-foreground/90, etc.) */
-@theme {
-  --color-fd-background: 18 18 18;
-  --color-fd-foreground: 250 250 250;
-  --color-fd-card: 30 30 30;
-  --color-fd-card-foreground: 250 250 250;
-  --color-fd-popover: 36 36 36;
-  --color-fd-popover-foreground: 250 250 250;
-  --color-fd-muted: 42 42 42;
-  --color-fd-muted-foreground: 160 160 160;
-  --color-fd-border: 250 250 250;
+/* Tailwind v4 CSS-first theming: fd-* utilities (bg-fd-primary/15, text-fd-foreground/90, etc.).
+   The :root tokens above are bare RGB channels, which Tailwind cannot put in color-mix().
+   `inline` makes each utility use rgb(var(--color-fd-*)) directly, so opacity variants
+   compile to valid colors while rgb(var(...)) consumers keep reading the channels. */
+@theme inline {
+  --color-fd-background: rgb(var(--color-fd-background));
+  --color-fd-foreground: rgb(var(--color-fd-foreground));
+  --color-fd-card: rgb(var(--color-fd-card));
+  --color-fd-card-foreground: rgb(var(--color-fd-card-foreground));
+  --color-fd-popover: rgb(var(--color-fd-popover));
+  --color-fd-popover-foreground: rgb(var(--color-fd-popover-foreground));
+  --color-fd-muted: rgb(var(--color-fd-muted));
+  --color-fd-muted-foreground: rgb(var(--color-fd-muted-foreground));
+  --color-fd-border: rgb(var(--color-fd-border));
 
-  --color-fd-primary: 211 23 33;       /* #D31721 — primary CTA/button red */
-  --color-fd-primary-foreground: 250 250 250;
-  --color-fd-accent: 254 2 48;         /* #FE0230 Ruddy — accent only */
-  --color-fd-accent-foreground: 250 250 250;
-  --color-fd-ring: 211 23 33;
+  --color-fd-primary: rgb(var(--color-fd-primary));
+  --color-fd-primary-foreground: rgb(var(--color-fd-primary-foreground));
+  --color-fd-accent: rgb(var(--color-fd-accent));
+  --color-fd-accent-foreground: rgb(var(--color-fd-accent-foreground));
+  --color-fd-ring: rgb(var(--color-fd-ring));
 
-  --color-ardrive-success: 24 169 87;  /* #18A957 */
-  --color-ardrive-info: 49 66 196;     /* #3142C4 */
+  --color-ardrive-success: rgb(var(--color-ardrive-success));
+  --color-ardrive-info: rgb(var(--color-ardrive-info));
 }
 
 /* ============================================================
