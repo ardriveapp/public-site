@@ -231,7 +231,7 @@
     {
       "slug": "faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors",
       "title": "Bad Gateway And Network Errors",
-      "description": "Troubleshoot 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, and frontend errors in ArDrive Web.",
+      "description": "Troubleshoot 502, 503, 504, bad gateway, network, resource, ar.io, GraphQL, gateway, and frontend errors in ArDrive Web.",
       "category": "FAQs",
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/",
@@ -246,7 +246,7 @@
     {
       "slug": "faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file",
       "title": "Cannot Access Or Retrieve A File",
-      "description": "If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, AR.IO, or gateway errors, the issue may be temporary gateway availability.",
+      "description": "If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, ar.io, or gateway errors, the issue may be temporary gateway availability.",
       "category": "FAQs",
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/",
