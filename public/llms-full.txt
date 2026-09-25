@@ -36,6 +36,7 @@
 - [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
 - [Sync Your Drive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/): Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.
 - [Trouble Accessing Data Through arweave.net?](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/): Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact.
+- [Turbo Gateway Rate Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-turbo-gateway-rate-limits/): Free download allowances, refill rates, and paid upgrades for data access through turbo-gateway.com.
 - [Arweave Manifests](https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/): Learn how Arweave Manifests map transaction IDs to friendly file names and paths.
 - [Block Explorers](https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/): Use ViewBlock or ArScan to check a wallet's transaction history and confirm whether an upload reached Arweave.
 - [What Is The Permaweb](https://ardrive.io/help/understanding-the-permaweb-general-what-is-the-permaweb/): Learn what the permaweb is and how Arweave stores data permanently.
@@ -1452,6 +1453,46 @@ Please do not send full manifests, entire collections, or large diagnostic logs 
 
 ---
 
+# Turbo Gateway Rate Limits
+
+Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-turbo-gateway-rate-limits/
+Category: FAQs
+Section: Help And Troubleshooting Guides
+Description: Free download allowances, refill rates, and paid upgrades for data access through turbo-gateway.com.
+
+[turbo-gateway.com](https://turbo-gateway.com) applies download rate limits so free access stays available for normal browsing, streaming, and file downloads. This page covers the free allowance, what happens when you hit the limit, and how to continue with a paid upgrade.
+
+# What are the free download limits?
+
+Every visitor gets a free allowance of **5 GB**. That allowance refills at about **2 GB per hour**.
+
+In practice, browsing, streaming, and downloading normally will not hit this limit. A 1 GB file is fine, and you can download several of that size back-to-back.
+
+# What happens if I use up my allowance?
+
+Downloads do not slow down or throttle. When the allowance is exhausted, downloads **stop**, and you will see a payment prompt.
+
+# How can I increase my download allowance?
+
+You can continue by paying with **USDC on Base**.
+
+- About **$0.11 per 1 GB**
+- Capped at **$1**, no matter how large the file
+
+Paying also raises your allowance to **50 GB** and removes per-file limits entirely.
+
+# Need higher limits?
+
+For heavier or ongoing data access, you can use another gateway on the ar.io network or run your own. See the [ar.io docs](https://docs.ar.io) for gateway discovery and how to operate a gateway.
+
+# Related help
+
+- For ArDrive Web upload and download size limits by platform and browser, see [ArDrive App Limits](/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits).
+- If a file will not load through a specific public gateway, see [Trouble Accessing Data Through arweave.net?](/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net).
+- For Turbo Credits, payments, and receipts, see [ArDrive Turbo](/help/faqs-faq-ardrive-turbo).
+
+---
+
 # Arweave Manifests
 
 Canonical URL: https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/
@@ -1658,10 +1699,6 @@ If the data will not load through a particular gateway, see [Trouble Accessing D
 If you contact us about an upload, include the explorer link or the raw transaction ID. That is usually enough for support to see the same evidence you are looking at. Visit our [contact page](/contact) to get in touch.
 
 Never share your seed phrase, private key, or wallet keyfile with anyone, including anyone claiming to be ArDrive support.
-
-# Learn more
-
-For a walkthrough of the explorer interface, see this video on [how to use ViewBlock](https://www.youtube.com/watch?v=SWyLTcCwcLI).
 
 ---
 
