@@ -42,7 +42,7 @@ export function SiteFooter() {
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)_auto] lg:items-start">
           <div>
             <p className="max-w-[13rem] text-xl leading-[1.2] text-fd-foreground">
-              Permanent, private, and powerful.
+              Permanent, private, and user-owned.
             </p>
             <div className="mt-6">
               <p className="mb-3 text-sm font-semibold text-fd-foreground">Socials</p>

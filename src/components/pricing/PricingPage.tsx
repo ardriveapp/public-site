@@ -5,11 +5,10 @@ import { PricingCalculator } from "./PricingCalculator";
 const ARDRIVE_BENEFITS = [
   "One time payment per file",
   "Inactive accounts never deleted",
-  "Top-level encryption for personal files",
-  "No storage restrictions — just pay for what you need",
+  "Private files encrypted on your device",
+  "No storage cap, pay only for what you upload",
   "No collection of personal data",
   "Data available even if ArDrive disappears",
-  "The ArDrive app will outlive the company",
 ];
 
 const TRADITIONAL_DRAWBACKS = [
@@ -63,7 +62,7 @@ export function PricingPage() {
             <span className="text-fd-primary">store forever.</span>
           </h1>
           <p className="mt-4 max-w-xl mx-auto text-lg" style={{ color: "rgba(250,250,250,0.55)" }}>
-            No subscriptions, just permanent preservation and access.
+            No subscriptions. You pay once to store and access your files.
           </p>
           <div className="mt-8">
             <a

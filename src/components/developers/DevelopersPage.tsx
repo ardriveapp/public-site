@@ -5,16 +5,16 @@ const TOOLS = [
     tag: "Protocol",
     name: "ArFS",
     full: "Arweave File System",
-    desc: "ArFS is a data modeling, storage, and retrieval protocol designed to emulate common file system operations and provide aspects of mutability to your data hierarchy on Arweave's permanent, immutable blockweave. It gives you the power of a file system with total control over the privacy of your data.",
+    desc: "ArFS is a data modeling, storage, and retrieval protocol designed to emulate common file system operations and provide aspects of mutability to your data hierarchy on Arweave's permanent, immutable blockweave. It works like a file system, and you control the privacy of your data.",
     cta: { label: "See ArFS Docs", href: "https://docs.ar.io/build/advanced/arfs" },
   },
   {
     tag: "SDK + Bundler",
     name: "Turbo",
     full: "Bundler and SDK",
-    desc: "The first open source bundler for the Arweave ecosystem. Turbo has been designed and built for enterprise-level scale and security, trusted by Meta for their uploads to Arweave. Turbo SDK brings programmable fiat top-ups, upload reliability, and fast data indexing finality.",
+    desc: "Turbo is the upload service behind ArDrive, trusted by Meta for their uploads to Arweave. The open-source Turbo SDK brings programmable fiat top-ups, upload reliability, and fast data indexing.",
     bullets: [
-      "Seeking to leverage a FIAT payment option for bundling services",
+      "Paying for uploads with a card instead of crypto",
       "Building a front-end app to reliably send data to Arweave",
       "Building a back-end system that stores or backs up data to Arweave",
     ],
@@ -76,12 +76,12 @@ export function DevelopersPage() {
             className="text-5xl sm:text-6xl lg:text-7xl"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
           >
-            Powering the{" "}
+            Build on the{" "}
             <span className="text-fd-primary">permanent cloud.</span>
           </h1>
           <p className="mt-5 max-w-2xl mx-auto text-lg" style={{ color: "rgba(250,250,250,0.55)" }}>
             Store, organize, and access your data through APIs, SDKs, and developer tools
-            that make permanent storage as simple as familiar cloud workflows.
+            that work like the cloud workflows you already know.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -111,8 +111,8 @@ export function DevelopersPage() {
             style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
           >
             <p className="text-base" style={{ color: "rgba(250,250,250,0.6)" }}>
-              <span className="font-bold text-fd-foreground">Cloud storage, on roids.</span>
-              {" "}A web3 platform of open-source apps, developer tools, and libraries.
+              <span className="font-bold text-fd-foreground">Built in the open.</span>
+              {" "}Open-source apps, developer tools, and libraries.
             </p>
           </div>
         </div>
@@ -221,7 +221,7 @@ export function DevelopersPage() {
             className="relative z-10 mx-auto max-w-3xl text-balance text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
           >
-            Permanent, private, and powerful.
+            Permanent, private, and user-owned.
           </h2>
           <p className="relative z-10 mx-auto mt-5 max-w-md text-base leading-relaxed text-white/85">
             Open-source tools to build on the permanent web.

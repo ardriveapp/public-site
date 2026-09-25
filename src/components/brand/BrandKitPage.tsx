@@ -260,7 +260,7 @@ export function BrandKitPage() {
               </div>
               <div className="space-y-2">
                 <p className="text-base font-normal">
-                  Permanent, private, and powerful.
+                  Permanent, private, and user-owned.
                 </p>
                 <p className="text-base font-semibold">
                   No subscriptions, no data caps.

@@ -8,18 +8,17 @@ import { FINAL_CTA_WIDTH_CLASS, SITE_CONTAINER_CLASS } from "@/components/site-c
 // ─── Data ──────────────────────────────────────────────────────────────────────
 
 const ROTATING_PHRASES = [
-  "no privacy breaches.",
-  "no vendor lock-in.",
-  "no 404s.",
-  "no storage limits.",
   "no subscriptions.",
+  "no renewal dates.",
+  "no vendor lock-in.",
+  "one payment per file.",
 ];
 
 const FEATURES = [
   {
     num: "01",
-    title: "Unlimited Storage",
-    desc: "Store and share your files effortlessly, with no upload limits or storage caps.",
+    title: "No Storage Cap",
+    desc: "There is no account quota. You pay once for each file you upload, and store as much as you want.",
     pill: "Off Subscription",
     img: "/home/turbo-balances.png",
   },
@@ -33,7 +32,7 @@ const FEATURES = [
   {
     num: "03",
     title: "Open Source",
-    desc: "Benefit from full transparency, robust security, and complete flexibility.",
+    desc: "The ArDrive app, CLI, and core libraries are open source, so anyone can inspect and audit the code.",
     pill: null,
     img: "/home/open-source.png",
   },
@@ -42,15 +41,15 @@ const FEATURES = [
 const PRODUCT_FEATURES = [
   {
     title: "End to end encryption",
-    desc: "Ensure your files remain fully secure from upload to download.",
+    desc: "Files in a private drive are encrypted on your device before they upload.",
   },
   {
     title: "Permanent Publishing",
-    desc: "Publish sites with unbreakable links and content that never disappears.",
+    desc: "Publish sites to permanent storage, with links that keep working.",
   },
   {
     title: "Designed to Last",
-    desc: "Enjoy unlimited access to your secure data for generations to come.",
+    desc: "Files are stored on Arweave, not on ArDrive's servers, so they do not depend on ArDrive staying online.",
   },
   {
     title: "Version Tracking",
@@ -85,8 +84,8 @@ const COMPARISON_ROWS = [
   ["Proprietary and company controlled",          "Decentralized and open source"],
   ["Risk account shutdown",                       "Inactive accounts never deleted"],
   ["User tracking and big data collection",       "No collection of personal data"],
-  ["Storage based on subscription tiers",         "No storage restrictions"],
-  ["Subject to corporate control",                "The ArDrive app will outlive the company"],
+  ["Storage based on subscription tiers",         "No storage cap"],
+  ["Subject to corporate control",                "Files stay on Arweave if ArDrive stops"],
 ];
 
 const MORE_FEATURES = [
@@ -96,7 +95,7 @@ const MORE_FEATURES = [
   },
   {
     title: "Site and App Hosting",
-    desc: "Easily deploy and host sites or apps directly from your drives.",
+    desc: "Deploy and host sites or apps directly from your drives.",
   },
   {
     title: "Content Streaming",
@@ -347,14 +346,14 @@ export function HomePage() {
             className="mx-auto max-w-2xl text-2xl leading-relaxed sm:text-3xl lg:text-4xl"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 300, color: "rgba(250,250,250,0.75)" }}
           >
-            Seamless access to your apps and data for{" "}
+            Permanent storage for your apps and data, with{" "}
             <RotatingText />
           </p>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          3. FEATURES — "Cloud storage, evolved."
+          3. FEATURES — "Cloud storage, paid once."
           ══════════════════════════════════════════════════════════════════════ */}
       <section
         className="py-24"
@@ -377,10 +376,10 @@ export function HomePage() {
               style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
             >
               Cloud storage,{" "}
-              <span className="text-fd-primary">evolved.</span>
+              <span className="text-fd-primary">paid once.</span>
             </h2>
             <p className="mt-3 max-w-sm text-base" style={{ color: "rgba(250,250,250,0.45)" }}>
-              Leverage the power of permanent storage to future-proof your data.
+              Upload a file once and it stays stored, with no renewals.
             </p>
           </div>
 
@@ -558,8 +557,8 @@ export function HomePage() {
               <span className="text-fd-primary">own.</span>
             </h2>
             <p className="mt-4 max-w-lg mx-auto text-base" style={{ color: "rgba(250,250,250,0.45)" }}>
-              ArDrive acts just like your go-to cloud storage app, but comes supercharged
-              with features that let you permanently secure, manage, and access your data.
+              ArDrive works like the cloud storage app you already use, and every file you
+              upload is stored permanently.
             </p>
           </div>
 
@@ -978,10 +977,10 @@ export function HomePage() {
             className="relative z-10 mx-auto max-w-3xl text-balance text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl xl:text-[3.35rem]"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
           >
-            Permanent, private, and powerful
+            Permanent, private, and user-owned
           </h2>
           <p className="relative z-10 mx-auto mt-5 max-w-md text-base leading-relaxed text-white/85">
-            Store your files, apps, and pages once — and keep them forever.
+            Store your files, apps, and pages once and keep them forever.
           </p>
           <a
             href="https://app.ardrive.io"

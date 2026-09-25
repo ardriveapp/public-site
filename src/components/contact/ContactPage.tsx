@@ -133,7 +133,7 @@ export function ContactPage() {
             className="relative z-10 mx-auto max-w-3xl text-balance text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
           >
-            Permanent, private, and powerful.
+            Permanent, private, and user-owned.
           </h2>
           <p className="relative z-10 mx-auto mt-5 max-w-md text-base leading-relaxed text-white/85">
             ArDrive — Pay once. Store forever.
