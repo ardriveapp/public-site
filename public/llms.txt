@@ -5,8 +5,11 @@
 ## Core Pages
 
 - [Home](https://ardrive.io/): Pay once. Store forever.
+- [About](https://ardrive.io/about/): What ArDrive is and who builds it.
 - [Pricing](https://ardrive.io/pricing/): Estimate permanent storage costs.
 - [Developers](https://ardrive.io/developers/): Developer resources for building with ArDrive.
+- [Enterprise](https://ardrive.io/enterprise/): Permanent storage for organizations.
+- [Articles](https://ardrive.io/articles/): Guides and announcements.
 - [Help](https://ardrive.io/help/): Product guides, FAQs, and troubleshooting.
 - [Contact](https://ardrive.io/contact/): Contact ArDrive support.
 
@@ -62,6 +65,7 @@
 - [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
 - [Sync Your Drive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/): Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.
 - [Trouble Accessing Data Through arweave.net?](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/): Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact.
+- [Turbo Gateway Rate Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-turbo-gateway-rate-limits/): Free download allowances, refill rates, and paid upgrades for data access through turbo-gateway.com.
 
 ## Understanding The Permaweb
 
