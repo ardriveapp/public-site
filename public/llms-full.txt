@@ -26,8 +26,8 @@
 - [What Makes ArDrive Different From Other File Storage Apps](https://ardrive.io/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/): What makes ArDrive different from other file storage apps?
 - [Where Can I Make A Feature Request](https://ardrive.io/help/faqs-faq-where-can-i-make-a-feature-request/): Where can I make a feature request?
 - [ArDrive App Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/): Current upload and download limits for ArDrive by upload method, platform, and browser.
-- [Bad Gateway And Network Errors](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/): Troubleshoot 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, and frontend errors in ArDrive Web.
-- [Cannot Access Or Retrieve A File](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/): If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, AR.IO, or gateway errors, the issue may be temporary gateway availability.
+- [Bad Gateway And Network Errors](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/): Troubleshoot 502, 503, 504, bad gateway, network, resource, ar.io, GraphQL, gateway, and frontend errors in ArDrive Web.
+- [Cannot Access Or Retrieve A File](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/): If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, ar.io, or gateway errors, the issue may be temporary gateway availability.
 - [Change Gateway URL For ArDrive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/): Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen.
 - [Check Browser Console Logs](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs/): Browser console logs and network errors are the best way to understand ArDrive Web issues and help support troubleshoot login, gateway, upload, download, preview, or sync problems.
 - [Clearing Your Cache](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/): Clear browser cache for app.ardrive.io when files, folders, drives, or statuses look stale.
@@ -151,6 +151,8 @@ Category: ArDrive as a Platform
 Section: Arweave File System
 Description: Technical overview of ArFS, the Arweave File System used by ArDrive.
 
+> **Note:** This page describes an earlier version of ArFS. Read the current spec at [docs.ar.io](https://docs.ar.io/build/advanced/arfs).
+
 Arweave File System, or “ArFS” is a data modeling, storage, and retrieval protocol designed to emulate common file system operations and to provide aspects of mutability to your data hierarchy on [Arweave](https://ardrive.io/what-is-arweave/)'s otherwise permanent, immutable data storage blockweave.
 
 Due to Arweave's permanent, immutable and public nature traditional file system operations such as permissions, file/folder renaming and moving, and file updates cannot be done by simply updating the on-chain data model.
@@ -209,6 +211,8 @@ Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system
 Category: ArDrive as a Platform
 Section: Arweave File System
 Description: Technical overview of the ArFS Drive entity and root folder relationship.
+
+> **Note:** This page describes an earlier version of ArFS. Read the current spec at [docs.ar.io](https://docs.ar.io/build/advanced/arfs).
 
 A Drive is the highest level logical grouping of folders and files.
 
@@ -338,6 +342,8 @@ Canonical URL: https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system
 Category: ArDrive as a Platform
 Section: Arweave File System
 Description: Technical diagrams for public and private ArFS Drive structures.
+
+> **Note:** This page describes an earlier version of ArFS. Read the current spec at [docs.ar.io](https://docs.ar.io/build/advanced/arfs).
 
 Sometimes, it is easier to understand how different data types come together to make a single information architecture, or schema. The below diagrams show examples of how Drives, Folders and Files all fit together and reference one another.
 
@@ -969,11 +975,11 @@ One gigabyte is equal to 10^9 or 1,000,000,000 bytes.
 Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/
 Category: FAQs
 Section: Help And Troubleshooting Guides
-Description: Troubleshoot 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, and frontend errors in ArDrive Web.
+Description: Troubleshoot 502, 503, 504, bad gateway, network, resource, ar.io, GraphQL, gateway, and frontend errors in ArDrive Web.
 
-If ArDrive Web shows 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, or frontend errors, the issue is often temporary gateway availability or connectivity rather than a problem with your files or wallet.
+If ArDrive Web shows 502, 503, 504, bad gateway, network, resource, ar.io, GraphQL, gateway, or frontend errors, the issue is often temporary gateway availability or connectivity rather than a problem with your files or wallet.
 
-ArDrive uses Arweave gateways to load account data, retrieve files, show previews, download files, and query drive, folder, and file metadata. During periods of heavy network activity, gateway maintenance, AR.IO routing issues, or temporary gateway errors, some requests may fail.
+ArDrive uses Arweave gateways to load account data, retrieve files, show previews, download files, and query drive, folder, and file metadata. During periods of heavy network activity, gateway maintenance, ar.io routing issues, or temporary gateway errors, some requests may fail.
 
 These errors can appear while logging in, syncing a drive, opening a folder, previewing a file, retrieving a file, or downloading a file.
 
@@ -989,7 +995,7 @@ Common signs include:
 
 - Network or resource errors in the browser console
 
-- Gateway, AR.IO, GraphQL, or frontend errors
+- Gateway, ar.io, GraphQL, or frontend errors
 
 # What to do
 
@@ -1007,7 +1013,7 @@ Common signs include:
 
 - If the problem occurs specifically when requesting data through `arweave.net`, compare the identifier across public gateways. See [Trouble Accessing Data Through arweave.net?](/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net).
 
-- If the problem continues, visit our [contact page](/contact) and include what you were trying to do plus any browser console errors you saw, such as 502, 503, 504, bad gateway, network errors, resource errors, AR.IO errors, or GraphQL errors.
+- If the problem continues, visit our [contact page](/contact) and include what you were trying to do plus any browser console errors you saw, such as 502, 503, 504, bad gateway, network errors, resource errors, ar.io errors, or GraphQL errors.
 
 ---
 
@@ -1016,15 +1022,15 @@ Common signs include:
 Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/
 Category: FAQs
 Section: Help And Troubleshooting Guides
-Description: If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, AR.IO, or gateway errors, the issue may be temporary gateway availability.
+Description: If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, ar.io, or gateway errors, the issue may be temporary gateway availability.
 
 If you cannot access, retrieve, preview, or download a file in ArDrive Web, the issue may be related to temporary gateway availability, indexing delays, or frontend connectivity.
 
-ArDrive retrieves file data through Arweave gateways. During periods of heavy network activity, gateway maintenance, AR.IO routing issues, or temporary gateway errors, a file may fail to load even if it is still stored permanently on Arweave.
+ArDrive retrieves file data through Arweave gateways. During periods of heavy network activity, gateway maintenance, ar.io routing issues, or temporary gateway errors, a file may fail to load even if it is still stored permanently on Arweave.
 
-If you are seeing 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, gateway, or frontend errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+If you are seeing 502, 503, 504, bad gateway, network, resource, ar.io, GraphQL, gateway, or frontend errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
 
-The browser console is the best place to confirm whether the file issue is a gateway, network, resource, GraphQL, AR.IO, or frontend error. See [Check Browser Console Logs](/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs).
+The browser console is the best place to confirm whether the file issue is a gateway, network, resource, GraphQL, ar.io, or frontend error. See [Check Browser Console Logs](/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs).
 
 Common signs include:
 
@@ -1036,7 +1042,7 @@ Common signs include:
 
 - Network or resource errors in the browser console
 
-- Gateway, AR.IO, GraphQL, or frontend errors while opening a file
+- Gateway, ar.io, GraphQL, or frontend errors while opening a file
 
 # What to do
 
@@ -1114,7 +1120,7 @@ Description: Browser console logs and network errors are the best way to underst
 
 Browser console logs are often the best way to understand what is happening when ArDrive Web does not load, log in, sync, preview, upload, download, access, or retrieve a file as expected.
 
-Console logs can show whether the issue looks like a password or wallet problem, a frontend issue, a failed network request, a gateway issue, an AR.IO issue, or a 502, 503, 504, or bad gateway error.
+Console logs can show whether the issue looks like a password or wallet problem, a frontend issue, a failed network request, a gateway issue, an ar.io issue, or a 502, 503, 504, or bad gateway error.
 
 # How to open the browser console
 
@@ -1134,7 +1140,7 @@ Console logs can show whether the issue looks like a password or wallet problem,
 
 - Network or resource errors
 
-- AR.IO, GraphQL, gateway, or frontend errors
+- Ar.io, GraphQL, gateway, or frontend errors
 
 - Invalid password, invalid keyfile, wallet, or authentication messages
 
@@ -1328,7 +1334,7 @@ If ArDrive shows an invalid password or invalid keyfile message, double-check th
 
 If you are using a seed phrase, make sure the phrase belongs to the wallet you expect to access. If you are using ArConnect or another wallet connection, make sure the wallet is unlocked and connected to the correct account.
 
-If you do not see an invalid password or wallet message, and instead see repeated network, resource, 502, 503, 504, bad gateway, AR.IO, GraphQL, or frontend errors, the issue may not be your password or keyfile. See [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+If you do not see an invalid password or wallet message, and instead see repeated network, resource, 502, 503, 504, bad gateway, ar.io, GraphQL, or frontend errors, the issue may not be your password or keyfile. See [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
 
 The browser console is the best place to confirm whether the login issue is a password, wallet, gateway, network, or frontend error. See [Check Browser Console Logs](/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs).
 
@@ -1340,7 +1346,7 @@ The browser console is the best place to confirm whether the login issue is a pa
 
 - Refresh ArDrive and try logging in again.
 
-- If the browser console shows 502, 503, 504, bad gateway, network, resource, AR.IO, GraphQL, or frontend errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+- If the browser console shows 502, 503, 504, bad gateway, network, resource, ar.io, GraphQL, or frontend errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
 
 - If the problem continues, visit our [contact page](/contact) and include how you are logging in, whether you saw an invalid password message, and any browser console errors you saw.
 
