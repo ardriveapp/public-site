@@ -17,7 +17,7 @@ Next.js 15 static marketing site for ArDrive — permanent, decentralized storag
 - **Event Handlers**: Use `useCallback` for event handlers in client components
 
 ## Project Structure
-- `content/` — MDX content files (articles, case-studies, legal) — DO NOT put code here
+- `content/` — MDX content files (articles, help, legal) — DO NOT put code here
 - `public/` — Static assets served at site root — use organized subdirectories
 - `src/app/` — Next.js App Router pages (thin wrappers)
 - `src/components/` — React components organized by feature/domain
@@ -176,11 +176,6 @@ Use constants from `@/components/site-container`:
 - Optional: `date`, `tags`, `heroImage`, `heroImageAlt`, `ogImage`, `archived`
 - `archived: true` hides from listing but keeps the URL live
 - Images: `public/articles/<slug>/` → reference as `/articles/<slug>/filename.jpg`
-
-### Case Studies (`content/case-studies/`)
-- Filename: `<slug>.mdx`
-- Required: `title`, `description`
-- Optional: `heroImage`, `ogImage`, `archived`
 
 ### Help (`content/help/`)
 - Filename: `<slug>.mdx` (kebab-case)

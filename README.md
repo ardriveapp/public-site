@@ -21,7 +21,7 @@ Visit `http://localhost:3000` to see the site.
 ## Project Structure
 
 ```
-content/           # MDX articles, case studies, use cases
+content/           # MDX articles, help articles, legal pages
 public/            # Static assets and images
 src/
   app/            # Next.js App Router pages
@@ -32,10 +32,6 @@ src/
 ## Key Sections
 
 - **Articles** (`/articles`) — Blog posts and technical content
-- **Case Studies** (`/case-studies`) — Project implementations
-- **Use Cases** (`/use-cases`) — Industry applications
-- **Ecosystem** (`/ecosystem`) — Partner projects
-- **Cloudmap** (`/cloudmap`) — Gateway locations
 - **Help** (`/help`) — Product guides, FAQs, and troubleshooting
 
 ## Agent-Friendly Help Indexes
