@@ -13,31 +13,35 @@ interface LogoAsset {
 
 const LOGO_ASSETS: LogoAsset[] = [
   {
-    name: "Icon — Dark background",
+    name: "Icon, dark background",
     description: "Preferred version. Use on dark or black surfaces.",
     previewBg: "#121212",
     png: "/brand/ArDrive-Logo-Dark.png",
-    svg: "/brand/ArDrive-Logo-Dark.svg",
+    // The vector mark has its own light outline, so one SVG serves both
+    // backgrounds.
+    svg: "/brand/ArDrive-Logo.svg",
   },
   {
-    name: "Icon — Light background",
+    name: "Icon, light background",
     description: "Use on white or light-colored surfaces.",
     previewBg: "#FAFAFA",
     png: "/brand/ArDrive-Logo-Light.png",
-    svg: "/brand/ArDrive-Logo-Light.svg",
+    svg: "/brand/ArDrive-Logo.svg",
   },
   {
-    name: "Wordmark — Dark background",
+    name: "Wordmark, dark background",
     description: "Full logo with logotype. Use on dark surfaces.",
     previewBg: "#121212",
     png: "/brand/ArDrive-Logo-Wordmark-Light.png",
+    svg: "/brand/ArDrive-Logo-Light.svg",
     wide: true,
   },
   {
-    name: "Wordmark — Light background",
+    name: "Wordmark, light background",
     description: "Full logo with logotype. Use on white or light surfaces.",
     previewBg: "#FAFAFA",
     png: "/brand/ArDrive-Logo-Wordmark-Dark.png",
+    svg: "/brand/ArDrive-Logo-Dark.svg",
     wide: true,
   },
 ];
@@ -110,6 +114,43 @@ export function BrandKitPage() {
             Official ArDrive logos, color tokens, and typography. Use these assets when
             referencing or building on ArDrive.
           </p>
+        </div>
+      </section>
+
+      {/* For agents and developers */}
+      <section className="px-4 pt-4 pb-2">
+        <div className={SITE_CONTAINER_CLASS}>
+          <div
+            className="rounded-2xl p-6 sm:p-7"
+            style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
+          >
+            <h2
+              className="text-2xl"
+              style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
+            >
+              For agents and developers
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm" style={{ color: "rgba(250,250,250,0.6)" }}>
+              Building an ArDrive app or screen? Follow the design system: theme
+              tokens for dark and light, type scale, spacing, components and copy
+              rules. Agents can read the brand kit as JSON.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {[
+                { href: "/brand-kit/design-system.md", label: "Design system" },
+                { href: "/brand-kit/agents.json", label: "agents.json" },
+              ].map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="inline-flex items-center justify-center rounded-full px-4 py-2 text-xs font-semibold transition-opacity hover:opacity-80"
+                  style={{ background: "rgba(255,255,255,0.06)", color: "rgba(250,250,250,0.85)", border: "1px solid rgba(255,255,255,0.1)" }}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -266,7 +307,7 @@ export function BrandKitPage() {
                   No subscriptions, no data caps.
                 </p>
                 <p className="text-sm" style={{ color: "rgba(250,250,250,0.55)" }}>
-                  ArDrive uses Arweave — a blockchain protocol that stores your data
+                  ArDrive uses Arweave, a blockchain protocol that stores your data
                   across hundreds of nodes worldwide.
                 </p>
               </div>
@@ -290,7 +331,7 @@ export function BrandKitPage() {
             style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", color: "rgba(250,250,250,0.6)" }}
           >
             <p>Do not alter the logo colors, proportions, or orientation.</p>
-            <p>Maintain adequate clear space — at minimum equal to the height of the icon — around all logo variants.</p>
+            <p>Keep clear space around every logo variant of at least the height of the icon.</p>
             <p>Do not place the logo on backgrounds with insufficient contrast.</p>
             <p>
               Questions?{" "}
