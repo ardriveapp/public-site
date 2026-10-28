@@ -97,7 +97,7 @@
     "primary": {
       "family": "Wavehaus",
       "fallback": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
-      "license": "Licensed face. Get the font files from the ArDrive team; use the fallback stack without them.",
+      "license": "Licensed face. ArDrive apps get the font files from the ArDrive team; everyone else uses the fallback stack.",
       "weights": {
         "400": "42 Light: large figures only, such as amounts and sizes at heading sizes",
         "500": "66 Book: body text, the default",

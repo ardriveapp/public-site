@@ -80,7 +80,7 @@ neutral.
 | `icon-low` | `#5E5E5E` | `#8A8A8A` | Quiet icons |
 | `icon-mid` | `#A6A6A6` | `#666666` | Most icons |
 | `icon-high` | `#FFFFFF` | `#4F4F4F` | Emphasised icons |
-| `scrim` | `rgba(0,0,0,0.5)` | `rgba(0,0,0,0.5)` | Behind a dialog; a bottom sheet's is `rgba(8,8,8,0.64)` |
+| `scrim` | `rgba(0,0,0,0.5)` | `rgba(0,0,0,0.5)` | Behind a dialog or a bottom sheet |
 
 ### 2.3 Status colours
 
@@ -144,7 +144,8 @@ brand value can't be read on its container. Warning is deliberately grey.
 ### 3.1 Faces
 
 **Wavehaus** is the face for all text except the monospace cases below. It is
-a licensed face: get the font files from the ArDrive team, and fall back to
+a licensed face: ArDrive apps get the font files from the ArDrive team, and
+everyone else uses the fallback stack
 `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
 sans-serif`.
 
@@ -210,8 +211,8 @@ paragraph-l SemiBold.
 | `xxl` | 48 | Around an empty state or a page's main block |
 
 **Corner radii:** 4 for small controls (checkboxes, segments, chips), 6 for
-buttons and text fields, 8 for cards, notices and segmented controls, 9 for
-dialogs, 12 for sheets and large panels.
+buttons and text fields, 8 for cards, notices and segmented controls, 12 for
+dialogs, sheets and large panels.
 
 **Elevation** (shadow colour from the theme, section 2.4):
 
@@ -253,7 +254,7 @@ is the same height:
 A 6 px `container-red` band across the top, then the title (heading3 Bold)
 with a close button on the right (named "Close" for screen readers), an
 optional one-line description in `text-mid`, the content, and the action row.
-Padding 24 horizontal. Surface `container-l3`, radius 9, elevation 80, over
+Padding 24 horizontal. Surface `container-l3`, radius 12, elevation 80, over
 the scrim.
 
 The action row is right-aligned. The last action is primary. Cancel and
