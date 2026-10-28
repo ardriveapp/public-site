@@ -278,7 +278,7 @@ form is the same height.
 ### Segmented control
 
 Pick one of a few. 40 px tall, a `container-raised` track with a
-`stroke-mid` edge and radius 8; the chosen segment is filled `text-high` with
+`stroke-mid` edge and radius 8; the chosen segment is filled `text-mid` with
 its label in `container-raised`, the others are plain. Either it shares the width
 equally (a row of amounts) or it hugs its labels (a two-way switch). Each
 segment is a button for screen readers and says whether it is chosen.
