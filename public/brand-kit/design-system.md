@@ -210,9 +210,14 @@ paragraph-l SemiBold.
 | `xl` | 32 | Between sections of a page |
 | `xxl` | 48 | Around an empty state or a page's main block |
 
-**Corner radii:** 4 for small controls (checkboxes, segments, chips), 6 for
-buttons and text fields, 8 for cards, notices and segmented controls, 12 for
-dialogs, sheets and large panels.
+**Corner radii**, and nothing in between:
+
+| Token | px | Use |
+|---|---|---|
+| `sm` | 4 | Small controls: checkboxes, segments, chips |
+| `control` | 6 | Buttons and text fields |
+| `md` | 8 | Cards, notices, segmented controls and menus |
+| `lg` | 12 | Dialogs, sheets and large panels |
 
 **Elevation** (shadow colour from the theme, section 2.4):
 
@@ -228,7 +233,7 @@ Dialogs use 80. Pick a level by how far a surface floats above the one
 under it.
 
 **Breakpoint:** one, at 834 px. Under it, phone type sizes, a 16 px gutter,
-dialogs full width and bottom sheets in place of menus.
+dialogs full width and a bottom sheet in place of the New menu.
 
 ## 5. Components
 
@@ -275,6 +280,14 @@ required field's label ends in " *". A field that takes an ID or key uses
 monospace text and keeps the height of the other fields. Every field in a
 form is the same height.
 
+### Select fields
+
+Pick one of a list in a form. Drawn as a text field is, at the same height,
+with the label above, the value in the field and a down arrow at its right.
+It opens a menu under it, at least as wide, of choice rows (Menus, below).
+A select that isn't in a form, such as a unit beside an amount, is a button
+that opens the same menu.
+
 ### Segmented control
 
 Pick one of a few. 40 px tall, a `container-raised` track with a
@@ -306,6 +319,24 @@ action (Copy, Apply) is announced as a button.
 - **Copy field:** a read-only field with a Copy link; a secret is masked
   behind a reveal toggle.
 
+### Menus
+
+Every menu is the same card: radius `md`, elevation 80, the menu surface
+from the table under Lists and tables, items in `text-high` with an icon or
+checkbox before the label. A menu opens beside the button that opened it and
+flips to stay on the screen; a nested menu opens beside its item. Escape or a click
+outside closes it, and a click outside still reaches what it lands on. A
+screen reader reads a menu's items after the page, and with the
+accessibility tree on, a click on an item runs that item, not the row behind
+it. Under 834 px, a long menu that starts things (New) is a bottom sheet;
+row menus stay menus.
+
+A menu that picks a value uses choice rows: 40 px tall, a 16 px slot before
+the label that holds a tick on the current value (so labels line up), the
+label in `text-high`, and the menu's hover colour on hover or keyboard
+focus. Opened from the keyboard, the menu focuses the current value; Up and
+Down move, Enter picks, Escape closes, and focus returns to the button.
+
 ### Lists and tables
 
 A click selects and highlights a row. A double-click, a tap on touch, or
@@ -314,7 +345,7 @@ navigation open on a single click.
 
 | Surface | Dark | Light |
 |---|---|---|
-| Table | `#121212`, rows `#191919`, selected `#2C2C2C` | `#FBF9FA`, rows and selected `#F1EFF0` |
+| Table | `#121212`, rows `#191919`, hover `#222222`, selected `#2C2C2C` | `#FBF9FA`, rows `#F1EFF0`, hover `#E8E5E7`, selected `#E0DCDE` |
 | Menu | `#1F1F1F`, hover `#2C2C2C` | `#FBF9FA`, hover `#F1EFF0` |
 
 ## 6. Copy
@@ -342,6 +373,8 @@ navigation open on a single click.
 - Don't add a warning yellow, orange or pink, or a new status hue.
 - Don't use Ruddy for buttons or text.
 - Don't put a dialog on top of a dialog.
+- Don't draw a menu any other way, such as a framework's popup menu; every
+  menu is the one card above.
 - Don't set a button height outside the three sizes, or a gap off the
   spacing scale.
 - Don't put the wire landscape (Permahills) motif inside the apps.
