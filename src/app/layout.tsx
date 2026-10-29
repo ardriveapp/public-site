@@ -2,7 +2,7 @@ import "@/app/global.css";
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { bodyFont, headingFont } from "@/lib/fonts";
+import { bodyFont, headingFont, monoFont } from "@/lib/fonts";
 import { withBasePath } from "@/lib/base-path";
 
 const getMetadataBase = () => {
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bodyFont.variable} ${headingFont.variable}`}
+      className={`${bodyFont.variable} ${headingFont.variable} ${monoFont.variable}`}
       suppressHydrationWarning
     >
       <body

@@ -149,17 +149,31 @@ everyone else uses the fallback stack
 `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
 sans-serif`.
 
-| Weight | Wavehaus cut | Use |
+| Wavehaus cut | CSS weight | Use |
 |---|---|---|
-| 400 | 42 Light | Large figures only: amounts, sizes and counts at heading sizes, where the figure is the point of its block |
-| 500 | 66 Book | Body text, the default |
-| 600 | 95 SemiBold | Labels, buttons, emphasis |
-| 700 | 128 Bold | Titles: dialog and page headings |
-| 800 | 158 ExtraBold | Marketing headlines only (the website), not in the apps |
+| 158 ExtraBold | 800 | Marketing headlines only (the website), not in the apps |
+| 128 Bold | 700 | Titles: dialog and page headings |
+| 95 SemiBold | 600 | Labels, buttons, emphasis |
+| 66 Book | 400 | Body text, the default |
+| 42 Light | 300 | Large figures only: amounts, sizes and counts at heading sizes, where the figure is the point of its block |
+
+Text with no weight set is always Book, never Light. The font files
+themselves declare Light as 400 and Book as 500, so a web page declares the
+CSS weights above in `@font-face`, and an app that cannot (the Flutter apps,
+whose renderer reads the files) makes Book its theme's default instead. The
+28 Thin cut is never used.
 
 A figure in Light sits beside its unit in Book or SemiBold at a smaller size
 ("7.8766 credits", "$42.00 USD"), set as one line of text that wraps, never
 as two boxes that can overflow.
+
+Wavehaus figures are proportional: a 1 is half as wide as a 0, and the face
+has no tabular figures. Right-align a column of numbers, and give a figure
+that changes in place (a percentage, a counter, a balance) a fixed width, so
+nothing beside it moves.
+
+Wavehaus covers Latin only. Other scripts (Hindi, Japanese, Chinese) are set
+in the system's font through the fallback stack.
 
 **Roboto Mono Regular** (OFL) is for exactly two kinds of text:
 

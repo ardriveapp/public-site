@@ -1,6 +1,6 @@
 {
   "brand": "ArDrive",
-  "version": "2026-10-28",
+  "version": "2026-10-29",
   "human_reference": "/brand-kit",
   "machine_reference": "/brand-kit/agents.json",
   "design_system": {
@@ -99,12 +99,15 @@
       "fallback": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "license": "Licensed face. ArDrive apps get the font files from the ArDrive team; everyone else uses the fallback stack.",
       "weights": {
-        "400": "42 Light: large figures only, such as amounts and sizes at heading sizes",
-        "500": "66 Book: body text, the default",
-        "600": "95 SemiBold: labels, buttons, emphasis",
+        "800": "158 ExtraBold: website headlines only",
         "700": "128 Bold: titles in the apps",
-        "800": "158 ExtraBold: website headlines"
-      }
+        "600": "95 SemiBold: labels, buttons, emphasis",
+        "400": "66 Book: body text, the default",
+        "300": "42 Light: large figures only, such as amounts and sizes at heading sizes"
+      },
+      "weights_note": "CSS weights to declare in @font-face. The files declare Light as 400 and Book as 500; text with no weight set must be Book, never Light. 28 Thin is never used.",
+      "figures": "Proportional only, no tabular figures. Right-align number columns; give a figure that changes in place a fixed width.",
+      "scripts": "Latin only. Other scripts use the system font through the fallback stack."
     },
     "monospace": {
       "family": "Roboto Mono",
