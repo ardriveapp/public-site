@@ -323,13 +323,30 @@ action (Copy, Apply) is announced as a button.
 
 Every menu is the same card: radius `md`, elevation 80, the menu surface
 from the table under Lists and tables, items in `text-high` with an icon or
-checkbox before the label. A menu opens beside the button that opened it and
-flips to stay on the screen; a nested menu opens beside its item. Escape or a click
-outside closes it, and a click outside still reaches what it lands on. A
+checkbox before the label. A menu opens beside the button that opened it
+and flips to stay on the screen; a nested menu opens beside its item. Escape
+or a click outside closes it, and a click outside still reaches what it lands
+on. A
 screen reader reads a menu's items after the page, and with the
 accessibility tree on, a click on an item runs that item, not the row behind
 it. Under 834 px, a long menu that starts things (New) is a bottom sheet;
 row menus stay menus.
+
+A menu of actions groups its items, with a 1 px `stroke-low` line and 4 px
+above and below it between groups. The line takes no click and a screen
+reader skips it. A drive, a folder and a file each have one menu, the same
+wherever it opens (its row, the page header, the details panel, a phone), in
+this order. An item that doesn't apply is left out, never shown disabled for
+good:
+
+- **Drive:** Share, Publish to web | Download, Export contents | Rename,
+  Create snapshot, Hide | Sync, Full resync | More info | Detach. Until this
+  device has synced the drive, only what doesn't need its contents shows.
+- **Folder:** Open | Share, Publish to web | Download | Rename, Move, Add
+  license, Hide | More info.
+- **File:** Preview | Share, Add name | Download | Rename (Edit for a note),
+  Move, Add license, Hide | Check upload status (while it uploads), More
+  info.
 
 A menu that picks a value uses choice rows: 40 px tall, a 16 px slot before
 the label that holds a tick on the current value (so labels line up), the
