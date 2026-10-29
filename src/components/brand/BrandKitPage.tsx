@@ -62,6 +62,50 @@ const COLORS: BrandColor[] = [
   { name: "Info", hex: "#3142C4", role: "Info states, secondary accents" },
 ];
 
+// The Wavehaus cuts, heaviest first, at the CSS weight each is declared at.
+const TYPE_WEIGHTS = [
+  {
+    cut: "ExtraBold",
+    weight: 800,
+    use: "Website headlines only",
+    sample: "Pay once. Store forever.",
+    size: "text-3xl",
+    family: "var(--font-heading)",
+  },
+  {
+    cut: "Bold",
+    weight: 700,
+    use: "Titles in the apps",
+    sample: "Upload files",
+    size: "text-2xl",
+    family: "var(--font-heading)",
+  },
+  {
+    cut: "SemiBold",
+    weight: 600,
+    use: "Labels, buttons, emphasis",
+    sample: "Turbo Credits",
+    size: "text-lg",
+    family: "var(--font-body)",
+  },
+  {
+    cut: "Book",
+    weight: 400,
+    use: "Body text, the default",
+    sample: "Permanent, private and user-owned.",
+    size: "text-base",
+    family: "var(--font-body)",
+  },
+  {
+    cut: "Light",
+    weight: 300,
+    use: "Large figures only",
+    sample: "2.4 GB",
+    size: "text-4xl",
+    family: "var(--font-body)",
+  },
+];
+
 function DownloadButton({
   href,
   label,
@@ -253,62 +297,107 @@ export function BrandKitPage() {
       <section className="px-4 py-16">
         <div className={SITE_CONTAINER_CLASS}>
           <h2
-            className="mb-8 text-3xl"
+            className="mb-3 text-3xl"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}
           >
             Typography
           </h2>
-          <div className="grid gap-5 md:grid-cols-2">
+          <p className="mb-8 max-w-2xl text-sm" style={{ color: "rgba(250,250,250,0.6)" }}>
+            Two faces: Wavehaus for everything people read, Roboto Mono for the
+            strings they check character by character.
+          </p>
+          <div className="grid gap-5 lg:grid-cols-[3fr_2fr]">
 
-            {/* Heading */}
+            {/* Wavehaus */}
             <div
-              className="rounded-2xl p-7"
+              className="min-w-0 rounded-2xl p-7"
               style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
             >
-              <div className="flex items-start justify-between gap-4 mb-5">
+              <div className="mb-2 flex items-start justify-between gap-4">
                 <div>
-                  <p className="font-semibold text-sm">Wavehaus Sans</p>
+                  <p className="font-semibold text-sm">Wavehaus</p>
                   <p className="text-xs mt-0.5" style={{ color: "rgba(250,250,250,0.45)" }}>
-                    Headings · Weight 800
+                    Headings, body and UI · Licensed face
                   </p>
                 </div>
-                <code className="text-xs font-mono px-2 py-1 rounded" style={{ background: "rgba(255,255,255,0.06)", color: "rgba(250,250,250,0.5)" }}>
-                  var(--font-heading)
-                </code>
-              </div>
-              <div style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
-                <p className="text-5xl leading-tight">Aa</p>
-                <p className="mt-3 text-2xl leading-tight">Pay Once.</p>
-                <p className="text-2xl leading-tight" style={{ color: "#D31721" }}>Store Forever.</p>
-              </div>
-            </div>
-
-            {/* Body */}
-            <div
-              className="rounded-2xl p-7"
-              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
-            >
-              <div className="flex items-start justify-between gap-4 mb-5">
-                <div>
-                  <p className="font-semibold text-sm">Wavehaus Sans</p>
-                  <p className="text-xs mt-0.5" style={{ color: "rgba(250,250,250,0.45)" }}>
-                    Body / UI · Weights 400 – 600
-                  </p>
-                </div>
-                <code className="text-xs font-mono px-2 py-1 rounded" style={{ background: "rgba(255,255,255,0.06)", color: "rgba(250,250,250,0.5)" }}>
+                <code className="shrink-0 whitespace-nowrap text-xs font-mono px-2 py-1 rounded" style={{ background: "rgba(255,255,255,0.06)", color: "rgba(250,250,250,0.5)" }}>
                   var(--font-body)
                 </code>
               </div>
-              <div className="space-y-2">
-                <p className="text-base font-normal">
-                  Permanent, private, and user-owned.
+              <div>
+                {TYPE_WEIGHTS.map((w) => (
+                  <div
+                    key={w.cut}
+                    className="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:gap-6"
+                    style={{ borderTop: "1px solid rgba(255,255,255,0.07)" }}
+                  >
+                    <div className="shrink-0 sm:w-44">
+                      <p className="text-sm font-semibold">
+                        {w.cut} <span style={{ color: "rgba(250,250,250,0.45)" }}>{w.weight}</span>
+                      </p>
+                      <p className="text-xs" style={{ color: "rgba(250,250,250,0.45)" }}>{w.use}</p>
+                    </div>
+                    <p
+                      className={`min-w-0 leading-tight ${w.size}`}
+                      style={{ fontFamily: w.family, fontWeight: w.weight }}
+                    >
+                      {w.sample}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex min-w-0 flex-col gap-5">
+              {/* Roboto Mono */}
+              <div
+                className="rounded-2xl p-7"
+                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
+              >
+                <div className="mb-5 flex items-start justify-between gap-4">
+                  <div>
+                    <p className="font-semibold text-sm">Roboto Mono</p>
+                    <p className="text-xs mt-0.5" style={{ color: "rgba(250,250,250,0.45)" }}>
+                      Regular 400 · OFL
+                    </p>
+                  </div>
+                  <code className="text-xs font-mono px-2 py-1 rounded" style={{ background: "rgba(255,255,255,0.06)", color: "rgba(250,250,250,0.5)" }}>
+                    font-mono
+                  </code>
+                </div>
+                <div className="space-y-3 text-sm">
+                  <p>
+                    Owner <span className="font-mono text-[13px]">7xKpQa...q2Fd</span>
+                  </p>
+                  <p className="break-all font-mono text-[13px]" style={{ color: "rgba(250,250,250,0.75)" }}>
+                    kQJt49W-uYw_E7YSqQqkUARNZPg4H38hFnOMP4hf9MA
+                  </p>
+                  <p style={{ color: "rgba(250,250,250,0.55)" }}>
+                    Transaction, file and drive IDs, wallet addresses, keys and
+                    code. A name like phil.ar.io stays in Wavehaus. Set it a step
+                    smaller than the text beside it.
+                  </p>
+                </div>
+              </div>
+
+              {/* Rules */}
+              <div
+                className="rounded-2xl p-7 text-sm space-y-3"
+                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", color: "rgba(250,250,250,0.65)" }}
+              >
+                <p>
+                  <span className="font-semibold" style={{ color: "#FAFAFA" }}>Text with no weight set is Book.</span>{" "}
+                  The files call Light 400, so declare the weights above in
+                  @font-face.
                 </p>
-                <p className="text-base font-semibold">
-                  No subscriptions, no data caps.
+                <p>
+                  <span className="font-semibold" style={{ color: "#FAFAFA" }}>Light is for figures.</span>{" "}
+                  Only at heading sizes, beside a label in a heavier weight.
                 </p>
-                <p className="text-sm" style={{ color: "rgba(250,250,250,0.55)" }}>
-                  ArDrive uses Arweave, a blockchain protocol that stores your data
-                  across hundreds of nodes worldwide.
+                <p>
+                  <span className="font-semibold" style={{ color: "#FAFAFA" }}>Line numbers up.</span>{" "}
+                  Wavehaus figures vary in width. Right-align number columns and
+                  give a figure that changes a fixed width.
                 </p>
               </div>
             </div>

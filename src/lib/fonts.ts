@@ -45,3 +45,17 @@ export const bodyFont = localFont({
 });
 
 
+
+// Roboto Mono Regular (OFL, src/fonts/Roboto-Mono/OFL.txt), the Latin subset
+// the ArDrive apps ship: IDs, wallet addresses, keys and code.
+export const monoFont = localFont({
+  src: [
+    {
+      path: "../fonts/Roboto-Mono/RobotoMono-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-roboto-mono",
+  display: "swap",
+});

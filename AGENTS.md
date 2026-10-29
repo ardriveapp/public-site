@@ -83,7 +83,7 @@ For listing/index cards, a subtle red gradient is appropriate:
 All weights are available. Match weight to role:
 | Weight | File | Use |
 |---|---|---|
-| 300 — Light | `Wavehaus-42Light` | Large, airy display text |
+| 300 — Light | `Wavehaus-42Light` | Large figures only (sizes, amounts) |
 | 400 — Book | `Wavehaus-66Book` | Body copy, UI labels |
 | 600 — SemiBold | `Wavehaus-95SemiBold` | Subheadings, emphasis |
 | 700 — Bold | `Wavehaus-128Bold` | Section headings |
@@ -93,7 +93,9 @@ CSS variables exposed via Next.js font loader:
 - `var(--font-heading)` — headings (600–800 range)
 - `var(--font-body)` — body/UI (300–600 range)
 
-Both map to Wavehaus. Headings automatically use `var(--font-heading)` via global CSS. For inline overrides:
+- `var(--font-roboto-mono)` — Roboto Mono Regular, behind Tailwind's `font-mono`: IDs, wallet addresses, keys and code only
+
+Heading and body map to Wavehaus. The brand kit's design system (`public/brand-kit/design-system.md`, section 3) is the rule; keep this table in step with it. Headings automatically use `var(--font-heading)` via global CSS. For inline overrides:
 ```tsx
 <h1 style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>...</h1>
 ```

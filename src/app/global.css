@@ -55,6 +55,10 @@
 
   --color-ardrive-success: #18A957;
   --color-ardrive-info: #3142C4;
+
+  /* Roboto Mono, as in the apps, for the font-mono utility. */
+  --font-mono: var(--font-roboto-mono), ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
 }
 
 /* ============================================================
@@ -261,7 +265,7 @@ h6 {
   padding: 0.2em 0.4em;
   border-radius: 0.25rem;
   font-size: 0.875em;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
 }
 
 .prose pre {
