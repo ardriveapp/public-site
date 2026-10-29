@@ -345,7 +345,7 @@ navigation open on a single click.
 
 | Surface | Dark | Light |
 |---|---|---|
-| Table | `#121212`, rows `#191919`, selected `#2C2C2C` | `#FBF9FA`, rows `#F1EFF0`, selected `#E0DCDE` |
+| Table | `#121212`, rows `#191919`, hover `#222222`, selected `#2C2C2C` | `#FBF9FA`, rows `#F1EFF0`, hover `#E8E5E7`, selected `#E0DCDE` |
 | Menu | `#1F1F1F`, hover `#2C2C2C` | `#FBF9FA`, hover `#F1EFF0` |
 
 ## 6. Copy
