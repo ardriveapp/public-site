@@ -12,6 +12,12 @@
 - [Articles](https://ardrive.io/articles/): Guides and announcements.
 - [Help](https://ardrive.io/help/): Product guides, FAQs, and troubleshooting.
 - [Contact](https://ardrive.io/contact/): Contact ArDrive support.
+- [Brand Kit](https://ardrive.io/brand-kit/): Logos, colors and typography.
+
+## Brand and Design
+
+- [Brand kit JSON](https://ardrive.io/brand-kit/agents.json): Machine-readable logos, colors, typography and copy terms.
+- [Design system](https://ardrive.io/brand-kit/design-system.md): The standard for ArDrive app UI: theme tokens, type scale, spacing, components and copy rules.
 
 ## Machine-Readable Help
 

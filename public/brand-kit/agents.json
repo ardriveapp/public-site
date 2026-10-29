@@ -1,0 +1,131 @@
+{
+  "brand": "ArDrive",
+  "version": "2026-10-28",
+  "human_reference": "/brand-kit",
+  "machine_reference": "/brand-kit/agents.json",
+  "design_system": {
+    "spec": "/brand-kit/design-system.md",
+    "usage": "The standard for building ArDrive app UI on any platform: theme tokens for dark and light, type scale, spacing, radii, components and copy rules. Use it for product screens; this file covers the brand layer only."
+  },
+  "assets_base_path": "/brand/",
+  "logos": [
+    {
+      "id": "icon",
+      "name": "Icon",
+      "variants": {
+        "svg": "/brand/ArDrive-Logo.svg"
+      },
+      "usage": "The mark on a transparent ground, with its own light outline. Works on dark and light backgrounds."
+    },
+    {
+      "id": "icon-on-dark",
+      "name": "Icon on dark plate",
+      "variants": {
+        "png": "/brand/ArDrive-Logo-Dark.png"
+      },
+      "usage": "Preferred version where a square plate is needed, such as an avatar or app icon."
+    },
+    {
+      "id": "icon-on-light",
+      "name": "Icon on light plate",
+      "variants": {
+        "png": "/brand/ArDrive-Logo-Light.png"
+      },
+      "usage": "A square plate on light surfaces."
+    },
+    {
+      "id": "wordmark-light",
+      "name": "Wordmark, light text",
+      "variants": {
+        "svg": "/brand/ArDrive-Logo-Light.svg",
+        "png": "/brand/ArDrive-Logo-Wordmark-Light.png"
+      },
+      "usage": "Use on dark backgrounds."
+    },
+    {
+      "id": "wordmark-dark",
+      "name": "Wordmark, dark text",
+      "variants": {
+        "svg": "/brand/ArDrive-Logo-Dark.svg",
+        "png": "/brand/ArDrive-Logo-Wordmark-Dark.png"
+      },
+      "usage": "Use on light backgrounds."
+    }
+  ],
+  "logo_rules": [
+    "Do not alter the logo's colours, proportions or orientation.",
+    "Keep clear space around every variant of at least the height of the icon.",
+    "Do not place the logo on a background without enough contrast."
+  ],
+  "colors": [
+    {
+      "name": "Onyx",
+      "hex": "#121212",
+      "usage": "Dark background."
+    },
+    {
+      "name": "Alabaster",
+      "hex": "#FAFAFA",
+      "usage": "Text and foreground on dark."
+    },
+    {
+      "name": "Primary",
+      "hex": "#D31721",
+      "usage": "CTAs, primary buttons and key accents."
+    },
+    {
+      "name": "Ruddy",
+      "hex": "#FE0230",
+      "usage": "The logo mark, decorative highlights and glows. Not for buttons or text: white on Ruddy fails WCAG AA."
+    },
+    {
+      "name": "Success",
+      "hex": "#18A957",
+      "usage": "Success states."
+    },
+    {
+      "name": "Info",
+      "hex": "#3142C4",
+      "usage": "Info states."
+    }
+  ],
+  "color_rules": [
+    "There is no brand warning or error colour. Errors use the reds. Warnings are neutral greys with a warning icon; never add yellow, orange or pink.",
+    "Dark is the default theme; light is first class. App UI takes every colour from the theme tokens in the design system spec."
+  ],
+  "typography": {
+    "primary": {
+      "family": "Wavehaus",
+      "fallback": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "license": "Licensed face. ArDrive apps get the font files from the ArDrive team; everyone else uses the fallback stack.",
+      "weights": {
+        "400": "42 Light: large figures only, such as amounts and sizes at heading sizes",
+        "500": "66 Book: body text, the default",
+        "600": "95 SemiBold: labels, buttons, emphasis",
+        "700": "128 Bold: titles in the apps",
+        "800": "158 ExtraBold: website headlines"
+      }
+    },
+    "monospace": {
+      "family": "Roboto Mono",
+      "weight": 400,
+      "license": "OFL",
+      "usage": "Code, text-file previews and note editors; transaction, file and drive IDs, wallet addresses and keys. Names (ArNS, ENS, SNS) stay in Wavehaus."
+    }
+  },
+  "copy": {
+    "rules": [
+      "Sentence case for labels, buttons and titles.",
+      "Minimal text: no description that restates its label.",
+      "No em dashes."
+    ],
+    "terms": {
+      "Turbo Credits": "The product name. Lowercase \"credits\" after an amount, shown to 4 decimal places.",
+      "free upload allowance": "Not \"free tier\" or \"free uploads\".",
+      "ar.io Console": "ar.io in lowercase.",
+      "address": "A wallet address only, never a name or a web location.",
+      "snapshot": "The user's word for a saved drive state."
+    }
+  },
+  "contact": "/contact"
+}
