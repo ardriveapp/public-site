@@ -280,6 +280,14 @@ required field's label ends in " *". A field that takes an ID or key uses
 monospace text and keeps the height of the other fields. Every field in a
 form is the same height.
 
+### Select fields
+
+Pick one of a list in a form. Drawn as a text field is, at the same height,
+with the label above, the value in the field and a down arrow at its right.
+It opens a menu under it, at least as wide, of choice rows (Menus, below).
+A select that isn't in a form, such as a unit beside an amount, is a button
+that opens the same menu.
+
 ### Segmented control
 
 Pick one of a few. 40 px tall, a `container-raised` track with a
@@ -322,6 +330,12 @@ screen reader reads a menu's items after the page, and with the
 accessibility tree on, a click on an item runs that item, not the row behind
 it. Under 834 px, a long menu that starts things (New) is a bottom sheet;
 row menus stay menus.
+
+A menu that picks a value uses choice rows: 40 px tall, a 16 px slot before
+the label that holds a tick on the current value (so labels line up), the
+label in `text-high`, and the menu's hover colour on hover or keyboard
+focus. Opened from the keyboard, the menu focuses the current value; Up and
+Down move, Enter picks, Escape closes, and focus returns to the button.
 
 ### Lists and tables
 
