@@ -62,11 +62,11 @@ neutral.
 | `container-red` | `#D31721` | `#D31721` | The dialog's top band |
 | `text-high` | `#E0E0E0` | `#3B3B3B` | Body text, titles |
 | `text-mid` | `#A6A6A6` | `#4F4F4F` | Secondary text, descriptions |
-| `text-low` | `#7D7D7D` | `#666666` | Labels, captions, metadata |
-| `text-xlow` | `#424241` | `#8A8A8A` | Placeholders, disabled text |
+| `text-low` | `#939393` | `#616161` | Labels, captions, metadata |
+| `text-xlow` | `#666666` | `#8A8A8A` | Placeholders, disabled text |
 | `text-link` | `#A6A6A6` | `#4F4F4F` | Links (underlined) |
 | `text-on-primary` | `#FFFFFF` | `#F8F6F7` | Text on a primary button |
-| `text-red` | `#D42C35` | `#D42C35` | Destructive text |
+| `text-red` | `#E78086` | `#C0151E` | Errors, failures and destructive text; the same as the error foreground |
 | `stroke-low` | `rgba(237,237,237,0.08)` | `rgba(30,0,10,0.12)` | Dividers |
 | `stroke-mid` | `rgba(237,237,237,0.12)` | `rgba(30,0,10,0.16)` | Field and card edges |
 | `stroke-high` | `rgba(237,237,237,0.16)` | `#D1CBCE` | Focused or hovered edges |
@@ -82,6 +82,11 @@ neutral.
 | `icon-high` | `#FFFFFF` | `#4F4F4F` | Emphasised icons |
 | `scrim` | `rgba(0,0,0,0.5)` | `rgba(0,0,0,0.5)` | Behind a dialog or a bottom sheet |
 
+Every text token except `text-xlow` reads at 4.5:1 or better on every
+surface, from the page to a selected table row. `text-xlow` is for
+placeholders and disabled text, which AA exempts; it still reads at 2:1 or
+better on a disabled button, a menu, a dialog and the page.
+
 ### 2.3 Status colours
 
 Each status has a foreground (icon, emphasis), a container (fill) and a
@@ -92,7 +97,7 @@ meets AA in both themes.
 |---|---|---|
 | Info | `#8B98F9` / `#111833` / `#253293` | `#3142C4` / `#ECEEFE` / `#B1BAFB` |
 | Success | `#18A957` / `#052211` / `#0A4423` | `#11763D` / `#F4FBF7` / `#D1EEDD` |
-| Error | `#DF565D` / `#260406` / `#730D12` | `#C0151E` / `#FCF9FA` / `#F2B6B9` |
+| Error | `#E78086` / `#260406` / `#730D12` | `#C0151E` / `#FCF9FA` / `#F2B6B9` |
 | Warning | `#E0E0E0` / `#1F1F1F` / `rgba(237,237,237,0.16)` | `#3B3B3B` / `#FFFFFF` / `#D1CBCE` |
 
 Info and success are the brand hues, lightened or darkened only where the
@@ -104,8 +109,8 @@ brand value can't be read on its container. Warning is deliberately grey.
 :root, [data-theme="dark"] {
   --container-l0: #080808; --container-l1: #0D0D0D; --container-l2: #121212;
   --container-l3: #171717; --container-raised: #1F1F1F; --container-red: #D31721;
-  --text-high: #E0E0E0; --text-mid: #A6A6A6; --text-low: #7D7D7D; --text-xlow: #424241;
-  --text-link: #A6A6A6; --text-on-primary: #FFFFFF; --text-red: #D42C35;
+  --text-high: #E0E0E0; --text-mid: #A6A6A6; --text-low: #939393; --text-xlow: #666666;
+  --text-link: #A6A6A6; --text-on-primary: #FFFFFF; --text-red: #E78086;
   --stroke-low: rgba(237,237,237,0.08); --stroke-mid: rgba(237,237,237,0.12);
   --stroke-high: rgba(237,237,237,0.16); --stroke-red: #C0151E;
   --button-primary: #D31721; --button-primary-hover: #C0151E; --button-primary-press: #9A1118;
@@ -115,15 +120,15 @@ brand value can't be read on its container. Warning is deliberately grey.
   --icon-low: #5E5E5E; --icon-mid: #A6A6A6; --icon-high: #FFFFFF;
   --info-fg: #8B98F9; --info-container: #111833; --info-stroke: #253293;
   --success-fg: #18A957; --success-container: #052211; --success-stroke: #0A4423;
-  --error-fg: #DF565D; --error-container: #260406; --error-stroke: #730D12;
+  --error-fg: #E78086; --error-container: #260406; --error-stroke: #730D12;
   --warning-fg: #E0E0E0; --warning-container: #1F1F1F; --warning-stroke: rgba(237,237,237,0.16);
   --scrim: rgba(0,0,0,0.5); --shadow: rgba(13,13,13,0.9);
 }
 [data-theme="light"] {
   --container-l0: #F8F6F7; --container-l1: #EDEAEB; --container-l2: #E0DCDE;
   --container-l3: #E0DCDE; --container-raised: #FFFFFF; --container-red: #D31721;
-  --text-high: #3B3B3B; --text-mid: #4F4F4F; --text-low: #666666; --text-xlow: #8A8A8A;
-  --text-link: #4F4F4F; --text-on-primary: #F8F6F7; --text-red: #D42C35;
+  --text-high: #3B3B3B; --text-mid: #4F4F4F; --text-low: #616161; --text-xlow: #8A8A8A;
+  --text-link: #4F4F4F; --text-on-primary: #F8F6F7; --text-red: #C0151E;
   --stroke-low: rgba(30,0,10,0.12); --stroke-mid: rgba(30,0,10,0.16);
   --stroke-high: #D1CBCE; --stroke-red: #DF565D;
   --button-primary: #D31721; --button-primary-hover: #DF565D; --button-primary-press: #E78086;
