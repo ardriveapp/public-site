@@ -358,9 +358,10 @@ good:
   device has synced the drive, only what doesn't need its contents shows.
 - **Folder:** Open | Share, Publish to web | Download | Rename, Move, Add
   license, Hide | More info.
-- **File:** Preview | Share, Add name | Download | Rename (Edit for a note),
-  Move, Add license, Hide | Check upload status (while it uploads), More
-  info.
+- **File:** Preview | Share, Publish to web | Download | Rename (Edit for a
+  note), Move, Add license, Hide | Check upload status (while it uploads),
+  More info. A file's name is set inside Publish to web; where nothing
+  publishes, Add name stands in its place.
 
 A menu that picks a value uses choice rows: 40 px tall, a 16 px slot before
 the label that holds a tick on the current value (so labels line up), the
