@@ -51,8 +51,8 @@
 - [ArDrive Turbo](https://ardrive.io/help/faqs-faq-ardrive-turbo/): Common questions about ArDrive Turbo Credits, payments, receipts, refunds, and support.
 - [Arweave Wallets](https://ardrive.io/help/faqs-faq-arweave-wallets/): Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.
 - [Everything You Need To Know About ArDrive](https://ardrive.io/help/faqs-faq-everything-you-need-to-know-about-ardrive/): Common questions about permanence, privacy, uploads, sharing, and permaweb URLs in ArDrive.
-- [How Do Keyfile And Seed Phrase Login Work](https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/): Learn how keyfile and seed phrase login work and how to protect wallet access.
 - [How Do Turbo Conversions Work](https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/): Understand how Turbo upload prices are estimated from file size, AR, and Credits.
+- [How keyfile and recovery phrase login work](https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/): Learn how keyfile, recovery phrase, and wallet sign-in work in ArDrive and how to protect wallet access.
 - [What Are The Privacy And Encryption Standards?](https://ardrive.io/help/faqs-faq-what-are-the-privacy-and-encryption-standards/): Private Drive files are encrypted with AES-256-GCM, while public files remain public forever.
 - [What Currencies Or Cryptocurrencies Can I Use To Upload?](https://ardrive.io/help/faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload/): ArDrive supports permanent storage payments through Turbo Credits or AR tokens.
 - [What Makes ArDrive Different From Other File Storage Apps](https://ardrive.io/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/): What makes ArDrive different from other file storage apps?
@@ -68,7 +68,7 @@
 - [Clearing Your Cache](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/): Clear browser cache for app.ardrive.io when files, folders, drives, or statuses look stale.
 - [Drive Syncing Issues](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/): Drive syncing issues are usually caused by intermittent gateway indexing delays and often resolve on their own within a few hours.
 - [File Upload Issues And Workarounds](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/): Troubleshoot file upload status, gateway indexing delays, and transaction visibility.
-- [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
+- [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, recovery phrase, wallet, locked drive, browser, and gateway-related login errors.
 - [Sync Your Drive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/): Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.
 - [Trouble Accessing Data Through arweave.net?](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/): Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact.
 - [Turbo Gateway Rate Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-turbo-gateway-rate-limits/): Free download allowances, refill rates, and paid upgrades for data access through turbo-gateway.com.
@@ -84,7 +84,7 @@
 ### Actions
 
 - [Actions](https://ardrive.io/help/using-ardrive-apps-actions-actions/): Overview of common file, folder, and Drive actions in ArDrive.
-- [ArDrive Explorer View](https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/): An overview of the buttons on the ArDrive Drive Explorer:
+- [ArDrive Explorer View](https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/): Where to find the actions for your drives, folders, and files in ArDrive.
 - [Download A File](https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/): Download files from ArDrive without additional storage charges.
 - [Drive Explorer](https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/): Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.
 - [Drive Sharing](https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/): Share public or private Drives with a link.
@@ -100,20 +100,22 @@
 
 ### Getting Started
 
-- [ArDrive Password](https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/): Understand how your ArDrive password protects private Drives and why it must be stored safely.
-- [Create An Arweave Wallet With ArDrive](https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/): Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
-- [Fund Your Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/): Fund ArDrive uploads with Turbo Credits or AR tokens.
-- [Log Into ArDrive Keyfile](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/): Log in to ArDrive using your Arweave wallet keyfile and password.
-- [Log Into ArDrive MetaMask Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/): Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.
-- [Log Into ArDrive Seed Phrase](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/): Log in to ArDrive with an existing seed phrase and your ArDrive password.
-- [Log Into ArDrive With Wander](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/): Use Wander to manage an Arweave wallet and log in to ArDrive.
+- [Fund your wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/): Pay for ArDrive uploads with Turbo Credits, by card or crypto, or with AR tokens.
+- [Log into ArDrive with a keyfile](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/): Log in to ArDrive with your Arweave wallet keyfile and your password.
+- [Log into ArDrive with a recovery phrase](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/): Log in to ArDrive with your 12-word recovery phrase and your password.
+- [Log into ArDrive with MetaMask](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/): Sign in to ArDrive with MetaMask. ArDrive makes an Arweave wallet from your MetaMask signature, so there is no keyfile to manage.
+- [Log into ArDrive with Wander](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/): Use the Wander browser extension to sign in to ArDrive with a wallet approval, with no ArDrive password.
+- [Sign up for ArDrive](https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/): Create an ArDrive account with a password and a recovery phrase.
+- [Your drive password](https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/): One password protects all your private drives. Learn which password you use, how to unlock a locked drive, and how Remember on this device works.
 
 ### Using ArDrive
 
+- [Add Turbo Credits and use Billing](https://ardrive.io/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing/): Add Turbo Credits from the upload review or the Billing page, and see how the free upload allowance works.
 - [Attach A Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/): Attach a shared public or private Drive to your account from a Drive link.
+- [Create a drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/): Create a public or private drive for permanent file storage.
 - [Create A Snapshot](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-a-snapshot/): Create Drive snapshots to speed up future syncing for large public or private Drives.
 - [Create An Arweave Manifest](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/): Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.
-- [Create New Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/): Create a new public or private Drive for permanent file storage on the permaweb.
 - [New Folders](https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/): Create folders to organize files inside an ArDrive Drive.
+- [Publish to web](https://ardrive.io/help/using-ardrive-apps-using-ardrive-publish-to-web/): Turn a public drive, a folder, or a file into a web page, update it, and find it again in Web pages.
 - [The New Button](https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/): Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.
-- [Uploading Files](https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/): Upload files from a Drive using the +NEW button, review the one-time storage price, and wait for upload confirmation.
+- [Uploading Files](https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/): Upload files to a drive, review the one-time storage price, and wait for upload confirmation.

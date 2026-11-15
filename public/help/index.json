@@ -232,16 +232,6 @@
       ]
     },
     {
-      "slug": "faqs-faq-how-do-keyfile-and-seed-phrase-login-work",
-      "title": "How Do Keyfile And Seed Phrase Login Work",
-      "description": "Learn how keyfile and seed phrase login work and how to protect wallet access.",
-      "category": "FAQs",
-      "section": "FAQ",
-      "pathname": "/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/",
-      "url": "https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/",
-      "headings": []
-    },
-    {
       "slug": "faqs-faq-how-do-turbo-conversions-work",
       "title": "How Do Turbo Conversions Work",
       "description": "Understand how Turbo upload prices are estimated from file size, AR, and Credits.",
@@ -259,6 +249,16 @@
           "text": "Is the price of data consistent?"
         }
       ]
+    },
+    {
+      "slug": "faqs-faq-how-do-keyfile-and-seed-phrase-login-work",
+      "title": "How keyfile and recovery phrase login work",
+      "description": "Learn how keyfile, recovery phrase, and wallet sign-in work in ArDrive and how to protect wallet access.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/",
+      "url": "https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/",
+      "headings": []
     },
     {
       "slug": "faqs-faq-what-are-the-privacy-and-encryption-standards",
@@ -484,7 +484,7 @@
     {
       "slug": "faqs-help-and-troubleshooting-guides-login-trouble",
       "title": "Login Trouble",
-      "description": "Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.",
+      "description": "Troubleshoot ArDrive Web login issues, including password, keyfile, recovery phrase, wallet, locked drive, browser, and gateway-related login errors.",
       "category": "FAQs",
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-login-trouble/",
@@ -682,7 +682,7 @@
     {
       "slug": "using-ardrive-apps-actions-ardrive-explorer-view",
       "title": "ArDrive Explorer View",
-      "description": "An overview of the buttons on the ArDrive Drive Explorer:",
+      "description": "Where to find the actions for your drives, folders, and files in ArDrive.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-ardrive-explorer-view/",
@@ -895,39 +895,9 @@
       ]
     },
     {
-      "slug": "using-ardrive-apps-getting-started-ardrive-password",
-      "title": "ArDrive Password",
-      "description": "Understand how your ArDrive password protects private Drives and why it must be stored safely.",
-      "category": "Using ArDrive Apps",
-      "section": "Getting Started",
-      "pathname": "/help/using-ardrive-apps-getting-started-ardrive-password/",
-      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "ArDrive requires a password for any Private Drives that you create."
-        }
-      ]
-    },
-    {
-      "slug": "using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive",
-      "title": "Create An Arweave Wallet With ArDrive",
-      "description": "Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.",
-      "category": "Using ArDrive Apps",
-      "section": "Getting Started",
-      "pathname": "/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/",
-      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive."
-        }
-      ]
-    },
-    {
       "slug": "using-ardrive-apps-getting-started-fund-your-wallet",
-      "title": "Fund Your Wallet",
-      "description": "Fund ArDrive uploads with Turbo Credits or AR tokens.",
+      "title": "Fund your wallet",
+      "description": "Pay for ArDrive uploads with Turbo Credits, by card or crypto, or with AR tokens.",
       "category": "Using ArDrive Apps",
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-fund-your-wallet/",
@@ -936,48 +906,69 @@
     },
     {
       "slug": "using-ardrive-apps-getting-started-log-into-ardrive-keyfile",
-      "title": "Log Into ArDrive Keyfile",
-      "description": "Log in to ArDrive using your Arweave wallet keyfile and password.",
+      "title": "Log into ArDrive with a keyfile",
+      "description": "Log in to ArDrive with your Arweave wallet keyfile and your password.",
       "category": "Using ArDrive Apps",
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/",
       "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/",
       "headings": [
         {
-          "depth": 3,
-          "text": "Logging into ArDrive with your keyfile is an easy way to sign into ArDrive web."
+          "depth": 2,
+          "text": "Log in with a keyfile"
+        },
+        {
+          "depth": 2,
+          "text": "Log in again on the same device"
         }
       ]
     },
     {
-      "slug": "using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet",
-      "title": "Log Into ArDrive MetaMask Wallet",
-      "description": "Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.",
-      "category": "Using ArDrive Apps",
-      "section": "Getting Started",
-      "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/",
-      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/",
-      "headings": []
-    },
-    {
       "slug": "using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase",
-      "title": "Log Into ArDrive Seed Phrase",
-      "description": "Log in to ArDrive with an existing seed phrase and your ArDrive password.",
+      "title": "Log into ArDrive with a recovery phrase",
+      "description": "Log in to ArDrive with your 12-word recovery phrase and your password.",
       "category": "Using ArDrive Apps",
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/",
       "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/",
       "headings": [
         {
-          "depth": 3,
-          "text": "Logging into ArDrive with your seed phrase is a secure way to log into ArDrive without having to keep a keyfile on your computer."
+          "depth": 2,
+          "text": "Log in with a recovery phrase"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet",
+      "title": "Log into ArDrive with MetaMask",
+      "description": "Sign in to ArDrive with MetaMask. ArDrive makes an Arweave wallet from your MetaMask signature, so there is no keyfile to manage.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Log in with MetaMask"
+        },
+        {
+          "depth": 2,
+          "text": "Private drives"
+        },
+        {
+          "depth": 2,
+          "text": "Keyfile and account details"
+        },
+        {
+          "depth": 2,
+          "text": "Pay for uploads"
         }
       ]
     },
     {
       "slug": "using-ardrive-apps-getting-started-log-into-ardrive-arconnect",
-      "title": "Log Into ArDrive With Wander",
-      "description": "Use Wander to manage an Arweave wallet and log in to ArDrive.",
+      "title": "Log into ArDrive with Wander",
+      "description": "Use the Wander browser extension to sign in to ArDrive with a wallet approval, with no ArDrive password.",
       "category": "Using ArDrive Apps",
       "section": "Getting Started",
       "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/",
@@ -985,19 +976,112 @@
       "headings": [
         {
           "depth": 2,
-          "text": "Get Started"
+          "text": "Install Wander"
         },
         {
           "depth": 2,
-          "text": "Download Wander"
+          "text": "Log in with Wander"
         },
         {
           "depth": 2,
-          "text": "Add a Wallet"
+          "text": "Open private drives"
         },
         {
           "depth": 2,
-          "text": "Log into the ArDrive using the digital wallet from Wander"
+          "text": "If Wander doesn't answer"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive",
+      "title": "Sign up for ArDrive",
+      "description": "Create an ArDrive account with a password and a recovery phrase.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Sign up"
+        },
+        {
+          "depth": 2,
+          "text": "What each secret does"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-ardrive-password",
+      "title": "Your drive password",
+      "description": "One password protects all your private drives. Learn which password you use, how to unlock a locked drive, and how Remember on this device works.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-ardrive-password/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Which password you use"
+        },
+        {
+          "depth": 2,
+          "text": "Set a drive password"
+        },
+        {
+          "depth": 2,
+          "text": "Unlock a locked drive"
+        },
+        {
+          "depth": 2,
+          "text": "Remember on this device"
+        },
+        {
+          "depth": 2,
+          "text": "Related"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing",
+      "title": "Add Turbo Credits and use Billing",
+      "description": "Add Turbo Credits from the upload review or the Billing page, and see how the free upload allowance works.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "The free upload allowance"
+        },
+        {
+          "depth": 2,
+          "text": "Add credits when you upload"
+        },
+        {
+          "depth": 2,
+          "text": "Add credits from your profile or Billing"
+        },
+        {
+          "depth": 3,
+          "text": "Pay with crypto"
+        },
+        {
+          "depth": 2,
+          "text": "See your balance and purchases"
+        },
+        {
+          "depth": 2,
+          "text": "Share credits"
+        },
+        {
+          "depth": 2,
+          "text": "Credit expiry and refunds"
+        },
+        {
+          "depth": 2,
+          "text": "Pay with AR instead"
         }
       ]
     },
@@ -1017,6 +1101,25 @@
         {
           "depth": 2,
           "text": "Use the new button to attach a Drive"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-create-new-drive",
+      "title": "Create a drive",
+      "description": "Create a public or private drive for permanent file storage.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-create-new-drive/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Create a drive"
+        },
+        {
+          "depth": 2,
+          "text": "Before you choose"
         }
       ]
     },
@@ -1063,25 +1166,6 @@
       ]
     },
     {
-      "slug": "using-ardrive-apps-using-ardrive-create-new-drive",
-      "title": "Create New Drive",
-      "description": "Create a new public or private Drive for permanent file storage on the permaweb.",
-      "category": "Using ArDrive Apps",
-      "section": "Using ArDrive",
-      "pathname": "/help/using-ardrive-apps-using-ardrive-create-new-drive/",
-      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/",
-      "headings": [
-        {
-          "depth": 2,
-          "text": "Getting Started"
-        },
-        {
-          "depth": 2,
-          "text": "New Drives added to the Sidebar"
-        }
-      ]
-    },
-    {
       "slug": "using-ardrive-apps-using-ardrive-new-folders",
       "title": "New Folders",
       "description": "Create folders to organize files inside an ArDrive Drive.",
@@ -1090,6 +1174,49 @@
       "pathname": "/help/using-ardrive-apps-using-ardrive-new-folders/",
       "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/",
       "headings": []
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-publish-to-web",
+      "title": "Publish to web",
+      "description": "Turn a public drive, a folder, or a file into a web page, update it, and find it again in Web pages.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-publish-to-web/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-publish-to-web/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Before you start"
+        },
+        {
+          "depth": 2,
+          "text": "Publish a drive"
+        },
+        {
+          "depth": 2,
+          "text": "Publish a folder"
+        },
+        {
+          "depth": 2,
+          "text": "Publish a file"
+        },
+        {
+          "depth": 2,
+          "text": "Cost"
+        },
+        {
+          "depth": 2,
+          "text": "Find your web pages"
+        },
+        {
+          "depth": 2,
+          "text": "Update a page"
+        },
+        {
+          "depth": 2,
+          "text": "If publishing stops"
+        }
+      ]
     },
     {
       "slug": "using-ardrive-apps-using-ardrive-the-new-button",
@@ -1104,12 +1231,16 @@
     {
       "slug": "using-ardrive-apps-using-ardrive-uploading-files",
       "title": "Uploading Files",
-      "description": "Upload files from a Drive using the +NEW button, review the one-time storage price, and wait for upload confirmation.",
+      "description": "Upload files to a drive, review the one-time storage price, and wait for upload confirmation.",
       "category": "Using ArDrive Apps",
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-uploading-files/",
       "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/",
       "headings": [
+        {
+          "depth": 2,
+          "text": "Upload files"
+        },
         {
           "depth": 2,
           "text": "What file sizes can I upload?"

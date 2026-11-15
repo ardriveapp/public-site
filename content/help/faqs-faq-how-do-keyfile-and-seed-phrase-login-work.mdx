@@ -1,24 +1,30 @@
 ---
-title: "How Do Keyfile And Seed Phrase Login Work"
-description: "Learn how keyfile and seed phrase login work and how to protect wallet access."
+title: "How keyfile and recovery phrase login work"
+description: "Learn how keyfile, recovery phrase, and wallet sign-in work in ArDrive and how to protect wallet access."
 category: "FAQs"
 section: "FAQ"
 ---
 
 **Keyfiles:**
 
-A keyfile is a file that contains your Arweave wallet, a unique sequence of characters that is used to encrypt and decrypt your data. This keyfile is used to authenticate your identity when you log in to ArDrive’s applications and sign transactions.
+A keyfile is a file that contains your Arweave wallet. The wallet identifies you when you sign in to ArDrive and signs your transactions.
 
-The keyfile is stored on your device and an encrypted version is stored in ArDrive until you opt to forget wallet during login, it can be removed from your device at any time. You will be prompted to provide your keyfile and password when you log in to ArDrive. Your password is needed to encrypt your wallet when you first start a session and decrypt your wallet for future access. Once your keyfile and password are verified, you will have access to your account and the data that you have stored via ArDrive.
+When you sign in with a keyfile, ArDrive asks for your password. ArDrive remembers your account on this device. The next time you open ArDrive, **Welcome back** asks for your password. To remove the wallet from this device, click **Use a different account**.
 
-It is important to keep your keyfile secure, as anyone who has access to it can potentially access your account and the data stored within it. Additionally, your wallet can not be exported from the app, and cannot be recovered by ArDrive. Therefore, it is recommended to store your keyfile in a secure location and not share it with anyone else.
+Anyone with your keyfile can use your account. Keep it in a secure location and don't share it. ArDrive can't recover a lost keyfile. You can download your keyfile from **Account and security** if you signed in with a keyfile, a recovery phrase, or an account made in ArDrive. ArDrive asks for your password first.
 
-**Seed Phrases:**
+**Recovery phrases:**
 
-A seed phrase is a sequence of words that serves as a cryptographic backup for your wallet. When you enter the seed phrase, ArDrive applies an algorithm to identify and generate your unique wallet (which you can download as a keyfile).
+A recovery phrase is 12 words that act as a backup of your wallet. When you enter the phrase, ArDrive makes your wallet from it, the same one every time. You can download that wallet as a keyfile.
 
-You will be prompted to provide your seed phrase and password when you log in to ArDrive. Your password is needed to encrypt your wallet when you first start a session and decrypt your wallet for future access.
+You enter your recovery phrase and your password to sign in. Once you are in, you can see your balances, use your drives, and upload.
 
-Once your wallet is generated and your password is entered, you can then view your balances, interact with your drives, and make uploads.
+Anyone with your recovery phrase can use your account, so keep it private. We recommend a password manager. ArDrive can't recover a lost phrase.
 
-It is important to keep your seed phrase secure, as anyone who has access to it can potentially access your account and the data stored within it. We recommend keeping your seed phrase in a password manager for extra protection.
+**Wallets:**
+
+Wander, Phantom, Solflare, and MetaMask sign you in with an approval in the wallet. There is no ArDrive password to sign in. The wallet keeps your key, so back it up there. For private drives, you set a drive password. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
+
+**Remember on this device:**
+
+ArDrive can remember a private drive on a device you trust, so you don't unlock it each time. You can make this device forget it from the drive details or from **Account and security**. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).

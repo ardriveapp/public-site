@@ -1,15 +1,19 @@
 ---
 title: "Login Trouble"
-description: "Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors."
+description: "Troubleshoot ArDrive Web login issues, including password, keyfile, recovery phrase, wallet, locked drive, browser, and gateway-related login errors."
 category: "FAQs"
 section: "Help And Troubleshooting Guides"
 ---
 
-If you are having trouble logging in to ArDrive Web, first check whether the issue looks like a password, keyfile, seed phrase, or wallet problem.
+If you are having trouble logging in to ArDrive Web, first check whether the issue looks like a password, keyfile, recovery phrase, or wallet problem.
 
-If ArDrive shows an invalid password or invalid keyfile message, double-check that you are using the correct wallet keyfile and password.
+If ArDrive shows an invalid password or invalid keyfile message, double-check that you are using the correct wallet keyfile and password. "Invalid password. Please try again." means the password doesn't match this account. "That file isn't a keyfile. Choose the keyfile you saved." means the file isn't a wallet keyfile.
 
-If you are using a seed phrase, make sure the phrase belongs to the wallet you expect to access. If you are using ArConnect or another wallet connection, make sure the wallet is unlocked and connected to the correct account.
+If you are using a recovery phrase, make sure the phrase belongs to the wallet you expect to access. "That isn't a recovery phrase. Check each word." means a word is missing or wrong.
+
+If you are using Wander, Phantom, Solflare, or MetaMask, make sure the wallet is unlocked and on the account you signed in with. A wallet account has no ArDrive password to sign in. See [Log into ArDrive with Wander](/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect). If Wander says it didn't answer, open Wander to check it is unlocked, then try again. If nothing opens, restart your browser.
+
+If you sign in and a private drive shows **Locked**, ArDrive can't open it with your password yet. Click **Unlock** and enter your drive password. If you see **This password didn't open your private drives**, check the password and try again. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
 
 If you do not see an invalid password or wallet message, and instead see repeated network, resource, 502, 503, 504, bad gateway, ar.io, GraphQL, or frontend errors, the issue may not be your password or keyfile. See [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
 
@@ -17,7 +21,7 @@ The browser console is the best place to confirm whether the login issue is a pa
 
 # What to do
 
-- Confirm you are using the correct keyfile, seed phrase, wallet, and password.
+- Confirm you are using the correct keyfile, recovery phrase, wallet, and password.
 
 - Try a different browser or private window to rule out cached frontend issues.
 
