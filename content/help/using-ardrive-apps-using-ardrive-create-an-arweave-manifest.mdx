@@ -1,65 +1,65 @@
 ---
-title: "Create An Arweave Manifest"
-description: "Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths."
+title: "Create A Deployment (Arweave Manifest)"
+description: "Create a deployment from a public drive or folder to give its files friendly paths at one Arweave address."
 category: "Using ArDrive Apps"
 section: "Using ArDrive"
 ---
 
-# Overview
+A deployment publishes a folder at one Arweave address, with each file at a friendly path. ArDrive stores it as an Arweave manifest.
 
-Arweave Manifests can unlock new and unique experiences that can only be made possible on the Permaweb.
+An Arweave manifest maps file names and paths to Arweave transaction IDs. A gateway reads it, so you can open files by name:
 
-An Arweave Manifest is a mapping of Arweave Transaction IDs and friendly names. This map is put into a standardized, JSON structure and permanently stored on Arweave, and it allows users to create logical groupings of content. Arweave Gateways can interpret this structure, so users can then reference individual transactions by their file name and/or path.
+```text
+https://turbo-gateway.com/MANIFEST_TX_ID/index.html
+https://turbo-gateway.com/MANIFEST_TX_ID/images/logo.png
+```
 
-Manifests allow you to use friendlier URLs like...
+Replace MANIFEST_TX_ID with the transaction ID of the deployment.
 
-[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/0.png](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
-[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/333.png](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
+Without a manifest, each file has its own address made of its transaction ID. For how manifests work, see [Arweave Manifests](/help/understanding-the-permaweb-general-arweave-manifests).
 
-...rather than opaque Arweave transaction IDs that ordinarily reference your data:
-[https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0](https://eev46qzbxsuwzsou7p4xu3trfpa63x6b3hpon5l46hnrisudhswq.turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
-[https://turbo-gateway.com/nHuFsR2Y-e\_qtnsmj0avn37CTWxlZ4zvG\_CKwtldK3I](https://turbo-gateway.com/nHuFsR2Y-e_qtnsmj0avn37CTWxlZ4zvG_CKwtldK3I)
+To publish a drive, a folder, or a single file as a web page, use [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web). Use a deployment when you want a website or an app at one address, for example one that you also name with [Names](/help/using-ardrive-apps-using-ardrive-names).
 
-With ArDrive, any Public Drive or Folder can be turned into a Manifest. The file names and paths would each be represented within the Arweave Manifest, making it easier for developers and users to reference their content by the names used on their local file systems.
+## Create a deployment
 
-Want to learn how it works and see some examples? [Check out our detailed technology article.](/help/understanding-the-permaweb-general-arweave-manifests/)
+You can create a deployment only in a public drive.
 
-# Instructions
+1. Open the public drive.
+2. Click **New**, click **Advanced**, and click **New deployment**.
+3. In **Target folder**, open the folder to publish. Stay at the top to use the whole drive. The deployment includes every file in the folder and its subfolders.
 
-Creating an Arweave Manifest is easy with ArDrive.
+   ![Target folder, listing the folders in the drive, with a fallback page field](/help/3-0/deployment-target.png)
 
-1.  Navigate to your Public Drive, and click the “New” button and "Advanced" and select “Create Manifest”.
+4. Optional: enter a **Fallback page**. This is the transaction ID of the file that opens when a path isn't found.
+5. Click **Next**.
+6. In **Deployment name**, enter a name for the deployment, then click **Next**.
 
-1.  Enter in the name for your Arweave Manifest and click “Next”
+   ![New deployment, with the deployment name field](/help/3-0/new-deployment.png)
 
-1.  Select the location to create the Manifest out of.
+7. Review the deployment. ArDrive shows its size and its cost. A small deployment is usually free when your free upload allowance covers it. The review then shows **Cost: 0 credits** and says "Uploads this small are free with Turbo." Turbo decides what is free. A larger deployment costs Turbo Credits.
+8. Optional: open **Give it a name like yours.ar.io** to point a name you own at it. See [Names](/help/using-ardrive-apps-using-ardrive-names).
+9. Click **Create deployment**.
 
-    1.  Selecting the top level of the Drive will create a manifest out of all of the Drive’s content, including subfolders.
+ArDrive leaves hidden files and folders out of the deployment. The review warns that files uploaded here are viewable by anyone on the internet, so publish only what you want everyone to see.
 
-    2.  Selecting an individual folder will create a manifest out of all of that Folder’s content, including subfolders
+If some files in the folder are still pending, ArDrive says **Files pending** and recommends that you wait until they confirm.
 
-2.  View and confirm the price of the Manifest and upload it to ArDrive
+The deployment appears in your drive as a file of type **Deployment**.
 
-After the Manifest is created and uploaded, it will have a special icon indicating that it is an Arweave Manifest.
+## Open a deployment
 
-Congratulations! You can now access any of the Arweave Transactions referenced in the Manifest using the its friendlier file path and name. [See our technical article on for more references.](/help/understanding-the-permaweb-general-arweave-manifests/)
+Open the link of the deployment to see its default page. A deployment opens `index.html` if it has one. If it has none, the first file in the deployment opens, and all other files stay reachable by their paths.
 
-Clicking the “Preview Link” for a Manifest will load the default `index.html` page referenced within the Manifest.
+To check the paths a deployment uses, open its raw manifest in your browser at `turbo-gateway.com/raw/MANIFEST_TX_ID`.
 
-Clicking the “Download Link” for a Manifest will download the default `index.html` page referenced within the Manifest.
+## Update a deployment
 
-No `index.html`? No problem! The first file contained in the Manifest will act as the default file that is loaded when the Manifest is previewed, and all other files can still be referenced with their friendly names.
+After you change the files, create a deployment again with the same name. ArDrive adds a new version of the deployment with the new transaction IDs. Earlier versions stay on Arweave.
 
-**NOTE:** Check the paths that your Manifest is using by checking the raw endpoint: `turbo-gateway.com/raw/ManifestTXID` into your browser.
+## Import files from a manifest
 
-# Updating a Manifest
+**New**, **Advanced**, **Import from manifest** adds the files that an existing manifest lists to your drive.
 
-Need to make changes to your permanent web app or NFT collection? ArDrive makes it easy for users to quickly adjust a specific file or folder, and then recreate a new manifest containing the updated transaction IDs and friendly names. Just like any other file in ArDrive, a new Manifest revision can be created by reusing the existing Manifest name, allowing permanent version control over your site or app.
+## Customize a manifest
 
-# Want it Custom?
-
-The ArDrive CLI also allows you to create a manifest out of a given Public Drive or Folder, and takes it a step further.
-
-With the CLI, developers can quickly create and export a preview of their manifest. This preview can be modified in a standard text editor to fit any use case, like adding other Arweave Transaction IDs that aren’t contained within your Drive, or changing the friendly names. Once the manifest has been customized, the CLI can quickly upload it, using the custom “Arweave Manifest” content type.
-
-Detailed instructions can be found on our [Docs Portal](https://docs.ardrive.io).
+The ArDrive CLI can create a manifest from a public drive or folder and export a preview. You can edit the preview, for example to add transaction IDs that aren't in your drive, and upload it with the CLI. See the [docs portal](https://docs.ardrive.io).

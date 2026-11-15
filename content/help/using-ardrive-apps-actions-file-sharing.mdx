@@ -1,18 +1,52 @@
 ---
 title: "File Sharing"
-description: "Share public or private files from ArDrive with a link."
+description: "Share a public or private file with a link. A private file also needs its access key."
 category: "Using ArDrive Apps"
 section: "Actions"
 ---
 
-To share a file in one of your public or private folders click on and highlight the file you want to share.
+Share a file by sending a link. For a file in a public drive, anyone with the link can open the file. For a file in a private drive, the person also needs the file's access key.
 
-This will expand the detail panel. at the top right corner of your screen
+To share a folder or a whole drive, see [Drive sharing](/help/using-ardrive-apps-actions-drive-sharing). To make a web page from a file, see [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web).
 
-### File Link
+## Share a public file
 
-Click on the share icon and a window will pop up in the middle of your screen that contains a link. You can now copy the link and send it to whomever you want to share it with and they will have access to the file forever.
+1. Click the menu at the right of the file's row, and click **Share file**.
+2. In **Share file with others**, click **Copy link**.
+3. Send the link, then click **Done**.
 
-**NOTE:** Sharing is only for Public Drives, Private Drives, and individual files. Folders cannot be shared at this time.
+![Share file with others for a public file, with the link hidden](/help/3-0/share-public-file.png)
 
-**NOTE:** Whomever you share a link with can also share that link with others. We plan to provide the option to limit the spread of link sharing in future versions of ArDrive. For now, links are unrestricted in how often they can be shared.
+Optional: turn on **Link to this version only**. The link then always opens this version, even after you upload a new one.
+
+## Share a private file
+
+A private file is encrypted. The link on its own doesn't open it. The recipient needs the access key too.
+
+1. Click the menu at the right of the file's row, and click **Share file**.
+2. Copy the link with **Copy link**.
+3. Click **Copy key** to copy the **Access key**. The key is hidden. Click the eye icon to show it.
+4. Send the link and the key. Use a different channel for each: a link and its key in the same message protect nothing.
+
+![Share file with others for a private file, with Access key and three options](/help/3-0/share-private-file.png)
+
+The dialog has three options. All are off when it opens.
+
+| Option | What it does |
+|---|---|
+| **Include the key in the link** | Puts the key in the link. Anyone with the link can open the file, so treat the link like the file itself. |
+| **Hide file details** | The recipient sees nothing about the file, not its name, size, or type, until they unlock it. |
+| **Link to this version only** | The link always opens this version, even after you upload a new one. |
+
+The key opens every version of the file.
+
+## What the recipient sees
+
+When someone opens the link of a private file, ArDrive says "This file is protected with an access key." They paste the key in **Paste the access key** and click **Unlock file**. The key stays on their device and isn't sent to ArDrive.
+
+If the link points to an earlier version, the recipient sees "A newer version of this file is available." with **View latest** and **View shared version**.
+
+## Good to know
+
+- Anyone who has a link, and the key if the file is private, can share it with others. You can't limit how often a link is shared.
+- Sharing doesn't cost anything.

@@ -1,52 +1,74 @@
 ---
 title: "Sync Your Drive"
-description: "Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale."
+description: "Use Sync or Full resync when files show red or orange status, recently uploaded files don't appear, or your drive looks stale."
 category: "FAQs"
 section: "Help And Troubleshooting Guides"
 ---
 
-If your drive looks stale, recently uploaded files do not appear, or files show red or orange status longer than expected,ArDrivemay need to sync your drive data from the Arweave gateway again.
+Syncing brings ArDrive up to date with your drives on Arweave. If your drive looks stale, recently uploaded files don't appear, or files show red or orange status longer than expected, run a sync.
 
-Some syncing issues are caused by temporary gateway indexing delays and resolve on their own over time. Manual sync givesArDriveanother chance to query the gateway and update the local view of your drive.
+Some problems come from gateway indexing delays and clear on their own. A sync gives ArDrive another chance to ask the gateway and update your view.
 
-# Start a manual sync
+## Sync your drives
 
-Open the sync menu inArDriveand choose the sync option that matches what you need.
+1. Open **Your drives**.
+2. Click **Sync all drives**.
 
-![ArDrive sync menu showing regular sync and deep sync options](/help/sync-menu.jpg)
+To sync one drive, open its menu and click **Sync this drive**.
 
-# Regular sync
+The sync menu is the arrow beside **Sync all drives**. It has these items:
 
-Regular sync is incremental. It starts from the last block heightArDrivesynced for your drive and checks for newer drive, folder, and file updates.
+- **Sync all drives.** "Gets changes since the last sync."
+- **Full resync all drives.** "Rereads all history. Slower; use it if something looks missing."
+- **Sync history.** What the most recent syncs did.
 
-Use regular sync when:
+![The sync menu with Sync all drives, Full resync all drives, and Sync history](/help/3-0/sync-menu.png)
 
-- Your drive mostly looks correct, but recent files or folders are missing.
+While a drive syncs, ArDrive shows how far it is. Click **Stop syncing** to end it. ArDrive keeps what finished. If a sync fails, the sync menu offers **Try again**.
 
-- A file status has not updated after waiting for gateway indexing.
+A drive you haven't synced on this device shows "This drive isn't synced on this device". Click **Sync this drive** to see its files and folders.
 
-- You refreshed the app and wantArDriveto check for newer updates.
+## When to use Sync
 
-# Deep sync
+Use **Sync** when:
 
-Deep sync starts from block height 0 and rebuilds the drive index from the beginning.
+- Your drive mostly looks right, but recent files or folders are missing.
+- A file status hasn't updated after waiting for gateway indexing.
+- You reloaded ArDrive and want it to check for changes.
 
-Use deep sync when:
+## When to use Full resync
 
-- Regular sync does not find the missing files or folders.
+A full resync rereads the whole history of your drives from Arweave, without using snapshots. Use **Full resync** when:
 
-- Your drive looks incomplete or significantly out of date.
+- **Sync** doesn't find the missing files or folders.
+- Your drive looks incomplete or out of date.
+- You changed gateways and want ArDrive to rebuild its view of your drive.
+- Support asks you to run a full resync.
 
-- You changed gateways and wantArDriveto rebuild its view of your drive.
+To resync one drive, open its menu and click **Full resync this drive**.
 
-- Support asks you to run a deep sync while troubleshooting.
+A full resync takes longer than a sync, especially for large drives. ArDrive asks you to confirm first. The message says "Nothing on this device is deleted."
 
-Deep sync can take longer than regular sync, especially for large drives, because it checks your drive history from the beginning.
+![The Full resync confirmation](/help/3-0/full-resync.png)
 
-# When sync may not fix it
+## See what happened
 
-If the gateway has not indexed the file, folder, or upload transaction yet, sync may still not find it right away. Wait a few minutes to a few hours and try again.
+Click **Sync history** in the sync menu. It lists the most recent syncs on this device, with the drive, when it ran, who started it, how long it took, and how many items changed. ArDrive keeps the last 20 and clears them when you log out.
 
-If you continue seeing gateway, GraphQL, 502, 503, 504, or bad gateway errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+![Sync history, listing recent syncs](/help/3-0/sync-history.png)
 
-Advanced users can also try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+## Sync automatically
+
+Open **Settings** from your account menu. Under **Sync**:
+
+- **Automatic sync** checks your drives for changes every 5 minutes while ArDrive is open.
+- **Sync all drives when I sign in** syncs every drive at sign-in. When it is off, ArDrive reads only the drive you open.
+- **Sync from snapshots** loads large drives faster from a saved copy. Turn it off to read every change from the start.
+
+## When sync doesn't fix it
+
+If the gateway hasn't indexed the file, folder, or upload yet, a sync can't find it. Wait a few minutes to a few hours, then try again.
+
+If you keep seeing gateway, GraphQL, 502, 503, 504, or bad gateway errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+
+Advanced users can change the gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
