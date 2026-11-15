@@ -19,8 +19,8 @@
 - [ArDrive Turbo](https://ardrive.io/help/faqs-faq-ardrive-turbo/): Common questions about ArDrive Turbo Credits, payments, receipts, refunds, and support.
 - [Arweave Wallets](https://ardrive.io/help/faqs-faq-arweave-wallets/): Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.
 - [Everything You Need To Know About ArDrive](https://ardrive.io/help/faqs-faq-everything-you-need-to-know-about-ardrive/): Common questions about permanence, privacy, uploads, sharing, and permaweb URLs in ArDrive.
-- [How Do Keyfile And Seed Phrase Login Work](https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/): Learn how keyfile and seed phrase login work and how to protect wallet access.
 - [How Do Turbo Conversions Work](https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/): Understand how Turbo upload prices are estimated from file size, AR, and Credits.
+- [How keyfile and recovery phrase login work](https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/): Learn how keyfile, recovery phrase, and wallet sign-in work in ArDrive and how to protect wallet access.
 - [What Are The Privacy And Encryption Standards?](https://ardrive.io/help/faqs-faq-what-are-the-privacy-and-encryption-standards/): Private Drive files are encrypted with AES-256-GCM, while public files remain public forever.
 - [What Currencies Or Cryptocurrencies Can I Use To Upload?](https://ardrive.io/help/faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload/): ArDrive supports permanent storage payments through Turbo Credits or AR tokens.
 - [What Makes ArDrive Different From Other File Storage Apps](https://ardrive.io/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/): What makes ArDrive different from other file storage apps?
@@ -33,7 +33,7 @@
 - [Clearing Your Cache](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/): Clear browser cache for app.ardrive.io when files, folders, drives, or statuses look stale.
 - [Drive Syncing Issues](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/): Drive syncing issues are usually caused by intermittent gateway indexing delays and often resolve on their own within a few hours.
 - [File Upload Issues And Workarounds](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/): Troubleshoot file upload status, gateway indexing delays, and transaction visibility.
-- [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
+- [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, recovery phrase, wallet, locked drive, browser, and gateway-related login errors.
 - [Sync Your Drive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/): Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.
 - [Trouble Accessing Data Through arweave.net?](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/): Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact.
 - [Turbo Gateway Rate Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-turbo-gateway-rate-limits/): Free download allowances, refill rates, and paid upgrades for data access through turbo-gateway.com.
@@ -41,7 +41,7 @@
 - [Block Explorers](https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/): Use ViewBlock or ArScan to check a wallet's transaction history and confirm whether an upload reached Arweave.
 - [What Is The Permaweb](https://ardrive.io/help/understanding-the-permaweb-general-what-is-the-permaweb/): Learn what the permaweb is and how Arweave stores data permanently.
 - [Actions](https://ardrive.io/help/using-ardrive-apps-actions-actions/): Overview of common file, folder, and Drive actions in ArDrive.
-- [ArDrive Explorer View](https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/): An overview of the buttons on the ArDrive Drive Explorer:
+- [ArDrive Explorer View](https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/): Where to find the actions for your drives, folders, and files in ArDrive.
 - [Download A File](https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/): Download files from ArDrive without additional storage charges.
 - [Drive Explorer](https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/): Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.
 - [Drive Sharing](https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/): Share public or private Drives with a link.
@@ -54,20 +54,22 @@
 - [Public Preview](https://ardrive.io/help/using-ardrive-apps-actions-public-preview/): Get a permanent public preview URL for files stored in a Public Drive.
 - [Rename A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/): Rename files and folders in ArDrive while preserving permanent data history.
 - [Storing Your NFT Data With ArDrive Web](https://ardrive.io/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/): Store NFT assets and metadata permanently with ArDrive.
-- [ArDrive Password](https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/): Understand how your ArDrive password protects private Drives and why it must be stored safely.
-- [Create An Arweave Wallet With ArDrive](https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/): Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
-- [Fund Your Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/): Fund ArDrive uploads with Turbo Credits or AR tokens.
-- [Log Into ArDrive Keyfile](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/): Log in to ArDrive using your Arweave wallet keyfile and password.
-- [Log Into ArDrive MetaMask Wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/): Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.
-- [Log Into ArDrive Seed Phrase](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/): Log in to ArDrive with an existing seed phrase and your ArDrive password.
-- [Log Into ArDrive With Wander](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/): Use Wander to manage an Arweave wallet and log in to ArDrive.
+- [Fund your wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/): Pay for ArDrive uploads with Turbo Credits, by card or crypto, or with AR tokens.
+- [Log into ArDrive with a keyfile](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/): Log in to ArDrive with your Arweave wallet keyfile and your password.
+- [Log into ArDrive with a recovery phrase](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/): Log in to ArDrive with your 12-word recovery phrase and your password.
+- [Log into ArDrive with MetaMask](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/): Sign in to ArDrive with MetaMask. ArDrive makes an Arweave wallet from your MetaMask signature, so there is no keyfile to manage.
+- [Log into ArDrive with Wander](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/): Use the Wander browser extension to sign in to ArDrive with a wallet approval, with no ArDrive password.
+- [Sign up for ArDrive](https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/): Create an ArDrive account with a password and a recovery phrase.
+- [Your drive password](https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/): One password protects all your private drives. Learn which password you use, how to unlock a locked drive, and how Remember on this device works.
+- [Add Turbo Credits and use Billing](https://ardrive.io/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing/): Add Turbo Credits from the upload review or the Billing page, and see how the free upload allowance works.
 - [Attach A Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/): Attach a shared public or private Drive to your account from a Drive link.
+- [Create a drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/): Create a public or private drive for permanent file storage.
 - [Create A Snapshot](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-a-snapshot/): Create Drive snapshots to speed up future syncing for large public or private Drives.
 - [Create An Arweave Manifest](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/): Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.
-- [Create New Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/): Create a new public or private Drive for permanent file storage on the permaweb.
 - [New Folders](https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/): Create folders to organize files inside an ArDrive Drive.
+- [Publish to web](https://ardrive.io/help/using-ardrive-apps-using-ardrive-publish-to-web/): Turn a public drive, a folder, or a file into a web page, update it, and find it again in Web pages.
 - [The New Button](https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/): Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.
-- [Uploading Files](https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/): Upload files from a Drive using the +NEW button, review the one-time storage price, and wait for upload confirmation.
+- [Uploading Files](https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/): Upload files to a drive, review the one-time storage price, and wait for upload confirmation.
 
 ---
 
@@ -411,11 +413,11 @@ What is a Credit?
 
 Can I view my Credits balance on Viewblock or Wander?
 
--   Credits are specific to ArDrive and can only be viewed and used in ArDrive.
+-   Credits are specific to ArDrive and can only be viewed and used in ArDrive. To see yours, click your account at the top right of ArDrive, or open the **Billing** page. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
 
 Which currencies can I pay in?
 
--   USD with additional currencies being added soon.
+-   By card, you pay in USD. With crypto, you can pay with USDC or ETH on Base, USDC or ETH on Ethereum, or SOL.
 
 Can I get a copy of my receipt?
 
@@ -423,7 +425,11 @@ Can I get a copy of my receipt?
 
 Can I pay with any credit or debit card?
 
--   We accept all major credit and debit cards. Purchase restrictions may be implemented by your card provider or country of origin.
+-   We accept all major credit and debit cards. Purchase restrictions may be implemented by your card provider or country of origin. You can also pay with crypto.
+
+Is there a free upload allowance?
+
+-   Yes. Your free upload allowance covers small uploads and small changes, such as hiding and unhiding a file. The upload review shows when an action is covered, and says when you have used it up and need credits.
 
 Do the value of Credits ever change?
 
@@ -450,6 +456,10 @@ Do Credits expire?
 Can I transfer Credits to another wallet?
 
 -   No, Credits are non-transferable.
+
+Can I share my Credits with someone?
+
+-   Yes. The person you share with can spend from your Credits until you revoke the share or it expires. The **Billing** page lists the Credits you shared and the Credits shared with you.
 
 Can I exchange my Credits for AR?
 
@@ -647,33 +657,6 @@ Arweave is a permanent blockchain. Whatever you upload to Arweave becomes immuta
 
 ---
 
-# How Do Keyfile And Seed Phrase Login Work
-
-Canonical URL: https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/
-Category: FAQs
-Section: FAQ
-Description: Learn how keyfile and seed phrase login work and how to protect wallet access.
-
-**Keyfiles:**
-
-A keyfile is a file that contains your Arweave wallet, a unique sequence of characters that is used to encrypt and decrypt your data. This keyfile is used to authenticate your identity when you log in to ArDrive’s applications and sign transactions.
-
-The keyfile is stored on your device and an encrypted version is stored in ArDrive until you opt to forget wallet during login, it can be removed from your device at any time. You will be prompted to provide your keyfile and password when you log in to ArDrive. Your password is needed to encrypt your wallet when you first start a session and decrypt your wallet for future access. Once your keyfile and password are verified, you will have access to your account and the data that you have stored via ArDrive.
-
-It is important to keep your keyfile secure, as anyone who has access to it can potentially access your account and the data stored within it. Additionally, your wallet can not be exported from the app, and cannot be recovered by ArDrive. Therefore, it is recommended to store your keyfile in a secure location and not share it with anyone else.
-
-**Seed Phrases:**
-
-A seed phrase is a sequence of words that serves as a cryptographic backup for your wallet. When you enter the seed phrase, ArDrive applies an algorithm to identify and generate your unique wallet (which you can download as a keyfile).
-
-You will be prompted to provide your seed phrase and password when you log in to ArDrive. Your password is needed to encrypt your wallet when you first start a session and decrypt your wallet for future access.
-
-Once your wallet is generated and your password is entered, you can then view your balances, interact with your drives, and make uploads.
-
-It is important to keep your seed phrase secure, as anyone who has access to it can potentially access your account and the data stored within it. We recommend keeping your seed phrase in a password manager for extra protection.
-
----
-
 # How Do Turbo Conversions Work
 
 Canonical URL: https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/
@@ -696,6 +679,39 @@ The price of an upload using Credits takes into account multiple factors like th
 Not exactly. The Arweave network protocol is always adjusting the data price to maintain sustainable, perpetual storage. The data price is lowered as the network increases its overall capacity.
 
 This can result in a fluctuating data price. However, for most files these fluctuations would only increase or decrease costs by fractions of a cent.
+
+---
+
+# How keyfile and recovery phrase login work
+
+Canonical URL: https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/
+Category: FAQs
+Section: FAQ
+Description: Learn how keyfile, recovery phrase, and wallet sign-in work in ArDrive and how to protect wallet access.
+
+**Keyfiles:**
+
+A keyfile is a file that contains your Arweave wallet. The wallet identifies you when you sign in to ArDrive and signs your transactions.
+
+When you sign in with a keyfile, ArDrive asks for your password. ArDrive remembers your account on this device. The next time you open ArDrive, **Welcome back** asks for your password. To remove the wallet from this device, click **Use a different account**.
+
+Anyone with your keyfile can use your account. Keep it in a secure location and don't share it. ArDrive can't recover a lost keyfile. You can download your keyfile from **Account and security** if you signed in with a keyfile, a recovery phrase, or an account made in ArDrive. ArDrive asks for your password first.
+
+**Recovery phrases:**
+
+A recovery phrase is 12 words that act as a backup of your wallet. When you enter the phrase, ArDrive makes your wallet from it, the same one every time. You can download that wallet as a keyfile.
+
+You enter your recovery phrase and your password to sign in. Once you are in, you can see your balances, use your drives, and upload.
+
+Anyone with your recovery phrase can use your account, so keep it private. We recommend a password manager. ArDrive can't recover a lost phrase.
+
+**Wallets:**
+
+Wander, Phantom, Solflare, and MetaMask sign you in with an approval in the wallet. There is no ArDrive password to sign in. The wallet keeps your key, so back it up there. For private drives, you set a drive password. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
+
+**Remember on this device:**
+
+ArDrive can remember a private drive on a device you trust, so you don't unlock it each time. You can make this device forget it from the drive details or from **Account and security**. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
 
 ---
 
@@ -1327,13 +1343,17 @@ See [Block Explorers](/help/understanding-the-permaweb-general-block-explorers) 
 Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/
 Category: FAQs
 Section: Help And Troubleshooting Guides
-Description: Troubleshoot ArDrive Web login issues, including password, keyfile, seed phrase, ArConnect, wallet, browser, and gateway-related login errors.
+Description: Troubleshoot ArDrive Web login issues, including password, keyfile, recovery phrase, wallet, locked drive, browser, and gateway-related login errors.
 
-If you are having trouble logging in to ArDrive Web, first check whether the issue looks like a password, keyfile, seed phrase, or wallet problem.
+If you are having trouble logging in to ArDrive Web, first check whether the issue looks like a password, keyfile, recovery phrase, or wallet problem.
 
-If ArDrive shows an invalid password or invalid keyfile message, double-check that you are using the correct wallet keyfile and password.
+If ArDrive shows an invalid password or invalid keyfile message, double-check that you are using the correct wallet keyfile and password. "Invalid password. Please try again." means the password doesn't match this account. "That file isn't a keyfile. Choose the keyfile you saved." means the file isn't a wallet keyfile.
 
-If you are using a seed phrase, make sure the phrase belongs to the wallet you expect to access. If you are using ArConnect or another wallet connection, make sure the wallet is unlocked and connected to the correct account.
+If you are using a recovery phrase, make sure the phrase belongs to the wallet you expect to access. "That isn't a recovery phrase. Check each word." means a word is missing or wrong.
+
+If you are using Wander, Phantom, Solflare, or MetaMask, make sure the wallet is unlocked and on the account you signed in with. A wallet account has no ArDrive password to sign in. See [Log into ArDrive with Wander](/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect). If Wander says it didn't answer, open Wander to check it is unlocked, then try again. If nothing opens, restart your browser.
+
+If you sign in and a private drive shows **Locked**, ArDrive can't open it with your password yet. Click **Unlock** and enter your drive password. If you see **This password didn't open your private drives**, check the password and try again. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
 
 If you do not see an invalid password or wallet message, and instead see repeated network, resource, 502, 503, 504, bad gateway, ar.io, GraphQL, or frontend errors, the issue may not be your password or keyfile. See [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
 
@@ -1341,7 +1361,7 @@ The browser console is the best place to confirm whether the login issue is a pa
 
 # What to do
 
-- Confirm you are using the correct keyfile, seed phrase, wallet, and password.
+- Confirm you are using the correct keyfile, recovery phrase, wallet, and password.
 
 - Try a different browser or private window to rule out cached frontend issues.
 
@@ -1773,11 +1793,11 @@ For a more in-depth guide of all these functions see below:
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/
 Category: Using ArDrive Apps
 Section: Actions
-Description: An overview of the buttons on the ArDrive Drive Explorer:
+Description: Where to find the actions for your drives, folders, and files in ArDrive.
 
-An overview of the buttons on the ArDrive Drive Explorer:
+Each drive, folder, and file has one menu with its actions, such as **Share**, **Publish to web**, **Download**, **Rename**, and **Move**. Click the menu at the right of a row to open it.
 
-[https://www.youtube.com/watch?v=JyDfZoEhOa4](https://www.youtube.com/watch?v=JyDfZoEhOa4)
+For an overview, see [Drive Explorer](/help/using-ardrive-apps-actions-drive-explorer).
 
 ---
 
@@ -1819,8 +1839,6 @@ Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/
 Category: Using ArDrive Apps
 Section: Actions
 Description: Share public or private Drives with a link.
-
-<YouTubeEmbed videoId="O3o0oLc2IX4" />
 
 One of the great features of ArDrive is sharing Drives with others.
 
@@ -2115,194 +2133,415 @@ This is sometimes referenced as
 
 ---
 
-# ArDrive Password
-
-Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/
-Category: Using ArDrive Apps
-Section: Getting Started
-Description: Understand how your ArDrive password protects private Drives and why it must be stored safely.
-
-## ArDrive requires a password for any Private Drives that you create.
-
-##
-
-Your ArDrive password serves as additional security during your session. Encrypting your wallet at rest and as also serving as entropy for encrypting Private Drives.  This password is never uploaded or stored off your device, ensuring nobody else can access your data, except for you and those who you share it with.
-
-**This password cannot be reset or changed if you make a Private Drive during your session. Make sure to write it down & keep it in a secure location since there is no recovery mechanism.  If this password is lost, you will not be able to decrypt your Private Drive data!**
-
-Accounts that don't create private Drives can use different passwords.
-
----
-
-# Create An Arweave Wallet With ArDrive
-
-Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/
-Category: Using ArDrive Apps
-Section: Getting Started
-Description: Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
-
-## Using ArDrive requires an Arweave Wallet and creating a wallet is easy with ArDrive.
-
-<YouTubeEmbed videoId="kUaCpRXItss" />
-
-1.  Visit [app.ardrive.io](https://app.ardrive.io) and click **“New User? Get Started here”.**
-
-2.  We will walk you through a few things that may be new to you compared to other apps in the signup process.
-
-3.  A 12 word seed phrase and keyfile are generated with the option to download the keyfile.
-
-4.  Write down the seed phrase & store it in a secure location.
-
-5.  Confirm the seed phrase by providing the words ArDrive asks for in order to download the keyfile.
-
-6.  Download your keyfile and keep it in a safe place.
-
-7.  Create and confirm a password that you will use with your seed phrase or keyfile if you create a private Drive.
-
-    **NOTE:** The seed phrase cannot be recovered by anybody. The keyfile can be recovered by using the seed phrase in ArDrive or another wallet service like Wander.
-
----
-
-# Fund Your Wallet
+# Fund your wallet
 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/
 Category: Using ArDrive Apps
 Section: Getting Started
-Description: Fund ArDrive uploads with Turbo Credits or AR tokens.
+Description: Pay for ArDrive uploads with Turbo Credits, by card or crypto, or with AR tokens.
 
-There are two ways to purchase permanent storage with ArDrive:
+There are two ways to pay for permanent storage with ArDrive.
 
-1. **ArDrive Turbo**: use a credit or debit card to buy Credits.
+1. **Turbo Credits.** Pay by card or with crypto and ArDrive uses the credits for your uploads. You don't need to manage AR. Small uploads are covered by your free upload allowance.
 
-ArDrive Turbo is an upload service that makes it simple to pay for permanent storage without managing AR directly. In the app, use the Turbo top-up flow to add Credits to your wallet.
+   To add credits, see [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing). For common questions, see the [Turbo FAQ](/help/faqs-faq-ardrive-turbo).
 
-Questions about Turbo? Visit the [Turbo FAQ](/help/faqs-faq-ardrive-turbo).
+2. **Arweave tokens (AR).** Use AR from your Arweave wallet.
 
-<YouTubeEmbed videoId="H3GuC033w5o" />
+   ArDrive is built on the [Arweave network](https://arweave.org/), and the AR token pays the global network of operators who secure the network and provide storage.
 
-2. **Arweave Tokens (AR)**: use AR from your Arweave wallet.
-
-ArDrive is based on the [Arweave network](https://arweave.org/ "https://arweave.org/") and the $AR token is used to pay the global network of operators who secure the network & provide storage.
-
-If you choose to use AR, buy it through an exchange or swap service that is available in your region, then transfer the AR to your Arweave wallet address. Always verify wallet addresses carefully before sending funds.
+   To use AR, buy it through an exchange or swap service that is available in your region. Then transfer it to your Arweave wallet address. Check wallet addresses carefully before you send funds.
 
 ---
 
-# Log Into ArDrive Keyfile
+# Log into ArDrive with a keyfile
 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/
 Category: Using ArDrive Apps
 Section: Getting Started
-Description: Log in to ArDrive using your Arweave wallet keyfile and password.
+Description: Log in to ArDrive with your Arweave wallet keyfile and your password.
 
-### Logging into ArDrive with your keyfile is an easy way to sign into ArDrive web.
+A keyfile is a file that holds your Arweave wallet. You can log in with one from an ArDrive account, or from a wallet made in another app such as Wander.
 
-1.  Go to [app.ardrive.io](https://app.ardrive.io/ "https://app.ardrive.io") and choose ‘Select a Keyfile’ to proceed.
+## Log in with a keyfile
 
-2.  Locate the keyfile on your computer and select it. [ArDrive encrypts the keyfile securely on the backend](/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work "/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work").
+1. Go to [app.ardrive.io](https://app.ardrive.io) and click **Log in**.
 
-3.  Enter your ArDrive password to log in.
+   ![The ArDrive log in panel with the Recovery phrase or keyfile option](/help/3-0/signin-options.png)
 
-Learn more about keyfiles in the FAQ Section.
+2. Click **Recovery phrase or keyfile**.
 
----
+3. Click **Choose a keyfile** and select the keyfile on your computer.
 
-# Log Into ArDrive MetaMask Wallet
+   ![The recovery phrase panel with the Choose a keyfile button](/help/3-0/signin-keyfile.png)
 
-Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/
-Category: Using ArDrive Apps
-Section: Getting Started
-Description: Log in to ArDrive with MetaMask and understand how the derived Arweave wallet is protected.
+4. Enter your password and click **Continue**.
 
-Users can login to ArDrive with MetaMask, making it easy to get started with storing data permanently without needing a new wallet browser extension or keys to worry about.
+   If this wallet has used ArDrive before, ArDrive asks for the password you used then. If ArDrive doesn't recognize the wallet, it asks you to choose a password.
 
-From [app.ardrive.io](https://app.ardrive.io), select Log In, and Continue with MetaMask.
+ArDrive opens **Your drives**. Your password also opens your private drives. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
 
-This will begin a process that generates a new Arweave wallet behind the scenes, that is safely and securely derived from your Ethereum wallet in MetaMask.
+If ArDrive says "That file isn't a keyfile. Choose the keyfile you saved.", the file you picked isn't a wallet keyfile. See [Login trouble](/help/faqs-help-and-troubleshooting-guides-login-trouble).
 
-You'll be prompted to connect the wallet to ArDrive and sign two messages through MetaMask.
+## Log in again on the same device
 
-If it's the first time you're logging into ArDrive with MetaMask, you'll be prompted to create a password. **It's important to securely store this password, as entering a different password will prevent access to the newly created Arweave wallet.  It cannot be changed or recovered by an administrator.**
+ArDrive remembers your account on this device. The next time you open it, **Welcome back** asks for your password.
 
-Users continue through the ArDrive onboarding steps and enter the app securely logged in with a new Arweave wallet derived from Ethereum keys through MetaMask. Users can write down or copy the seedphrase for the new Arweave wallet or download the keyfile. Users can skip this and continue to access ArDrive through MetaMask with the password created during setup.
+![The Welcome back panel asking for a password](/help/3-0/signin-welcome-back.png)
 
-Once logged in, users can top up using their credit card with Turbo, or even send and spend AR from their new Arweave wallet.
+To use another account, click **Use a different account**.
 
-Want to export your Arweave key and store it in an Arweave wallet? Keyfiles can always be downloaded after logging into ArDrive by clicking your wallet address in the top right corner.  These can be stored securely offline, or within Arweave wallet apps like Wander.io.
+To learn how keyfiles work, see [How do keyfile and recovery phrase login work](/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work).
 
 ---
 
-# Log Into ArDrive Seed Phrase
+# Log into ArDrive with a recovery phrase
 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/
 Category: Using ArDrive Apps
 Section: Getting Started
-Description: Log in to ArDrive with an existing seed phrase and your ArDrive password.
+Description: Log in to ArDrive with your 12-word recovery phrase and your password.
 
-### Logging into ArDrive with your seed phrase is a secure way to log into ArDrive without having to keep a keyfile on your computer.
+Your recovery phrase is the 12 words you saved when you made your account. You can log in with it on any device, without a keyfile.
 
-1.  Go to [app.ardrive.io](https://app.ardrive.io/ "https://app.ardrive.io") and select ‘Enter Seed Phrase’ to proceed.
+## Log in with a recovery phrase
 
-2.  Enter the 12 word seed phrase in the order it was given seperated by a space. When entered correctly, ArDrive generates the keyfile securely on the backend keeping it encrypted within the app.
+1. Go to [app.ardrive.io](https://app.ardrive.io) and click **Log in**.
 
-3.   Enter your ArDrive password to log in.
+2. Click **Recovery phrase or keyfile**.
 
-Learn more about Seed Phrases in the FAQ Section.
+3. In **Enter your recovery phrase**, type your 12 words in order, separated by spaces. To check what you typed, click **Show**.
+
+   ![The Enter your recovery phrase panel](/help/3-0/signin-keyfile.png)
+
+4. Click **Continue**.
+
+5. Enter your password and click **Continue**.
+
+   If this wallet has used ArDrive before, ArDrive asks for the password you used then. If ArDrive doesn't recognize the wallet, it asks you to choose a password.
+
+ArDrive opens **Your drives**.
+
+If ArDrive says "That isn't a recovery phrase. Check each word.", compare your words with the ones you saved. See [Login trouble](/help/faqs-help-and-troubleshooting-guides-login-trouble).
+
+To learn how recovery phrases work, see [How do keyfile and recovery phrase login work](/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work).
 
 ---
 
-# Log Into ArDrive With Wander
+# Log into ArDrive with MetaMask
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Sign in to ArDrive with MetaMask. ArDrive makes an Arweave wallet from your MetaMask signature, so there is no keyfile to manage.
+
+You can sign in to ArDrive with MetaMask. ArDrive makes an Arweave wallet for your account from a signature in MetaMask, so you don't need another wallet extension or keyfile.
+
+## Log in with MetaMask
+
+1. Go to [app.ardrive.io](https://app.ardrive.io) and click **Log in**.
+2. Under **or a browser wallet**, click **MetaMask**.
+3. In MetaMask, approve the request to connect to ArDrive, and the signature request. The signature is free and sends no transaction.
+4. When ArDrive asks **Have you used ArDrive with this MetaMask before?**, choose one:
+
+   - **No, I'm new.** ArDrive makes a new, empty account for this MetaMask.
+   - **Yes.** Choose this if you made your MetaMask account before ArDrive 3.0 and set a password. ArDrive asks for that password.
+
+   ![The question Have you used ArDrive with this MetaMask before, with No, I'm new and Yes](/help/3-0/metamask-used-before.png)
+
+5. If ArDrive shows **Approve in MetaMask**, approve the sign-in requests in MetaMask.
+
+ArDrive opens **Your drives**. A new MetaMask account has no ArDrive password.
+
+Approve only signature requests that ArDrive asks for.
+
+## Private drives
+
+To make a private drive, you set a drive password the first time you need one. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
+
+## Keyfile and account details
+
+A MetaMask account has no keyfile to download. Open **Account and security** to see that MetaMask signs you in and that your files stay with this wallet.
+
+1. Click your account at the top right.
+2. Click **Account and security**.
+
+## Pay for uploads
+
+To pay for uploads, add Turbo Credits. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
+
+---
+
+# Log into ArDrive with Wander
 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/
 Category: Using ArDrive Apps
 Section: Getting Started
-Description: Use Wander to manage an Arweave wallet and log in to ArDrive.
+Description: Use the Wander browser extension to sign in to ArDrive with a wallet approval, with no ArDrive password.
 
-What is Wander?
+Wander is a Chrome browser extension that holds your Arweave wallet. You sign in to ArDrive by approving in Wander. There is no ArDrive password to remember.
 
-Wander is a Chrome browser extension that makes it easy to manage your digital wallet for ArDrive.  If you’ve ever used MetaMask before, you’ll find Wander similar.
+**Account and security** says "Wander keeps your key. Back it up there."
 
-Wander simplifies the login experience because your wallet is encrypted and safely stored within Wander. ArDrive can then securely access it as needed.
+## Install Wander
 
-* * *
+1. Go to the [Wander website](https://arconnect.io) and download the Wander Chrome extension.
+2. Add the extension to Chrome.
+3. In the Wander welcome page, create a password for Wander. This password is not an ArDrive password. Wander can't recover it.
+4. Create a new wallet or load one you already have.
 
-## Get Started
+   To make a new wallet, copy the recovery phrase and download the keyfile, and keep both somewhere safe. They can't be recreated.
 
-1.  Go to the [**Wander website**](https://arconnect.io) to download the Wander Chrome extension
+## Log in with Wander
 
-2.  Press on the ‘Download for Chrome’ button
+1. Go to [app.ardrive.io](https://app.ardrive.io) and click **Log in**.
+2. Under **or a browser wallet**, click **Wander**.
+3. Approve the requests that Wander shows. Wander asks you to connect to ArDrive, and can ask you to sign in.
 
-3.  You will be redirected to the Wander page of the Chrome store
+ArDrive opens **Your drives**. While ArDrive waits, it shows **Approve in Wander**.
 
-4.  Once at that page press the ‘Add to Chrome’ button
+The next time you open ArDrive, **Welcome back** says "Approve in your wallet to open your drives." Click **Continue with Wander** and approve. To use another account, click **Use a different account**.
 
-5.  A pop-up will appear and please press ‘add extension’ and you will be directed to the Welcome page for Wander
+## Open private drives
 
-## Download Wander
+Wander accounts use a drive password for private drives. You set it the first time you need a private drive. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
 
-We are now on the “Welcome to Wander” page
+A drive that isn't open yet shows **Locked**. Click **Unlock** in its row and enter your drive password. Wander then shows one **Sign items** request. Approve it. That one approval opens your other locked drives only if they use the same password.
 
-1.  Create a password for Wander. This password is not the same as your password for ArDrive.
+## If Wander doesn't answer
 
-**Note:** Make sure to write down your Wander password as it can’t be recovered.
+- **Wander didn't answer.** Open Wander and check that it is unlocked. Then try again. If nothing opens, restart your browser.
+- **Wander needs your permission again.** Click **Reconnect** and approve in Wander.
+- **Wander isn't available.** Install or turn on Wander in this browser, then try again.
+- **Signed out.** Your Wander account changed. Log in again.
 
-2\. You will be asked to either create a new wallet or load a wallet.
+For more help, see [Login trouble](/help/faqs-help-and-troubleshooting-guides-login-trouble).
 
-## Add a Wallet
+---
 
--   To make a new wallet with Wander, press the “New Wallet” button, then copy the seedphrase and download the keyfile.
+# Sign up for ArDrive
 
-**Note:** Make sure to save your seedphrase and keyfile somewhere safe as they are not able to be recreated if lost.
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Create an ArDrive account with a password and a recovery phrase.
 
--   The new wallet will be loaded into Wander automatically, but will have no AR.
+You sign up with a password and a recovery phrase. ArDrive makes your Arweave wallet on your device, so your account key never leaves it.
 
-## Log into the ArDrive using the digital wallet from Wander
+Have a password manager or a safe place for paper ready. ArDrive can't recover your password or your recovery phrase.
 
-1.  Visit the [**ArDrive login screen**](https://app.ardrive.io)
+## Sign up
 
-2.  Select the Wander option
+1. Go to [app.ardrive.io](https://app.ardrive.io) and click **Sign up**.
 
-3.  Log in with your ArDrive password
+   ![The ArDrive welcome panel with Log in and Sign up buttons](/help/3-0/signin-landing.png)
+
+2. Wait while ArDrive creates your account. This can take up to a minute. Keep the tab open.
+
+   If your browser has a wallet extension, ArDrive first shows **Create your account**. Click **Create an account**. To use the wallet instead, see [Log into ArDrive with Wander](/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect), [MetaMask](/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet), or Phantom or Solflare in [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
+
+3. In **Choose a password**, enter a password of at least 12 characters. To get one made for you, click **Suggest a strong password**.
+
+   ![The Choose a password dialog with a strong password entered](/help/3-0/signup-password.png)
+
+4. If you used a suggested password, click **Copy** and save it in your password manager.
+
+5. Confirm the password and click **Continue**.
+
+6. In **Save your recovery phrase**, click **Show**, and write down the 12 words in order. Or click **Copy** and save them in your password manager.
+
+   Optional: click **Download a keyfile instead** to save a keyfile for your wallet.
+
+   ![The Save your recovery phrase panel with the words hidden](/help/3-0/signup-recovery.png)
+
+7. Select **I've saved my recovery phrase. ArDrive can't recover it.** and click **Continue**.
+
+You are signed in. ArDrive then sets up a private drive named My files for you. If it can't, your first upload creates it.
+
+Tip: if you didn't save your recovery phrase, you can still back up your wallet. Click your account at the top right, click **Account and security**, and under **Sign in** find **Keyfile** and click **Download**. ArDrive asks for your password first.
+
+## What each secret does
+
+- **Password.** It protects your private drives, and you use it to sign in. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
+- **Recovery phrase.** The 12 words let you sign in on any device. They don't open your private files without your password.
+- **Keyfile.** A file that holds your wallet. You can download it at any time from **Account and security**. See [Log into ArDrive with a keyfile](/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile).
+
+Nobody can recover a lost recovery phrase.
+
+---
+
+# Your drive password
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: One password protects all your private drives. Learn which password you use, how to unlock a locked drive, and how Remember on this device works.
+
+One password protects all your private drives. ArDrive can't change or recover it. If you lose it, you can't open your private drives, so keep it somewhere safe.
+
+## Which password you use
+
+The password depends on how you sign in.
+
+| How you sign in | Your drive password | When ArDrive asks |
+|---|---|---|
+| Keyfile, recovery phrase, or an account made in ArDrive | Your sign-in password | Nothing more is asked |
+| Wander, Phantom, Solflare, or MetaMask | A password you set | The first time you need a private drive |
+
+A wallet account signs in with an approval in the wallet, so it has no sign-in password. To sign in with a wallet, click **Wander**, **Phantom or Solflare**, or **MetaMask** under **or a browser wallet** on the log in panel, then approve in the wallet. See [Log into ArDrive with Wander](/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect) and [Log into ArDrive with MetaMask](/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet).
+
+## Set a drive password
+
+If you sign in with a wallet, ArDrive asks you to set the drive password when you first need a private drive.
+
+1. Create a private drive. See [Create a drive](/help/using-ardrive-apps-using-ardrive-create-new-drive).
+2. In **Keep your files private**, enter a password of at least 12 characters. To get one made for you, click **Suggest a strong password**. ArDrive says "Use at least 12 characters." until the password is long enough.
+3. Enter the same password in **Confirm password**.
+4. Click **Set password**. The button stays off until both passwords match.
+
+![The Keep your files private dialog with Password and Confirm password fields](/help/3-0/keep-your-files-private.png)
+
+Use a password you can keep. It protects every private drive you make later.
+
+## Unlock a locked drive
+
+A drive shows **Locked** when ArDrive can't open it yet. A locked drive appears as **Private drive**, with a lock, until you unlock it.
+
+1. Open **Your drives**.
+2. In the locked drive's row, click **Unlock**. You can also double-click the row. A single click only selects it.
+3. In **Unlock drive**, enter your drive password.
+
+   ![The Unlock drive dialog with Try on my other locked drives and Remember on this device selected](/help/3-0/unlock-drive.png)
+
+4. Check the two boxes under the password. **Try on my other locked drives** and **Remember on this device** are both selected when the dialog opens. Clear either one that you don't want.
+5. Click **Unlock**.
+
+If you open a locked drive from **Private drives** in the left menu instead, ArDrive shows **This drive is locked** with an **Unlock** button. Click it to open the same dialog.
+
+If ArDrive says **Wrong password**, check the password and try again.
+
+**Try on my other locked drives** tries the same password on your other locked drives, so one password can open them all. It appears when you have other locked drives.
+
+A drive made before ArDrive 3.0 can have its own password. For these drives, the dialog says "The password you used with ArDrive before". Enter that password.
+
+With Wander, **Unlock** asks for your drive password first, and then Wander shows one **Sign items** request. Approve it. That one approval opens your other locked drives only if they use the same password.
+
+If you sign in with a password and it doesn't open any private drive, ArDrive shows **This password didn't open your private drives**. Check the password and try again, or continue. Drives it doesn't open stay locked until you unlock them.
+
+## Remember on this device
+
+**Remember on this device** keeps a private drive unlocked on this device, so you don't unlock it again. The unlock dialog selects it for you. Clear it on a device you don't trust, because anyone who can use your browser can open a remembered drive.
+
+To see whether a drive is remembered:
+
+1. Open the drive's menu and click **More info**.
+2. Find **On this device**. It shows **Remembered** or **Not remembered**.
+
+![The drive details with On this device showing Remembered and the Forget on this device button](/help/3-0/drive-remembered.png)
+
+To forget one drive, click **Forget on this device**. The drive stays open until you close the session, and it is locked the next time.
+
+To forget every remembered drive:
+
+1. Click your account at the top right and click **Account and security**.
+2. Under **This device**, find the number of drives remembered and click **Forget**.
+3. In the confirmation, click **Forget**. ArDrive says "You'll need their passwords to open them again."
+
+![The Account and security page with the This device section](/help/3-0/account-security.png)
+
+Clearing your browser's site data also forgets remembered drives. See [Clearing your cache](/help/faqs-help-and-troubleshooting-guides-clearing-your-cache).
+
+## Related
+
+- [Privacy and encryption standards](/help/faqs-faq-what-are-the-privacy-and-encryption-standards)
+- [Login trouble](/help/faqs-help-and-troubleshooting-guides-login-trouble)
+
+---
+
+# Add Turbo Credits and use Billing
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Add Turbo Credits from the upload review or the Billing page, and see how the free upload allowance works.
+
+Turbo Credits pay for uploads in ArDrive. You pay once for each upload, with no subscription. You can add credits from the upload review, from your profile panel, or from the Billing page.
+
+## The free upload allowance
+
+Your free upload allowance covers small uploads and small changes, such as hiding and unhiding a file. When an upload is within it, the upload review shows **Free** as the cost and says "Covered by your free upload allowance." When a publish or similar action is within it, the review shows **Cost: 0 credits** and says that uploads this small are free with Turbo.
+
+When you have used it up, ArDrive says so, and the action needs credits.
+
+## Add credits when you upload
+
+The upload review shows the cost of your files. If the upload is over your free upload allowance and you don't have enough credits, ArDrive asks you to add them without leaving the upload.
+
+1. Click **New**, then click **Upload files**. Choose a drive if ArDrive asks where.
+2. Click **Choose files** and select your files.
+
+   ![The upload review showing the cost for one file](/help/3-0/upload-review.png)
+
+3. Read the cost. If the upload needs more credits than you have, ArDrive says "This upload is over your free upload allowance" and shows how many credits it needs.
+
+   ![The upload review with a warning that the upload is over the free upload allowance, and an Add credits button](/help/3-0/upload-add-credits.png)
+
+4. Click **Add credits**.
+5. In **Add Turbo Credits**, choose an amount: **$10**, **$25**, **$50**, or **$100**. ArDrive shows how many credits you get and whether that is enough for the upload.
+6. Click **Continue to payment** and pay by card.
+7. Back in the upload review, click **Upload**.
+
+## Add credits from your profile or Billing
+
+1. Click your account at the top right.
+2. Click the **+** next to **Credits**, or click **Billing** and then **Add credits**.
+
+   ![The profile panel with Credits, Account and security, Billing, and Settings](/help/3-0/profile-menu.png)
+
+3. In **Buy Turbo Credits**, choose a **Payment method**: **Credit/debit card** or **Crypto**.
+4. Choose how to pick the amount in **Select by**: **Storage** or **USD**.
+5. Choose an amount, or enter a custom amount from $5 to $10,000. If you have a promo code, click **Have a promo code?**.
+
+   ![The Buy Turbo Credits dialog with a $10 amount and the purchase summary](/help/3-0/add-credits-dialog.png)
+
+6. Check the **Purchase summary**. It shows the credits you get, roughly how much storage they buy, and the price.
+7. Click **Continue** and complete the payment.
+
+### Pay with crypto
+
+Under **Crypto**, choose one of these:
+
+- USDC on Base
+- ETH on Base
+- USDC on Ethereum
+- ETH on Ethereum
+- SOL
+
+ArDrive refreshes the price before you pay and never pays an expired quote. If you decline in your wallet, ArDrive says no payment was made. If a top-up is already open in another tab, ArDrive warns you.
+
+## See your balance and purchases
+
+Open **Billing** from your profile panel.
+
+![The Billing page balance, with the numbers hidden](/help/3-0/billing-balance.png)
+
+- **Balance.** Your **Turbo Credits** and about how much storage they buy. If credits are shared with you, ArDrive splits the balance into yours and shared with you. It also shows your AR, which pays for uploads directly.
+- **Purchases.** Each purchase with its type (such as **Card** or **Crypto**), amount, date, receipt, and credits. Click **Download CSV** to save your purchases.
+- **Shared credits.** Credits shared with you and credits you shared, with how much is left or used, and when each share expires.
+
+If you signed in with Phantom or Solflare and credits are held on that wallet, Billing shows them as "credits on your wallet" with a **Use them** button. Click it and approve in your wallet to use those credits in ArDrive. For credits on a MetaMask wallet, Billing says to share them in the ar.io Console. Purchases you make with those wallets in the ar.io Console show in the ar.io Console.
+
+## Share credits
+
+You can share your credits with another person. The person you share with can spend from your credits until you revoke the share or it expires. Billing lists the credits you shared and shows how much of each share is used.
+
+## Credit expiry and refunds
+
+Credits expire twelve months after the date of purchase. All sales are final. For the full terms, see the [Terms of Service](/tos-and-privacy). For answers to common questions, see the [Turbo FAQ](/help/faqs-faq-ardrive-turbo).
+
+## Pay with AR instead
+
+If you hold AR, ArDrive can use it to pay for uploads directly. Billing shows your AR balance. See [Fund your wallet](/help/using-ardrive-apps-getting-started-fund-your-wallet).
 
 ---
 
@@ -2334,6 +2573,40 @@ Click on Attach Drive and a popup box will appear at the center of your screen.
 The pop up will have a place for you to put your 36-character Drive ID that your friend shared with you and a box that allows you to name the Drive. You can choose any name you wish for this Drive. It doesn’t have to be the same name that the original creator used.
 
 Once you press ‘attach’ the Drive will appear under a ‘Shared Drives’ heading in the left side menu.
+
+---
+
+# Create a drive
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Create a public or private drive for permanent file storage.
+
+A drive is a container for your files and folders. You need a drive before you upload files.
+
+## Create a drive
+
+1. Click **New**, then click **New drive**.
+
+   ![The Create drive dialog with the Private privacy option selected](/help/3-0/create-drive.png)
+
+2. In **Drive name**, enter a name.
+
+3. In **Privacy**, choose **Private** or **Public**. **Private** is selected by default.
+
+   - **Private.** Files in a private drive are encrypted. Only people you share them with can open them.
+   - **Public.** Anyone can find a public drive and view its files.
+
+4. Click **Create drive**.
+
+The drive appears in **Your drives**, and in the sidebar under **Public drives** or **Private drives**. Open it to add folders and upload files. See [Uploading files](/help/using-ardrive-apps-using-ardrive-uploading-files).
+
+## Before you choose
+
+- You can't change a drive between public and private. Choose **Private** for anything that you don't want others to read.
+- Data on Arweave is permanent, so a public drive's files can't be deleted.
+- Your drive password protects your private drives. If you sign in with a wallet, ArDrive asks you to set it when you make your first private drive. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
 
 ---
 
@@ -2425,41 +2698,6 @@ Detailed instructions can be found on our [Docs Portal](https://docs.ardrive.io)
 
 ---
 
-# Create New Drive
-
-Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/
-Category: Using ArDrive Apps
-Section: Using ArDrive
-Description: Create a new public or private Drive for permanent file storage on the permaweb.
-
-ArDrive is built around “Drives” - permanent digital storage containers. Drives are like hard drives on the permaweb where you can put all kinds of files - audio, video, photo, code - and group them in folders to your heart’s content.
-
-You must create a Drive before you start uploading your files.
-
-## Getting Started
-
-To get started with ArDrive, you’ll first want to create a Drive.
-
-Hit the **+NEW** button and a drop down list will appear with our seven options.
-
-Select “New Drive”
-
-A pop screen will appear that gives you the option to name your Drive and to select whether it is public or private.
-
-★ If you select “Private” then only you will have access to that Drive. If you select “Public” you are giving access to all files in the Drive to everyone forever. An automatic URL will be created for this Drive and this URL cannot be deleted.
-
-When you create a new Drive, the default is for it to be private. Be careful! If you accidentally publish your information to a public Drive there is no delete button.
-
-## New Drives added to the Sidebar
-
-Once you create the Drive it will now appear on the sidebar list under personal Drives.
-
-After you select the Drive, you can now add folders or upload files to it.
-
-<YouTubeEmbed videoId="lurTntJbd1U" />
-
----
-
 # New Folders
 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/
@@ -2478,6 +2716,111 @@ Select the folder that you have created, and it will take you another level down
 Navigate easily through your Drive by clicking on the folder names that now appear as breadcrumbs in the top navigation.
 
 **NOTE:** Folders cannot be shared at this time.
+
+---
+
+# Publish to web
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-publish-to-web/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Turn a public drive, a folder, or a file into a web page, update it, and find it again in Web pages.
+
+Publish to web turns a public drive, a folder, or a single file into a web page with a link you can share. You can also publish a file by itself, with no page around it.
+
+A published page is public and permanent. Anyone with the link can open it, and search engines can list its files. You can't unpublish a page, so publish only what you want everyone to see.
+
+## Before you start
+
+- A drive must be public to publish it, and so must a folder. A file in a private drive can have a file page that opens only with the key in its link.
+- Hidden items in a public drive can still be found, because the data is public. ArDrive leaves hidden items out of the page.
+- ArDrive can't publish a drive, folder, or file that has changes it hasn't confirmed on Arweave. The message says you can publish once they are confirmed, usually within an hour.
+
+## Publish a drive
+
+1. Open a public drive.
+2. Click the menu at the right of the drive name, and click **Publish to web**.
+
+   ![A drive menu with Share drive, Publish to web, and other items](/help/3-0/publish-menu.png)
+
+3. In **What's included**, check the number of files and folders. Click **Next**.
+
+   ![Step 1 of 3, What's included, showing file and folder counts](/help/3-0/publish-included.png)
+
+4. In **How it looks**, enter a **Title**. Optional: add a **Description**, a **Cover**, or an **Icon**. The **Page** and **Link preview** panels show the result. Click **Next**.
+
+   ![Step 2 of 3, How it looks, with the title, description, and previews](/help/3-0/publish-look.png)
+
+5. In **Review and publish**, check **What**, **Title**, and **Link**.
+
+   ![Step 3 of 3, Review and publish, with the cost](/help/3-0/publish-review.png)
+
+6. Optional: open **Give it a name like yours.ar.io** to point a name you own at the page. Buy and renew names in the ar.io Console.
+
+7. Click **Publish**. Keep the tab open until ArDrive finishes.
+
+When it finishes, **Your page is published** shows the link. Click **Copy link** to copy it, or **Open page** to see it. The first time, a page can take a minute to load.
+
+## Publish a folder
+
+1. Open the folder's menu in the drive, and click **Publish to web**.
+2. Follow steps 3 to 7 of [Publish a drive](#publish-a-drive).
+
+The page holds the folder and everything in it. ArDrive can't publish a folder that is hidden or inside a hidden folder. Unhide it first.
+
+## Publish a file
+
+1. Open the file's menu, and click **Publish to web**.
+2. In **How to publish**, choose one, then click **Next**.
+
+   - **File page.** A page for this file, with a title, description, and preview.
+   - **The file itself.** The file at a permanent link, with a name if you like. Available for files in public drives.
+
+   If **File page** shows "Available after the next ArDrive release.", file pages aren't offered. A public file is then published as the file itself.
+
+   ![How to publish, with File page and The file itself](/help/3-0/publish-file-how.png)
+
+3. In **How it looks**, enter a **Title**. Click **Next**.
+4. In **Review and publish**, click **Publish**.
+
+For a private file, a file page opens the file only with the key in its link. Anyone with that link can open the file, and the key opens every version of it. The title, description, and images are public.
+
+## Cost
+
+The review shows the cost. A small publish shows **Cost: 0 credits** and says that uploads this small are free with Turbo. A larger one costs Turbo Credits or AR. If you can't cover it, ArDrive says so. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
+
+When you pay with AR, the page opens 15 to 30 minutes after you publish, once the network confirms it.
+
+## Find your web pages
+
+The **Web pages** list in the sidebar shows everything you have published, with its link and the date you last updated it.
+
+1. Click **Web pages** in the sidebar.
+2. Click the menu at the right of a page to **Open page**, **Copy link**, **Update page**, **Add name**, or **Open folder**.
+
+![The Web pages list with a page menu](/help/3-0/web-pages-menu.png)
+
+To publish from this list, click **Publish**, choose a drive, open a folder if you want one, and click **Publish drive**, **Publish folder**, or **Publish file**. Select a file in the list to publish only that file.
+
+![The publish picker inside a folder, with Publish folder](/help/3-0/publish-picker.png)
+
+## Update a page
+
+After you change the files, update the page to show them.
+
+1. Click **Web pages** in the sidebar.
+2. Open the page's menu and click **Update page**.
+3. In **Published to web**, click **Update** and follow the steps.
+
+![The Published to web dialog with Update, Open page, and Done](/help/3-0/publish-update.png)
+
+An update gets a new link. Earlier links keep working. If a name points at the page, it moves to the new link.
+
+## If publishing stops
+
+- **Publishing didn't finish.** Click **Try again**. If a transaction already reached the network, ArDrive tells you it is paid for.
+- **Publishing stopped.** Open **Publish to web** and try again.
+- **There's nothing to publish here yet.** The drive or folder has no files that visitors could see.
 
 ---
 
@@ -2510,23 +2853,19 @@ The **+NEW** button is the control center of the app, where you control your Dri
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/
 Category: Using ArDrive Apps
 Section: Using ArDrive
-Description: Upload files from a Drive using the +NEW button, review the one-time storage price, and wait for upload confirmation.
+Description: Upload files to a drive, review the one-time storage price, and wait for upload confirmation.
 
-After [creating a Drive](/help/using-ardrive-apps-using-ardrive-create-new-drive/) you are ready to upload a file.
+After you [create a drive](/help/using-ardrive-apps-using-ardrive-create-new-drive), you are ready to upload a file.
 
-Click into the Drive where you want to upload your file.
+## Upload files
 
-Now click on the **+NEW** button and select “Upload file(s)”
+1. Open the drive where you want to upload. If you start from **Your drives**, ArDrive asks **Upload to which drive?** Choose a drive.
+2. Click **New**, then click **Upload files**. To upload a whole folder, click **Upload folder**.
+3. Click **Choose files** and select your files.
+4. In the upload review, check the files, their sizes, and the cost.
+5. Click **Upload**. To stop with no charge, click **Cancel**.
 
-ArDrive will now allow you to select from the file(s) on your desktop.
-
-Select which file you want and press “Upload”
-
-ArDrive will then calculate the cost of the file(s) you want to upload to the permaweb. A pop up screen will appear that will confirm the file(s) you have selected, the size of each file, and the one-time cost.
-
-You will now have the ability to cancel the transaction at no cost or upload the file for the cost indicated.
-
-<YouTubeEmbed videoId="51Gpg3-GFZw" />
+The cost is a one-time price, paid with Turbo Credits. If your free upload allowance covers the upload, the review shows **Cost: Free** and says "Covered by your free upload allowance." If the upload needs more credits than you have, click **Add credits**. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
 
 ## What file sizes can I upload?
 
