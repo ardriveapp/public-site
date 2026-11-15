@@ -2241,14 +2241,19 @@ You can sign in to ArDrive with MetaMask. ArDrive makes an Arweave wallet for yo
 
 1. Go to [app.ardrive.io](https://app.ardrive.io) and click **Log in**.
 2. Under **or a browser wallet**, click **MetaMask**.
-3. In MetaMask, approve the request to connect to ArDrive.
-4. In MetaMask, approve the request to sign. The signature is free and sends no transaction.
+3. In MetaMask, approve the request to connect to ArDrive, and the signature request. The signature is free and sends no transaction.
+4. When ArDrive asks **Have you used ArDrive with this MetaMask before?**, choose one:
+
+   - **No, I'm new.** ArDrive makes a new, empty account for this MetaMask.
+   - **Yes.** Choose this if you made your MetaMask account before ArDrive 3.0 and set a password. ArDrive asks for that password.
+
+   ![The question Have you used ArDrive with this MetaMask before, with No, I'm new and Yes](/help/3-0/metamask-used-before.png)
+
+5. If ArDrive shows **Approve in MetaMask**, approve the sign-in requests in MetaMask.
 
 ArDrive opens **Your drives**. A new MetaMask account has no ArDrive password.
 
 Approve only signature requests that ArDrive asks for.
-
-If you made your MetaMask account in an earlier version of ArDrive with a password, ArDrive can still ask for that password when you sign in. Enter the password you set then.
 
 ## Private drives
 
@@ -2276,7 +2281,7 @@ Description: Use the Wander browser extension to sign in to ArDrive with a walle
 
 Wander is a Chrome browser extension that holds your Arweave wallet. You sign in to ArDrive by approving in Wander. There is no ArDrive password to remember.
 
-Wander keeps your key. Back it up in Wander.
+**Account and security** says "Wander keeps your key. Back it up there."
 
 ## Install Wander
 
@@ -2291,16 +2296,17 @@ Wander keeps your key. Back it up in Wander.
 
 1. Go to [app.ardrive.io](https://app.ardrive.io) and click **Log in**.
 2. Under **or a browser wallet**, click **Wander**.
-3. In Wander, approve the request to connect to ArDrive.
-4. In Wander, approve the request to sign in to ArDrive.
+3. Approve the requests that Wander shows. Wander asks you to connect to ArDrive, and can ask you to sign in.
 
 ArDrive opens **Your drives**. While ArDrive waits, it shows **Approve in Wander**.
+
+The next time you open ArDrive, **Welcome back** says "Approve in your wallet to open your drives." Click **Continue with Wander** and approve. To use another account, click **Use a different account**.
 
 ## Open private drives
 
 Wander accounts use a drive password for private drives. You set it the first time you need a private drive. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
 
-A drive that isn't open yet shows **Locked**. With Wander, one approval can open many locked drives at once. Click **Unlock** and approve in Wander.
+A drive that isn't open yet shows **Locked**. Click **Unlock** in its row and enter your drive password. Wander then shows one **Sign items** request. Approve it. That one approval opens your other locked drives only if they use the same password.
 
 ## If Wander doesn't answer
 
@@ -2350,7 +2356,7 @@ Have a password manager or a safe place for paper ready. ArDrive can't recover y
 
 7. Select **I've saved my recovery phrase. ArDrive can't recover it.** and click **Continue**.
 
-You are signed in. An account made in ArDrive starts with a private drive named My files.
+You are signed in. ArDrive then sets up a private drive named My files for you. If it can't, your first upload creates it.
 
 ## What each secret does
 
@@ -2387,34 +2393,42 @@ A wallet account signs in with an approval in the wallet, so it has no sign-in p
 If you sign in with a wallet, ArDrive asks you to set the drive password when you first need a private drive.
 
 1. Create a private drive. See [Create a drive](/help/using-ardrive-apps-using-ardrive-create-new-drive).
-2. In **Keep your files private**, enter a password.
-3. Click **Set password**.
+2. In **Keep your files private**, enter a password of at least 12 characters. To get one made for you, click **Suggest a strong password**. ArDrive says "Use at least 12 characters." until the password is long enough.
+3. Enter the same password in **Confirm password**.
+4. Click **Set password**. The button stays off until both passwords match.
+
+![The Keep your files private dialog with Password and Confirm password fields](/help/3-0/keep-your-files-private.png)
 
 Use a password you can keep. It protects every private drive you make later.
 
 ## Unlock a locked drive
 
-A drive shows **Locked** when ArDrive can't open it yet. A locked drive appears as **Private drive** until you unlock it.
+A drive shows **Locked** when ArDrive can't open it yet. A locked drive appears as **Private drive**, with a lock, until you unlock it.
 
-1. Open **Your drives** or **Private drives**.
-2. Click the locked drive. ArDrive shows **This drive is locked**.
-3. Click **Unlock**.
-4. In **Unlock drive**, enter your drive password.
-5. Optional: select **Try on my other locked drives**. This appears when you have more than one locked drive.
-6. Optional: select **Remember on this device**. See the next section.
-7. Click **Unlock**.
+1. Open **Your drives**.
+2. In the locked drive's row, click **Unlock**. You can also double-click the row. A single click only selects it.
+3. In **Unlock drive**, enter your drive password.
+
+   ![The Unlock drive dialog with Try on my other locked drives and Remember on this device selected](/help/3-0/unlock-drive.png)
+
+4. Check the two boxes under the password. **Try on my other locked drives** and **Remember on this device** are both selected when the dialog opens. Clear either one that you don't want.
+5. Click **Unlock**.
+
+If you open a locked drive from **Private drives** in the left menu instead, ArDrive shows **This drive is locked** with an **Unlock** button. Click it to open the same dialog.
 
 If ArDrive says **Wrong password**, check the password and try again.
 
+**Try on my other locked drives** tries the same password on your other locked drives, so one password can open them all. It appears when you have other locked drives.
+
 A drive made before ArDrive 3.0 can have its own password. For these drives, the dialog says "The password you used with ArDrive before". Enter that password.
 
-With Wander, one approval in Wander can open many locked drives at once.
+With Wander, **Unlock** asks for your drive password first, and then Wander shows one **Sign items** request. Approve it. That one approval opens your other locked drives only if they use the same password.
 
-If you sign in and your password doesn't open any private drive, ArDrive shows **This password didn't open your private drives**. Check the password and try again, or continue. Drives it doesn't open stay locked until you unlock them.
+If you sign in with a password and it doesn't open any private drive, ArDrive shows **This password didn't open your private drives**. Check the password and try again, or continue. Drives it doesn't open stay locked until you unlock them.
 
 ## Remember on this device
 
-**Remember on this device** keeps a private drive unlocked on this device, so you don't unlock it again. Choose it only on a device you trust, because anyone who can use your browser can open the drive.
+**Remember on this device** keeps a private drive unlocked on this device, so you don't unlock it again. The unlock dialog selects it for you. Clear it on a device you don't trust, because anyone who can use your browser can open a remembered drive.
 
 To see whether a drive is remembered:
 
@@ -2453,7 +2467,7 @@ Turbo Credits pay for uploads in ArDrive. You pay once for each upload, with no 
 
 ## The free upload allowance
 
-Your free upload allowance covers small uploads and small changes, such as hiding and unhiding a file. When an action is within it, the review shows **Cost: 0 credits** and says that uploads this small are free with Turbo.
+Your free upload allowance covers small uploads and small changes, such as hiding and unhiding a file. When an upload is within it, the upload review shows **Free** as the cost and says "Covered by your free upload allowance." When a publish or similar action is within it, the review shows **Cost: 0 credits** and says that uploads this small are free with Turbo.
 
 When you have used it up, ArDrive says so, and the action needs credits.
 
@@ -2513,11 +2527,11 @@ Open **Billing** from your profile panel.
 - **Purchases.** Each purchase with its type (such as **Card** or **Crypto**), amount, date, receipt, and credits. Click **Download CSV** to save your purchases.
 - **Shared credits.** Credits shared with you and credits you shared, with how much is left or used, and when each share expires.
 
-Credits held on a Phantom or MetaMask wallet appear here too. Purchases you make with those wallets in the ar.io Console show in the ar.io Console.
+If you signed in with Phantom or Solflare and credits are held on that wallet, Billing shows them as "credits on your wallet" with a **Use them** button. Click it and approve in your wallet to use those credits in ArDrive. For credits on a MetaMask wallet, Billing says to share them in the ar.io Console. Purchases you make with those wallets in the ar.io Console show in the ar.io Console.
 
 ## Share credits
 
-You can share your credits with another person. The person you share with can spend from your credits until you revoke the share or it expires. Share credits in the ar.io Console. Billing lists the credits you shared and shows how much of each share is used.
+You can share your credits with another person. The person you share with can spend from your credits until you revoke the share or it expires. Billing lists the credits you shared and shows how much of each share is used.
 
 ## Credit expiry and refunds
 
@@ -2760,6 +2774,8 @@ The page holds the folder and everything in it. ArDrive can't publish a folder t
    - **File page.** A page for this file, with a title, description, and preview.
    - **The file itself.** The file at a permanent link, with a name if you like. Available for files in public drives.
 
+   If **File page** shows "Available after the next ArDrive release.", file pages aren't offered. A public file is then published as the file itself.
+
    ![How to publish, with File page and The file itself](/help/3-0/publish-file-how.png)
 
 3. In **How it looks**, enter a **Title**. Click **Next**.
@@ -2847,7 +2863,7 @@ After you [create a drive](/help/using-ardrive-apps-using-ardrive-create-new-dri
 4. In the upload review, check the files, their sizes, and the cost.
 5. Click **Upload**. To stop with no charge, click **Cancel**.
 
-The cost is a one-time price, paid with Turbo Credits. If your free upload allowance covers the upload, the cost is 0 credits. If the upload needs more credits than you have, click **Add credits**. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
+The cost is a one-time price, paid with Turbo Credits. If your free upload allowance covers the upload, the review shows **Cost: Free** and says "Covered by your free upload allowance." If the upload needs more credits than you have, click **Add credits**. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
 
 ## What file sizes can I upload?
 
