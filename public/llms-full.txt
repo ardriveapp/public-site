@@ -2358,6 +2358,8 @@ Have a password manager or a safe place for paper ready. ArDrive can't recover y
 
 You are signed in. ArDrive then sets up a private drive named My files for you. If it can't, your first upload creates it.
 
+Tip: if you didn't save your recovery phrase, you can still back up your wallet. Click your account at the top right, click **Account and security**, and under **Sign in** find **Keyfile** and click **Download**. ArDrive asks for your password first.
+
 ## What each secret does
 
 - **Password.** It protects your private drives, and you use it to sign in. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
