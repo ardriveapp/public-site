@@ -437,7 +437,7 @@ Can I pay with any credit or debit card?
 
 Is there a free upload allowance?
 
--   Yes. Your free upload allowance covers small uploads and small changes, such as hiding and unhiding a file. The upload review shows when an action is covered, and says when you have used it up and need credits.
+-   Yes. Your free upload allowance covers small uploads and small changes, such as hiding and unhiding a file. The upload review shows when an action is covered, and says when you have used it up and need credits. Turbo decides what is free, so a small upload is usually free when your allowance covers it, but not always.
 
 Do the value of Credits ever change?
 
@@ -1153,13 +1153,11 @@ This setting is for advanced users. Changing it can affect loading, syncing, pre
 ## Change the gateway in Settings
 
 1. Click your account at the top right, then click **Settings**.
-2. Under **Network**, find the setting you want to change:
-   - **Gateway.** "Where ArDrive reads files from."
-   - **GraphQL server.** "Where ArDrive looks up your drives and files."
-   - **Turbo services.** "Where uploads and payments are sent."
-3. Click **Change** below it.
-4. In **Switch gateway**, enter the URL in **Gateway URL**, or click **Choose an ar.io gateway**.
-5. Click **Save**.
+2. Under **Network**, find the setting you want to change, and click **Change** below it:
+   - **Gateway.** "Where ArDrive reads files from." **Change** opens **Switch gateway**. Enter the URL in **Gateway URL**, or click **Choose an ar.io gateway**.
+   - **GraphQL server.** "Where ArDrive looks up your drives and files." **Change** opens **Switch GraphQL server**. Enter the URL in **GraphQL Server URL**. This dialog has no list of ar.io gateways.
+   - **Turbo services.** "Where uploads and payments are sent." **Change** opens **Turbo Service URLs**. Enter the **Upload Service URL** and the **Payment Service URL**.
+3. Click **Save**.
 
 ![The Network section of Settings, with Gateway, GraphQL server, and Turbo services](/help/3-0/settings-network.png)
 
@@ -1174,7 +1172,7 @@ After you change the gateway, run a full resync so ArDrive rebuilds its view. Se
 You can change gateway settings from the login screen.
 
 1. Click the settings icon at the top right of the welcome screen.
-2. Click **Set gateway**, **Set GraphQL server**, or **Set Turbo services**.
+2. Click **Set gateway**, **Set GraphQL server**, or **Set Turbo services**. Each opens the same dialog as its **Change** button in Settings.
 
 ![The settings menu on the welcome screen with Set gateway, Set GraphQL server, Set Turbo services, and Sync all drives on login](/help/3-0/login-settings-menu.png)
 
@@ -2935,7 +2933,7 @@ You can create a deployment only in a public drive.
 
    ![New deployment, with the deployment name field](/help/3-0/new-deployment.png)
 
-7. Review the deployment. ArDrive shows its size and its cost. A small deployment shows **Cost: 0 credits** and says that uploads this small are free with Turbo. A larger one costs Turbo Credits.
+7. Review the deployment. ArDrive shows its size and its cost. A small deployment is usually free when your free upload allowance covers it. The review then shows **Cost: 0 credits** and says "Uploads this small are free with Turbo." Turbo decides what is free. A larger deployment costs Turbo Credits.
 8. Optional: open **Give it a name like yours.ar.io** to point a name you own at it. See [Names](/help/using-ardrive-apps-using-ardrive-names).
 9. Click **Create deployment**.
 
@@ -3014,7 +3012,7 @@ Snapshots help users with large drives. You can create them for public and priva
 
 1.  Open the drive, click **New**, click **Advanced**, and click **New snapshot**. You can also click the menu at the right of the drive name, and click **Create snapshot**.
 2.  Follow the steps. ArDrive determines the size and cost of the snapshot and shows them before it uploads.
-3.  Upload the snapshot. The next time you sync, the drive syncs faster.
+3.  Click **Create**. The next time you sync, the drive syncs faster.
 
 If recent changes to the drive are still being confirmed on Arweave, ArDrive says so, for example "4 recent changes to this drive are still being confirmed on Arweave. Try again in a few minutes." Wait, then try again.
 
@@ -3057,7 +3055,7 @@ If ArDrive says **No Solana wallet found**, open ArDrive in your wallet's app, o
 
 If you sign in with Phantom or Solflare, that wallet is already the wallet for names. There is nothing to link.
 
-Your linked wallet approves name changes. Turbo Credits pay for them.
+Your linked wallet approves name changes. Turbo Credits pay for them, with one exception: if you manage a name for its owner, your ArNS wallet pays the network fee in SOL instead of credits.
 
 ## See your names
 
@@ -3075,7 +3073,7 @@ Then:
 
 1. Choose the name. ArDrive says "Choose a name for" and the item.
 2. Optional: add an undername, such as blog for blog_maya.ar.io. Use letters, numbers, - and _, and start with a letter or number.
-3. Check the **Cost**. ArDrive shows it in Turbo Credits before your wallet is asked.
+3. Check the **Cost**. ArDrive shows it, in Turbo Credits or in SOL, before your wallet is asked.
 4. Confirm the change.
 5. Approve in your wallet when it asks. It can ask twice. ArDrive says **Approve once more in your ArNS wallet** for the second request.
 
@@ -3084,8 +3082,9 @@ ArDrive says **Name saved** when it finishes, and says how soon the name goes li
 ## Change or remove a name
 
 - To point a name at something else, click **Change name** in the item's menu, or choose **Change what it points to**.
-- To remove an undername, click **Remove name**. The undername stops working.
-- A main name can't be removed. Point it at something else instead.
+- To remove a name, click **Remove name**.
+  - An undername stops working.
+  - A main name keeps working. It shows a page that tells visitors nothing is here right now, so links to it keep working.
 
 If you hide a file that has a name, the name still opens it. ArDrive asks **Remove its name too?** so you can remove it.
 
@@ -3490,7 +3489,7 @@ Click the menu at the right of a row. The menu has these items:
 | **Add name** | Points a name you own at the page. See [Names](/help/using-ardrive-apps-using-ardrive-names). |
 | **Open folder** | Opens the drive or folder the page comes from. |
 
-A pinned file page has no **Update page** item.
+A pinned file page and a deployment page have no **Update page** item.
 
 ## Publish from this page
 
@@ -3498,7 +3497,7 @@ Click **Publish**, choose a drive, and follow the steps in [Publish to web](/hel
 
 ## Update a page
 
-An update gets a new link. Earlier links keep working. If a name points at the page, it moves to the new link. The steps are in [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web#update-a-page).
+An update gets a new link. Earlier links keep working. The steps are in [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web#update-a-page).
 
 ## Pages are public
 
