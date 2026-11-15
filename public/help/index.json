@@ -197,7 +197,7 @@
     {
       "slug": "faqs-faq-arweave-wallets",
       "title": "Arweave Wallets",
-      "description": "Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.",
+      "description": "Common questions about Arweave wallets, recovery phrases, and logging in to ArDrive.",
       "category": "FAQs",
       "section": "FAQ",
       "pathname": "/help/faqs-faq-arweave-wallets/",
@@ -306,6 +306,16 @@
       ]
     },
     {
+      "slug": "faqs-faq-which-languages-does-ardrive-support",
+      "title": "Which languages does ArDrive support?",
+      "description": "ArDrive shows its text in English, Spanish, Hindi, Japanese, and Chinese. It follows the language of your browser.",
+      "category": "FAQs",
+      "section": "FAQ",
+      "pathname": "/help/faqs-faq-which-languages-does-ardrive-support/",
+      "url": "https://ardrive.io/help/faqs-faq-which-languages-does-ardrive-support/",
+      "headings": []
+    },
+    {
       "slug": "faqs-help-and-troubleshooting-guides-ardrive-app-limits",
       "title": "ArDrive App Limits",
       "description": "Current upload and download limits for ArDrive by upload method, platform, and browser.",
@@ -365,22 +375,26 @@
     {
       "slug": "faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive",
       "title": "Change Gateway URL For ArDrive",
-      "description": "Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen.",
+      "description": "Advanced users can change the gateway, GraphQL server, and Turbo services that ArDrive uses, in Settings or on the login screen.",
       "category": "FAQs",
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/",
       "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/",
       "headings": [
         {
-          "depth": 1,
-          "text": "Change gateways from account settings"
+          "depth": 2,
+          "text": "Change the gateway in Settings"
         },
         {
-          "depth": 1,
-          "text": "Change gateways while logging in"
+          "depth": 2,
+          "text": "Change the gateway before you log in"
         },
         {
-          "depth": 1,
+          "depth": 2,
+          "text": "After an update"
+        },
+        {
+          "depth": 2,
           "text": "When to try this"
         }
       ]
@@ -499,27 +513,35 @@
     {
       "slug": "faqs-help-and-troubleshooting-guides-sync-your-drive",
       "title": "Sync Your Drive",
-      "description": "Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.",
+      "description": "Use Sync or Full resync when files show red or orange status, recently uploaded files don't appear, or your drive looks stale.",
       "category": "FAQs",
       "section": "Help And Troubleshooting Guides",
       "pathname": "/help/faqs-help-and-troubleshooting-guides-sync-your-drive/",
       "url": "https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/",
       "headings": [
         {
-          "depth": 1,
-          "text": "Start a manual sync"
+          "depth": 2,
+          "text": "Sync your drives"
         },
         {
-          "depth": 1,
-          "text": "Regular sync"
+          "depth": 2,
+          "text": "When to use Sync"
         },
         {
-          "depth": 1,
-          "text": "Deep sync"
+          "depth": 2,
+          "text": "When to use Full resync"
         },
         {
-          "depth": 1,
-          "text": "When sync may not fix it"
+          "depth": 2,
+          "text": "See what happened"
+        },
+        {
+          "depth": 2,
+          "text": "Sync automatically"
+        },
+        {
+          "depth": 2,
+          "text": "When sync doesn't fix it"
         }
       ]
     },
@@ -672,12 +694,29 @@
     {
       "slug": "using-ardrive-apps-actions-actions",
       "title": "Actions",
-      "description": "Overview of common file, folder, and Drive actions in ArDrive.",
+      "description": "Find the actions for drives, folders, and files in one menu for each.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-actions/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-actions/",
-      "headings": []
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Files"
+        },
+        {
+          "depth": 2,
+          "text": "Folders"
+        },
+        {
+          "depth": 2,
+          "text": "Drives"
+        },
+        {
+          "depth": 2,
+          "text": "The details panel"
+        }
+      ]
     },
     {
       "slug": "using-ardrive-apps-actions-ardrive-explorer-view",
@@ -692,7 +731,7 @@
     {
       "slug": "using-ardrive-apps-actions-download-a-file",
       "title": "Download A File",
-      "description": "Download files from ArDrive without additional storage charges.",
+      "description": "Download files from ArDrive. Downloading costs nothing.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-download-a-file/",
@@ -702,22 +741,64 @@
     {
       "slug": "using-ardrive-apps-actions-drive-explorer",
       "title": "Drive Explorer",
-      "description": "Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.",
+      "description": "Find your way around Your drives and the file list: the sidebar, the menus, and how a click works.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-drive-explorer/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/",
-      "headings": []
+      "headings": [
+        {
+          "depth": 2,
+          "text": "The sidebar"
+        },
+        {
+          "depth": 2,
+          "text": "Open and select"
+        },
+        {
+          "depth": 2,
+          "text": "Your drives page"
+        },
+        {
+          "depth": 2,
+          "text": "Inside a drive"
+        }
+      ]
     },
     {
       "slug": "using-ardrive-apps-actions-drive-sharing",
       "title": "Drive Sharing",
-      "description": "Share public or private Drives with a link.",
+      "description": "Share a public or private drive, or a folder, with a link. A private drive also needs its access key.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-drive-sharing/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/",
-      "headings": []
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Share a public drive"
+        },
+        {
+          "depth": 2,
+          "text": "Share a folder"
+        },
+        {
+          "depth": 2,
+          "text": "Share a private drive"
+        },
+        {
+          "depth": 3,
+          "text": "Include the key in the link"
+        },
+        {
+          "depth": 3,
+          "text": "Share a folder in a private drive"
+        },
+        {
+          "depth": 2,
+          "text": "Good to know"
+        }
+      ]
     },
     {
       "slug": "using-ardrive-apps-actions-export-csv-table",
@@ -732,77 +813,85 @@
     {
       "slug": "using-ardrive-apps-actions-file-sharing",
       "title": "File Sharing",
-      "description": "Share public or private files from ArDrive with a link.",
+      "description": "Share a public or private file with a link. A private file also needs its access key.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-file-sharing/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/",
       "headings": [
         {
-          "depth": 3,
-          "text": "File Link"
+          "depth": 2,
+          "text": "Share a public file"
+        },
+        {
+          "depth": 2,
+          "text": "Share a private file"
+        },
+        {
+          "depth": 2,
+          "text": "What the recipient sees"
+        },
+        {
+          "depth": 2,
+          "text": "Good to know"
         }
       ]
     },
     {
       "slug": "using-ardrive-apps-actions-hiding-files-from-your-drive",
       "title": "Hiding Files From Your Drive",
-      "description": "Yes, hiding files or folders is possible with ArDrive.",
+      "description": "Hide a file, a folder, or a drive from your view, show hidden items, and unhide them.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-hiding-files-from-your-drive/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/",
       "headings": [
         {
-          "depth": 3,
-          "text": "Can you hide a folder or file?"
+          "depth": 2,
+          "text": "Hide an item"
         },
         {
-          "depth": 3,
-          "text": "Can you unhide files or folders?"
+          "depth": 2,
+          "text": "Show hidden items"
+        },
+        {
+          "depth": 2,
+          "text": "Unhide an item"
+        },
+        {
+          "depth": 2,
+          "text": "Hidden drives"
+        },
+        {
+          "depth": 2,
+          "text": "What hiding doesn't do"
         }
       ]
     },
     {
       "slug": "using-ardrive-apps-actions-licensing-your-data",
       "title": "Licensing Your Data",
-      "description": "Apply licensing information to uploaded files to clarify reuse and attribution.",
+      "description": "Add a license to a file to say how others can use it, and see what it costs.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-licensing-your-data/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/",
       "headings": [
         {
-          "depth": 1,
-          "text": "Introduction"
-        },
-        {
-          "depth": 1,
-          "text": "Licensing Your Content"
+          "depth": 2,
+          "text": "Add a license"
         },
         {
           "depth": 2,
-          "text": "How to Apply a License"
+          "text": "What a license costs"
         },
         {
           "depth": 2,
-          "text": "Viewing Licenses"
-        },
-        {
-          "depth": 1,
-          "text": "Understanding Your Licensing Options"
+          "text": "See a license"
         },
         {
           "depth": 2,
-          "text": "Creative Commons Licenses"
-        },
-        {
-          "depth": 3,
-          "text": "The Six License Types"
-        },
-        {
-          "depth": 3,
-          "text": "Choosing the Right License"
+          "text": "Creative Commons licenses"
         },
         {
           "depth": 2,
@@ -810,18 +899,14 @@
         },
         {
           "depth": 2,
-          "text": "Impacts of Licensing"
-        },
-        {
-          "depth": 1,
-          "text": "Stay Connected and Empowered"
+          "text": "Impacts of licensing"
         }
       ]
     },
     {
       "slug": "using-ardrive-apps-actions-move-a-file-or-folder",
       "title": "Move A File Or Folder",
-      "description": "Move files or folders within the same Drive.",
+      "description": "Move files or folders to another folder in the same drive.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-move-a-file-or-folder/",
@@ -841,7 +926,7 @@
     {
       "slug": "using-ardrive-apps-actions-public-preview",
       "title": "Public Preview",
-      "description": "Get a permanent public preview URL for files stored in a Public Drive.",
+      "description": "Open a file in a public drive at its web address.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-public-preview/",
@@ -849,19 +934,36 @@
       "headings": [
         {
           "depth": 2,
-          "text": "URLs on the Permaweb"
+          "text": "Web addresses on the permaweb"
         }
       ]
     },
     {
       "slug": "using-ardrive-apps-actions-rename-a-file-or-folder",
       "title": "Rename A File Or Folder",
-      "description": "Rename files and folders in ArDrive while preserving permanent data history.",
+      "description": "Rename files, folders, and drives in ArDrive and keep their data history.",
       "category": "Using ArDrive Apps",
       "section": "Actions",
       "pathname": "/help/using-ardrive-apps-actions-rename-a-file-or-folder/",
       "url": "https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/",
-      "headings": []
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Rename a file or folder"
+        },
+        {
+          "depth": 2,
+          "text": "Rename a drive"
+        },
+        {
+          "depth": 2,
+          "text": "Edit a note"
+        },
+        {
+          "depth": 2,
+          "text": "What happens to the data"
+        }
+      ]
     },
     {
       "slug": "using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web",
@@ -886,7 +988,7 @@
         },
         {
           "depth": 2,
-          "text": "Create a Manifest for your metadata"
+          "text": "Create a deployment for your metadata"
         },
         {
           "depth": 2,
@@ -962,6 +1064,41 @@
         {
           "depth": 2,
           "text": "Pay for uploads"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-getting-started-log-into-ardrive-phantom-or-solflare",
+      "title": "Log into ArDrive with Phantom or Solflare",
+      "description": "Use the Phantom or Solflare browser wallet to sign in to ArDrive with a wallet approval, with no sign-in password.",
+      "category": "Using ArDrive Apps",
+      "section": "Getting Started",
+      "pathname": "/help/using-ardrive-apps-getting-started-log-into-ardrive-phantom-or-solflare/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-phantom-or-solflare/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Before you start"
+        },
+        {
+          "depth": 2,
+          "text": "Log in"
+        },
+        {
+          "depth": 2,
+          "text": "Your two addresses"
+        },
+        {
+          "depth": 2,
+          "text": "Private drives"
+        },
+        {
+          "depth": 2,
+          "text": "Turbo Credits held on your wallet"
+        },
+        {
+          "depth": 2,
+          "text": "Related"
         }
       ]
     },
@@ -1043,6 +1180,37 @@
       ]
     },
     {
+      "slug": "using-ardrive-apps-using-ardrive-account-and-security",
+      "title": "Account and security",
+      "description": "See how you sign in, download your keyfile, forget remembered drives, and copy your addresses.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-account-and-security/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-account-and-security/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Open the page"
+        },
+        {
+          "depth": 2,
+          "text": "Sign in"
+        },
+        {
+          "depth": 2,
+          "text": "This device"
+        },
+        {
+          "depth": 2,
+          "text": "Addresses"
+        },
+        {
+          "depth": 2,
+          "text": "Related"
+        }
+      ]
+    },
+    {
       "slug": "using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing",
       "title": "Add Turbo Credits and use Billing",
       "description": "Add Turbo Credits from the upload review or the Billing page, and see how the free upload allowance works.",
@@ -1088,7 +1256,7 @@
     {
       "slug": "using-ardrive-apps-using-ardrive-attach-a-drive",
       "title": "Attach A Drive",
-      "description": "Attach a shared public or private Drive to your account from a Drive link.",
+      "description": "Attach a drive that someone shared with you, using its drive ID, so it shows in your Shared with me list.",
       "category": "Using ArDrive Apps",
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-attach-a-drive/",
@@ -1096,11 +1264,50 @@
       "headings": [
         {
           "depth": 2,
-          "text": "Use a Drive Link to attach a Drive"
+          "text": "Attach a drive"
         },
         {
           "depth": 2,
-          "text": "Use the new button to attach a Drive"
+          "text": "Attach a private drive"
+        },
+        {
+          "depth": 2,
+          "text": "Find an attached drive"
+        },
+        {
+          "depth": 2,
+          "text": "Open a drive without attaching it"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-create-an-arweave-manifest",
+      "title": "Create A Deployment (Arweave Manifest)",
+      "description": "Create a deployment from a public drive or folder to give its files friendly paths at one Arweave address.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Create a deployment"
+        },
+        {
+          "depth": 2,
+          "text": "Open a deployment"
+        },
+        {
+          "depth": 2,
+          "text": "Update a deployment"
+        },
+        {
+          "depth": 2,
+          "text": "Import files from a manifest"
+        },
+        {
+          "depth": 2,
+          "text": "Customize a manifest"
         }
       ]
     },
@@ -1139,41 +1346,112 @@
       ]
     },
     {
-      "slug": "using-ardrive-apps-using-ardrive-create-an-arweave-manifest",
-      "title": "Create An Arweave Manifest",
-      "description": "Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.",
+      "slug": "using-ardrive-apps-using-ardrive-names",
+      "title": "Names",
+      "description": "Point an ArNS name you own at a published page, a deployment, or a public file, and pay for the change with Turbo Credits.",
       "category": "Using ArDrive Apps",
       "section": "Using ArDrive",
-      "pathname": "/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/",
-      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-names/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-names/",
       "headings": [
         {
-          "depth": 1,
-          "text": "Overview"
+          "depth": 2,
+          "text": "What you can name"
         },
         {
-          "depth": 1,
-          "text": "Instructions"
+          "depth": 2,
+          "text": "Link your Solana wallet"
         },
         {
-          "depth": 1,
-          "text": "Updating a Manifest"
+          "depth": 2,
+          "text": "See your names"
         },
         {
-          "depth": 1,
-          "text": "Want it Custom?"
+          "depth": 2,
+          "text": "Give a page a name"
+        },
+        {
+          "depth": 2,
+          "text": "Change or remove a name"
+        },
+        {
+          "depth": 2,
+          "text": "If a change doesn't go through"
+        },
+        {
+          "depth": 2,
+          "text": "Renew a name"
         }
       ]
     },
     {
       "slug": "using-ardrive-apps-using-ardrive-new-folders",
       "title": "New Folders",
-      "description": "Create folders to organize files inside an ArDrive Drive.",
+      "description": "Create folders to organize files inside an ArDrive drive.",
       "category": "Using ArDrive Apps",
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-new-folders/",
       "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/",
-      "headings": []
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Create a folder"
+        },
+        {
+          "depth": 2,
+          "text": "Share, move, and rename a folder"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-open-a-drive-without-signing-in",
+      "title": "Open a drive without signing in",
+      "description": "Open a public drive from a link or a drive ID, with no account. A private drive also needs the key it was shared with.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-open-a-drive-without-signing-in/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-open-a-drive-without-signing-in/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Open a drive"
+        },
+        {
+          "depth": 2,
+          "text": "Open a private drive"
+        },
+        {
+          "depth": 2,
+          "text": "If ArDrive can't open it"
+        },
+        {
+          "depth": 2,
+          "text": "Keep a drive"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-pin-a-file",
+      "title": "Pin a file",
+      "description": "Add a file that is already on Arweave to your drive by its transaction ID, without uploading it again.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-pin-a-file/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-pin-a-file/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Pin a file"
+        },
+        {
+          "depth": 2,
+          "text": "Use a pinned file"
+        },
+        {
+          "depth": 2,
+          "text": "What a pin doesn't do"
+        }
+      ]
     },
     {
       "slug": "using-ardrive-apps-using-ardrive-publish-to-web",
@@ -1219,9 +1497,40 @@
       ]
     },
     {
+      "slug": "using-ardrive-apps-using-ardrive-share-turbo-credits",
+      "title": "Share Turbo Credits",
+      "description": "See the credits shared with you and the credits you shared, and use credits held on a Solana wallet.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-share-turbo-credits/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-share-turbo-credits/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "See your shares"
+        },
+        {
+          "depth": 2,
+          "text": "Share credits with another wallet"
+        },
+        {
+          "depth": 2,
+          "text": "Use credits held on your Solana wallet"
+        },
+        {
+          "depth": 2,
+          "text": "When credits expire"
+        },
+        {
+          "depth": 2,
+          "text": "Related"
+        }
+      ]
+    },
+    {
       "slug": "using-ardrive-apps-using-ardrive-the-new-button",
       "title": "The New Button",
-      "description": "Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.",
+      "description": "Use New to upload files, make folders, notes, pins, and drives, attach a shared drive, and create deployments or snapshots.",
       "category": "Using ArDrive Apps",
       "section": "Using ArDrive",
       "pathname": "/help/using-ardrive-apps-using-ardrive-the-new-button/",
@@ -1252,6 +1561,37 @@
         {
           "depth": 2,
           "text": "Understanding File Status"
+        }
+      ]
+    },
+    {
+      "slug": "using-ardrive-apps-using-ardrive-web-pages",
+      "title": "Web pages",
+      "description": "Find every page you published, open it, copy its link, update it, and give it a name.",
+      "category": "Using ArDrive Apps",
+      "section": "Using ArDrive",
+      "pathname": "/help/using-ardrive-apps-using-ardrive-web-pages/",
+      "url": "https://ardrive.io/help/using-ardrive-apps-using-ardrive-web-pages/",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "Open Web pages"
+        },
+        {
+          "depth": 2,
+          "text": "Use a page"
+        },
+        {
+          "depth": 2,
+          "text": "Publish from this page"
+        },
+        {
+          "depth": 2,
+          "text": "Update a page"
+        },
+        {
+          "depth": 2,
+          "text": "Pages are public"
         }
       ]
     }

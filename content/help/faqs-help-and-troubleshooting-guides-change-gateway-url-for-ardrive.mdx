@@ -1,42 +1,48 @@
 ---
 title: "Change Gateway URL For ArDrive"
-description: "Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen."
+description: "Advanced users can change the gateway, GraphQL server, and Turbo services that ArDrive uses, in Settings or on the login screen."
 category: "FAQs"
 section: "Help And Troubleshooting Guides"
 ---
 
-[app.ardrive.io](https://app.ardrive.io/) connects to Arweave gateways to upload data, download data, and query indexed drive, file, and folder information.
+ArDrive connects to Arweave gateways to read files, to look up your drives, files, and folders, and to send uploads. Changing a gateway can help if the default gateway is unavailable, or your internet provider blocks it.
 
-Changing your gateway can be useful if the default gateway is temporarily unavailable, your ISP blocks access to it, or you want to use another decentralized gateway for Permaweb services.
+This setting is for advanced users. Changing it can affect loading, syncing, previews, and how soon uploads appear in the app. The default gateway is `https://turbo-gateway.com`.
 
-This setting is intended for advanced users. Changing gateways can affect loading, syncing, previews, and how quickly newly uploaded data appears in the app.
+## Change the gateway in Settings
 
-# Change gateways from account settings
+1. Click your account at the top right, then click **Settings**.
+2. Under **Network**, find the setting you want to change:
+   - **Gateway.** "Where ArDrive reads files from."
+   - **GraphQL server.** "Where ArDrive looks up your drives and files."
+   - **Turbo services.** "Where uploads and payments are sent."
+3. Click **Change** below it.
+4. In **Switch gateway**, enter the URL in **Gateway URL**, or click **Choose an ar.io gateway**.
+5. Click **Save**.
 
-After you are logged in, open your account menu and go to settings.
+![The Network section of Settings, with Gateway, GraphQL server, and Turbo services](/help/3-0/settings-network.png)
 
-![ArDrive account menu with settings option](/help/help-gateway-settings-1.jpg)
+![Switch gateway, with the Gateway URL field and Choose an ar.io gateway](/help/3-0/switch-gateway.png)
 
-From settings, open the gateway settings area.
+Settings says "Advanced. Change these only if you know you need to."
 
-![ArDrive settings screen showing gateway settings](/help/help-gateway-settings-2.jpg)
+After you change the gateway, run a full resync so ArDrive rebuilds its view. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
 
-You can update both gateway fields:
+## Change the gateway before you log in
 
-- Data Gateway: used for retrieving data and generating preview links.
+You can change gateway settings from the login screen.
 
-- GraphQL Gateway: used for querying indexed drive, folder, and file metadata.
+1. Click the settings icon at the top right of the welcome screen.
+2. Click **Set gateway**, **Set GraphQL server**, or **Set Turbo services**.
 
-![ArDrive gateway settings fields](/help/help-gateway-settings-3.jpg)
+![The settings menu on the welcome screen with Set gateway, Set GraphQL server, Set Turbo services, and Sync all drives on login](/help/3-0/login-settings-menu.png)
 
-# Change gateways while logging in
+The same menu has the **Sync all drives on login** switch and the ArDrive version. The welcome dialog that asks for your password has the same settings icon.
 
-You can also change gateway settings from the login screen before accessing your drive.
+## After an update
 
-![ArDrive login gateway settings](/help/help-gateway-login-settings.jpg)
+If you chose a custom gateway before ArDrive 3.0, check **Settings**. The update can reset saved settings, including the gateway, to the defaults.
 
-# When to try this
+## When to try this
 
-Changing gateways may help if you are an advanced user troubleshooting drive syncing, file previews, or temporary gateway availability issues.
-
-If your issue appears to be an extended outage, visit our [contact page](/contact) before changing settings.
+Try another gateway if you troubleshoot syncing, previews, or gateway availability. If an outage lasts longer, visit our [contact page](/contact) before you change settings.

@@ -17,7 +17,7 @@
 - [Update File Version](https://ardrive.io/help/ardrive-as-a-platform-arweave-file-system-update-file-version/): Technical overview of how ArFS represents new file versions.
 - [ArDrive On The Permaweb](https://ardrive.io/help/faqs-faq-ardrive-on-the-permaweb-dapp/): Use the permanent ArDrive dApp entry point on the permaweb.
 - [ArDrive Turbo](https://ardrive.io/help/faqs-faq-ardrive-turbo/): Common questions about ArDrive Turbo Credits, payments, receipts, refunds, and support.
-- [Arweave Wallets](https://ardrive.io/help/faqs-faq-arweave-wallets/): Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.
+- [Arweave Wallets](https://ardrive.io/help/faqs-faq-arweave-wallets/): Common questions about Arweave wallets, recovery phrases, and logging in to ArDrive.
 - [Everything You Need To Know About ArDrive](https://ardrive.io/help/faqs-faq-everything-you-need-to-know-about-ardrive/): Common questions about permanence, privacy, uploads, sharing, and permaweb URLs in ArDrive.
 - [How Do Turbo Conversions Work](https://ardrive.io/help/faqs-faq-how-do-turbo-conversions-work/): Understand how Turbo upload prices are estimated from file size, AR, and Credits.
 - [How keyfile and recovery phrase login work](https://ardrive.io/help/faqs-faq-how-do-keyfile-and-seed-phrase-login-work/): Learn how keyfile, recovery phrase, and wallet sign-in work in ArDrive and how to protect wallet access.
@@ -25,51 +25,59 @@
 - [What Currencies Or Cryptocurrencies Can I Use To Upload?](https://ardrive.io/help/faqs-faq-what-currencies-or-cryptocurrencies-can-i-use-to-upload/): ArDrive supports permanent storage payments through Turbo Credits or AR tokens.
 - [What Makes ArDrive Different From Other File Storage Apps](https://ardrive.io/help/faqs-faq-what-makes-ardrive-different-from-other-file-storage-apps/): What makes ArDrive different from other file storage apps?
 - [Where Can I Make A Feature Request](https://ardrive.io/help/faqs-faq-where-can-i-make-a-feature-request/): Where can I make a feature request?
+- [Which languages does ArDrive support?](https://ardrive.io/help/faqs-faq-which-languages-does-ardrive-support/): ArDrive shows its text in English, Spanish, Hindi, Japanese, and Chinese. It follows the language of your browser.
 - [ArDrive App Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/): Current upload and download limits for ArDrive by upload method, platform, and browser.
 - [Bad Gateway And Network Errors](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors/): Troubleshoot 502, 503, 504, bad gateway, network, resource, ar.io, GraphQL, gateway, and frontend errors in ArDrive Web.
 - [Cannot Access Or Retrieve A File](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-cannot-access-or-retrieve-file/): If a file will not load, preview, download, access, or retrieve from ArDrive Web and you see 502, 503, 504, bad gateway, network, resource, ar.io, or gateway errors, the issue may be temporary gateway availability.
-- [Change Gateway URL For ArDrive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/): Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen.
+- [Change Gateway URL For ArDrive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/): Advanced users can change the gateway, GraphQL server, and Turbo services that ArDrive uses, in Settings or on the login screen.
 - [Check Browser Console Logs](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-check-browser-console-logs/): Browser console logs and network errors are the best way to understand ArDrive Web issues and help support troubleshoot login, gateway, upload, download, preview, or sync problems.
 - [Clearing Your Cache](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-clearing-your-cache/): Clear browser cache for app.ardrive.io when files, folders, drives, or statuses look stale.
 - [Drive Syncing Issues](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-drive-syncing-issues/): Drive syncing issues are usually caused by intermittent gateway indexing delays and often resolve on their own within a few hours.
 - [File Upload Issues And Workarounds](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-file-upload-issues-and-workarounds/): Troubleshoot file upload status, gateway indexing delays, and transaction visibility.
 - [Login Trouble](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-login-trouble/): Troubleshoot ArDrive Web login issues, including password, keyfile, recovery phrase, wallet, locked drive, browser, and gateway-related login errors.
-- [Sync Your Drive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/): Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.
+- [Sync Your Drive](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/): Use Sync or Full resync when files show red or orange status, recently uploaded files don't appear, or your drive looks stale.
 - [Trouble Accessing Data Through arweave.net?](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net/): Check whether a transaction or data item loads on other public Arweave gateways, and find out who to contact.
 - [Turbo Gateway Rate Limits](https://ardrive.io/help/faqs-help-and-troubleshooting-guides-turbo-gateway-rate-limits/): Free download allowances, refill rates, and paid upgrades for data access through turbo-gateway.com.
 - [Arweave Manifests](https://ardrive.io/help/understanding-the-permaweb-general-arweave-manifests/): Learn how Arweave Manifests map transaction IDs to friendly file names and paths.
 - [Block Explorers](https://ardrive.io/help/understanding-the-permaweb-general-block-explorers/): Use ViewBlock or ArScan to check a wallet's transaction history and confirm whether an upload reached Arweave.
 - [What Is The Permaweb](https://ardrive.io/help/understanding-the-permaweb-general-what-is-the-permaweb/): Learn what the permaweb is and how Arweave stores data permanently.
-- [Actions](https://ardrive.io/help/using-ardrive-apps-actions-actions/): Overview of common file, folder, and Drive actions in ArDrive.
+- [Actions](https://ardrive.io/help/using-ardrive-apps-actions-actions/): Find the actions for drives, folders, and files in one menu for each.
 - [ArDrive Explorer View](https://ardrive.io/help/using-ardrive-apps-actions-ardrive-explorer-view/): Where to find the actions for your drives, folders, and files in ArDrive.
-- [Download A File](https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/): Download files from ArDrive without additional storage charges.
-- [Drive Explorer](https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/): Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.
-- [Drive Sharing](https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/): Share public or private Drives with a link.
+- [Download A File](https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/): Download files from ArDrive. Downloading costs nothing.
+- [Drive Explorer](https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/): Find your way around Your drives and the file list: the sidebar, the menus, and how a click works.
+- [Drive Sharing](https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/): Share a public or private drive, or a folder, with a link. A private drive also needs its access key.
 - [Export Csv Table](https://ardrive.io/help/using-ardrive-apps-actions-export-csv-table/): Export a CSV inventory of Drive contents, transaction IDs, links, and metadata.
-- [File Sharing](https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/): Share public or private files from ArDrive with a link.
-- [Hiding Files From Your Drive](https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/): Yes, hiding files or folders is possible with ArDrive.
-- [Licensing Your Data](https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/): Apply licensing information to uploaded files to clarify reuse and attribution.
-- [Move A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-move-a-file-or-folder/): Move files or folders within the same Drive.
+- [File Sharing](https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/): Share a public or private file with a link. A private file also needs its access key.
+- [Hiding Files From Your Drive](https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/): Hide a file, a folder, or a drive from your view, show hidden items, and unhide them.
+- [Licensing Your Data](https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/): Add a license to a file to say how others can use it, and see what it costs.
+- [Move A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-move-a-file-or-folder/): Move files or folders to another folder in the same drive.
 - [New File Versions](https://ardrive.io/help/using-ardrive-apps-actions-new-file-versions/): Upload a replacement file with the same name to create a new file version.
-- [Public Preview](https://ardrive.io/help/using-ardrive-apps-actions-public-preview/): Get a permanent public preview URL for files stored in a Public Drive.
-- [Rename A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/): Rename files and folders in ArDrive while preserving permanent data history.
+- [Public Preview](https://ardrive.io/help/using-ardrive-apps-actions-public-preview/): Open a file in a public drive at its web address.
+- [Rename A File Or Folder](https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/): Rename files, folders, and drives in ArDrive and keep their data history.
 - [Storing Your NFT Data With ArDrive Web](https://ardrive.io/help/using-ardrive-apps-actions-storing-your-nft-data-with-ardrive-web/): Store NFT assets and metadata permanently with ArDrive.
 - [Fund your wallet](https://ardrive.io/help/using-ardrive-apps-getting-started-fund-your-wallet/): Pay for ArDrive uploads with Turbo Credits, by card or crypto, or with AR tokens.
 - [Log into ArDrive with a keyfile](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-keyfile/): Log in to ArDrive with your Arweave wallet keyfile and your password.
 - [Log into ArDrive with a recovery phrase](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-seed-phrase/): Log in to ArDrive with your 12-word recovery phrase and your password.
 - [Log into ArDrive with MetaMask](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-metamask-wallet/): Sign in to ArDrive with MetaMask. ArDrive makes an Arweave wallet from your MetaMask signature, so there is no keyfile to manage.
+- [Log into ArDrive with Phantom or Solflare](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-phantom-or-solflare/): Use the Phantom or Solflare browser wallet to sign in to ArDrive with a wallet approval, with no sign-in password.
 - [Log into ArDrive with Wander](https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-arconnect/): Use the Wander browser extension to sign in to ArDrive with a wallet approval, with no ArDrive password.
 - [Sign up for ArDrive](https://ardrive.io/help/using-ardrive-apps-getting-started-create-an-arweave-wallet-with-ardrive/): Create an ArDrive account with a password and a recovery phrase.
 - [Your drive password](https://ardrive.io/help/using-ardrive-apps-getting-started-ardrive-password/): One password protects all your private drives. Learn which password you use, how to unlock a locked drive, and how Remember on this device works.
+- [Account and security](https://ardrive.io/help/using-ardrive-apps-using-ardrive-account-and-security/): See how you sign in, download your keyfile, forget remembered drives, and copy your addresses.
 - [Add Turbo Credits and use Billing](https://ardrive.io/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing/): Add Turbo Credits from the upload review or the Billing page, and see how the free upload allowance works.
-- [Attach A Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/): Attach a shared public or private Drive to your account from a Drive link.
+- [Attach A Drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/): Attach a drive that someone shared with you, using its drive ID, so it shows in your Shared with me list.
+- [Create A Deployment (Arweave Manifest)](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/): Create a deployment from a public drive or folder to give its files friendly paths at one Arweave address.
 - [Create a drive](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-new-drive/): Create a public or private drive for permanent file storage.
 - [Create A Snapshot](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-a-snapshot/): Create Drive snapshots to speed up future syncing for large public or private Drives.
-- [Create An Arweave Manifest](https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/): Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.
-- [New Folders](https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/): Create folders to organize files inside an ArDrive Drive.
+- [Names](https://ardrive.io/help/using-ardrive-apps-using-ardrive-names/): Point an ArNS name you own at a published page, a deployment, or a public file, and pay for the change with Turbo Credits.
+- [New Folders](https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/): Create folders to organize files inside an ArDrive drive.
+- [Open a drive without signing in](https://ardrive.io/help/using-ardrive-apps-using-ardrive-open-a-drive-without-signing-in/): Open a public drive from a link or a drive ID, with no account. A private drive also needs the key it was shared with.
+- [Pin a file](https://ardrive.io/help/using-ardrive-apps-using-ardrive-pin-a-file/): Add a file that is already on Arweave to your drive by its transaction ID, without uploading it again.
 - [Publish to web](https://ardrive.io/help/using-ardrive-apps-using-ardrive-publish-to-web/): Turn a public drive, a folder, or a file into a web page, update it, and find it again in Web pages.
-- [The New Button](https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/): Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.
+- [Share Turbo Credits](https://ardrive.io/help/using-ardrive-apps-using-ardrive-share-turbo-credits/): See the credits shared with you and the credits you shared, and use credits held on a Solana wallet.
+- [The New Button](https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/): Use New to upload files, make folders, notes, pins, and drives, attach a shared drive, and create deployments or snapshots.
 - [Uploading Files](https://ardrive.io/help/using-ardrive-apps-using-ardrive-uploading-files/): Upload files to a drive, review the one-time storage price, and wait for upload confirmation.
+- [Web pages](https://ardrive.io/help/using-ardrive-apps-using-ardrive-web-pages/): Find every page you published, open it, copy its link, update it, and give it a name.
 
 ---
 
@@ -490,37 +498,37 @@ Is Turbo Available in ArDrive-CLI?
 Canonical URL: https://ardrive.io/help/faqs-faq-arweave-wallets/
 Category: FAQs
 Section: FAQ
-Description: Common questions about Arweave wallets, seed phrases, and logging in to ArDrive.
+Description: Common questions about Arweave wallets, recovery phrases, and logging in to ArDrive.
 
-I didn't get my seed phrase from ArDrive. Can I still use it to log in?
+I didn't get my recovery phrase from ArDrive. Can I still use it to log in?
 
--   If you have a seed phrase from another Arweave-compatible wallet, such as Wander, you can use it to log in to ArDrive.
+-   If you have a recovery phrase from another Arweave-compatible wallet, such as Wander, you can use it to log in to ArDrive.
 
-Can I get a seed phrase for my existing wallet?
+Can I get a recovery phrase for my existing wallet?
 
--   No. If you did not save your seed phrase when the wallet was created, it cannot be generated or recovered later.
+-   No. If you did not save your recovery phrase when the wallet was created, it cannot be generated or recovered later.
 
-What is a seed phrase?
+What is a recovery phrase?
 
--   A seed phrase is a set of random words generated when you create a wallet. You can use it to log in or as a backup to regain access to your account.
+-   A recovery phrase is a set of random words generated when you create a wallet. You can use it to log in or as a backup to regain access to your account.
 
-What do I do if I lose my seed phrase?
+What do I do if I lose my recovery phrase?
 
--   You can still log in if you have your keyfile. If you lose both your seed phrase and keyfile, your wallet cannot be recovered. Keep your seed phrase in a safe place.
+-   You can still log in if you have your keyfile. If you lose both your recovery phrase and keyfile, your wallet cannot be recovered. Keep your recovery phrase in a safe place.
 
-How do I keep my seed phrase safe?
+How do I keep my recovery phrase safe?
 
 -   Write it down on paper and store it securely, or save it in a password manager.
 
-Is logging in with a seed phrase safe?
+Is logging in with a recovery phrase safe?
 
--   Yes. Always verify you are on [ardrive.io](https://ardrive.io) or one of the [official ArDrive dapps](/help/faqs-faq-ardrive-on-the-permaweb-dapp) before entering your seed phrase so you do not share it with another site or app.
+-   Yes. Always verify you are on [ardrive.io](https://ardrive.io) or one of the [official ArDrive dapps](/help/faqs-faq-ardrive-on-the-permaweb-dapp) before entering your recovery phrase so you do not share it with another site or app.
 
-Why is my wallet generated every time I log in with a seed phrase?
+Why is my wallet generated every time I log in with a recovery phrase?
 
--   Your seed phrase identifies and regenerates your wallet each time you log in to ArDrive. Your wallet is required to access your drives, upload and sign transactions, and check your balance.
+-   Your recovery phrase identifies and regenerates your wallet each time you log in to ArDrive. Your wallet is required to access your drives, upload and sign transactions, and check your balance.
 
-What format does my seed phrase need to be in to log into ArDrive?
+What format does my recovery phrase need to be in to log into ArDrive?
 
 -   Enter the 12 words in the order they were given to you, separated by spaces.
 
@@ -587,7 +595,7 @@ We accept a wide variety of files including video (mp4, mov), audio (mp3, wav), 
 
 With ArDrive it is easy to upload more than one file at a time.
 
-After you hit the ‘Upload File(s)’ button in ArDrive a browser will appear that allows you to select which files to choose from. Simply choose the desired files and then upload them.
+After you click **Upload files** in the **New** menu, a window opens so you can select files. Choose the files you want, then upload them.
 
 Upload limits depend on upload method, browser, and platform. See [ArDrive App Limits](/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits) for the current limits.
 
@@ -597,7 +605,7 @@ If you want to upload a folder from your computer to ArDrive, there are two opti
 
 1.  Zip the folder and upload that to ArDrive.
 
-2.  Use the 'Upload Folder' option from the NEW button.
+2.  Use the **Upload folder** option in the **New** menu.
 
 READ: [https://ardrive.io/bundles/](https://ardrive.io/bundles/) WATCH: [https://www.youtube.com/watch?v=EUAERbzmxaY](https://www.youtube.com/watch?v=EUAERbzmxaY)
 
@@ -729,6 +737,21 @@ If you opt to make your Drive private, all of your files will be encrypted. ArDr
 Additionally, every private file has its own ‘private key’ based on the key from the user’s Arweave wallet combined with their password.  This makes it only possible for the content to be accessed by the person with that ‘private key’ (you) and the people that they share it with.
 
 #
+What password protects my private drives?
+
+One drive password protects all your private drives. If you sign in with a keyfile or a recovery phrase, or with an account you made in ArDrive, your sign-in password is your drive password. If you sign in with a wallet such as Wander, Phantom, Solflare, or MetaMask, you set a drive password the first time you need a private drive. ArDrive can't recover or change it. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
+
+#
+How do I share a private file or drive?
+
+A link to a private file or drive doesn't open it on its own. The person you share it with also needs its access key, which you send apart from the link. If you include the key in the link, anyone with the link can open it. See [File sharing](/help/using-ardrive-apps-actions-file-sharing) and [Drive sharing](/help/using-ardrive-apps-actions-drive-sharing).
+
+#
+Are published web pages private?
+
+No. A page you publish with Publish to web is public, and anyone with its link can open it. Search engines can list its files. See [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web).
+
+#
 Can I make private files public?
 
 Private Drives can't be converted into Public Drives yet. But any _files_ in your Private Drive can be shared with anyone you want.
@@ -767,9 +790,9 @@ How do I pay to upload my data on ArDrive?
 
 There are two ways to purchase permanent storage with ArDrive:
 
-1. **ArDrive Turbo**: use a credit or debit card to buy Credits.
+1. **ArDrive Turbo**: use a credit or debit card, or crypto, to buy Turbo Credits. Crypto payments accept USDC on Base, ETH on Base, USDC on Ethereum, ETH on Ethereum, and SOL.
 
-ArDrive Turbo is an upload service that makes it simple to pay for permanent storage without managing AR directly. In the app, use the Turbo top-up flow to buy Credits and then spend those Credits on uploads.
+ArDrive Turbo is an upload service that makes it simple to pay for permanent storage without managing AR directly. In the app, click **Add credits** to buy Turbo Credits, and then spend them on uploads. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
 
 Questions about Turbo? Visit the [Turbo FAQ](/help/faqs-faq-ardrive-turbo).
 
@@ -788,12 +811,12 @@ Pricing is based on the size of each file. ArDrive checks the size of each file 
 
 Many of the files you upload will cost only a tenth or hundredth of a cent. It is not until the size of the file gets to be 1 MB that it may cost a penny.
 
-**NOTE:** This is the price, not for one month or one year, but for forever.
+**NOTE:** This is a one-time price for each upload, not a price for a month or a year.
 
 #
 How much does it cost?
 
-Rather than pay subscriptions month after month, with ArDrive you only pay once to store your data forever. Most files such as photos, PDFs and Word Docs may only cost a tenth or hundredth of a cent.
+Rather than pay subscriptions month after month, with ArDrive you pay once for each upload. Most files such as photos, PDFs and Word Docs may only cost a tenth or hundredth of a cent.
 
 There are a few factors that cause fluctuations in the price, such as the price movement of the AR token but the [network adjusts storage costs dynamically](https://ardrive.io/how-much-does-it-cost-to-store-on-arweave/) to keep costs predictable.
 
@@ -925,6 +948,39 @@ We’d love to hear what you have in mind. Please [reach out to us on Twitter](h
 
 ---
 
+# Which languages does ArDrive support?
+
+Canonical URL: https://ardrive.io/help/faqs-faq-which-languages-does-ardrive-support/
+Category: FAQs
+Section: FAQ
+Description: ArDrive shows its text in English, Spanish, Hindi, Japanese, and Chinese. It follows the language of your browser.
+
+Which languages does ArDrive support?
+
+-   English, Spanish, Hindi, Japanese, and Chinese (Simplified and Hong Kong).
+
+Where do I choose the language?
+
+-   ArDrive has no language setting. It uses the language of your browser. If your browser's language is one of the supported languages, ArDrive opens in it. Otherwise it opens in English.
+
+How do I change the language ArDrive shows?
+
+-   Change the language list in your browser's settings, put the language you want first, and reload ArDrive. Your browser's own help explains where the language list is.
+
+![The ArDrive landing page in Spanish](/help/3-0/language-spanish.png)
+
+Is everything translated?
+
+-   Most of the text is. The translations are made by machine. Dates and some messages stay in English, and a few words, such as "or" on the landing page, can stay in English.
+
+Does the language change my files?
+
+-   No. The language only changes the text of the app. File names and drive names stay as you wrote them.
+
+If a translation is wrong or unclear, tell us on the [feature request](/help/faqs-faq-where-can-i-make-a-feature-request) page.
+
+---
+
 # ArDrive App Limits
 
 Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-ardrive-app-limits/
@@ -1024,7 +1080,7 @@ Common signs include:
 
 - If the issue is with a file, try opening the file, preview link, or transaction ID again later after gateway indexing catches up.
 
-- If your drive looks stale after the gateway recovers, run a regular sync or deep sync. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
+- If your drive looks stale after the gateway recovers, run a sync or a full resync. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
 
 - Advanced users can try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
 
@@ -1088,43 +1144,49 @@ Common signs include:
 Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive/
 Category: FAQs
 Section: Help And Troubleshooting Guides
-Description: Advanced users can change the data gateway and GraphQL gateway that ArDrive uses from account settings or from the login screen.
+Description: Advanced users can change the gateway, GraphQL server, and Turbo services that ArDrive uses, in Settings or on the login screen.
 
-[app.ardrive.io](https://app.ardrive.io/) connects to Arweave gateways to upload data, download data, and query indexed drive, file, and folder information.
+ArDrive connects to Arweave gateways to read files, to look up your drives, files, and folders, and to send uploads. Changing a gateway can help if the default gateway is unavailable, or your internet provider blocks it.
 
-Changing your gateway can be useful if the default gateway is temporarily unavailable, your ISP blocks access to it, or you want to use another decentralized gateway for Permaweb services.
+This setting is for advanced users. Changing it can affect loading, syncing, previews, and how soon uploads appear in the app. The default gateway is `https://turbo-gateway.com`.
 
-This setting is intended for advanced users. Changing gateways can affect loading, syncing, previews, and how quickly newly uploaded data appears in the app.
+## Change the gateway in Settings
 
-# Change gateways from account settings
+1. Click your account at the top right, then click **Settings**.
+2. Under **Network**, find the setting you want to change:
+   - **Gateway.** "Where ArDrive reads files from."
+   - **GraphQL server.** "Where ArDrive looks up your drives and files."
+   - **Turbo services.** "Where uploads and payments are sent."
+3. Click **Change** below it.
+4. In **Switch gateway**, enter the URL in **Gateway URL**, or click **Choose an ar.io gateway**.
+5. Click **Save**.
 
-After you are logged in, open your account menu and go to settings.
+![The Network section of Settings, with Gateway, GraphQL server, and Turbo services](/help/3-0/settings-network.png)
 
-![ArDrive account menu with settings option](/help/help-gateway-settings-1.jpg)
+![Switch gateway, with the Gateway URL field and Choose an ar.io gateway](/help/3-0/switch-gateway.png)
 
-From settings, open the gateway settings area.
+Settings says "Advanced. Change these only if you know you need to."
 
-![ArDrive settings screen showing gateway settings](/help/help-gateway-settings-2.jpg)
+After you change the gateway, run a full resync so ArDrive rebuilds its view. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
 
-You can update both gateway fields:
+## Change the gateway before you log in
 
-- Data Gateway: used for retrieving data and generating preview links.
+You can change gateway settings from the login screen.
 
-- GraphQL Gateway: used for querying indexed drive, folder, and file metadata.
+1. Click the settings icon at the top right of the welcome screen.
+2. Click **Set gateway**, **Set GraphQL server**, or **Set Turbo services**.
 
-![ArDrive gateway settings fields](/help/help-gateway-settings-3.jpg)
+![The settings menu on the welcome screen with Set gateway, Set GraphQL server, Set Turbo services, and Sync all drives on login](/help/3-0/login-settings-menu.png)
 
-# Change gateways while logging in
+The same menu has the **Sync all drives on login** switch and the ArDrive version. The welcome dialog that asks for your password has the same settings icon.
 
-You can also change gateway settings from the login screen before accessing your drive.
+## After an update
 
-![ArDrive login gateway settings](/help/help-gateway-login-settings.jpg)
+If you chose a custom gateway before ArDrive 3.0, check **Settings**. The update can reset saved settings, including the gateway, to the defaults.
 
-# When to try this
+## When to try this
 
-Changing gateways may help if you are an advanced user troubleshooting drive syncing, file previews, or temporary gateway availability issues.
-
-If your issue appears to be an extended outage, visit our [contact page](/contact) before changing settings.
+Try another gateway if you troubleshoot syncing, previews, or gateway availability. If an outage lasts longer, visit our [contact page](/contact) before you change settings.
 
 ---
 
@@ -1183,6 +1245,8 @@ Clearing the cache in your web browser for [https://app.ardrive.io](https://app.
 -   Missing files, folders or drives
 
 Syncing a large Drive can take several minutes depending on how many items are in it.
+
+**Before you clear site data:** clearing the site data for ArDrive signs you out and makes ArDrive forget what it remembers on this device: remembered drives, saved accounts, and your settings. You need your sign-in password or wallet to sign in again, and your drive password to unlock private drives again. Make sure you have your keyfile or recovery phrase. See [Account and security](/help/using-ardrive-apps-using-ardrive-account-and-security).
 
 # Clearing Your Cache
 
@@ -1267,7 +1331,7 @@ In most cases, this resolves on its own within a few hours.
 
 - Wait a few hours and check your drive again.
 
-- If the drive still looks stale, run a regular sync. If that does not find the missing files or folders, run a deep sync. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
+- If the drive still looks stale, run a sync. If that does not find the missing files or folders, run a full resync. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
 
 - Refresh ArDrive or sign out and back in if the app still looks stale.
 
@@ -1326,7 +1390,7 @@ We recently began packing all ArDrive transactions into bundles to improve ArFS 
 
 If your file status is red, the transaction may have failed and your file may not be permanently stored on the Arweave network. Use `turbo-gateway.com/` plus your transaction id to see if your file made it to Arweave 5–15 minutes after you upload your data through the web. If your file fails to reach Arweave, the fees you paid for uploading this data are not spent, and the funds return to your ArDrive wallet.
 
-If the transaction later appears on the gateway but the file is still missing from your drive or its status stays red or orange, try manually syncing your drive. Start with regular sync, then use deep sync if the file still does not appear. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
+If the transaction later appears on the gateway but the file is still missing from your drive or its status stays red or orange, try manually syncing your drive. Start with a sync, then use a full resync if the file still does not appear. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
 
 Using an Incognito Tab or logging out of ArDrive will clear your local cache of data, including files that have not been mined. If you log out and back in, the files marked red will disappear.
 
@@ -1378,53 +1442,75 @@ The browser console is the best place to confirm whether the login issue is a pa
 Canonical URL: https://ardrive.io/help/faqs-help-and-troubleshooting-guides-sync-your-drive/
 Category: FAQs
 Section: Help And Troubleshooting Guides
-Description: Use regular sync or deep sync when files show red or orange status, recently uploaded files do not appear, or your drive looks stale.
+Description: Use Sync or Full resync when files show red or orange status, recently uploaded files don't appear, or your drive looks stale.
 
-If your drive looks stale, recently uploaded files do not appear, or files show red or orange status longer than expected,ArDrivemay need to sync your drive data from the Arweave gateway again.
+Syncing brings ArDrive up to date with your drives on Arweave. If your drive looks stale, recently uploaded files don't appear, or files show red or orange status longer than expected, run a sync.
 
-Some syncing issues are caused by temporary gateway indexing delays and resolve on their own over time. Manual sync givesArDriveanother chance to query the gateway and update the local view of your drive.
+Some problems come from gateway indexing delays and clear on their own. A sync gives ArDrive another chance to ask the gateway and update your view.
 
-# Start a manual sync
+## Sync your drives
 
-Open the sync menu inArDriveand choose the sync option that matches what you need.
+1. Open **Your drives**.
+2. Click **Sync all drives**.
 
-![ArDrive sync menu showing regular sync and deep sync options](/help/sync-menu.jpg)
+To sync one drive, open its menu and click **Sync this drive**.
 
-# Regular sync
+The sync menu is the arrow beside **Sync all drives**. It has these items:
 
-Regular sync is incremental. It starts from the last block heightArDrivesynced for your drive and checks for newer drive, folder, and file updates.
+- **Sync all drives.** "Gets changes since the last sync."
+- **Full resync all drives.** "Rereads all history. Slower; use it if something looks missing."
+- **Sync history.** What the most recent syncs did.
 
-Use regular sync when:
+![The sync menu with Sync all drives, Full resync all drives, and Sync history](/help/3-0/sync-menu.png)
 
-- Your drive mostly looks correct, but recent files or folders are missing.
+While a drive syncs, ArDrive shows how far it is. Click **Stop syncing** to end it. ArDrive keeps what finished. If a sync fails, the sync menu offers **Try again**.
 
-- A file status has not updated after waiting for gateway indexing.
+A drive you haven't synced on this device shows "This drive isn't synced on this device". Click **Sync this drive** to see its files and folders.
 
-- You refreshed the app and wantArDriveto check for newer updates.
+## When to use Sync
 
-# Deep sync
+Use **Sync** when:
 
-Deep sync starts from block height 0 and rebuilds the drive index from the beginning.
+- Your drive mostly looks right, but recent files or folders are missing.
+- A file status hasn't updated after waiting for gateway indexing.
+- You reloaded ArDrive and want it to check for changes.
 
-Use deep sync when:
+## When to use Full resync
 
-- Regular sync does not find the missing files or folders.
+A full resync rereads the whole history of your drives from Arweave, without using snapshots. Use **Full resync** when:
 
-- Your drive looks incomplete or significantly out of date.
+- **Sync** doesn't find the missing files or folders.
+- Your drive looks incomplete or out of date.
+- You changed gateways and want ArDrive to rebuild its view of your drive.
+- Support asks you to run a full resync.
 
-- You changed gateways and wantArDriveto rebuild its view of your drive.
+To resync one drive, open its menu and click **Full resync this drive**.
 
-- Support asks you to run a deep sync while troubleshooting.
+A full resync takes longer than a sync, especially for large drives. ArDrive asks you to confirm first. The message says "Nothing on this device is deleted."
 
-Deep sync can take longer than regular sync, especially for large drives, because it checks your drive history from the beginning.
+![The Full resync confirmation](/help/3-0/full-resync.png)
 
-# When sync may not fix it
+## See what happened
 
-If the gateway has not indexed the file, folder, or upload transaction yet, sync may still not find it right away. Wait a few minutes to a few hours and try again.
+Click **Sync history** in the sync menu. It lists the most recent syncs on this device, with the drive, when it ran, who started it, how long it took, and how many items changed. ArDrive keeps the last 20 and clears them when you log out.
 
-If you continue seeing gateway, GraphQL, 502, 503, 504, or bad gateway errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+![Sync history, listing recent syncs](/help/3-0/sync-history.png)
 
-Advanced users can also try changing the data gateway and GraphQL gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
+## Sync automatically
+
+Open **Settings** from your account menu. Under **Sync**:
+
+- **Automatic sync** checks your drives for changes every 5 minutes while ArDrive is open.
+- **Sync all drives when I sign in** syncs every drive at sign-in. When it is off, ArDrive reads only the drive you open.
+- **Sync from snapshots** loads large drives faster from a saved copy. Turn it off to read every change from the start.
+
+## When sync doesn't fix it
+
+If the gateway hasn't indexed the file, folder, or upload yet, a sync can't find it. Wait a few minutes to a few hours, then try again.
+
+If you keep seeing gateway, GraphQL, 502, 503, 504, or bad gateway errors, see [Bad Gateway And Network Errors](/help/faqs-help-and-troubleshooting-guides-bad-gateway-and-network-errors).
+
+Advanced users can change the gateway. See [Change Gateway URL For ArDrive](/help/faqs-help-and-troubleshooting-guides-change-gateway-url-for-ardrive).
 
 ---
 
@@ -1710,7 +1796,7 @@ Copy the transaction ID or data-item ID from ArDrive and open it on a `/tx/` pag
 
 An explorer reports the state of the Arweave network. ArDrive additionally depends on gateways unbundling and indexing the transaction, and on your drive being synced. A transaction can be confirmed on-chain and still be missing from your drive for a while.
 
-If an explorer shows your transaction but ArDrive does not, run a regular sync and then a deep sync. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
+If an explorer shows your transaction but ArDrive does not, run a sync and then a full resync. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
 
 If the data will not load through a particular gateway, see [Trouble Accessing Data Through arweave.net?](/help/faqs-help-and-troubleshooting-guides-trouble-accessing-data-through-arweave-net).
 
@@ -1746,45 +1832,45 @@ Arweave allows for a permanent and decentralized Internet. The Arweave Permaweb 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-actions/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Overview of common file, folder, and Drive actions in ArDrive.
+Description: Find the actions for drives, folders, and files in one menu for each.
 
-After your data is uploaded and secured on the Arweave network, ArDrive lets you perform various actions to edit, share and download your content.
+Each drive, folder, and file has one menu with its actions. The menu is the same wherever the item appears. Click the three dots at the right of a row to open it. For a drive that is open, the menu is at the right of the drive name.
 
-**Drives:** When in a drive you can click on the “Show Menu” Button
+## Files
 
-This will bring up the dropdown:
+![A file's menu](/help/3-0/menu-file.png)
 
-You will now have your choice to Rename, Share, Export the Drive Contents or see the details (More info) of the Drive.
+A file's menu has these items:
 
-**Folder**: Clicking on a folder will bring up the details bar to the right and the ability to Rename or Move.
+- **Preview.** Opens a public file at its web address. See [Public preview](/help/using-ardrive-apps-actions-public-preview).
+- **Share file.** See [File sharing](/help/using-ardrive-apps-actions-file-sharing).
+- **Publish to web.** See [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web).
+- **Download.** See [Download a file](/help/using-ardrive-apps-actions-download-a-file).
+- **Rename.** A text note has **Edit note** instead. See [Rename a file or folder](/help/using-ardrive-apps-actions-rename-a-file-or-folder).
+- **Move.** See [Move a file or folder](/help/using-ardrive-apps-actions-move-a-file-or-folder).
+- **Add license.** See [Licensing your data](/help/using-ardrive-apps-actions-licensing-your-data).
+- **Hide** or **Unhide.** See [Hiding files](/help/using-ardrive-apps-actions-hiding-files-from-your-drive).
+- **More info.** Opens the details panel.
 
-**Files**: Clicking on a file will bring up the details bar and the ability to:
+A private file has no **Preview**. Its **Publish to web** makes a file page that opens only with the key in its link.
 
--   Share the file
+## Folders
 
--   Download the file
+![A folder's menu](/help/3-0/menu-folder.png)
 
--   Preview the file (will show you the permanent URL given to the file in your web browser)
+A folder's menu has **Open**, **Share folder**, **Publish to web**, **Download**, **Rename**, **Move**, **Add license**, **Hide**, and **More info**.
 
-    -   **Note:** Only for Public files and not Private Files
+## Drives
 
--   Rename the file
+![A drive's menu](/help/3-0/menu-drive.png)
 
--   Move the file
+A drive's menu has **Share drive**, **Publish to web**, **Download**, **Export contents**, **Rename drive**, **Create snapshot**, **Hide**, **Sync this drive**, **Full resync this drive**, and **More info**. A drive that is already published shows **Published to web**. A private drive has no **Publish to web**. See [Export a CSV table](/help/using-ardrive-apps-actions-export-csv-table) for **Export contents**.
 
-For a more in-depth guide of all these functions see below:
+## The details panel
 
--   [Download a file](/help/using-ardrive-apps-actions-download-a-file/)
+Double-click a file, or click **More info**, to open its details panel. The panel has **Preview**, **Details**, and **Activity** tabs. A toolbar at the top has the main actions as icons: share, download, preview, rename, move, and hide. Point at an icon to see its name.
 
--   [Share a file](/help/using-ardrive-apps-actions-file-sharing/) or [drive](/help/using-ardrive-apps-actions-drive-sharing/)
-
--   [Preview](/help/using-ardrive-apps-actions-public-preview/) a public file
-
--   [Edit](/help/using-ardrive-apps-actions-rename-a-file-or-folder/) a file or folder name
-
--   [Move](/help/using-ardrive-apps-actions-move-a-file-or-folder/) a file or folder name
-
-[See what all the buttons on the Drive Explorer do](/help/using-ardrive-apps-actions-ardrive-explorer-view/).
+![The toolbar of the details panel, with Share file, Download, Preview, Rename, Move, and Hide](/help/3-0/file-panel-toolbar.png)
 
 ---
 
@@ -1806,17 +1892,18 @@ For an overview, see [Drive Explorer](/help/using-ardrive-apps-actions-drive-exp
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-download-a-file/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Download files from ArDrive without additional storage charges.
+Description: Download files from ArDrive. Downloading costs nothing.
 
-Click on the file you want to download.
+1. Click the menu at the right of the file, and click **Download**.
+2. The file downloads to your computer.
 
-In the details panel, the download icon is the one with the arrow pointing downwards.
+You can also open the details panel with **More info**. The download icon in its toolbar does the same.
 
-Click on the download icon and the file will download to your computer.
+For a private file, ArDrive removes the encryption when it downloads.
 
-For private files, we remove any ArFS encryption.
+Folders and drives have **Download** in their menus too. A download of many files is saved as a zip. A drive also has **Export contents**, which saves a table of its files. See [Export a CSV table](/help/using-ardrive-apps-actions-export-csv-table).
 
-**NOTE**: There is no additional charge to download, preview or share any of your files in ArDrive.
+There is no charge to download, preview, or share your files in ArDrive.
 
 ---
 
@@ -1825,11 +1912,36 @@ For private files, we remove any ArFS encryption.
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-drive-explorer/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Once logged into ArDrive you’ll arrive at the Drive Explorer. Get to know how to use the New button to upload files and take actions to share your files.
+Description: Find your way around Your drives and the file list: the sidebar, the menus, and how a click works.
 
-Once logged into ArDrive you’ll arrive at the Drive Explorer.
+When you sign in, ArDrive opens **Your drives**, the list of all your drives. Open a drive to see its folders and files.
 
-Get to know how to use [the New button](/help/using-ardrive-apps-using-ardrive-the-new-button) to upload files and [take actions](/help/using-ardrive-apps-actions-actions) to share your files.
+![Your drives, with the sidebar and a list of drives](/help/3-0/your-drives.png)
+
+## The sidebar
+
+The sidebar has these places:
+
+- **Your drives.** Every drive in one list.
+- **Public drives**, **Private drives**, **Shared with me**, and **Hidden.** The same drives, filtered. The number beside each counts the drives in it.
+- **Web pages.** Everything you published. See [Web pages](/help/using-ardrive-apps-using-ardrive-web-pages).
+- **Names.** The names you can point at your content. See [Names](/help/using-ardrive-apps-using-ardrive-names).
+
+Click a drive in the sidebar to open it.
+
+## Open and select
+
+A single click selects a row. A double-click opens it: a drive or a folder opens, and a file opens its details panel with a preview. You can also click the menu at the right of a row, and click **Open** or **More info**.
+
+## Your drives page
+
+**Your drives** lists each drive with when it last synced on this device, how many files and how much it holds, and when you created it. A drive you haven't synced on this device shows "Not synced on this device". See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
+
+## Inside a drive
+
+The file list has **Name**, **Size**, **Last updated**, and **Date created** columns. The columns icon at the top right chooses which columns show, adds the **License** column, and turns on **Show hidden items**. The search box at the top searches files, folders, and drives.
+
+For the actions on drives, folders, and files, see [Actions](/help/using-ardrive-apps-actions-actions). To add things, see [The New button](/help/using-ardrive-apps-using-ardrive-the-new-button).
 
 ---
 
@@ -1838,28 +1950,57 @@ Get to know how to use [the New button](/help/using-ardrive-apps-using-ardrive-t
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-drive-sharing/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Share public or private Drives with a link.
+Description: Share a public or private drive, or a folder, with a link. A private drive also needs its access key.
 
-One of the great features of ArDrive is sharing Drives with others.
+Share a drive or a folder with a link. The person who opens the link doesn't need an ArDrive account.
 
-To share a Drive select the Public Drive you wish to share.
+## Share a public drive
 
-Then click on the show menu icon at the right of the Drive name
+1. Open the drive.
+2. Click the menu at the right of the drive name, and click **Share drive**.
+3. In **Share drive with others**, click **Copy link**, then click **Done**.
 
-After clicking on the icon a text box will appear that has a link that you are able to copy and send to anyone of your choosing.
+Anyone with the link goes straight to the drive, with no account or login. See [Open a drive without signing in](/help/using-ardrive-apps-using-ardrive-open-a-drive-without-signing-in).
 
-**When the user receives your link and clicks on it they will be brought to that specific Drive and will be able to access the shared drive without needing an ArDrive account or login.**
+## Share a folder
 
-* * *
+1. Click the menu at the right of the folder's row, and click **Share folder**.
+2. In **Share folder with others**, click **Copy link**, then click **Done**.
 
-When you share a **Private Drive**, the "drive key" is included in the copied link.  This enables someone to view the Drive without having access to your wallet, or drive password.
+The dialog says "Anyone with the link can open this folder."
 
-**Make sure you know & trust who you’re sharing your Private Drive & Files with & where you’re sharing it.**
-**It is not recommended to share Private Drives & Files on public platforms.**
+![Share folder with others, with the link hidden](/help/3-0/share-folder.png)
 
-If the recipient of this drive key loses it, they will no longer be able to access the private drive.
+## Share a private drive
 
-Sharing is only for Public Drives, Private Drives and individual files. Folders cannot currently be shared.
+A private drive is encrypted. The link on its own doesn't open it. The person you send it to also needs the drive access key.
+
+1. Open the drive.
+2. Click the menu at the right of the drive name, and click **Share drive**.
+3. Click **Copy link** to copy the **Link**.
+4. Click **Copy key** to copy the **Drive access key**. The key is hidden. Click the eye icon to show it.
+5. Send the link and the key. Send the key apart from the link.
+
+![Share drive with others for a private drive, with the link hidden and the Drive access key masked](/help/3-0/share-private-drive.png)
+
+The link alone doesn't open the drive. ArDrive says so under the options: "The link alone won't open this drive. The person you send it to also needs the access key above."
+
+### Include the key in the link
+
+The option **Include the key in the link** is off when the dialog opens. If you turn it on, anyone with the link can open every file in the drive, including files you add later. ArDrive warns you of this. A drive key can't be changed, so you can't take access back from someone who has it.
+
+![Include the key in the link, with the warning that anyone with the link can open every file](/help/3-0/share-private-drive-key-in-link.png)
+
+### Share a folder in a private drive
+
+**Share folder** in a private drive works the same way. The access key opens everything in the drive, not just that folder. Share the key only with people you trust with the whole drive.
+
+## Good to know
+
+- The person you share a private drive with can't open it again if they lose the key. Send it again.
+- Don't share private drives or files on public platforms.
+- Sharing doesn't cost anything.
+- To attach a shared drive to your account, see [Attach a drive](/help/using-ardrive-apps-using-ardrive-attach-a-drive).
 
 ---
 
@@ -1903,19 +2044,53 @@ Use the [Share File](/help/using-ardrive-apps-actions-file-sharing/) feature to 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-file-sharing/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Share public or private files from ArDrive with a link.
+Description: Share a public or private file with a link. A private file also needs its access key.
 
-To share a file in one of your public or private folders click on and highlight the file you want to share.
+Share a file by sending a link. For a file in a public drive, anyone with the link can open the file. For a file in a private drive, the person also needs the file's access key.
 
-This will expand the detail panel. at the top right corner of your screen
+To share a folder or a whole drive, see [Drive sharing](/help/using-ardrive-apps-actions-drive-sharing). To make a web page from a file, see [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web).
 
-### File Link
+## Share a public file
 
-Click on the share icon and a window will pop up in the middle of your screen that contains a link. You can now copy the link and send it to whomever you want to share it with and they will have access to the file forever.
+1. Click the menu at the right of the file's row, and click **Share file**.
+2. In **Share file with others**, click **Copy link**.
+3. Send the link, then click **Done**.
 
-**NOTE:** Sharing is only for Public Drives, Private Drives, and individual files. Folders cannot be shared at this time.
+![Share file with others for a public file, with the link hidden](/help/3-0/share-public-file.png)
 
-**NOTE:** Whomever you share a link with can also share that link with others. We plan to provide the option to limit the spread of link sharing in future versions of ArDrive. For now, links are unrestricted in how often they can be shared.
+Optional: turn on **Link to this version only**. The link then always opens this version, even after you upload a new one.
+
+## Share a private file
+
+A private file is encrypted. The link on its own doesn't open it. The recipient needs the access key too.
+
+1. Click the menu at the right of the file's row, and click **Share file**.
+2. Copy the link with **Copy link**.
+3. Click **Copy key** to copy the **Access key**. The key is hidden. Click the eye icon to show it.
+4. Send the link and the key. Use a different channel for each: a link and its key in the same message protect nothing.
+
+![Share file with others for a private file, with Access key and three options](/help/3-0/share-private-file.png)
+
+The dialog has three options. All are off when it opens.
+
+| Option | What it does |
+|---|---|
+| **Include the key in the link** | Puts the key in the link. Anyone with the link can open the file, so treat the link like the file itself. |
+| **Hide file details** | The recipient sees nothing about the file, not its name, size, or type, until they unlock it. |
+| **Link to this version only** | The link always opens this version, even after you upload a new one. |
+
+The key opens every version of the file.
+
+## What the recipient sees
+
+When someone opens the link of a private file, ArDrive says "This file is protected with an access key." They paste the key in **Paste the access key** and click **Unlock file**. The key stays on their device and isn't sent to ArDrive.
+
+If the link points to an earlier version, the recipient sees "A newer version of this file is available." with **View latest** and **View shared version**.
+
+## Good to know
+
+- Anyone who has a link, and the key if the file is private, can share it with others. You can't limit how often a link is shared.
+- Sharing doesn't cost anything.
 
 ---
 
@@ -1924,23 +2099,44 @@ Click on the share icon and a window will pop up in the middle of your screen th
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-hiding-files-from-your-drive/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Yes, hiding files or folders is possible with ArDrive.
+Description: Hide a file, a folder, or a drive from your view, show hidden items, and unhide them.
 
-### **Can you hide a folder or file?**
+You can hide files, folders, and drives. A hidden item leaves your normal view. Hiding changes what ArDrive shows. It doesn't remove data from Arweave.
 
-Yes, hiding files or folders is possible with ArDrive.
+## Hide an item
 
-**NOTE: Drives cannot be hidden at this time**
+1. Click the menu at the right of the file, folder, or drive.
+2. Click **Hide**.
 
-To hide a file or folder press the ‘three dots’ to the right of the file or folder, which will reveal the option to hide that particular file or folder.
+ArDrive hides the item at once. For a drive, the menu is at the right of its row in **Your drives**, or at the right of the drive name when the drive is open.
 
-Click on ‘Hide’ and that folder or file will be hidden from view.
+Hiding is a small write. When your free upload allowance covers it, ArDrive makes the change with no review. When it doesn't, ArDrive shows a review with the price first and uses Turbo Credits.
 
-### Can you unhide files or folders?
+## Show hidden items
 
-If you want to unhide the files or folders that you have hidden, go to the ‘three dots’ to the right of Drive box and hit the ‘Reveal hidden items’ option.
+1. Click the columns icon at the top right of the file list.
+2. Click **Show hidden items**.
 
-To hide these items again press the same ‘Three Dots’ and hit ‘Conceal hidden items’.
+![The Columns menu with Name, Size, Last updated, Date created, License, and Show hidden items](/help/3-0/columns-menu.png)
+
+Hidden files and folders show dimmed. Hidden drives show in the sidebar with a hidden icon. Click **Show hidden items** again to hide them from view.
+
+## Unhide an item
+
+1. Show hidden items.
+2. Click the menu at the right of the hidden item, and click **Unhide**.
+
+## Hidden drives
+
+Click **Hidden** in the sidebar to see every hidden drive. The menu of a hidden drive has **Unhide**.
+
+![The Hidden list with one hidden drive and its menu showing Unhide](/help/3-0/hidden-drives.png)
+
+## What hiding doesn't do
+
+- Hidden data in a public drive can still be found, because the data is public. Hiding only changes your view.
+- ArDrive leaves hidden items out of [published pages](/help/using-ardrive-apps-using-ardrive-publish-to-web) and [deployments](/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest).
+- A name still opens a hidden file. When you hide a file that has a name, ArDrive asks **Remove its name too?** so you can remove it. See [Names](/help/using-ardrive-apps-using-ardrive-names).
 
 ---
 
@@ -1949,64 +2145,51 @@ To hide these items again press the same ‘Three Dots’ and hit ‘Conceal hid
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-licensing-your-data/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Apply licensing information to uploaded files to clarify reuse and attribution.
+Description: Add a license to a file to say how others can use it, and see what it costs.
 
-# Introduction
+A license says how other people can use your file. ArDrive offers the Universal Data License (UDL) and the Creative Commons licenses. A license is saved as a small record next to the file, and anyone who can open the file can read it.
 
-ArDrive is proud to introduce its new "Licensing" feature, designed to empower users with greater control and flexibility over the distribution and use of their uploaded files. This guide provides an in-depth overview of the licensing options available, including the Universal Data License (UDL) and a suite of Creative Commons licenses. By understanding and utilizing these licensing options, you can ensure that your work is shared and used in a manner that aligns with your preferences.
+## Add a license
 
-# Licensing Your Content
+1. Click the menu at the right of the file or folder, and click **Add license**.
+2. In **License**, choose **Creative Commons (CC)** or **Universal Data License (UDL)**.
+3. Click **Next**.
+4. Set up the license:
+   - For Creative Commons, choose a **Type** such as **Attribution** or **Attribution Non-Commercial**.
+   - For the UDL, enter a **License fee** and a **Currency**, and set **Commercial use** and **Derivations**.
+5. Click **Next**.
+6. In **Review license**, check the license and the **Cost**. Click **View** to read the license text.
+7. Click **Confirm**.
 
-When you upload files to ArDrive, you now have the option to apply a license after. This feature is vital for content creators, educators, and anyone interested in specifying how their work can be used by others. Licensing your content can protect your rights while also enabling you to contribute to the global commons of knowledge and culture.
+![Review license, with the license and a cost of Free](/help/3-0/license-review.png)
 
-## How to Apply a License
+## What a license costs
 
-1.  **Upload Your File:** Begin by uploading your file(s) to ArDrive as you normally would.
-2.  **Assign License:** After the upload process, select the file and apply a license.
-3.  **Select a License:** You can select from the Universal Data License (UDL) or any of the Creative Commons licenses.
-4.  **Review and Confirm:** After selecting a license, review the details to ensure it aligns with your intentions for the file. Once confirmed, the license will be applied to your file.
+A license is a small write, and the review states what it costs. When your free upload allowance covers it, the review says **Free** and "Covered by your free upload allowance." Turbo decides what the allowance covers. When it doesn't, the review shows a price and the license uses Turbo Credits. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
 
-At this time, there is no additional cost to apply a licenses files on ArDrive.
+## See a license
 
-## Viewing Licenses
+Anyone who opens a file can read its license on the file's **Details** tab.
 
-Anyone accessing your files on ArDrive can view the license you've applied by viewing the file's details in the right panel. This transparency ensures that users understand the permissions and restrictions associated with a file, whether accessing an individual file or the full drive.
+To see licenses in the file list, click the columns icon, then click **License**. The **License** column shows only when something in the list has a license.
 
-# Understanding Your Licensing Options
+## Creative Commons licenses
 
-## Creative Commons Licenses
+Creative Commons is a nonprofit that offers standard licenses. You choose which freedoms to give others. The licenses range from the most open, which allow commercial use and changes, to the most restrictive, which let others share your work if they credit you and don't change it or use it commercially. CC0 Public Domain Dedication gives up all rights in a work.
 
-Creative Commons is a globally recognized nonprofit organization that offers a standardized way to grant public permission to share and use creative work. By applying a Creative Commons license to your files, you specify the freedoms and limitations others have in using your work. This clarity benefits both creators and users, facilitating the sharing and use of copyrighted material in a legal and straightforward manner.
-
-### The Six License Types
-
-Creative Commons offers six main license types, ranging from the most permissive (allowing for both commercial use and modifications) to the most restrictive (only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially). Additionally, the CC0 Public Domain Dedication allows creators to waive all rights and place a work in the public domain.
-
-Learn more from [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/) about these licenses, as well as CC0 Public Domain Dedication.
-
-### Choosing the Right License
-
-Selecting the appropriate license is crucial. We recommend using the [Creative Commons License Chooser](https://chooser-beta.creativecommons.org/) tool, which guides you through the process of selecting a license that aligns with your intentions.
+To choose, use the [Creative Commons License Chooser](https://chooser-beta.creativecommons.org/). To learn more, see [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/).
 
 ## Universal Data License (UDL)
 
-The Universal Data License is specifically designed for content stored on public permissionless blockchain networks. It is a legal framework that outlines the terms of use for your content, addressing the unique considerations of blockchain-based storage. The UDL is an excellent choice for users who wish to leverage the security and transparency of blockchain technology for their content.
+The UDL is a license for content on public blockchain networks. Its terms address the way data is stored there. To learn more, see [the Universal Data License explained](https://dev.to/fllstck/the-universal-data-license-explained-2di).
 
-[Learn more](https://dev.to/fllstck/the-universal-data-license-explained-2di) about the Universal Data License and how it works.
+## Impacts of licensing
 
-## Impacts of Licensing
+- **Clarity.** A license tells others what they can and can't do with your content.
+- **Control.** You choose how your content is used.
+- **Sharing.** A license that allows reuse adds to the commons.
 
-Applying a license to your content has several implications:
-
--   **Legal Clarity:** Licenses provide legal clarity about what others can and cannot do with your content, protecting your rights while facilitating its use.
--   **Control:** You maintain control over how your content is used and distributed.
--   **Contribution to the Commons:** By selecting a license that allows for sharing and reuse, you contribute to the global commons, supporting a culture of collaboration and innovation.
-
-# Stay Connected and Empowered
-
-If you have any questions, need assistance with the licensing feature, or require further information, please don't hesitate to reach out. Our support team is here to help you with technical queries, licensing choices, and any other concerns you might have.
-
-Visit our [contact page](/contact) for help with technical queries, licensing choices, and any other questions.
+If you need help with licenses, visit our [contact page](/contact).
 
 ---
 
@@ -2015,15 +2198,22 @@ Visit our [contact page](/contact) for help with technical queries, licensing ch
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-move-a-file-or-folder/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Move files or folders within the same Drive.
+Description: Move files or folders to another folder in the same drive.
 
-To move a file or folder to another folder, first click on the file or folder you want moved.
+Move a file or a folder to another folder in the same drive.
 
-In the details panel, the move button is on the right end.
+1. Click the menu at the right of the file or folder, and click **Move**.
+2. In **Move items**, find the destination. Click a folder's arrow to open it.
+3. Optional: click **Create folder** to make a new folder here.
+4. Click **Move here**.
 
-This will bring up a window titled “**Move File**” which has all of the Folders you have created within that Drive. Select the folder or subfolder where you’d like to move the file, then click the “**Move Here**” button at the bottom right.
+![The Move items dialog with the drive's folders, Create folder, and Move here](/help/3-0/move-items.png)
 
-**NOTE**: Files and folders cannot currently be moved from one Drive to another.
+You can also open the details panel with **More info**. The move icon in its toolbar does the same.
+
+Files and folders can't move from one drive to another.
+
+Moving is a small write. When your free upload allowance covers it, it costs nothing. Otherwise it uses Turbo Credits.
 
 ---
 
@@ -2049,21 +2239,24 @@ Note: ArDrive exposes version history in the Info panel of the file.
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-public-preview/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Get a permanent public preview URL for files stored in a Public Drive.
+Description: Open a file in a public drive at its web address.
 
-All of the files on your Public Drive are given a URL that can be searched and shared as any other web address.
+Every file in a public drive has a web address. You can search it, share it, and open it like any other web address.
 
-To locate the full URL address highlight a file within your public folder.
+1. Click the menu at the right of the file, and click **Preview**.
+2. A new tab opens with the file. ArDrive can show files your browser can display, such as photos, music, video, and PDFs.
 
-In the details panel, select the square with a diagonal arrow - this is the public preview button. It will load any browser compatible data. This includes photos, music, movies, and PDFs.
+You can also open the details panel with **More info**. The preview icon in its toolbar does the same, and the **Preview** tab shows the file inside ArDrive.
 
-## URLs on the Permaweb
+Private files have no **Preview** item.
 
-When you click the public preview button, a new tab in your browser will open. You're viewing your data on the permaweb. The first string of numbers is a sandbox that turbo-gateway.com uses, the string of characters after turbo-gateway.com is the data item's transaction ID.
+## Web addresses on the permaweb
 
-Once you have this unique URL you can share it with others, embed it on a website or bookmark it in your browser as a record of your public permaweb files.
+When you preview a file, the new tab shows your data on the permaweb. The first part of the address is a sandbox that the gateway uses. The string after the gateway name is the data item's transaction ID.
 
-**Warning:**  Not all file types can be previewed in the browser. If a file type cannot be previewed, it will automatically download the file to your computer.
+You can share the address, embed it on a website, or bookmark it as a record of your public files.
+
+If your browser can't display a file type, it downloads the file instead.
 
 ---
 
@@ -2072,21 +2265,37 @@ Once you have this unique URL you can share it with others, embed it on a websit
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-actions-rename-a-file-or-folder/
 Category: Using ArDrive Apps
 Section: Actions
-Description: Rename files and folders in ArDrive while preserving permanent data history.
+Description: Rename files, folders, and drives in ArDrive and keep their data history.
 
-To rename a file or folder, click on the file or folder you want to be renamed.
+Rename a file, a folder, or a drive from its menu.
 
-In the details panel, click on the icon that looks like a pencil.
+## Rename a file or folder
 
-Clicking the icon will bring up a “Rename File” window with the current name of the File displayed in the text box.
+1. Click the menu at the right of the file or folder, and click **Rename**.
+2. In **Rename file**, change the name. For a folder the dialog says **Rename folder**.
+3. Click **Rename**.
 
-Click the “Rename” button below and the file get its new name. A new transaction will be submitted to the Arweave network, using this new name with the file’s existing data.
+![The Rename file dialog with the current name](/help/3-0/rename-file.png)
 
-**NOTE:** All data stored in ArDrive is immutable and cannot be changed. But this doesn’t mean we cannot append new information and metadata to that file.
+**Rename** stays off until the name is different.
 
-ArDrive lets you do things like rename and move your files and folders after they have been uploaded. This ability to edit the metadata lets you keep a nice organized view of your permanent data.
+You can also open the details panel with **More info**. The pencil icon in its toolbar renames the item.
 
-Learn more about [ArFS](https://ardrive.io/arfs) in our FAQ Video: [https://www.youtube.com/watch?v=9gv4S4K4Kro](https://www.youtube.com/watch?v=9gv4S4K4Kro)
+## Rename a drive
+
+Click the menu at the right of the drive name, and click **Rename drive**.
+
+## Edit a note
+
+A text note has **Edit note** in its menu instead of **Rename**.
+
+## What happens to the data
+
+Data stored in ArDrive can't be changed. A rename saves a new record that uses the new name with the file's existing data. The earlier name stays in the history. This lets you keep your files organized after you upload them.
+
+Renaming is a small write. When your free upload allowance covers it, it costs nothing. Otherwise it uses Turbo Credits.
+
+To learn how ArFS records changes, see the [ArFS documentation](https://ardrive.io/arfs).
 
 ---
 
@@ -2115,9 +2324,9 @@ You want your NFT to be seen - it needs be in a public Drive!
 
 Our good friend Cowboy Coder went in depth into [NFT metadata](https://ardrive.io/arweave-and-nft-metadata/). Upload your metadata the same way you uploaded your images.
 
-## **Create a Manifest for your metadata**
+## **Create a deployment for your metadata**
 
-Just like you made one for your images.
+Just like you made one for your images. See [Create a deployment](/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest).
 
 ## **Working with NFT marketplaces**
 
@@ -2269,6 +2478,59 @@ A MetaMask account has no keyfile to download. Open **Account and security** to 
 ## Pay for uploads
 
 To pay for uploads, add Turbo Credits. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
+
+---
+
+# Log into ArDrive with Phantom or Solflare
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-getting-started-log-into-ardrive-phantom-or-solflare/
+Category: Using ArDrive Apps
+Section: Getting Started
+Description: Use the Phantom or Solflare browser wallet to sign in to ArDrive with a wallet approval, with no sign-in password.
+
+Phantom and Solflare are browser wallets that hold Solana keys. You sign in to ArDrive by approving in the wallet. ArDrive makes an Arweave account for your files from your Solana wallet, so there is no ArDrive password to sign in.
+
+## Before you start
+
+Install Phantom or Solflare in your browser and unlock it. ArDrive shows the sign-in option only when it finds one of them.
+
+## Log in
+
+1. Go to [app.ardrive.io](https://app.ardrive.io) and click **Log in**.
+2. Under **or a browser wallet**, click **Phantom or Solflare**.
+
+   ![The Log in panel with Recovery phrase or keyfile, and Phantom or Solflare under or a browser wallet](/help/3-0/signin-phantom-option.png)
+
+3. Approve the requests that your wallet shows. ArDrive asks the wallet to connect and to sign a message. While it waits, it says **Approve in Phantom** or **Approve in Solflare**.
+4. Wait while ArDrive says **Setting up your account.** The first sign-in takes longer.
+
+ArDrive opens **Your drives**. A new account shows **Getting started**, where you can upload files or create a drive.
+
+If ArDrive says **Login failed**, close the message, check that your wallet is unlocked, and try again.
+
+The next time you open ArDrive, **Welcome back** shows **Continue with Phantom** or **Continue with Solflare**. Click it and approve in your wallet. To use another account, click **Use a different account**.
+
+## Your two addresses
+
+**Account and security** shows two addresses for a Phantom or Solflare account:
+
+- **Solana, for sign-in and names.** The address of your wallet. It also holds your names. See [Names](/help/using-ardrive-apps-using-ardrive-names).
+- **Arweave, for your files.** The address ArDrive uses for your files and uploads.
+
+![Account and security for a Phantom account, with the Solana and Arweave addresses hidden](/help/3-0/account-phantom.png)
+
+## Private drives
+
+A wallet account has no sign-in password, so ArDrive asks you to set a drive password the first time you need a private drive. See [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
+
+## Turbo Credits held on your wallet
+
+If you bought Turbo Credits with your Solana wallet in the ar.io Console, **Billing** shows them as credits on your wallet, with a **Use them** button. See [Share Turbo Credits](/help/using-ardrive-apps-using-ardrive-share-turbo-credits).
+
+## Related
+
+- [Account and security](/help/using-ardrive-apps-using-ardrive-account-and-security)
+- [Login trouble](/help/faqs-help-and-troubleshooting-guides-login-trouble)
 
 ---
 
@@ -2458,6 +2720,59 @@ Clearing your browser's site data also forgets remembered drives. See [Clearing 
 
 ---
 
+# Account and security
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-account-and-security/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: See how you sign in, download your keyfile, forget remembered drives, and copy your addresses.
+
+**Account and security** shows how you sign in, what ArDrive remembers on this device, and the addresses behind your account.
+
+## Open the page
+
+1. Click your account at the top right.
+2. Click **Account and security**.
+
+![Account and security with Sign in, This device, and Addresses](/help/3-0/account-keyfile.png)
+
+## Sign in
+
+This section depends on how you sign in.
+
+| You sign in with | The section shows |
+|---|---|
+| A keyfile or a recovery phrase | **Keyfile**, with a **Download** button |
+| Wander | "Wander keeps your key. Back it up there." and **Connected** |
+| Phantom or Solflare | "Phantom signs you in. Your files stay with this wallet." and **Connected** |
+
+To save a copy of your keyfile, click **Download**. Keep the keyfile private and somewhere safe. Anyone who has it can control your wallet.
+
+## This device
+
+**This device** shows how many private drives ArDrive remembers on this device, such as "3 drives remembered". A remembered drive opens without its password.
+
+To forget them:
+
+1. Click **Forget**.
+2. In the confirmation, click **Forget**. ArDrive says "You'll need their passwords to open them again."
+
+For how remembering works, see [Your drive password](/help/using-ardrive-apps-getting-started-ardrive-password).
+
+## Addresses
+
+- **Arweave, for your files.** The address of your account. Click the copy icon to copy it.
+- **Solana, for names.** The Solana wallet that holds your names. Click **Link** to add one. See [Names](/help/using-ardrive-apps-using-ardrive-names).
+
+If you sign in with Phantom or Solflare, the Solana address is the wallet you signed in with. ArDrive labels it **Solana, for sign-in and names**.
+
+## Related
+
+- [Billing and Turbo Credits](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing)
+- [Clearing your cache](/help/faqs-help-and-troubleshooting-guides-clearing-your-cache)
+
+---
+
 # Add Turbo Credits and use Billing
 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing/
@@ -2550,29 +2865,103 @@ If you hold AR, ArDrive can use it to pay for uploads directly. Billing shows yo
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-attach-a-drive/
 Category: Using ArDrive Apps
 Section: Using ArDrive
-Description: Attach a shared public or private Drive to your account from a Drive link.
+Description: Attach a drive that someone shared with you, using its drive ID, so it shows in your Shared with me list.
 
-Attach Drives is the way to receive a Public or Private Drive that has been shared with you. There is no cost to attach a Drive to your account or download any files from that Drive.
+Attaching a drive adds a public or private drive that someone shared with you to your account. Attaching a drive costs nothing, and so does downloading its files. You need the drive ID. A private drive also needs its access key.
 
-## Use a Drive Link to attach a Drive
+## Attach a drive
 
-The easiest way to attach a Drive to your account is to simply click on a Drive link that has been given to you. Drives are automatically attached if they are accessed via a Drive Sharing link.
+1. Click **New**, then click **Attach drive**.
+2. In **Drive ID**, paste the drive ID.
 
-Once you click on the link (and [login to ArDrive](/help), if needed) your new Drive will appear under a ‘Shared Drives’ heading in the left side menu.
+   ArDrive looks the drive up. When it finds the drive, it fills in the drive's name and shows whether it is public or private and who owns it.
 
-## Use the new button to attach a Drive
+   ![Attach drive, with the drive found and its name filled in](/help/3-0/attach-drive-found.png)
 
-If you have the 36-character Drive ID, you can also use the **+NEW** button to attach a Drive.
+3. Optional: change the name in **Drive name**. The name is only yours. It doesn't change the owner's name for the drive.
+4. Click **Attach**.
 
-Go to the control center of ArDrive and click the **+NEW** button.
+The drive opens, and ArDrive adds it to **Shared with me** in the sidebar.
 
-Four options will appear including ‘Attach Drive’.
+## Attach a private drive
 
-Click on Attach Drive and a popup box will appear at the center of your screen.
+When the drive is private, ArDrive says "This is a private drive. Enter its access key to continue." Enter the key the owner sent you, then click **Attach**. Without the key, you can't open the drive.
 
-The pop up will have a place for you to put your 36-character Drive ID that your friend shared with you and a box that allows you to name the Drive. You can choose any name you wish for this Drive. It doesn’t have to be the same name that the original creator used.
+## Find an attached drive
 
-Once you press ‘attach’ the Drive will appear under a ‘Shared Drives’ heading in the left side menu.
+Click **Shared with me** in the sidebar. The number beside it counts the drives you attached.
+
+## Open a drive without attaching it
+
+To look at a shared drive without an account, see [Open a drive without signing in](/help/using-ardrive-apps-using-ardrive-open-a-drive-without-signing-in).
+
+---
+
+# Create A Deployment (Arweave Manifest)
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Create a deployment from a public drive or folder to give its files friendly paths at one Arweave address.
+
+A deployment publishes a folder at one Arweave address, with each file at a friendly path. ArDrive stores it as an Arweave manifest.
+
+An Arweave manifest maps file names and paths to Arweave transaction IDs. A gateway reads it, so you can open files by name:
+
+```text
+https://turbo-gateway.com/MANIFEST_TX_ID/index.html
+https://turbo-gateway.com/MANIFEST_TX_ID/images/logo.png
+```
+
+Replace MANIFEST_TX_ID with the transaction ID of the deployment.
+
+Without a manifest, each file has its own address made of its transaction ID. For how manifests work, see [Arweave Manifests](/help/understanding-the-permaweb-general-arweave-manifests).
+
+To publish a drive, a folder, or a single file as a web page, use [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web). Use a deployment when you want a website or an app at one address, for example one that you also name with [Names](/help/using-ardrive-apps-using-ardrive-names).
+
+## Create a deployment
+
+You can create a deployment only in a public drive.
+
+1. Open the public drive.
+2. Click **New**, click **Advanced**, and click **New deployment**.
+3. In **Target folder**, open the folder to publish. Stay at the top to use the whole drive. The deployment includes every file in the folder and its subfolders.
+
+   ![Target folder, listing the folders in the drive, with a fallback page field](/help/3-0/deployment-target.png)
+
+4. Optional: enter a **Fallback page**. This is the transaction ID of the file that opens when a path isn't found.
+5. Click **Next**.
+6. In **Deployment name**, enter a name for the deployment, then click **Next**.
+
+   ![New deployment, with the deployment name field](/help/3-0/new-deployment.png)
+
+7. Review the deployment. ArDrive shows its size and its cost. A small deployment shows **Cost: 0 credits** and says that uploads this small are free with Turbo. A larger one costs Turbo Credits.
+8. Optional: open **Give it a name like yours.ar.io** to point a name you own at it. See [Names](/help/using-ardrive-apps-using-ardrive-names).
+9. Click **Create deployment**.
+
+ArDrive leaves hidden files and folders out of the deployment. The review warns that files uploaded here are viewable by anyone on the internet, so publish only what you want everyone to see.
+
+If some files in the folder are still pending, ArDrive says **Files pending** and recommends that you wait until they confirm.
+
+The deployment appears in your drive as a file of type **Deployment**.
+
+## Open a deployment
+
+Open the link of the deployment to see its default page. A deployment opens `index.html` if it has one. If it has none, the first file in the deployment opens, and all other files stay reachable by their paths.
+
+To check the paths a deployment uses, open its raw manifest in your browser at `turbo-gateway.com/raw/MANIFEST_TX_ID`.
+
+## Update a deployment
+
+After you change the files, create a deployment again with the same name. ArDrive adds a new version of the deployment with the new transaction IDs. Earlier versions stay on Arweave.
+
+## Import files from a manifest
+
+**New**, **Advanced**, **Import from manifest** adds the files that an existing manifest lists to your drive.
+
+## Customize a manifest
+
+The ArDrive CLI can create a manifest from a public drive or folder and export a preview. You can edit the preview, for example to add transaction IDs that aren't in your drive, and upload it with the CLI. See the [docs portal](https://docs.ardrive.io).
 
 ---
 
@@ -2621,80 +3010,96 @@ Description: Create Drive snapshots to speed up future syncing for large public 
 
 **QuickSync** a roll up of your Drive's ArFS metadata into a single snapshot, meaning much faster syncing times for your Drive in future sessions.
 
-This feature greatly improves the experience of power users with large Drives, all thanks to the ArFS protocol. Snapshots can be created for both your public & private Drives and decreases the sync time needed when you share/attach Drives with snapshots.
+Snapshots help users with large drives. You can create them for public and private drives. They shorten the sync time of a drive you share or attach.
 
-1.  Select the Drive you want to create a snap shot for, hit the **New** button, and select **Advanced**, and **New Snapshot**.
-2.  Select **proceed**.
-3.  ArDrive determines the size & cost of uploading the Snapshot, click **upload** to proceed.
-4.  Your Snapshot is created & the next time you login, you'll notice faster Drive syncing.
+1.  Open the drive, click **New**, click **Advanced**, and click **New snapshot**. You can also click the menu at the right of the drive name, and click **Create snapshot**.
+2.  Follow the steps. ArDrive determines the size and cost of the snapshot and shows them before it uploads.
+3.  Upload the snapshot. The next time you sync, the drive syncs faster.
+
+If recent changes to the drive are still being confirmed on Arweave, ArDrive says so, for example "4 recent changes to this drive are still being confirmed on Arweave. Try again in a few minutes." Wait, then try again.
+
+Syncing from snapshots is on by default. To change it, open **Settings** and see **Sync from snapshots**. See [Sync Your Drive](/help/faqs-help-and-troubleshooting-guides-sync-your-drive).
 
 ---
 
-# Create An Arweave Manifest
+# Names
 
-Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest/
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-names/
 Category: Using ArDrive Apps
 Section: Using ArDrive
-Description: Create an Arweave Manifest from a public Drive or folder to give permanent files friendly paths.
+Description: Point an ArNS name you own at a published page, a deployment, or a public file, and pay for the change with Turbo Credits.
 
-# Overview
+A name is a web address you choose, such as maya.ar.io, for a published page, a deployment, or a public file. ArDrive calls these ArNS names. You can point a name you own at your content and change what it points to later.
 
-Arweave Manifests can unlock new and unique experiences that can only be made possible on the Permaweb.
+ArDrive doesn't sell names. Buy and renew names in the ar.io Console. ArDrive assigns a name you already own, and you pay for the change with Turbo Credits.
 
-An Arweave Manifest is a mapping of Arweave Transaction IDs and friendly names. This map is put into a standardized, JSON structure and permanently stored on Arweave, and it allows users to create logical groupings of content. Arweave Gateways can interpret this structure, so users can then reference individual transactions by their file name and/or path.
+## What you can name
 
-Manifests allow you to use friendlier URLs like...
+- A published page: a drive, a folder, or a file. See [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web).
+- A deployment. See [Create a deployment](/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest).
+- A public file.
 
-[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/0.png](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/0.png)
-[https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq\_8g4oeiGP5RnA/333.png](https://turbo-gateway.com/Bgw5-GwpymUoe5VMeb-No9WWXpjWsq_8g4oeiGP5RnA/333.png)
+A private file can't have a name. To name a folder or a site, publish it to the web first.
 
-...rather than opaque Arweave transaction IDs that ordinarily reference your data:
-[https://turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0](https://eev46qzbxsuwzsou7p4xu3trfpa63x6b3hpon5l46hnrisudhswq.turbo-gateway.com/ISvPQyG8qWzJ1Pv5em5xK8Ht38HZ3ub1fPHbFEqDPK0)
-[https://turbo-gateway.com/nHuFsR2Y-e\_qtnsmj0avn37CTWxlZ4zvG\_CKwtldK3I](https://turbo-gateway.com/nHuFsR2Y-e_qtnsmj0avn37CTWxlZ4zvG_CKwtldK3I)
+## Link your Solana wallet
 
-With ArDrive, any Public Drive or Folder can be turned into a Manifest. The file names and paths would each be represented within the Arweave Manifest, making it easier for developers and users to reference their content by the names used on their local file systems.
+ArNS names are owned by Solana wallets, so ArDrive needs to know which wallet holds yours. You link it once.
 
-Want to learn how it works and see some examples? [Check out our detailed technology article.](/help/understanding-the-permaweb-general-arweave-manifests/)
+1. Click **Names** in the sidebar.
+2. Click **Link a Solana wallet**.
+3. Approve in your wallet.
 
-# Instructions
+You can also click **Link** next to **Solana, for names** on [Account and security](/help/using-ardrive-apps-using-ardrive-account-and-security).
 
-Creating an Arweave Manifest is easy with ArDrive.
+If ArDrive says **No Solana wallet found**, open ArDrive in your wallet's app, or install Phantom or Solflare. The message has links for each.
 
-1.  Navigate to your Public Drive, and click the “New” button and "Advanced" and select “Create Manifest”.
+![Link a Solana wallet, with No Solana wallet found](/help/3-0/names-link-wallet.png)
 
-1.  Enter in the name for your Arweave Manifest and click “Next”
+If you sign in with Phantom or Solflare, that wallet is already the wallet for names. There is nothing to link.
 
-1.  Select the location to create the Manifest out of.
+Your linked wallet approves name changes. Turbo Credits pay for them.
 
-    1.  Selecting the top level of the Drive will create a manifest out of all of the Drive’s content, including subfolders.
+## See your names
 
-    2.  Selecting an individual folder will create a manifest out of all of that Folder’s content, including subfolders
+**Names** lists every name your linked wallet holds, with what each points to. If the wallet holds no names, the page says **No names yet** and links to the ar.io Console, where you can get one.
 
-2.  View and confirm the price of the Manifest and upload it to ArDrive
+## Give a page a name
 
-After the Manifest is created and uploaded, it will have a special icon indicating that it is an Arweave Manifest.
+You can start from any of these places:
 
-Congratulations! You can now access any of the Arweave Transactions referenced in the Manifest using the its friendlier file path and name. [See our technical article on for more references.](/help/understanding-the-permaweb-general-arweave-manifests/)
+- A published page: click **Add name** in its menu in [Web pages](/help/using-ardrive-apps-using-ardrive-web-pages).
+- A public file: open its **Details** tab from **More info**, and click **Add name** next to **Name**. A pinned file also has **Add name** in its menu.
+- While you publish or create a deployment: open **Give it a name like yours.ar.io** in the review.
 
-Clicking the “Preview Link” for a Manifest will load the default `index.html` page referenced within the Manifest.
+Then:
 
-Clicking the “Download Link” for a Manifest will download the default `index.html` page referenced within the Manifest.
+1. Choose the name. ArDrive says "Choose a name for" and the item.
+2. Optional: add an undername, such as blog for blog_maya.ar.io. Use letters, numbers, - and _, and start with a letter or number.
+3. Check the **Cost**. ArDrive shows it in Turbo Credits before your wallet is asked.
+4. Confirm the change.
+5. Approve in your wallet when it asks. It can ask twice. ArDrive says **Approve once more in your ArNS wallet** for the second request.
 
-No `index.html`? No problem! The first file contained in the Manifest will act as the default file that is loaded when the Manifest is previewed, and all other files can still be referenced with their friendly names.
+ArDrive says **Name saved** when it finishes, and says how soon the name goes live. Gateways keep an old answer for a short time, called the cache time. A shorter cache time shows changes sooner, and a longer one loads faster for visitors.
 
-**NOTE:** Check the paths that your Manifest is using by checking the raw endpoint: `turbo-gateway.com/raw/ManifestTXID` into your browser.
+## Change or remove a name
 
-# Updating a Manifest
+- To point a name at something else, click **Change name** in the item's menu, or choose **Change what it points to**.
+- To remove an undername, click **Remove name**. The undername stops working.
+- A main name can't be removed. Point it at something else instead.
 
-Need to make changes to your permanent web app or NFT collection? ArDrive makes it easy for users to quickly adjust a specific file or folder, and then recreate a new manifest containing the updated transaction IDs and friendly names. Just like any other file in ArDrive, a new Manifest revision can be created by reusing the existing Manifest name, allowing permanent version control over your site or app.
+If you hide a file that has a name, the name still opens it. ArDrive asks **Remove its name too?** so you can remove it.
 
-# Want it Custom?
+## If a change doesn't go through
 
-The ArDrive CLI also allows you to create a manifest out of a given Public Drive or Folder, and takes it a step further.
+ArDrive says what happened and whether you were charged:
 
-With the CLI, developers can quickly create and export a preview of their manifest. This preview can be modified in a standard text editor to fit any use case, like adding other Arweave Transaction IDs that aren’t contained within your Drive, or changing the friendly names. Once the manifest has been customized, the CLI can quickly upload it, using the custom “Arweave Manifest” content type.
+- **Not enough credits.** Add Turbo Credits and try again. Nothing was charged. See [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing).
+- **It wasn't approved in your wallet.** Nothing was charged.
+- **The change wasn't approved in time.** Your credits come back within 15 minutes.
 
-Detailed instructions can be found on our [Docs Portal](https://docs.ardrive.io).
+## Renew a name
+
+Names are leased. ArDrive shows when a lease ends. Renew the name in the ar.io Console to keep it.
 
 ---
 
@@ -2703,19 +3108,111 @@ Detailed instructions can be found on our [Docs Portal](https://docs.ardrive.io)
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-new-folders/
 Category: Using ArDrive Apps
 Section: Using ArDrive
-Description: Create folders to organize files inside an ArDrive Drive.
+Description: Create folders to organize files inside an ArDrive drive.
 
-After [creating a Drive](/help/using-ardrive-apps-using-ardrive-create-new-drive/), you can upload any file you want to it, but you can keep your Drive organized by creating folders.
+After you [create a drive](/help/using-ardrive-apps-using-ardrive-create-new-drive), you can upload files to it. Folders keep the drive organized.
 
-Click on the **+NEW** button and choose “New Folder”.
+## Create a folder
 
-Once you create a new folder it will appear under the Drive that you have assigned it to.
+1. Open the drive, or the folder where the new folder should go.
+2. Click **New**, then click **New folder**.
+3. Enter a name and click **Create folder**.
 
-Select the folder that you have created, and it will take you another level down into that folder.
+The new folder appears in the list. Double-click it to open it. The names above the list are breadcrumbs. Click one to go back up to that folder.
 
-Navigate easily through your Drive by clicking on the folder names that now appear as breadcrumbs in the top navigation.
+## Share, move, and rename a folder
 
-**NOTE:** Folders cannot be shared at this time.
+Click the menu at the right of the folder's row. Its items include **Share folder**, **Publish to web**, **Download**, **Rename**, **Move**, **Hide**, and **More info**. To share a folder, see [Drive sharing](/help/using-ardrive-apps-actions-drive-sharing).
+
+---
+
+# Open a drive without signing in
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-open-a-drive-without-signing-in/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Open a public drive from a link or a drive ID, with no account. A private drive also needs the key it was shared with.
+
+You can open a drive that someone shared with you without an account. You only need its link or its drive ID.
+
+## Open a drive
+
+1. Go to [app.ardrive.io](https://app.ardrive.io).
+2. Click **Open a drive without logging in**.
+3. In **Drive link or ID**, paste the link or the drive ID.
+
+   ArDrive looks the drive up and shows "Drive found" with its name and whether it is public or private.
+
+   ![Open a drive, with the drive name found under the field](/help/3-0/open-drive-found.png)
+
+4. Click **Open drive**.
+
+The drive opens under **Shared with me**. You see its files and folders. A **Log in** button at the top right lets you sign in when you want to.
+
+![A public drive opened without signing in, with Shared with me in the sidebar and a Log in button](/help/3-0/open-drive-visitor.png)
+
+## Open a private drive
+
+A private drive also needs the drive key it was shared with. When you paste a private drive, ArDrive says "This is a private drive. Paste the drive key you were given." Paste the key in **Drive key**, then click **Open drive**.
+
+If the key is wrong, ArDrive says "This key doesn't open this drive." Ask the person who shared the drive to send the key again. They should send it apart from the link.
+
+The shared link of a private drive opens the drive on its own only if the sender included the key in the link. See [Drive sharing](/help/using-ardrive-apps-actions-drive-sharing).
+
+## If ArDrive can't open it
+
+| ArDrive says | What to do |
+|---|---|
+| No drive was found for that ID | Check the link, or ask the person who shared it. |
+| That doesn't look like an ArDrive link or drive ID | Paste the whole link, or the 36-character drive ID. |
+| That's a link to a file | Click **Open file** to see the file. |
+| That's a link to a transaction | Click **View transaction**. |
+| Couldn't reach the network | Check your connection and try again. |
+
+## Keep a drive
+
+If you have an account, you can add a shared drive to it. See [Attach a drive](/help/using-ardrive-apps-using-ardrive-attach-a-drive).
+
+---
+
+# Pin a file
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-pin-a-file/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Add a file that is already on Arweave to your drive by its transaction ID, without uploading it again.
+
+A pin adds a file that is already on Arweave to your drive. ArDrive saves a small record that points to the file's data. It doesn't upload the data again, so the pin shows the size of the original file.
+
+Use a pin to keep a file you found on Arweave, or one you uploaded somewhere else, with the rest of your files.
+
+## Pin a file
+
+1. Open the drive and the folder where the pin should go.
+2. Click **New**, then click **New file pin**.
+3. In **Enter transaction ID or file ID**, paste the transaction ID of the data, or an ArDrive file ID.
+4. In **Enter file name**, type the name the file should have in your drive.
+5. Click **Create pin**.
+
+![The New file pin dialog with the transaction ID and file name fields](/help/3-0/new-file-pin.png)
+
+The pin appears in the folder at once. Its status dot is pending until the network confirms the record. A small circle with a pin icon at the right of the row marks it as a pin.
+
+![A folder with pinned files, each with a pin icon](/help/3-0/pinned-files.png)
+
+A pin is a small write, so it counts toward your free upload allowance, or uses Turbo Credits. If it fails, ArDrive says "Your pin failed to upload".
+
+## Use a pinned file
+
+A pinned file has most of the same actions as a file you uploaded. Click the menu at the right of its row for **Preview**, **Share file**, **Add name**, **Download**, **Rename**, **Move**, and **Hide**. While the record is pending, the menu also has **Check upload status**.
+
+A pinned web page can show in [Web pages](/help/using-ardrive-apps-using-ardrive-web-pages), labelled **pinned in** and the name of the drive.
+
+## What a pin doesn't do
+
+- A pin doesn't copy or change the data. The data stays at its own transaction ID.
+- A pin points to data that is already public on Arweave. Pin only data you are happy to show in your drive.
+- Hiding a pin removes it from the view of your drive. The data stays on Arweave.
 
 ---
 
@@ -2824,27 +3321,86 @@ An update gets a new link. Earlier links keep working. If a name points at the p
 
 ---
 
+# Share Turbo Credits
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-share-turbo-credits/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: See the credits shared with you and the credits you shared, and use credits held on a Solana wallet.
+
+Credit sharing lets one wallet spend from the Turbo Credits of another, up to an amount the owner approves. The credits stay with their owner. A share is not a transfer: the person you share with can spend credits, and can't take them.
+
+ArDrive shows shares on the **Billing** page.
+
+## See your shares
+
+1. Click your account at the top right.
+2. Click **Billing**.
+
+If credits are shared with you, **Balance** splits your **Turbo Credits** into "yours" and "shared with you". Uploads can spend both.
+
+The **Shared credits** section lists each share:
+
+- **Shared with you.** Credits another wallet shared with you.
+- **You shared.** Credits you shared with another wallet.
+
+Each share shows how much is left, such as "0.5 left", or how much is used, such as "0.2 of 1 used". It also shows when the share ends, such as "expires" and a date. A share with no end date shows "never expires". A share that has ended shows "expired".
+
+## Share credits with another wallet
+
+Use the ar.io Console to share credits with another wallet. Billing lists the share after you make it.
+
+## Use credits held on your Solana wallet
+
+If you sign in with Phantom or Solflare and you bought Turbo Credits with that wallet in the ar.io Console, those credits belong to your Solana wallet, not to the Arweave address ArDrive uses for uploads. **Billing** shows them in a row such as "1.5 credits on your Phantom wallet".
+
+1. Click **Use them**.
+2. Approve in your wallet.
+
+ArDrive then shares those credits with your account, and they count as credits shared with you.
+
+If you sign in with MetaMask, Billing says to share the credits in the ar.io Console, and shows a button to copy your Arweave address. Share them to that address.
+
+## When credits expire
+
+Credits expire twelve months after the date of purchase. A share has its own end date, which Billing shows. A share that says "never expires" has no end date, but the credits in it still expire twelve months after they were bought. For the full terms, see the [Terms of Service](/tos-and-privacy).
+
+## Related
+
+- [Add Turbo Credits and use Billing](/help/using-ardrive-apps-using-ardrive-add-turbo-credits-and-billing)
+- [Turbo FAQ](/help/faqs-faq-ardrive-turbo)
+- [Log into ArDrive with Phantom or Solflare](/help/using-ardrive-apps-getting-started-log-into-ardrive-phantom-or-solflare)
+
+---
+
 # The New Button
 
 Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-the-new-button/
 Category: Using ArDrive Apps
 Section: Using ArDrive
-Description: Use the +NEW button to create drives and folders, attach shared drives, upload files, and create manifests or snapshots.
+Description: Use New to upload files, make folders, notes, pins, and drives, attach a shared drive, and create deployments or snapshots.
 
-The first thing to know about using ArDrive is that the big red **+NEW** button in the top left corner is your best friend.
+**New** is the red button at the top left of ArDrive. It makes things. Everything you can add to your drives starts here.
 
-The **+NEW** button is the control center of the app, where you control your Drive:
+![The New menu, with Advanced open to New deployment, New snapshot, and Import from manifest](/help/3-0/new-menu.png)
 
--   [Create New Drives](/help/using-ardrive-apps-using-ardrive-create-new-drive/)
+The menu has these items:
 
--   [Create New Folders](/help/using-ardrive-apps-using-ardrive-new-folders/)
+- **Upload files.** See [Uploading files](/help/using-ardrive-apps-using-ardrive-uploading-files).
+- **Upload folder.** Uploads a folder from your computer with everything in it.
+- **New folder.** See [New folders](/help/using-ardrive-apps-using-ardrive-new-folders).
+- **New note.** Writes a text note in the open folder.
+- **New file pin.** Adds a file that is already on Arweave. See [Pin a file](/help/using-ardrive-apps-using-ardrive-pin-a-file).
+- **New drive.** See [Create a drive](/help/using-ardrive-apps-using-ardrive-create-new-drive).
+- **Attach drive.** Adds a drive someone shared with you. See [Attach a drive](/help/using-ardrive-apps-using-ardrive-attach-a-drive).
+- **Advanced.** Opens more items:
+  - **New deployment.** In a public drive only. See [Create a deployment](/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest).
+  - **New snapshot.** See [Create a snapshot](/help/using-ardrive-apps-using-ardrive-create-a-snapshot).
+  - **Import from manifest.** In a public drive only. Adds the files that an existing manifest lists to the drive.
 
--   [Attach a Drive](/help/using-ardrive-apps-using-ardrive-attach-a-drive/) made by someone else
+The menu shows what fits where you are. On **Your drives**, with no drive open, it has **Upload files**, **Upload folder**, **New drive**, and **Attach drive**. **Upload files** and **Upload folder** are dimmed there until you open a drive. Inside a private drive, **Advanced** has only **New snapshot**.
 
--   [Upload Files](/help/using-ardrive-apps-using-ardrive-uploading-files/)
-
--   [Create a manifest](/help/using-ardrive-apps-using-ardrive-create-an-arweave-manifest)
--   Create a Snapshot
+**New** only makes things. To change something that exists, such as to share, rename, move, or hide it, use the item's own menu. See [Actions](/help/using-ardrive-apps-actions-actions).
 
 ---
 
@@ -2892,3 +3448,58 @@ ArDrive tries to track the status of each transaction in order to let you know w
 -   Red status means the file upload transaction may have failed
 
     -   If a file is not mined, the AR payment made for this file is refunded.
+
+---
+
+# Web pages
+
+Canonical URL: https://ardrive.io/help/using-ardrive-apps-using-ardrive-web-pages/
+Category: Using ArDrive Apps
+Section: Using ArDrive
+Description: Find every page you published, open it, copy its link, update it, and give it a name.
+
+**Web pages** lists everything you published to the web: drives, folders, and files. Use it to open a page, copy its link, update it after you change the files, and give it a name.
+
+To make a page, see [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web).
+
+## Open Web pages
+
+Click **Web pages** in the sidebar. Opening it folds the drive lists in the sidebar. Click **Your drives** to go back.
+
+The list has three columns:
+
+- **Page.** The page name, with the drive it belongs to under it. A file you pinned shows **pinned in** and the drive name.
+- **Link.** A short form of the page link.
+- **Updated.** The date of the last update. The newest page is first.
+
+![The Web pages list with each page's link hidden](/help/3-0/web-pages-list.png)
+
+If you haven't published anything, the page says **Nothing published yet** and has a **Go to your drives** button.
+
+![Web pages with nothing published](/help/3-0/web-pages-empty.png)
+
+## Use a page
+
+Click the menu at the right of a row. The menu has these items:
+
+| Item | What it does |
+|---|---|
+| **Open page** | Opens the page in a new tab. |
+| **Copy link** | Copies the page link. |
+| **Update page** | Publishes the page again with your latest changes. A drive, folder, or file page has this item. |
+| **Add name** | Points a name you own at the page. See [Names](/help/using-ardrive-apps-using-ardrive-names). |
+| **Open folder** | Opens the drive or folder the page comes from. |
+
+A pinned file page has no **Update page** item.
+
+## Publish from this page
+
+Click **Publish**, choose a drive, and follow the steps in [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web). ArDrive asks which drive first.
+
+## Update a page
+
+An update gets a new link. Earlier links keep working. If a name points at the page, it moves to the new link. The steps are in [Publish to web](/help/using-ardrive-apps-using-ardrive-publish-to-web#update-a-page).
+
+## Pages are public
+
+Anyone with a page link can open the page. Publishing can't be undone. Hide a file in your drive to leave it out of the next update. Hiding doesn't remove data that is already public.
