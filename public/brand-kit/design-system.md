@@ -286,8 +286,10 @@ Close are dismiss actions: secondary, never red, even when alone. A disabled
 action looks disabled and can't be pressed. Long content scrolls inside the
 dialog and the actions stay reachable.
 
-Errors show inside the dialog that failed (a notice, with a way to fix or
-retry), never as a second dialog on top. On a phone, a dialog may be a bottom
+Work runs inside the dialog too: while it does, the primary shows a spinner
+and Cancel and the close button wait, never a progress dialog on top. Errors
+show inside the dialog that failed (a notice, with a way to fix or retry),
+never as a second dialog on top. On a phone, a dialog may be a bottom
 sheet with the same title, spacing and action row.
 
 A dialog's primary action keeps its name: Upload stays Upload. Settings that
