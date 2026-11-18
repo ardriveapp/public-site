@@ -290,6 +290,22 @@ Errors show inside the dialog that failed (a notice, with a way to fix or
 retry), never as a second dialog on top. On a phone, a dialog may be a bottom
 sheet with the same title, spacing and action row.
 
+A dialog's primary action keeps its name: Upload stays Upload. Settings that
+only some people change sit in the dialog itself, folded away (below), not in
+a step of their own behind Next or Configure.
+
+### Disclosure rows
+
+An optional part of a dialog folded to one 40 px row: an 18 px icon in
+`icon-mid`, the title in paragraph-normal SemiBold `text-high`, a summary of
+what is set in paragraph-small SemiBold `text-low` (items separated by a
+drawn dot), and a chevron at the right that turns when it opens. Opened, the
+summary gives way and the content shows under the title, lined up with it.
+Rows stack with no gap between them and no box around them, so a dialog's
+optional parts read as one list. A row with nothing to open shows a link at
+its right instead of the chevron, such as "Get a name". It is reachable by
+keyboard and announced as an expandable button.
+
 ### Text fields
 
 Fill `input`, a 1 px `stroke-mid` edge, radius 6, 20 px side padding, 49 px
