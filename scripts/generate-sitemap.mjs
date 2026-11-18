@@ -23,6 +23,7 @@ const STATIC_PAGES = [
   "/help/",
   "/brand-kit/",
   "/tos-and-privacy/",
+  "/abuse/",
 ];
 
 /**
