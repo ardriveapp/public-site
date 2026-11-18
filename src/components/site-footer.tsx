@@ -117,9 +117,12 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-2 border-t border-fd-border/10 pt-4 text-xs text-fd-foreground/55 sm:flex-row sm:items-center sm:justify-end">
+        <div className="mt-8 flex flex-col gap-2 border-t border-fd-border/10 pt-4 text-xs text-fd-foreground/55 sm:flex-row sm:items-center sm:justify-end sm:gap-6">
           <Link href="/tos-and-privacy" className="transition-colors hover:text-fd-foreground/85">
             Terms of Service &amp; Privacy Policy
+          </Link>
+          <Link href="/abuse" className="transition-colors hover:text-fd-foreground/85">
+            Report Abuse
           </Link>
         </div>
       </div>

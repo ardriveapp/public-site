@@ -30,7 +30,7 @@ export default async function TosAndPrivacyPage() {
         {doc.date && (
           <p className="mt-3 text-sm" style={{ color: "rgba(250,250,250,0.35)" }}>
             Last updated{" "}
-            {new Date(doc.date).toLocaleDateString("en-US", {
+            {new Date(`${doc.date}T00:00:00`).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
               day: "numeric",
