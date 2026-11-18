@@ -4,7 +4,7 @@ import { compileMDX } from "@/lib/mdx";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
-  title: "Report Abuse | ArDrive",
+  title: "Report Abuse",
   description:
     "How to report phishing, malware and other abuse in files shared through ArDrive or served from ardrive.net and turbo-gateway.com.",
   canonical: "/abuse",
@@ -30,7 +30,7 @@ export default async function AbusePage() {
         {doc.date && (
           <p className="mt-3 text-sm" style={{ color: "rgba(250,250,250,0.35)" }}>
             Last updated{" "}
-            {new Date(doc.date).toLocaleDateString("en-US", {
+            {new Date(`${doc.date}T00:00:00`).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
               day: "numeric",
